@@ -29,6 +29,8 @@ alias gt='git tag '
 alias gk='gitk --all&'
 alias gx='gitx -all'
 
+# Personal ~/bin/ aliases
+alias relink='~/bin/link_syreport.sh ; ~/bin/link_bib.sh'
 #----------------------------------------------------------------------------------
 # From Xenon .bash_profile:
 #----------------------------------------------------------------------------------
