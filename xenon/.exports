@@ -1,0 +1,15 @@
+# .exports
+# Exports all environment variables
+# Sourced by .bash_profile and .bashrc (just in case); sources .path and .prompt
+
+if [ -f ~/.path ]; then
+        source ~/.path
+fi
+
+if [ -f ~/.prompt ]; then
+        source ~/.prompt
+fi
+
+export SHELL="/bin/bash"
+export VISUAL="vim"
+#export TERMINAL="gnome-terminal" # Or whatever, just an example

@@ -1,0 +1,6 @@
+# .path
+# Exports PATH environment variable
+
+export PATH="$HOME/bin:$HOME/local/bin:$HOME/DeHydrate/Code:$PATH"
+export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
+export C_INCLUDE_PATH=$HOME/include/:$C_INCLUDE_PATH

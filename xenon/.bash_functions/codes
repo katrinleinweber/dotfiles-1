@@ -1,3 +1,19 @@
+function reinstall_packages()
+{
+    dpkg --set-selections < "$HOME"/installed.log
+}
+
+function dotfiles()
+{
+    for dotfile in "$HOME/\.[a-z]*"; do
+        if [ -f "$dotfile" ]; then
+            ln -f "$dotfile" "$HOME/etc/dotfiles/xenon/"
+        elif [ -d "$dotfile" ]; then
+            cp -r "$dotfile" "$HOME/etc/dotfiles/xenon/"
+        fi
+    done
+}
+
 function qgulp()
 {
     file_list="$1"
