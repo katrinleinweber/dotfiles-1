@@ -1,471 +1,3 @@
-git rm --cached *.sublime*
-git status
-vim .gitignore 
-git add *
-git status
-git add .gitignore 
-git status
-git commit -m "Removed tracking of fyreport_tex_thesis.sublime-project and -workspace, and updated .gitignore"
-git push both master
-cd ..
-git add *
-git status
-git commit -m "Updated .gitignore files"
-git push fyreport master
-cd ../../
-git add *
-git status
-git add .gitignore .sync/
-git status
-git commit -m "Updated .gitignore files"
-cd writings_mac/
-ls
-rm tex/*
-cd syreport/
-cd ../fyreport/mmd/
-cp ~/bin/link_fyreport.sh ~/bin/unlink_fyreport.sh
-vim ~/bin/unlink_fyreport.sh 
-chmod +x ~/bin/unlink_fyreport.sh 
-~/bin/unlink_fyreport.sh 
-vim ~/bin/unlink_fyreport.sh 
-~/bin/unlink_fyreport.sh 
-vim ~/bin/unlink_fyreport.sh 
-vim ~/bin/unlink_fyreport.sh 
-~/bin/unlink_fyreport.sh 
-cp ~/bin/link_overleaf.sh ~/bin/unlink_overleaf.sh
-vim ~/bin/unlink_overleaf.sh 
-chmod +x ~/bin/unlink_overleaf.sh 
-~/bin/unlink_overleaf.sh 
-vim ~/bin/unlink_fyreport.sh 
-~/bin/unlink_fyreport.sh 
-cp ~/bin/link_fyreport.sh ~/bin/syreport.sh
-echo >> ~/bin/link_fyreport.sh 
-cat ~/bin/link_overleaf.sh >> ~/bin/link_fyreport.sh 
-vim ~/bin/link_fyreport.sh 
-rm ~/bin/link_overleaf.sh 
-echo >> ~/bin/unlink_fyreport.sh 
-cat ~/bin/unlink_overleaf.sh >> ~/bin/unlink_fyreport.sh 
-vim ~/bin/unlink_fyreport.sh 
-rm ~/bin/unlink_overleaf.sh 
-cp ~/bin/link_fyreport.sh ~/bin/link_syreport.sh
-rm ~/bin/syreport.sh 
-vim ~/bin/link_syreport.sh 
-git add *
-git status
-cd ..
-git add *
-git status
-git add tex_overleaf
-git status
-git commit -m "Renamed mmd to tex_plain, renamed tex_overleaf to tex_thesis, made new mmd directory and moved all .mmd files into there"
-git add *
-git status
-checkout pre-rm
-git checkout pre-rm
-git checkout master
-git add *
-git status
-git pull --help
-git pull master pre-rm
-git merge --help
-git merge pre-rm
-ls
-git add *
-git status
-git add gulp.tex main.tex
-git status
-git commit -m "Cleaning up directories"
-git push fyreport master
-git merge pre-rm
-cd ..
-cd syreport/
-ls
-git init
-cd tex_plain/
-ls
-rm cp2k.tex dehydrate.tex fyreport_main.pdf fyreport_outline.pdf gulp.tex gulp_parameters.tex introduction.tex literature_review.tex makebst.log methodology.tex mmd.sublime-workspace mmd_tex.sublime-* original_contribution.tex plan_timetable.tex preamble.[^t]*
-ls
-rm main.[abflos]*
-rm main.toc 
-ls
-git init
-ls -al
-rm .git
-rm -rf .git
-git init
-git add *
-vim .gitignore 
-vim .gitignore 
-git add *
-git rm --cached texify.sh 
-git status
-git add .gitignore 
-git rm --cached main.pdf
-vim .gitignore 
-git add *
-git status
-git add .gitignore 
-git status
-git commit -m "First commit of second-year report from submitted version of first-year report"
-cd ../tex_thesis/
-ls
-ls -al
-rm -rf .git
-ls -al
-rm 00_Introduction.tex 01_* 02_* 03_* 04_* 05_*
-rm Main.[abfls]*
-rm Main.toc
-mv SafeHavenWords.txt ~/Documents/
-mv ~/Desktop/PhD/writings_mac/fyreport/tex_thesis/SafeHavenWords.txt ~/Documents/
-rm example.bib fyreport_tex_thesis.sublime-* latex_syntax_issues.md
-less texput.log 
-rm texput
-rm texput.log 
-ls
-git init
-vim .gitignore 
-vim .gitignore 
-git add *
-git status
-vim .gitignore 
-git add *
-git status
-git add .gitignore 
-git status
-git commit -m "First commit of second-year report from submitted version of first-year report"
-git remote -v
-ls
-git add *
-git status
-git commit -m "Added newly-renamed files from Google Drive"
-cd ../tex_plain/
-ls
-rm 00_Introduction.tex 01_LitReview.tex 02_Methodology.tex 03_ResultsDiscussion.tex 04_PlanTimetable.tex 
-git add *
-git status
-git rm 00_Introduction.tex 01_LitReview.tex 02_Methodology.tex 03_ResultsDiscussion.tex 04_PlanTimetable.tex 
-git status
-git commit -m "Added newly-renamed files from Google Drive"
-cd ../..
-cd fyreport/tex_plain/
-git remote -v
-git remote --help
-git remote set-url -h
-cd ../tex_thesis ; git remote set-url fyreport https://github.com/jamesprime/fyreport-thesis.git
-git remote -v
-cd ../tex_thesis ; git remote set-url fytexRemote https://github.com/jamesprime/fyreport-thesis.git
-git remote -v
-cd ../tex_thesis ; git remote set-url both https://github.com/jamesprime/fyreport-thesis.git https://github.com/jamesprime/overleaf.git
-cd ../tex_thesis ; git remote set-url --push both https://github.com/jamesprime/fyreport-thesis.git https://github.com/jamesprime/overleaf.git
-git remote -v
-cd ../../syreport/
-git remote add syreport https://github.com/jamesprime/syreport.git
-cd tex_plain/
-cd ../../fyreport/tex_thesis/
-git remote rename fytexRemote fyreport
-git remote -v
-cd ../../syreport/tex_plain/
-ls
-cd ..; git push -u syreport master
-git push -u origin master
-git remote -v
-git push syreport master
-git status
-git add graphics/ tex_plain/ tex_thesis/
-git status
-git commit -m "Added new directories"
-git push syreport master
-cd tex_plain/
-git remote add syreport https://github.com/jamesprime/syreport-plain.git
-git push syreport master
-cd ../tex_thesis/
-git remote add syreport https://github.com/jamesprime/syreport-thesis.git
-git push syreport master
-cd ../tex_plain/
-git add *
-vim ~/.bash_profile
-relink
-vim ~/.bash_profile
-vim ~/bin/link_syreport.sh 
-vim ~/bin/link_bib.sh 
-source ~/.bash_profile
-relink
-git add *
-relink
-relink
-relink
-vim ~/bin/link_bib.sh 
-sshe xenon
-ssh xenon
-cd Desktop/PhD/xenon/data/test/nat/gs/
-cd ~/Desktop/PhD/xenon/
-scp -r xenon:~/ .
-cd Desktop/PhD/xenon/data/test/nat/gs/
-cd ~/Desktop/PhD/xenon/data/test/nat/gs/
-scp -r xenon:~/data/test/nat/gs/nat_data.tsv ../../R/
-scp -r xenon:~/data/test/nat/gs/nat_data.tsv ../../../R/
-scp -r xenon:~/data/test/sco/gs/sco_data.tsv ../../../R/
-scp -r xenon:~/data/test/mes/gs/mes_data.csv ../../../R/
-cp ~/Desktop/PhD/bin/addToPath.bat /Volumes/KINGSTON/
-vim .bash_profile
-cd bin
-vim link_bib.sh 
-vim link_bib.sh 
-vim link_fyreport.sh 
-vim link_syreport.sh 
-vim link_syreport.sh 
-ls
-chmod +x link_syreport.sh 
-./link_syreport.sh 
-vim link_syreport.sh 
-./link_syreport.sh 
-vim link_syreport.sh 
-./link_syreport.sh 
-./link_syreport.sh 
-cd ../Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-git add *
-git status
-git add .gitignore 
-git status
-git commit -m "Updated colour schemes and fixed sidebar issues in Default.sublime-theme"
-git push sublime master
-git add *
-git status
-git commit -m "Updated colour schemes and various sublime-settings (LaTeX, LaTeXTools, LaTeXing, Markdown) and fixed further sidebar issues in Default.sublime-theme"
-git push sublime master
-ssh xenon
-sudo diskutil list
-diskutil
-sudo diskutil mount
-sudo diskutil mountDisk
-mount
-sudo diskutil list
-sudo diskutil eraseDisk /dev/disk1
-sudo diskutil eraseDisk dos Kingston /dev/disk1
-sudo diskutil eraseDisk msdos Kingston /dev/disk1
-diskutil listFilesystems
-sudo diskutil eraseDisk fat32 Kingston /dev/disk1
-sudo diskutil eraseDisk fat32 AAAA /dev/disk1
-sudo diskutil disableOwnership /dev/disk1
-mount
-mount
-sudo mount
-sudo diskutil list
-mount
-sudo diskutil list
-mount
-mount
-mount
-mount
-mount
-mount
-mount
-sudo diskutil list
-sudo mount
-sudo mount
-sudo unmount
-sudo umount
-sudo mount
-cd Documents/launchpad/
-ls -a
-cd 
-ssh xenon
-ssh xenon
-sudo diskutil mount
-diskutil list
-sudo chmod 777 /dev/disk2
-diskutil list
-sudo diskutil 
-sudo diskutil eraseDisk
-sudo diskutil eraseDisk --help
-sudo diskutil eraseDisk fat32 'Blah' MBR disk2
-sudo diskutil eraseDisk fat32 blah MBR disk2
-sudo diskutil eraseDisk fat32 AAAA MBR disk2
-gpt -h
-gpt --help
-gpt help
-man gpt
-gpt remove -h
-gpt remove 
-gpt remove -a /dev/disk2
-sudo gpt remove -a /dev/disk2
-sudo gpt remove -a disk2
-man gpt
-gpt destroy -a /dev/disk2
-gpt destroy -r /dev/disk2
-sudo gpt destroy -r /dev/disk2
-diskutil
-diskutil list
-sudo diskutil unmountDisk force /Volumes/NO\ NAME
-sudo diskutil eraseDisk MS-DOS NO NAME /dev/disk2
-sudo diskutil eraseDisk MS-DOS "NO\ NAME" /dev/disk2
-sudo diskutil eraseDisk MS-DOS "NO NAME" /dev/disk2
-ssh xenon
-ssh xenon
-mkdir ~/Google\ Drive/test; scp -r xenon:~/data/test/nat/gs/* ~/Google\ Drive/test
-cd Google\ Drive/test/
-ls
-rm *.o*
-ls
-rm nat00_hydrated_*
-rm nat00_hydrated.gout-1 
-ls
-man ln
-mkdir ~/Google\ Drive/bin
-cd ..
-mv autoconfig\ \(1\).sh bin/autoconfig.sh
-mv chroot_setup.sh bin
-ls bin
-less dehydrate 
-mv doi_grabber.sh bin
-mv gulp_convert.sh gulp_coords.py texmake.sh bin
-cd test
-ln ~/Google\ Drive/bin/gulp_convert.sh ./gulp_convert.sh
-vim gulp_convert.sh 
-cd Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-git add *
-git status
-git commit -m "Updated MonokaiFluffed colour scheme, MMD and Package Control settings"
-git add *
-git status
-git commit -m "Finally fixed syntax highlighting issues for shell scripts in MonokaiFluffed, thanks to an awareness of the highlighting's sudden failure following ST3 caching when opened, along with a disabling of now-unsupported packages in Package Control, and also aided by the use of a new package called Color Scheme Editor (Shift+F12 to toggle on and off)"
-git push sublime master
-ssh xenon
-exit
-/Users/jcprime/Documents/US/Soft ; exit;
-nmap
-nmap
-nmap -sn 192.168.1.0/24
-ssh pi@192.168.1.1
-ssh pi@192.168.1.3
-nmap -sn 192.168.1.0/24
-arp -a
-nmap -sn 192.168.1.0/24
-ssh pi@192.168.2.255
-ssh pi@192.168.1.255
-ssh pi@192.168.1.4
-raspberrypi
-raspberrypi.local
-ssh raspberrypi.local
-ssh raspberrypi
-ssh raspberrypi.local
-ssh pi@raspberrypi.local
-sudo diskutil list
-sudo diskutil eraseDisk /dev/disk2
-sudo diskutil
-history
-sudo diskutil erase /dev/disk2
-sudo diskutil eraseDisk /dev/disk2
-sudo diskutil eraseDisk fat32 NOOBS MBR /dev/disk2
-sudo unmountDisk /dev/disk2
-sudo umountDisk /dev/disk2
-sudo diskutil unmountDisk /dev/disk2
-mount
-diskutil list
-sudo diskutil eraseDisk fat32 NOOBS MBR /dev/disk2
-exit
-ssh pi@raspberrypi
-sudo chmod 777 /dev/disk2
-sudo chmod 777 /Volumes/boot/
-sudo chmod 777 /Volumes/RECOVERY/
-cd /Volumes/RECOVERY/
-ls
-ls -al
-ls -a
-ls -al
-rm *
-y
-rm *
-ls
-cd
-mount
-ssh pi@raspberrypi
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi
-sudo ssh pi@raspberrypi.local
-scp ~/Downloads/LCD-show-160520.tar.gz pi@raspberrypi:~
-scp ~/Downloads/LCD-show-160520.tar.gz pi@raspberrypi.local:~
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi
-ssh pi@raspberrypi.local
-sudo ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-exit
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi
-exit
-sudo ssh pi@raspberryi.local
-
-nmap -sn 192.168.1.0/24
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@192.168.1.4
-sudo ssh pi@192.168.1.4
-sudo ssh pi@192.168.1.3
-sudo ssh pi@192.168.1.1
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi
-ssh pi@raspberrypi
-ssh pi@raspberrypi.local
-ssh raspberrypi
-ssh raspberrypi.local
-exit
-ssh raspberrypi.local
-history
-ssh pi@raspberrypi.local
-exit
-ssh xenon
-ssh xenon
-exit
-ssh pi@raspberrypi.local
-diskutil list
-diskutil list
-diskutil list
-diskutil unmountDisk /dev/disk1
-sudo dd bs=1m if=~/Downloads/2016-05-27-raspbian-jessie.img of=/dev/rdisk1
-ssh pi@raspberrypi.local
-vim /Users/jcprime/.ssh/known_hosts 
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh pi@raspberrypi.local
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-ssh xenon
-cd ~/Google\ Drive/bin/
-vim gulp_convert.sh 
-cd Downloads/
-scp archives/LCD-show-160520.tar.gz pi@raspberrypi.local
-scp archives/LCD-show-160520.tar.gz pi@raspberrypi.local:~
-cd /Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-git add *
-git status
-git commit -m "Status of User directory prior to editing of shell-script settings to make clearer distinctions between the oranges and yellows in the existing colour scheme"
-git push sublime master
-git pull sublime master
-git push sublime master
-git add *
-git status
-git commit -m "Updated colour schemes (MonokaiFluffed.tmTheme) for shell scripts so less confusion on the page now"
-git push sublime master
-exit
 ssh xenon
 ssh xenon
 cd Downloads/
@@ -498,3 +30,471 @@ sudo dd bs=1m if=arch-anywhere-2.2.2-dual.iso of=/dev/disk1
 diskutil list
 sudo dd bs=1m if=archives/arch-anywhere-2.2.2-dual.iso of=/dev/disk1
 sudo diskutil unmountDisk /dev/disk1
+cd dotfiles/
+ls
+cd mac/.vim/
+mkdir colors
+cd colors/
+wget https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim
+mv ~/Downloads/corporation_modified.vim .
+ls
+wget https://raw.githubusercontent.com/tpope/vim-vividchalk/master/colors/vividchalk.vim
+ls
+scp * xenon:~/.vim/colors/
+cd ../../..
+mkdir examples
+cd examples/
+mv ~/Downloads/config i3_config
+mkdir i3gaps_compton
+mv i3_config i3gaps_compton/
+mv ~/Downloads/conkyrc-madznk .
+ls
+mv ~/Downloads/Xresources ~/Downloads/conkyrc ~/Downloads/compton.conf ~/Downloads/xdefaults ~/Downloads/xinitrc ~/Downloads/xorg.conf ~/Downloads/alias ~/Downloads/bashrc i3gaps_compton/
+ls i3gaps_compton/
+less i3gaps_compton/compton.conf 
+less i3gaps_compton/i3_config 
+cd ../../
+mv dotfiles/dotfiles_personal
+mv dotfiles dotfiles_personal
+ls
+export github_user=YOUR_GITHUB_USER_NAME
+export github_user=jamesprime
+bash -c "$(curl -fsSL https://raw.github.com/$github_user/dotfiles/master/bin/dotfiles)" && source ~/.bashrc
+bash -c "$(curl -fsSL https://raw.github.com/$github_user/dotfiles-auto/master/bin/dotfiles)" && source ~/.bashrc
+ls -a
+mkdir dotphiles
+cd dotphiles/
+git clone --recursive git@github.com:*username*/dotphiles.git ~/.dotfiles
+git clone --recursive git@github.com:jamesprime/dotphiles.git ~/dotphiles
+git clone --recursive http://github.com/jamesprime/dotphiles.git ~/dotphiles
+git clone --recursive http://github.com/jamesprime/dotphiles.git
+git clone --recursive http://github.com/jamesprime/dotphiles/dotphiles.git
+git clone --recursive http://github.com/jamesprime/dotphiles/dotphiles.git ~/dotphiles
+cd dotfiles/
+ls
+ls -a mac/
+vim README.md 
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ls -a
+ls .gitconfig 
+ls .config/git/ignore 
+ssh xenon
+git config
+git config -l
+cd dotfiles/
+ls
+mkdir arch
+cd arch
+cd ..
+git add *
+git status
+git add arch/
+git status
+ls -a mac/
+ls -al mac/
+ls -al ..
+cd arch
+mkdir .config
+mkdir .config/i3
+touch .config/i3/config
+vim .config/i3/config 
+cd ..
+git add *
+git status
+git commit -m "Added arch directory"
+git push dotfiles master
+git push dotfilesRemote master
+git remote -l
+git remote -v
+git push origin master
+cd ..
+cd /Users/jcprime/Google\ Drive/test/
+cp nat11_N0.gin example.gin
+file=example.gin
+$file
+echo $file
+file="example.gin"
+echo $file
+less example.gin 
+cat example.gin 
+sed "/^fractional/,/(?:totalenergy|species)/ $file"
+sed -p "/^fractional/,/^totalenergy\|species)/ $file"
+sed "/^fractional/,/^totalenergy\|species/ $file"
+sed -e "/^fractional/,/^totalenergy\|species/ $file"
+sed -e "p/^fractional/,/^totalenergy\|species/ $file"
+sed "p/^fractional/,/^totalenergy\|species/ $file"
+sed "/^fractional/,/^totalenergy\|species)/p" "$file"
+    sed -e "/^fractional/,/^totalenergy\|species)/p" "$file"
+sed -e "/^fractional/,/^totalenergy\|species/p" "$file"
+sed -e "/^fractional/,/^totalenergy|species/p" "$file"
+sed -e "/^fractional/,/^(totalenergy|species)/p" "$file"
+sed -e "/^fractional/,/^(totalenergy\|species)/p" "$file"
+sed -e '/^fractional/,/^\(totalenergy\|species\)/p' "$file"
+sed -e '/^fractional/,/^totalenergy|species/p' "$file"
+sed -n '/^fractional/,/^totalenergy|species/p' "$file"
+sed -n '/^fractional/,/^totalenergy|species/{n;p;}' "$file"
+sed -n '/^fractional/,/^(totalenergy|species)/{n;p;}' "$file"
+sed -e "/^fractional/,/^totalenergy|species/p" "$file"
+sed -n "/^fractional/,/^totalenergy|species/p" "$file"
+sed -n "/^fractional/,/^\(totalenergy\|species\)/p" "$file"
+sed -n "/^fractional/,/^totalenergy|species/p" "$file"
+sed -n "/^fractional/,/^totalenergy\|species/p" "$file"
+sed -n "/^fractional/,/^(totalenergy|species)/p" "$file"
+sed -n "/^fractional/,/^\(totalenergy\|species\)/p" "$file"
+ssh xenon
+cp example.gin xenon:~/
+scp example.gin xenon:~/
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+source .bash_profile
+ssh xenon
+vim .profile
+echo $SHELL
+vim .exports
+ls dotfiles/mac/
+ls -al dotfiles/mac/
+ls -al
+vim .bashrc
+cd dotfiles/wip/
+vim bootstrap.sh 
+vim .unused 
+exit
+ls -a ~/dotfiles/wip/
+vim ~/dotfiles/wip/.extra
+vim ~/dotfiles/wip/.inputrc 
+vim ~/dotfiles/wip/.inputrc 
+mkdir Pictures/stills
+ssh xenon
+ssh xenon
+man read
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+printenv
+ssh xenon
+cd .dotfiles/
+ls
+ls caches/
+ls ../dotfiles_personal/
+ls ../dotfiles_personal/examples/
+brew install grc
+$ curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | sh
+cd
+ls -a
+mv dotfiles_personal/ dotfiles
+cd dotfiles
+ls
+mkdir wip
+touch .bash_profile .bashrc .path .brew bootstrap.sh .bash_prompt .exports .aliases .functions .extra .gitconfig .gitignore .inputrc .osx .vimrc .wgetrc
+cat ~/.vimrc >> .vimrc
+cat ~/.bashrc >> .bashrc
+cat ~/.bash_profile >> .bash_profile
+cat ~/.gitconfig >> .gitconfig
+cat ~/.gitignore >> .gitignore
+cat ~/.profile >> .profile
+cat ~/.zshrc >> .zshrc
+cat ~/.latexmkrc >> .latexmkrc
+vim .bashrc
+ls -a
+mv .bash_profile .bashrc .path .brew bootstrap.sh .bash_prompt .exports .aliases .functions .extra .gitconfig .gitignore .inputrc .osx .vimrc .wgetrc .profile .zshrc .latexmkrc wip
+ls -a
+mv .git wip
+ls -a
+cd wip/
+ls
+ls -a
+vim .bashrc
+vim .bash_profile 
+vim .bashrc
+vim .profile 
+vim .exports 
+ssh xenon
+ssh xenon
+ssh xenon
+cd dotfiles/xenon/
+scp -r xenon:~/.* .
+scp -r xenon:~/.* .
+ls
+ls -a
+rm -rf export.sh rel_cutoff_* test/ writings_xenon/
+ls -a
+scp -r xenon:~/.bash_aliases .
+scp -r xenon:~/.bash_functions .
+scp -r xenon:~/.bash_profile .
+scp -r xenon:~/.bashrc .
+scp -r xenon:~/.profile .
+scp -r xenon:~/rsync_exclusions .
+scp -r xenon:~/.ssh .
+scp -r xenon:~/.vim .
+scp -r xenon:~/.vimrc .
+cd ..
+cd wip/
+ls
+ls -a
+vim .bash_prompt
+vim .exports 
+vim .exports 
+ls -a
+vim .bash_prompt
+vim .bashrc
+vim .aliases
+vim .bashrc
+vim .aliases
+vim .bashrc
+vim .aliases
+vim .bashrc
+vim .exports 
+vim README.md
+vim .brew
+vim .brew
+vim bootstrap.sh 
+export SHELL="/bin/bash"
+echo $SHELL
+vim .bashrc
+vim .unused
+vim .aliases 
+vim .aliases 
+vim .aliases 
+vim ~/.profile 
+source ~/.profile
+vim ~/.zshrc 
+export SHELL="/bin/bash"
+sudo vim /usr/bin/login
+vim .bash_profile 
+vim .path
+vim .path
+vim .aliases 
+vim ~/Desktop/PhD/xenon/binX/erm.sh 
+vim ~/Desktop/PhD/xenon/binX/erm_cp2k.sh 
+vim ~/Desktop/PhD/xenon/binX/faff.sh 
+vim ~/Desktop/PhD/xenon/binX/editing/erm.sh 
+vim ~/Desktop/PhD/xenon/binX/editing/erm_cp2k.sh 
+vim ~/Desktop/PhD/xenon/binX/editing/erm_copy_v2.sh 
+scp ~/Desktop/PhD/xenon/binX/editing/erm* xenon:~/binX/editing/
+ls
+mkdir ~/Google\ Drive/bin/phd; cp -r ~/Desktop/PhD/bin ~/Google\ Drive/bin/phd
+mkdir ~/Google\ Drive/bin/xenon; cp -r ~/Desktop/PhD/xenon/binX ~/Google\ Drive/bin/xenon
+less .vimrc 
+ls
+ls -al
+ls -al ..
+cd
+cd Desktop/PhD/bin/
+ls
+ls -al
+ls -al ../xenon/binX/
+cd ..
+git add *
+git status
+git add writings_mac/[fs]yreport
+git status
+git add writings_mac/fyreport/*
+git commit -m "Status of the PhD directory before hardlinking the respective bin directories from PhD and PhD/xenon from Google Drive, where I've just copied them"
+cd
+whereis cron
+whereis crontab
+less /usr/bin/crontab 
+crontab -e
+crontab -e
+crontab -e
+cd bin/
+less boot_disk_creation.md 
+cd 
+less .vimrc 
+brew search
+brew search > brew.md
+less brew.md
+brew search
+cd dotfiles/wip/
+ls -al
+vim .brew
+cd
+cd dotfiles/wip/
+vim .brew
+ls
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+clear
+ssh xenon
+ssh xenon
+clear
+ssh xenon
+[D
+ssh xenon
+ssh xenon
+vim .brew
+ssh xenon
+ssh xenon
+ssh xenon
+anaconda-navigator
+anaconda-navigator &
+pip install anaconda-navigator
+pip install --upgrade anaconda-navigator
+pip install --update anaconda-navigator
+pip
+pip help
+pydoc raw_input
+vim .aliases 
+vim .aliases 
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+conda update conda
+conda -h
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+python --version
+virtualenv -h
+conda virtualenv -h
+vim .ssh/config 
+man ssh-config
+man ssh_config
+man ssh-add
+conda install abipy
+anaconda search -t conda abipy
+pip install abipy
+ssh xenon
+ssh xenon
+ssh xenon
+ssh xenon
+scp xenon:~/quickstep/sco/opt/precond_tests.txt ~/Google\ Drive/bin/
+mount
+diskutil list
+ssh xenon
+scp xenon:~/quickstep/sco/scol.inp ~/Google\ Drive/
+scp xenon:~/quickstep/sco/scol00_N0.cp2k ~/Google\ Drive/
+scp xenon:~/quickstep/sco/scol.log ~/Google\ Drive/
+scp xenon:~/quickstep/sco/2016-09-12_scol/scol.log ~/Google\ Drive/
+scp xenon:~/quickstep/sco/2016-09-12_scol/scol.inp ~/Google\ Drive/
+scp xenon:~/data/test/sco/00/scol00.gin ~/Google\ Drive/
+scp xenon:~/quickstep/sco/opt/precond_tests.txt ~/Google\ Drive/bin/
+scp xenon:~/quickstep/sco/opt/precond_tests.txt ~/Google\ Drive/bin/
+scp xenon:~/quickstep/sco/opt/precond_tests.txt ~/Google\ Drive/bin/
+scp xenon:~/quickstep/sco/opt/precond_tests.txt ~/Google\ Drive/bin/
+scp xenon:~/quickstep/sco/opt/precond_tests.md ~/Google\ Drive/bin/
+scp xenon:~/quickstep/sco/opt/precond_tests.md ~/Google\ Drive/bin/
+scp -r xenon:~/quickstep/sco/2016-09-10_scol ~/Google\ Drive/
+pip install bpython
+pip install --upgrade pip
+pip install --update pip
+pip install --upgrade spyder
+conda update spyder
+conda update
+conda help
+conda update ipython ipython-qtconsole ipython-notebook
+cd Google\ Drive/
+cd bin
+wget https://raw.githubusercontent.com/ghevcoul/coordinateTransform/master/coordinateTransform.py
+cd
+pip install atomman
+pip install xmltodict
+pip install DataModelDict numericalunits numpy scipy matplotlib diffpy.Structure ase pymatgen
+pydoc file
+pydoc open
+pydoc file.open
+pydoc file.__doc__
+pydoc open()
+pydoc open
+pydoc truncate
+pydoc file
+pydoc open
+pydoc file.__doc__
+cd /Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+git add *
+git status
+git commit -m "Added TrailingSpaces, changed linting settings for Python to get rid of obnoxious error messages, and edited colour schemes again"
+git push sublime master
+cd
+cd dotfiles/
+ls
+ls -a
+ls -a mac/
+cd ../.dotfiles/
+ls
+ls -a
+ls caches/
+vim caches/init/
+rm -r caches/
+ls -a
+git add *
+git status
+git add .
+git status
+cd  arch/.config/i3/
+ls -a
+cd ..
+ls -a
+cd ..
+ls -a
+cd ../../dotfiles/
+scp -r xenon:~/\.[a-z]* xenon/
+cd xenon/
+ls
+ls -a
+rm -r .cache/
+scp -r xenon:~/rsync_exclusions .
+cd ..
+git add .
+ls
+cd ../.dotfiles/
+ls
+ls -a
+scp -r xenon:~/rsync_exclusions xenon/
+scp -r xenon:~/\.[a-z]* xenon/
+cd xenon/
+rm -r .cache/
+ls -a
+cd ..
+git add .
+git status
+git commit -m "Separated xenon dotfiles into several more specific files"
+git remote -v
+git push origin master
+git remote -h
+git remote set-url origin https://github.com/jamesprime/dotfiles.git
+git remote -v
+git push origin master
+ls
+git pull origin master
+git push origin master
+git add .
+git status
+scp ~/Google\ Drive/bin/gulp_coords.py xenon:~/bin/
+ssh xenon

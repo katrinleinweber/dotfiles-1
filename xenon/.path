@@ -1,6 +1,7 @@
 # .path
 # Exports PATH environment variable
 
-export PATH="$HOME/bin:$HOME/local/bin:$HOME/DeHydrate/Code:$PATH"
+PATH="/home/james/.linuxbrew/bin:/home/james/bin:/home/james/local/bin:/home/james/DeHydrate/Code:/usr/local/sge6.2u5/bin/lx24-amd64:/opt/openmpi/gfortran/1.8.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/gamess"
+#export PATH="$HOME/.linuxbrew/bin:$HOME/bin:$HOME/local/bin:$HOME/DeHydrate/Code:$PATH"
 export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
 export C_INCLUDE_PATH=$HOME/include/:$C_INCLUDE_PATH

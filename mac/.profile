@@ -3,6 +3,8 @@
 # i.e. stick your environment variables and the like in here, because
 # anything run/spawned from the main one will inherit them automatically
 
+export SHELL="/bin/bash"
+
 # Git aliases
 alias ga='git add '
 alias gb='git branch '

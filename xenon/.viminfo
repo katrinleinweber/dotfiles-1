@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\/usr
+~MSle0~/home
 
 # Last Substitute Search Pattern:
 ~MSle0&-PADE-
@@ -69,21 +69,30 @@ $-PBE-
 :1,$s/Ca1/Ca/
 
 # Search String History (newest to oldest):
+?/home/james
+?/pref
+?/\/hom
 ?/\/usr
+?/prefix
+?/localedir=
+?/locale
+?/\/home\/james
+?/\/home
+?/\/us
+?/\/usr\/
+?/BUILD
+?/build
+?/gets
+?/\/u
 ?/install-m
 ?/man
 ?/man 
 ?/permission
-?/\/hom
 ?/open
-?/\/usr\/
 ?/INSTALL
-?/prefix
 ?/DISTFI
-?/\/u
 ?/\/
 ?/oldin
-?/pref
 ?/dir
 ?/DEST
 ?/DES
@@ -110,15 +119,6 @@ $-PBE-
 ?/condi
 ?//
 ?/MOLOPT
-?/step
-? \<PRECONDITIONER\>
-?/Si
-? \<bin\>
-?/bin/bash
-? \<qgulp\>
-? Ca1
-? Al2
-? Al1
 
 # Expression History (newest to oldest):
 
@@ -127,7 +127,7 @@ $-PBE-
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	export PATH=$HOME/local/bin:$PATH
 "2	BLOCK	0
 	 
@@ -243,159 +243,156 @@ $-PBE-
 	        $template_file > $work_dir/$template_file
 "9	LINE	0
 	        -e "s/${precond_placeholder}/${test}/g" \
-"-	CHAR	0
-	#
+""-	CHAR	0
+	 
 
 # File marks:
-'0  119  0  ~/src/tcl8.6.6/README
-'1  1  0  ~/src/tk8.6.6/README
-'2  46  0  ~/src/bzip2-1.0.6/README
-'3  1  0  ~/.path
-'4  6  0  ~/.path
-'5  12  0  ~/.exports
-'6  36  0  ~/.bashrc
-'7  1  0  ~/.bashr
-'8  435  12  ~/src/git-2.10.0/Documentation/Makefile
-'9  2392  35  ~/src/git-2.10.0/Makefile
+'0  59  0  ~/data/test/nat/test/test.sh
+'1  57  51  ~/data/test/nat/test/test.sh
+'2  54  0  ~/data/test/nat/test/test.sh
+'3  55  23  ~/data/test/nat/test/test.sh
+'4  1  0  ~/data/test/nat/test/nat_orig.frac
+'5  1  0  ~/data/test/nat/test/test.sh
+'6  58  24  ~/data/test/nat/test/test.sh
+'7  43  52  ~/data/test/nat/test/test.sh
+'8  688  14  ~/src/libxml2-2.9.4/Makefile
+'9  970  17  ~/src/libxml2-2.9.4/configure
 
 # Jumplist (newest first):
--'  119  0  ~/src/tcl8.6.6/README
--'  1  0  ~/src/tcl8.6.6/README
--'  1  0  ~/src/tk8.6.6/README
--'  46  0  ~/src/bzip2-1.0.6/README
--'  1  0  ~/src/bzip2-1.0.6/README
--'  1  0  ~/.path
--'  6  0  ~/.path
--'  4  17  ~/.path
--'  12  0  ~/.exports
--'  1  0  ~/.exports
--'  36  0  ~/.bashrc
+-'  59  0  ~/data/test/nat/test/test.sh
+-'  1  0  ~/data/test/nat/test/test.sh
+-'  57  51  ~/data/test/nat/test/test.sh
+-'  54  0  ~/data/test/nat/test/test.sh
+-'  55  23  ~/data/test/nat/test/test.sh
+-'  1  0  ~/data/test/nat/test/nat_orig.frac
+-'  58  24  ~/data/test/nat/test/test.sh
+-'  43  52  ~/data/test/nat/test/test.sh
+-'  688  14  ~/src/libxml2-2.9.4/Makefile
+-'  1  9  ~/src/libxml2-2.9.4/Makefile
+-'  970  17  ~/src/libxml2-2.9.4/configure
+-'  1  0  ~/src/libxml2-2.9.4/configure
+-'  42  0  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  1  0  ~/.bashr
--'  435  12  ~/src/git-2.10.0/Documentation/Makefile
--'  120  0  ~/src/git-2.10.0/Documentation/Makefile
--'  1  0  ~/src/git-2.10.0/Documentation/Makefile
--'  2392  35  ~/src/git-2.10.0/Makefile
--'  1  0  ~/src/git-2.10.0/Makefile
--'  2607  0  ~/src/git-2.10.0/Makefile
--'  2075  12  ~/src/git-2.10.0/Makefile
--'  243  47  ~/src/git-2.10.0/Makefile
--'  47  18  ~/src/man-pages-4.07/Makefile
--'  1  0  ~/src/man-pages-4.07/Makefile
--'  1875  0  ~/src/perl-5.24.0/Configure
--'  1  0  ~/src/perl-5.24.0/Configure
--'  1  0  ~/src/perl-5.24.0/INSTALL
--'  794  4  ~/src/git-2.10.0/configure
--'  1  0  ~/src/git-2.10.0/configure
--'  779  26  ~/src/zlib-1.2.8/configure
--'  1  0  ~/src/zlib-1.2.8/configure
--'  767  6  ~/src/gettext-0.19.8.1/configure
+-'  51  0  ~/.bash_profile
+-'  1  0  ~/.bash_profile
+-'  53  0  ~/.bash_profile
+-'  30  0  ~/.bashrc
+-'  5  0  ~/.path
+-'  1  0  ~/.path
+-'  4  6  ~/.path
+-'  570  18  ~/src/glibc-2.24/configure
+-'  1  0  ~/src/glibc-2.24/configure
+-'  454  0  ~/src/glibc-2.24/INSTALL
+-'  1  0  ~/src/glibc-2.24/INSTALL
+-'  76  0  ~/src/glibc-2.24/README
+-'  1  0  ~/src/glibc-2.24/README
+-'  213  0  ~/src/gettext-0.19.8.1/DEPENDENCIES
+-'  1  0  ~/src/gettext-0.19.8.1/DEPENDENCIES
+-'  237  4  ~/src/ncurses-6.0/INSTALL
+-'  1  0  ~/src/ncurses-6.0/INSTALL
+-'  155  17  ~/src/ncurses-6.0/configure
+-'  1  0  ~/src/ncurses-6.0/configure
+-'  337  18  ~/src/gettext-0.19.8.1/Makefile
+-'  1  0  ~/src/gettext-0.19.8.1/Makefile
+-'  1354  0  ~/src/libiconv-1.14/configure
+-'  1  0  ~/src/libiconv-1.14/configure
+-'  1366  0  ~/src/libiconv-1.14/configure
+-'  69  0  ~/src/libiconv-1.14/Makefile
+-'  1  0  ~/src/libiconv-1.14/Makefile
+-'  1  0  ~/src/libiconv-1.14/config
+-'  10  31  ~/src/libiconv-1.14/Makefile
+-'  1330  0  ~/src/libiconv-1.14/configure
+-'  1  0  ~/src/libiconv-1.14/DEPENDENCIES
+-'  1  0  ~/src/gettext-0.19.8.1/INSTALL
+-'  294  19  ~/src/gettext-0.19.8.1/Makefile
+-'  771  14  ~/src/gettext-0.19.8.1/configure
 -'  1  0  ~/src/gettext-0.19.8.1/configure
--'  3  44  ~/.bash_functions/codes
--'  6  0  ~/.bash_functions/codes
--'  763  17  ~/src/gettext-0.19.8.1/configure
--'  60  0  ~/src/expat-2.2.0/README
--'  1  0  ~/src/expat-2.2.0/README
--'  1  10  ~/src/git-2.10.0/git-compat-util.h
--'  110  16  ~/src/git-2.10.0/git-compat-util.h
+-'  728  17  ~/src/git-2.10.0/configure
+-'  1  0  ~/src/git-2.10.0/configure
 -'  1  0  ~/src/git-2.10.0/INSTALL
+-'  494  15  ~/src/curl-7.50.3/Makefile
+-'  1  0  ~/src/curl-7.50.3/Makefile
+-'  1207  17  ~/src/curl-7.50.3/configure
+-'  1  0  ~/src/curl-7.50.3/configure
+-'  1456  19  ~/src/m4-1.4.17/Makefile
+-'  1  0  ~/src/m4-1.4.17/Makefile
+-'  1837  20  ~/src/m4-1.4.17/configure
+-'  1  0  ~/src/m4-1.4.17/configure
+-'  721  34  ~/src/autoconf-2.69/configure
+-'  1  0  ~/src/autoconf-2.69/configure
+-'  347  29  ~/src/tcl8.6.6/unix/configure
+-'  1  0  ~/src/tcl8.6.6/unix/configure
+-'  227  0  ~/src/openssl-1.1.0b/INSTALL
+-'  1  0  ~/src/openssl-1.1.0b/INSTALL
+-'  197  0  ~/src/openssl-1.1.0b/INSTALL
 -'  1  0  ~/src/openssl-1.1.0b/Makefile
--'  47  0  ~/src/openssl-1.1.0b/Configure
--'  1  0  ~/src/openssl-1.1.0b/Configure
 -'  917  0  ~/src/openssl-1.1.0b/config
 -'  1  0  ~/src/openssl-1.1.0b/config
--'  96  0  ~/src/openssl-1.1.0b/INSTALL
--'  1  0  ~/src/openssl-1.1.0b/INSTALL
--'  741  12  ~/src/autoconf-2.69/configure
--'  1  0  ~/src/autoconf-2.69/configure
--'  2049  4  ~/src/m4-1.4.17/configure
--'  571  28  ~/src/m4-1.4.17/configure
--'  25  0  ~/src/m4-1.4.17/configure
--'  1  0  ~/src/m4-1.4.17/configure
--'  1929  62  ~/src/m4-1.4.17/Makefile
--'  1  0  ~/src/m4-1.4.17/Makefile
--'  1434  19  ~/src/m4-1.4.17/Makefile
--'  1605  11  ~/src/m4-1.4.17/Makefile
--'  1407  16  ~/src/m4-1.4.17/Makefile
--'  1930  9  ~/src/m4-1.4.17/Makefile
--'  1432  0  ~/src/m4-1.4.17/Makefile
--'  1475  7  ~/src/m4-1.4.17/Makefile
--'  1  0  ~/src/m4-1.4.17/INSTALL
--'  853  0  ~/src/autoconf-2.69/Makefile.in
--'  1  0  ~/src/autoconf-2.69/Makefile.in
--'  100  0  ~/src/autoconf-2.69/Makefile.am
--'  1  0  ~/src/autoconf-2.69/Makefile.am
--'  699  15  ~/src/autoconf-2.69/configure
--'  1  0  ~/src/autoconf-2.69/configure.ac
--'  1  0  ~/src/autoconf-2.69/configure.ax
--'  1  0  ~/src/autoconf-2.69/config
--'  742  1  ~/src/autoconf-2.69/configure
--'  570  27  ~/src/autoconf-2.69/configure
--'  164  0  ~/src/autoconf-2.69/configure
--'  1  0  ~/src/autoconf-2.69/INSTALL
--'  65  0  ~/src/autoconf-2.69/README
--'  1  0  ~/src/autoconf-2.69/README
--'  224  0  ~/src/git-2.10.0/configure.ac
--'  1  0  ~/src/git-2.10.0/configure.ac
--'  1331  4  ~/src/curl-7.50.3/configure
--'  561  10  ~/src/curl-7.50.3/configure
--'  546  0  ~/src/curl-7.50.3/configure
--'  1  0  ~/src/curl-7.50.3/configure
--'  1171  26  ~/src/curl-7.50.3/Makefile
--'  1170  23  ~/src/curl-7.50.3/Makefile
--'  1145  35  ~/src/curl-7.50.3/Makefile
--'  1144  35  ~/src/curl-7.50.3/Makefile
--'  1143  35  ~/src/curl-7.50.3/Makefile
--'  885  8  ~/src/curl-7.50.3/Makefile
--'  878  30  ~/src/curl-7.50.3/Makefile
--'  877  37  ~/src/curl-7.50.3/Makefile
--'  870  17  ~/src/curl-7.50.3/Makefile
--'  869  24  ~/src/curl-7.50.3/Makefile
--'  855  8  ~/src/curl-7.50.3/Makefile
--'  846  37  ~/src/curl-7.50.3/Makefile
--'  845  44  ~/src/curl-7.50.3/Makefile
--'  826  17  ~/src/curl-7.50.3/Makefile
--'  825  24  ~/src/curl-7.50.3/Makefile
--'  202  43  ~/src/curl-7.50.3/Makefile
--'  1  4  ~/src/curl-7.50.3/Makefile
+-'  122  2  ~/src/openssl-1.1.0b/INSTALL
+-'  767  17  ~/src/expat-2.2.0/configure
+-'  1  0  ~/src/expat-2.2.0/configure
+-'  2  0  ~/src/zlib-1.2.8/Makefile
+-'  1  0  ~/src/zlib-1.2.8/Makefile
+-'  52  21  ~/src/zlib-1.2.8/configure
+-'  1  0  ~/src/zlib-1.2.8/configure
+-'  1  0  ~/src/man-pages-4.07/README
+-'  76  0  ~/bin/testdisk-7.0/README
+-'  1  0  ~/bin/testdisk-7.0/README
+-'  1  0  ~/src/perl-5.24.0/Makefile
+-'  1  0  ~/src/perl-5.24.0/INSTALL
+-'  1  0  ~/src/bzip2-1.0.6/README
+-'  1  0  ~/src/bzip2-1.0.6/configu
+-'  864  17  ~/src/Python-3.5.2/configure
+-'  1  0  ~/src/Python-3.5.2/configure
+-'  1  0  ~/src/tk8.6.6/unix/Makefile
+-'  323  17  ~/src/tk8.6.6/unix/configure
+-'  1  0  ~/src/tk8.6.6/unix/configure
+-'  1  0  ~/src/tcl8.6.6/unix/Makefile
+-'  332  15  ~/src/tcl8.6.6/unix/configure
+-'  323  17  ~/src/tcl8.6.6/unix/configure
+-'  25  0  ~/src/tcl8.6.6/unix/Makefile
+-'  258  10  ~/src/gettext-0.19.8.1/Makefile
+-'  238  10  ~/src/gettext-0.19.8.1/Makefile
+-'  768  4  ~/src/gettext-0.19.8.1/configure
+-'  132  12  ~/src/libiconv-1.14/README
+-'  1  12  ~/src/libiconv-1.14/README
+-'  64  0  ~/src/libiconv-1.14/HACKING
 
 # History of marks within files (newest to oldest):
 
-> ~/src/tcl8.6.6/README
-	"	119	0
+> ~/data/test/nat/test/test.sh
+	"	59	0
+	^	55	24
+	.	57	12
+	+	43	52
+	+	57	53
+	+	58	24
+	+	56	0
+	+	54	31
+	+	57	51
+	+	58	23
+	+	57	39
+	+	55	23
+	+	57	12
 
-> ~/src/tk8.6.6/README
+> ~/data/test/nat/test/nat_orig.frac
 	"	1	0
 
-> ~/src/bzip2-1.0.6/README
-	"	46	0
+> ~/src/libxml2-2.9.4/Makefile
+	"	688	14
 
-> ~/.path
-	"	1	0
-	.	5	0
-	+	4	50
-	+	4	83
-	+	6	0
-	+	5	0
-	+	4	38
-	+	5	0
-
-> ~/.exports
-	"	12	0
-	^	15	64
-	.	15	63
-	+	3	80
-	+	11	1
-	+	6	21
-	+	10	23
-	+	14	18
-	+	13	11
-	+	15	63
+> ~/src/libxml2-2.9.4/configure
+	"	970	17
+	^	970	18
+	.	970	17
+	+	578	28
+	+	967	22
+	+	970	17
 
 > ~/.bashrc
-	"	36	0
-	^	42	2
-	.	42	1
+	"	42	0
+	^	29	0
+	.	42	0
 	+	12	20
 	+	13	24
 	+	15	0
@@ -452,182 +449,28 @@ $-PBE-
 	+	26	14
 	+	21	14
 	+	42	1
+	+	30	0
+	+	31	8
+	+	32	0
+	+	40	0
+	+	41	8
+	+	42	0
+	+	20	0
+	+	21	8
+	+	20	0
+	+	30	0
+	+	31	8
+	+	32	0
+	+	40	0
+	+	41	8
+	+	42	0
 	a	7	0
 	y	14	0
 
-> ~/.bashr
-	"	1	0
-
-> ~/src/git-2.10.0/Documentation/Makefile
-	"	435	12
-
-> ~/src/git-2.10.0/Makefile
-	"	2392	35
-
-> ~/src/man-pages-4.07/Makefile
-	"	47	18
-	^	47	19
-	.	4	18
-	+	4	18
-
-> ~/src/perl-5.24.0/Configure
-	"	1875	0
-
-> ~/src/perl-5.24.0/INSTALL
-	"	1	0
-
-> ~/src/git-2.10.0/configure
-	"	794	4
-	^	794	5
-	.	728	17
-	+	571	28
-	+	725	22
-	+	728	17
-
-> ~/src/zlib-1.2.8/configure
-	"	779	26
-	^	62	27
-	.	62	26
-	+	62	26
-
-> ~/src/gettext-0.19.8.1/configure
-	"	767	6
-	^	763	18
-	.	763	17
-	+	570	28
-	+	760	22
-	+	763	17
-
-> ~/.bash_functions/codes
-	"	3	44
-	^	3	45
-	.	3	45
-	+	36	30
-	+	37	18
-	+	41	21
-	+	40	22
-	+	43	5
-	+	39	16
-	+	45	40
-	+	36	17
-	+	18	0
-	+	16	0
-	+	15	0
-	+	8	39
-	+	9	52
-	+	14	3
-	+	9	33
-	+	10	11
-	+	13	9
-	+	9	14
-	+	1	29
-	+	4	0
-	+	3	45
-
-> ~/src/expat-2.2.0/README
-	"	60	0
-
-> ~/src/git-2.10.0/git-compat-util.h
-	"	1	10
-
-> ~/src/git-2.10.0/INSTALL
-	"	1	0
-
-> ~/src/openssl-1.1.0b/Makefile
-	"	1	0
-
-> ~/src/openssl-1.1.0b/Configure
-	"	47	0
-
-> ~/src/openssl-1.1.0b/config
-	"	917	0
-
-> ~/src/openssl-1.1.0b/INSTALL
-	"	96	0
-
-> ~/src/autoconf-2.69/configure
-	"	741	12
-	^	741	13
-	.	702	17
-	+	570	0
-	+	699	18
-	+	702	10
-	+	699	15
-	+	570	28
-	+	699	22
-	+	702	17
-
-> ~/src/m4-1.4.17/configure
-	"	2049	4
-	^	2049	5
-	.	1845	17
-	+	571	29
-	+	1842	22
-	+	1845	17
-
-> ~/src/m4-1.4.17/Makefile
-	"	1929	62
-	^	1434	20
-	.	1434	19
-	+	1434	19
-
-> ~/src/m4-1.4.17/INSTALL
-	"	1	0
-
-> ~/src/autoconf-2.69/Makefile.in
-	"	853	0
-
-> ~/src/autoconf-2.69/Makefile.am
-	"	100	0
-
-> ~/src/autoconf-2.69/configure.ac
-	"	1	0
-
-> ~/src/autoconf-2.69/configure.ax
-	"	1	0
-
-> ~/src/autoconf-2.69/config
-	"	1	0
-
-> ~/src/autoconf-2.69/INSTALL
-	"	1	0
-
-> ~/src/autoconf-2.69/README
-	"	65	0
-
-> ~/src/git-2.10.0/configure.ac
-	"	224	0
-
-> ~/src/curl-7.50.3/configure
-	"	1331	4
-	^	1331	5
-	.	1207	13
-	+	819	27
-	+	1204	18
-	+	1207	13
-
-> ~/src/curl-7.50.3/Makefile
-	"	1171	26
-
-> ~/etc/dotfiles/xenon/.gitconfig
-	"	1	0
-
-> ~/etc/dotfiles/.gitignore
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/.gitconfig
-	"	20	20
-	^	20	10
-	.	20	0
-	+	20	0
-
 > ~/.bash_profile
-	"	1	0
-	^	53	2
-	.	53	1
+	"	51	0
+	^	51	0
+	.	51	0
 	+	4	100
 	+	42	5
 	+	42	5
@@ -682,7 +525,357 @@ $-PBE-
 	+	48	0
 	+	49	15
 	+	53	1
+	+	16	0
+	+	17	0
+	+	18	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	30	0
+	+	31	0
+	+	32	0
+	+	37	0
+	+	38	0
+	+	39	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	51	0
 	a	41	0
+
+> ~/.path
+	"	5	0
+	^	5	1
+	.	5	0
+	+	5	50
+	+	5	83
+	+	7	0
+	+	6	0
+	+	5	38
+	+	6	0
+	+	4	6
+	+	4	33
+	+	5	0
+
+> ~/src/glibc-2.24/configure
+	"	570	18
+	^	859	0
+	.	806	17
+	+	570	28
+	+	803	22
+	+	806	17
+
+> ~/src/glibc-2.24/INSTALL
+	"	454	0
+	.	45	0
+	+	45	0
+
+> ~/src/glibc-2.24/README
+	"	76	0
+
+> ~/src/gettext-0.19.8.1/DEPENDENCIES
+	"	213	0
+
+> ~/src/ncurses-6.0/INSTALL
+	"	237	4
+
+> ~/src/ncurses-6.0/configure
+	"	155	17
+	^	155	18
+	.	155	17
+	+	97	28
+	+	152	22
+	+	155	17
+
+> ~/src/gettext-0.19.8.1/Makefile
+	"	337	18
+
+> ~/src/libiconv-1.14/configure
+	"	1354	0
+	^	1353	18
+	.	1320	17
+	+	558	28
+	+	1317	22
+	+	1320	17
+
+> ~/src/libiconv-1.14/Makefile
+	"	69	0
+	^	10	32
+	.	10	31
+	+	10	31
+
+> ~/src/libiconv-1.14/config
+	"	1	0
+
+> ~/src/libiconv-1.14/DEPENDENCIES
+	"	1	0
+
+> ~/src/gettext-0.19.8.1/INSTALL
+	"	1	0
+
+> ~/src/gettext-0.19.8.1/configure
+	"	771	14
+	^	763	18
+	.	763	17
+	+	570	28
+	+	760	22
+	+	763	17
+
+> ~/src/git-2.10.0/configure
+	"	728	17
+	^	728	18
+	.	728	17
+	+	571	28
+	+	725	22
+	+	728	17
+	+	571	28
+	+	725	22
+	+	728	17
+
+> ~/src/git-2.10.0/INSTALL
+	"	1	0
+
+> ~/src/curl-7.50.3/Makefile
+	"	494	15
+
+> ~/src/curl-7.50.3/configure
+	"	1207	17
+	^	1207	18
+	.	1207	17
+	+	819	27
+	+	1204	18
+	+	1207	13
+	+	819	28
+	+	1204	22
+	+	1207	17
+
+> ~/src/m4-1.4.17/Makefile
+	"	1456	19
+	^	1434	20
+	.	1434	19
+	+	1434	19
+
+> ~/src/m4-1.4.17/configure
+	"	1837	20
+	^	2049	5
+	.	1845	17
+	+	571	29
+	+	1842	22
+	+	1845	17
+
+> ~/src/autoconf-2.69/configure
+	"	721	34
+	^	741	13
+	.	702	17
+	+	570	0
+	+	699	18
+	+	702	10
+	+	699	15
+	+	570	28
+	+	699	22
+	+	702	17
+
+> ~/src/tcl8.6.6/unix/configure
+	"	347	29
+	^	323	18
+	.	323	17
+	+	254	28
+	+	320	22
+	+	323	17
+
+> ~/src/openssl-1.1.0b/INSTALL
+	"	227	0
+
+> ~/src/openssl-1.1.0b/Makefile
+	"	1	0
+
+> ~/src/openssl-1.1.0b/config
+	"	917	0
+
+> ~/src/expat-2.2.0/configure
+	"	767	17
+	^	767	18
+	.	767	17
+	+	581	28
+	+	764	22
+	+	767	17
+
+> ~/src/zlib-1.2.8/Makefile
+	"	2	0
+
+> ~/src/zlib-1.2.8/configure
+	"	52	21
+	^	62	27
+	.	62	26
+	+	62	26
+
+> ~/src/man-pages-4.07/README
+	"	1	0
+
+> ~/bin/testdisk-7.0/README
+	"	76	0
+
+> ~/src/perl-5.24.0/Makefile
+	"	1	0
+
+> ~/src/perl-5.24.0/INSTALL
+	"	1	0
+
+> ~/src/bzip2-1.0.6/README
+	"	1	0
+
+> ~/src/bzip2-1.0.6/configu
+	"	1	0
+
+> ~/src/Python-3.5.2/configure
+	"	864	17
+	^	864	18
+	.	864	17
+	+	571	28
+	+	861	22
+	+	864	17
+
+> ~/src/tk8.6.6/unix/Makefile
+	"	1	0
+
+> ~/src/tk8.6.6/unix/configure
+	"	323	17
+	^	323	18
+	.	323	17
+	+	254	28
+	+	320	22
+	+	323	17
+
+> ~/src/tcl8.6.6/unix/Makefile
+	"	1	0
+
+> ~/src/libiconv-1.14/README
+	"	132	12
+
+> ~/src/libiconv-1.14/HACKING
+	"	64	0
+
+> ~/src/libiconv-1.14/INSTALL.generic
+	"	65	0
+
+> ~/src/libiconv-1.14/srclib/progname.c
+	"	92	0
+
+> ~/src/libiconv-1.14/srclib/stdio.h
+	"	1005	6
+
+> ~/src/tcl8.6.6/README
+	"	119	0
+
+> ~/src/tk8.6.6/README
+	"	1	0
+
+> ~/.exports
+	"	12	0
+	^	15	64
+	.	15	63
+	+	3	80
+	+	11	1
+	+	6	21
+	+	10	23
+	+	14	18
+	+	13	11
+	+	15	63
+
+> ~/.bashr
+	"	1	0
+
+> ~/src/git-2.10.0/Documentation/Makefile
+	"	435	12
+
+> ~/src/git-2.10.0/Makefile
+	"	2392	35
+
+> ~/src/man-pages-4.07/Makefile
+	"	47	18
+	^	47	19
+	.	4	18
+	+	4	18
+
+> ~/src/perl-5.24.0/Configure
+	"	1875	0
+
+> ~/.bash_functions/codes
+	"	3	44
+	^	3	45
+	.	3	45
+	+	36	30
+	+	37	18
+	+	41	21
+	+	40	22
+	+	43	5
+	+	39	16
+	+	45	40
+	+	36	17
+	+	18	0
+	+	16	0
+	+	15	0
+	+	8	39
+	+	9	52
+	+	14	3
+	+	9	33
+	+	10	11
+	+	13	9
+	+	9	14
+	+	1	29
+	+	4	0
+	+	3	45
+
+> ~/src/expat-2.2.0/README
+	"	60	0
+
+> ~/src/git-2.10.0/git-compat-util.h
+	"	1	10
+
+> ~/src/openssl-1.1.0b/Configure
+	"	47	0
+
+> ~/src/m4-1.4.17/INSTALL
+	"	1	0
+
+> ~/src/autoconf-2.69/Makefile.in
+	"	853	0
+
+> ~/src/autoconf-2.69/Makefile.am
+	"	100	0
+
+> ~/src/autoconf-2.69/configure.ac
+	"	1	0
+
+> ~/src/autoconf-2.69/configure.ax
+	"	1	0
+
+> ~/src/autoconf-2.69/config
+	"	1	0
+
+> ~/src/autoconf-2.69/INSTALL
+	"	1	0
+
+> ~/src/autoconf-2.69/README
+	"	65	0
+
+> ~/src/git-2.10.0/configure.ac
+	"	224	0
+
+> ~/etc/dotfiles/xenon/.gitconfig
+	"	1	0
+
+> ~/etc/dotfiles/.gitignore
+	"	1	5
+	^	1	6
+	.	1	5
+	+	1	5
+
+> ~/.gitconfig
+	"	20	20
+	^	20	10
+	.	20	0
+	+	20	0
 
 > ~/git-2.10.0/Makefile
 	"	1617	0
@@ -1307,363 +1500,3 @@ $-PBE-
 	"	6	0
 	.	7	0
 	+	7	0
-
-> ~/.unused
-	"	155	5
-	^	155	6
-	.	155	5
-	+	154	0
-	+	104	19
-	+	154	0
-	+	154	0
-	+	154	0
-	+	154	0
-	+	116	27
-	+	112	33
-	+	113	89
-	+	108	25
-	+	110	0
-	+	106	0
-	+	106	0
-	+	154	0
-	+	106	0
-	+	135	13
-	+	4	0
-	+	6	0
-	+	4	0
-	+	7	54
-	+	15	0
-	+	7	3
-	+	17	60
-	+	101	0
-	+	7	0
-	+	154	0
-	+	136	0
-	+	135	14
-	+	153	0
-	+	7	0
-	+	152	0
-	+	137	0
-	+	142	0
-	+	144	0
-	+	145	0
-	+	146	0
-	+	147	0
-	+	150	0
-	+	151	0
-	+	152	0
-	+	154	0
-	+	155	5
-	a	105	0
-
-> ~/.bashc
-	"	1	0
-
-> ~/.extra
-	"	2	16
-	^	2	17
-	.	2	16
-	+	2	16
-
-> ~/binX/awking.awk
-	"	1	0
-
-> /usr/share/vim/vim74/doc/options.txt
-	"	2359	19
-
-> /usr/share/vim/vim74/doc/various.txt
-	"	130	0
-
-> /usr/share/vim/vim74/doc/syntax.txt
-	"	4427	24
-
-> ~/quickstep/mes/cutoff_tests/rel_cutoff_inputs.sh
-	"	8	8
-	^	8	9
-	.	8	8
-	+	5	16
-	+	6	13
-	+	20	30
-	+	8	8
-
-> ~/quickstep/mes/cutoff_tests/cutoff_data.ssv
-	"	1	0
-
-> ~/quickstep/sco/cutoff_tests/cutoff_data.ssv
-	"	1	0
-
-> ~/quickstep/sco/cutoff_tests/rel_cutoff_data.ssv
-	"	1	0
-
-> ~/quickstep/nat/cutoff_tests/cutoff_data.ssv
-	"	1	0
-
-> ~/quickstep/nat/cutoff_tests/rel_cutoff_data.ssv
-	"	1	0
-
-> ~/quickstep/mes/cutoff_tests/mes.inp
-	"	114	10
-	^	114	11
-	.	69	42
-	+	9	0
-	+	8	0
-	+	9	0
-	+	2	18
-	+	78	26
-	+	77	18
-	+	79	10
-	+	83	11
-	+	101	0
-	+	102	0
-	+	103	0
-	+	104	0
-	+	105	0
-	+	106	0
-	+	107	0
-	+	108	0
-	+	109	0
-	+	110	0
-	+	111	0
-	+	112	0
-	+	113	0
-	+	68	42
-	+	69	42
-
-> ~/quickstep/mes/cutoff_tests/cutoff_inputs.sh
-	"	1	0
-	^	19	31
-	.	19	30
-	+	5	16
-	+	19	30
-
-> ~/quickstep/mes/cutoff_tests/scol.inp
-	"	1	0
-
-> ~/quickstep/nat/nat.inp
-	"	79	12
-	^	79	13
-	.	79	12
-	+	5	11
-	+	21	21
-	+	16	35
-	+	17	2
-	+	16	13
-	+	17	13
-	+	16	23
-	+	17	23
-	+	16	6
-	+	17	19
-	+	18	0
-	+	7	18
-	+	99	26
-	+	111	12
-	+	83	13
-	+	1	92
-	+	1	66
-	+	83	15
-	+	87	17
-	+	86	15
-	+	83	9
-	+	85	12
-	+	87	16
-	+	1	52
-	+	70	42
-	+	71	42
-	+	111	15
-	+	2	199
-	+	3	20
-	+	2	2
-	+	1	12
-	+	3	99
-	+	80	14
-	+	79	12
-
-> ~/quickstep/nat/cutoff_tests/rel_cutoff_analyse.sh
-	"	9	8
-	^	9	9
-	.	9	8
-	+	5	13
-	+	4	0
-	+	6	14
-	+	9	8
-
-> ~/quickstep/nat/cutoff_tests/rel_cutoff_inputs.sh
-	"	8	8
-	^	8	9
-	.	8	8
-	+	5	16
-	+	6	13
-	+	20	12
-	+	8	8
-
-> ~/quickstep/sco/opt/scol-opt.log
-	"	98	1
-
-> ~/quickstep/sco/opt/scol-opt.inp
-	"	24	39
-	^	24	40
-	.	24	39
-	+	20	18
-	+	20	0
-	+	19	21
-	+	20	3
-	+	19	0
-	+	26	22
-	+	26	0
-	+	22	38
-	+	23	41
-	+	24	28
-	+	25	40
-	+	24	39
-
-> /usr/share/vim/vim74/doc/windows.txt
-	"	135	42
-
-> ~/.oldvimrc
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/.vimrc_swp
-	"	10	0
-
-> /usr/share/vim/vim74/doc/help.txt
-	"	50	0
-
-> ~/quickstep/sco/scol-opt.inp
-	"	11	27
-	^	11	28
-	.	11	27
-	+	6	0
-	+	7	0
-	+	8	0
-	+	10	0
-	+	11	27
-
-> ~/quickstep/sco/cutoff_tests/scol.inp
-	"	120	0
-	^	80	11
-	.	80	10
-	+	120	0
-	+	91	1
-	+	92	2
-	+	93	2
-	+	94	2
-	+	95	1
-	+	96	1
-	+	97	2
-	+	98	3
-	+	99	2
-	+	100	2
-	+	101	2
-	+	102	3
-	+	103	3
-	+	104	3
-	+	105	2
-	+	106	2
-	+	107	3
-	+	108	2
-	+	109	2
-	+	110	3
-	+	111	3
-	+	112	3
-	+	113	3
-	+	114	2
-	+	115	1
-	+	116	2
-	+	117	2
-	+	118	3
-	+	119	1
-	+	120	0
-	+	84	26
-	+	85	27
-	+	87	22
-	+	3	16
-	+	84	30
-	+	85	30
-	+	81	18
-	+	82	26
-	+	3	82
-	+	22	25
-	+	6	15
-	+	86	12
-	+	87	3
-	+	88	4
-	+	89	3
-	+	107	1
-	+	108	1
-	+	109	1
-	+	110	1
-	+	111	1
-	+	112	1
-	+	114	1
-	+	113	1
-	+	115	1
-	+	116	1
-	+	117	1
-	+	118	1
-	+	119	1
-	+	80	10
-
-> ~/quickstep/nat/cutoff_tests/cutoff_inputs.sh
-	"	1	0
-	^	19	12
-	.	19	12
-	+	5	16
-	+	19	12
-
-> ~/quickstep/nat/cutoff_tests/nat.inp
-	"	1	0
-	^	81	11
-	.	81	10
-	+	4	7
-	+	12	0
-	+	10	0
-	+	4	18
-	+	79	18
-	+	80	26
-	+	84	12
-	+	86	0
-	+	87	0
-	+	88	0
-	+	106	0
-	+	107	0
-	+	108	0
-	+	109	0
-	+	110	0
-	+	111	0
-	+	112	0
-	+	113	0
-	+	114	0
-	+	115	0
-	+	116	0
-	+	117	0
-	+	118	0
-	+	81	10
-
-> ~/binX/scott/tobedatamined.sh
-	"	42	11
-	^	42	12
-	.	25	58
-	+	3	0
-	+	3	0
-	+	4	25
-	+	5	20
-	+	4	65
-	+	5	60
-	+	25	35
-	+	18	6
-	+	20	13
-	+	24	29
-	+	25	58
-
-> ~/binX/scott/top10_for_datamining.sh
-	"	7	0
-
-> ~/quickstep/mes/cutoff_tests/rel_cutoff_analyse.sh
-	"	7	14
-	^	7	15
-	.	6	14
-	+	5	13
-	+	6	14

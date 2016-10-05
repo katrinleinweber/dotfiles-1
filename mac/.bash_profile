@@ -6,6 +6,9 @@ export PS1="\[\033[0;34m\]\u:\w $ \[\033[0m\]"
 # export PATH="$PATH:~/bin:/Library/TeX/texbin"
 export PATH="/Users/jcprime/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:~/bin"
 
+# Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!
+alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
+
 # added by Anaconda2 4.0.0 installer
 #export PATH="/Users/jcprime/anaconda/bin:$PATH"
 # (No longer required since it's been added to PATH as above)

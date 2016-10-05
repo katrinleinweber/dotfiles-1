@@ -3594,3 +3594,959 @@ make -j4
 make -j4
 #1475189054
 exit
+#1475334753
+qstat
+#1475334764
+cd quickstep/sco/
+#1475334768
+ls
+#1475334792
+tail -100 scol.log
+#1475334842
+mkdir 2016-09-30_scol
+#1475334901
+cp scol.inp scol00_N0.cp2k 2016-09-30_scol/
+#1475334946
+mv scol-* scol_* scol.[elos]* 2016-09-30_scol/
+#1475334947
+ls
+#1475334960
+less scol.inc
+#1475334972
+python
+#1475335016
+mv scol.inc scol.frac
+#1475335198
+cd
+#1475335203
+cd src/
+#1475335251
+wget http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz
+#1475335261
+tar -zxf libiconv-1.14.tar.gz 
+#1475335269
+mv libiconv-1.14.tar.gz ../zzzz/
+#1475335273
+cd libiconv-1.14/
+#1475335274
+ls
+#1475335284
+vim configure
+#1475335408
+./configure 
+#1475335437
+ls ~/local/
+#1475335444
+ls -a ~/local/
+#1475335461
+vim Makefile
+#1475335488
+make
+#1475335515
+./configure 
+#1475335540
+make
+#1475335599
+vim Makefile
+#1475335703
+vim srclib/stdio.h
+#1475335834
+vim srclib/progname.c 
+#1475336324
+cd ..
+#1475336328
+wget http://ftp.gnu.org/gnu/glibc/glibc-2.24.tar.gz
+#1475336343
+tar -zxf glibc-2.24.tar.gz 
+#1475336353
+mv glibc-2.24.tar.gz ../zzzz/
+#1475336357
+cd glibc-2.24/
+#1475336358
+ls
+#1475336365
+vim configure
+#1475336477
+./configure 
+#1475336511
+./configure -h
+#1475336578
+vim configure
+#1475336856
+./configure 
+#1475336866
+mkdir build
+#1475336880
+./configure -h
+#1475336914
+cd build/
+#1475336922
+../configure 
+#1475336946
+cd ..
+#1475336952
+rm -rf build/
+#1475336957
+ls
+#1475336969
+vim INSTALL 
+#1475337027
+mkdir ../glibc-build
+#1475337032
+vim INSTALL 
+#1475337103
+cd ../glibc-build/
+#1475337116
+../glibc-2.24/configure 
+#1475337146
+echo $LD_LIBRARY_PATH
+#1475337178
+export LD_LIBRARY_PATH="/home/james/local/lib"
+#1475337181
+echo $LD_LIBRARY_PATH
+#1475337186
+../glibc-2.24/configure 
+#1475337255
+make
+#1475337719
+make check
+#1475337951
+make install
+#1475338009
+cd ..
+#1475338010
+ls
+#1475338039
+mv bzip2-1.0.6.tar Python-3.5.2.tar tcl8.6.6-src.tar tk8.6.6-src.tar ../zzzz/
+#1475338049
+ls
+#1475338053
+history
+#1475338090
+cd libiconv-1.14/
+#1475338108
+./configure 
+#1475338142
+vim Makefile
+#1475338146
+make
+#1475338154
+vim Makefile
+#1475338177
+make
+#1475338188
+./configure 
+#1475338242
+vim INSTALL.generic 
+#1475338321
+make
+#1475338326
+./configure 
+#1475338350
+make
+#1475338584
+vim HACKING 
+#1475338607
+vim DEPENDENCIES 
+#1475338628
+vim README
+#1475338696
+make install
+#1475338710
+cd ../gettext-0.19.8.1/
+#1475338712
+make distclean
+#1475338725
+vim configure
+#1475338775
+./configure 
+#1475338865
+vim Makefile
+#1475338895
+make
+#1475338954
+make install
+#1475338962
+cd ../libiconv-1.14/
+#1475338964
+ls
+#1475338972
+./configure 
+#1475339003
+make
+#1475339123
+cd ..
+#1475339127
+ls
+#1475339183
+cd tcl8.6.6/
+#1475339190
+make distclean
+#1475339194
+make clean
+#1475339196
+ls
+#1475339203
+cd unix/
+#1475339204
+ls
+#1475339218
+make distclean
+#1475339225
+./configure
+#1475339238
+vim Makefile
+#1475339250
+vim configure
+#1475339292
+make clean
+#1475339297
+make distclean
+#1475339308
+vim configure
+#1475339327
+./configure
+#1475339339
+vim Makefile
+#1475339344
+make
+#1475339442
+make install
+#1475339456
+cd ../../tk8.6.6/
+#1475339457
+ls
+#1475339463
+cd unix/
+#1475339467
+make distclean
+#1475339470
+make clean
+#1475339475
+vim configure
+#1475339521
+./configure
+#1475339530
+vim Makefile
+#1475339536
+make
+#1475339571
+make install
+#1475339579
+cd ../..
+#1475339580
+ls
+#1475339612
+cd Python-3.5.2/
+#1475339614
+ls
+#1475339617
+make distclean
+#1475339627
+vim configure
+#1475339702
+./configure 
+#1475339733
+make
+#1475339849
+make install
+#1475339882
+cd ..
+#1475339883
+ls
+#1475339917
+cd bzip2-1.0.6/
+#1475339918
+ls
+#1475339923
+make distclean
+#1475339931
+vim configu
+#1475339945
+ls
+#1475339965
+vim README
+#1475339982
+make
+#1475340006
+make install PREFIX=/home/james
+#1475340010
+cd ..
+#1475340011
+ls
+#1475340022
+cd perl-5.24.0/
+#1475340025
+ls
+#1475340029
+make distclean
+#1475340045
+ls
+#1475340073
+vim INSTALL 
+#1475340138
+sh Configure -de -Dprefix='/home/james'
+#1475340187
+vim Makefile
+#1475340194
+make
+#1475340352
+make test
+#1475340876
+cd bin
+#1475340877
+ls
+#1475340925
+ls backups/
+#1475340947
+ls testdisk-7.0/
+#1475340963
+vim testdisk-7.0/README 
+#1475341003
+mkdir scripts
+#1475341088
+mv gulp_* faff.sh c.sh awking.awk scripts/
+#1475341092
+mkdir z
+#1475341181
+mv backups/ deprecated/ scott/ scripts/
+#1475341183
+ls
+#1475341200
+man ls
+#1475341330
+ls -alht
+#1475341436
+mv tabulate.sh tabulate_v2.sh xyz_dehydrate.sh jmol_export.spt car_to_xyz.sh general_info.pl 
+#1475341444
+mv tabulate.sh tabulate_v2.sh xyz_dehydrate.sh jmol_export.spt car_to_xyz.sh general_info.pl scripts/
+#1475341446
+ls scripts
+#1475341455
+ls -alht
+#1475341495
+mv basic_blocks/ scripts/
+#1475341502
+ls etc
+#1475341518
+mv etc/ scripts/
+#1475341519
+ls
+#1475341526
+mv z zzzz
+#1475341528
+ls
+#1475341538
+ls -alht
+#1475341572
+ls editing/
+#1475341583
+mv editing/ scripts/
+#1475341589
+ls
+#1475341594
+ls -alht
+#1475341614
+mv qstep rstep scripts/editing/
+#1475341619
+ls scripts/editing/
+#1475341632
+less file.txt 
+#1475341641
+rm file.txt 
+#1475341648
+ls readme.txt 
+#1475341654
+less readme.txt 
+#1475341668
+mv readme.txt README
+#1475341675
+mv README README.md
+#1475341682
+ls -alht
+#1475341703
+ls pycp2k/
+#1475341813
+mkdir ~/src/phd; mv pycp2k/ jmol/ gdis/ dehydrate/ testdisk-7.0/ ../src/phd
+#1475341818
+ls -alht
+#1475341832
+ls mcsubs/
+#1475341847
+ls -alht
+#1475341880
+mv pymol/ mcsubs/ ../src/phd/
+#1475341890
+man ln
+#1475341937
+man link
+#1475341958
+make install
+#1475341991
+cd ..
+#1475341995
+ls -alht
+#1475342019
+cd man-pages-4.07/
+#1475342021
+ls
+#1475342026
+vim README 
+#1475342064
+make install prefix=/home/james
+#1475342069
+cd ..
+#1475342073
+ls -alht
+#1475342095
+cd zlib-1.2.8/
+#1475342096
+ls
+#1475342107
+make distclean
+#1475342115
+vim configure 
+#1475342169
+./configure 
+#1475342172
+make
+#1475342182
+vim Makefile
+#1475342195
+make install
+#1475342199
+cd ..
+#1475342203
+ls -alht
+#1475342212
+cd expat-2.2.0/
+#1475342213
+ls
+#1475342218
+make distclean
+#1475342226
+vim configure
+#1475342290
+./configure 
+#1475342296
+make
+#1475342308
+make install
+#1475342312
+cd ..
+#1475342315
+ls -alht
+#1475342321
+cd openssl-1.1.0b/
+#1475342672
+ls
+#1475342677
+make distclean
+#1475342683
+ls
+#1475342692
+vim INSTALL 
+#1475342717
+vim config
+#1475342764
+./config 
+#1475342769
+ls
+#1475342774
+vim Makefile
+#1475342796
+vim INSTALL 
+#1475342847
+./config --prefix=/home/james
+#1475342855
+make distclean
+#1475342857
+./config --prefix=/home/james
+#1475342860
+make
+#1475343057
+make install
+#1475343153
+cd ..
+#1475343158
+ls -alth
+#1475343173
+cd tcl8.6.6/
+#1475343174
+ls
+#1475343179
+cd unix/
+#1475343181
+ls
+#1475343184
+make distclean
+#1475343193
+vim configure
+#1475343216
+./configure
+#1475343249
+make
+#1475343355
+make install
+#1475343410
+cd ../../
+#1475343412
+ls
+#1475343417
+ls -lht
+#1475343436
+cd autoconf-2.69/
+#1475343436
+ls
+#1475343442
+make distclean
+#1475343448
+vim configure
+#1475343484
+./configure 
+#1475343488
+make
+#1475343543
+make install
+#1475343547
+cd ..
+#1475343548
+ls
+#1475343552
+ls -alht
+#1475343557
+cd m4-1.4.17/
+#1475343558
+ls
+#1475343562
+make distclean
+#1475343566
+vim configure
+#1475343620
+./configure 
+#1475343663
+make
+#1475343698
+make install
+#1475343706
+ls
+#1475343718
+make distclean
+#1475343727
+./configure 
+#1475343868
+vim Makefile
+#1475344362
+make
+#1475344370
+make clean
+#1475344374
+make distclean
+#1475344383
+less configure
+#1475344458
+cd ..
+#1475344463
+ls -alht
+#1475344470
+cd curl-7.50.3/
+#1475344471
+ls
+#1475344475
+make clean
+#1475344479
+make distclean
+#1475344499
+vim configure
+#1475344602
+./configure 
+#1475344669
+vim Makefile
+#1475344702
+make
+#1475344843
+make install
+#1475344849
+cd ..
+#1475344858
+cd m4-1.4.17/
+#1475344863
+ls -alht ..
+#1475344872
+./configure 
+#1475344896
+make
+#1475344913
+cd ..
+#1475344916
+cd git-2.10.0/
+#1475344918
+ls
+#1475344924
+make clean
+#1475344927
+make distclean
+#1475344930
+ls
+#1475344956
+vim INSTALL 
+#1475344976
+make configure
+#1475344984
+vim configure
+#1475345048
+./configure 
+#1475345056
+make
+#1475345102
+make install
+#1475345172
+make distclean
+#1475345175
+cd ..
+#1475345179
+cd gettext-0.19.8.1/
+#1475345180
+ls
+#1475345188
+make distclean
+#1475345192
+make clean
+#1475345199
+vim configure
+#1475345219
+./configure 
+#1475345305
+vim Makefile
+#1475345335
+vim INSTALL 
+#1475345349
+vim DEPENDENCIES 
+#1475345364
+cd ../libiconv-1.14/
+#1475345368
+make
+#1475345372
+ls
+#1475345376
+vim DEPENDENCIES 
+#1475345381
+make distclean
+#1475345386
+vim config
+#1475345393
+vim configure
+#1475345419
+./configure 
+#1475345444
+vim Makefile
+#1475345478
+make
+#1475345504
+make clean
+#1475345509
+make distclean 
+#1475345513
+vim config
+#1475345519
+vim configure
+#1475345529
+./configure 
+#1475345556
+make
+#1475345599
+make clean
+#1475345603
+make distclean 
+#1475345607
+./configure 
+#1475345636
+vim Makefile
+#1475345666
+make clean
+#1475345670
+make distclean
+#1475345676
+vim configure
+#1475345805
+./configure 
+#1475345835
+make
+#1475346220
+cd ../gettext-0.19.8.1/
+#1475346225
+make
+#1475346746
+echo $O_BINARY
+#1475346834
+make clean && make distclean
+#1475346866
+vim DEPENDENCIES 
+#1475346956
+./configure --with-libiconv-prefix=/home/james/src/libiconv-1.14/
+#1475347051
+vim Makefile
+#1475347095
+make
+#1475347148
+make clean && make distclean
+#1475347153
+cd ..
+#1475347173
+vim gettext-0.19.8.1/DEPENDENCIES 
+#1475347277
+wget http://ftp.gnu.org/gnu/ncurses/ncurses-6.0.tar.gz
+#1475347286
+tar -zxf ncurses-6.0.tar.gz 
+#1475347294
+mv ncurses-6.0.tar.gz ../zzzz/
+#1475347299
+cd ncurses-6.0/
+#1475347300
+ls
+#1475347309
+vim configure
+#1475347354
+vim INSTALL 
+#1475347430
+./configure 
+#1475347455
+make
+#1475347721
+make install
+#1475347739
+cd ..
+#1475347749
+vim gettext-0.19.8.1/DEPENDENCIES 
+#1475347892
+wget ftp://xmlsoft.org/libxml2/libxml2-2.9.4.tar.gz
+#1475347899
+ls -alht
+#1475347933
+cd glibc-build/
+#1475347934
+ls
+#1475347951
+make clean && make distclean
+#1475348099
+make clean
+#1475348302
+make distclean
+#1475348317
+ls
+#1475348343
+cd ../glibc-2.24/
+#1475348344
+ls
+#1475348352
+vim README 
+#1475348377
+vim INSTALL 
+#1475348507
+make clean
+#1475348519
+make distclean
+#1475348536
+vim configure
+#1475348559
+cd ../glibc-build/
+#1475348569
+rm -rf *
+#1475348572
+ls
+#1475348586
+../glibc-2.24/configure 
+#1475348594
+make
+#1475359980
+exit
+#1475341946
+man symlink
+#1475359997
+exit
+#1475447552
+sqtat
+#1475447555
+qstat
+#1475447658
+ls quickstep/sco/
+#1475448150
+exit
+#1475532472
+qstat
+#1475533964
+exit
+#1475578477
+qstat
+#1475581896
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+#1475581900
+PATH="$HOME/.linuxbrew/bin:$PATH"
+#1475581905
+echo $PATH
+#1475581935
+vim .bashrc
+#1475581948
+vim .path 
+#1475582099
+man set
+#1475582104
+man PATH
+#1475582107
+man export
+#1475582123
+. .bash_profile 
+#1475582128
+echo $PATH
+#1475582132
+ls -al
+#1475582175
+vim .bashrc 
+#1475582267
+vim .bash_profile 
+#1475582283
+vim .bashrc 
+#1475582326
+vim .bash_profile 
+#1475582372
+vim .bashrc 
+#1475582384
+exit
+#1475584506
+brew install hell
+#1475584508
+brew install hello
+#1475584526
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+#1475584586
+cd src/
+#1475584587
+ls
+#1475584612
+ls -alht
+#1475584630
+tar -zxf libxml2-2.9.4.tar.gz 
+#1475584640
+mv libxml2-2.9.4.tar.gz ../zzzz/
+#1475584645
+ls -alht
+#1475584661
+cd libxml2-2.9.4/
+#1475584662
+ls
+#1475584670
+vim configure
+#1475584729
+./configure 
+#1475584783
+vim Makefile
+#1475584824
+make
+#1475589052
+less bin/gulp 
+#1475589059
+less bin/cp2k 
+#1475589597
+cd data/test/nat/
+#1475589602
+mkdir test
+#1475589627
+cp 00/nat00.gin test/nat_orig.gin
+#1475589818
+cd test/
+#1475589820
+ls
+#1475589840
+./test.sh nat.cp2k nat.inp nat_orig.gin
+#1475589862
+vim test.sh 
+#1475589890
+grep -A 'cell' "${file}"
+#1475589899
+man grep
+#1475589934
+vim test.sh 
+#1475589961
+grep -A1 'cell' "${file}"
+#1475589973
+grep 'cell' -A1 "${file}"
+#1475589983
+grep 'cell' "${file}" -A1
+#1475589993
+grep -A1 'cell' "${file}"
+#1475590002
+file="nat_orig.gin" 
+#1475590005
+grep -A1 'cell' "${file}"
+#1475590025
+cell=$(grep -A1 'cell' "${file}")
+#1475590031
+echo $cell
+#1475590054
+cell=$(grep -A2 'cell' "${file}"); echo $cell
+#1475590067
+cell=$(grep -A1 'cell' "${file}"); echo $cell
+#1475590072
+man grep
+#1475590297
+cell=$(grep -A1 'cell' "${file}" | tail -n 1); echo $cell
+#1475590310
+vim test.sh 
+#1475590683
+./test.sh nat.cp2k nat.inp nat_orig.gin
+#1475590701
+vim test.sh 
+#1475590786
+./test.sh nat.cp2k nat.inp nat_orig.gin
+#1475590792
+ls
+#1475590798
+vim nat_orig.frac 
+#1475590803
+vim test.sh 
+#1475590870
+./test.sh nat.cp2k nat.inp nat_orig.gin
+#1475590877
+ls
+#1475590886
+vim test.sh 
+#1475590935
+./test.sh nat.cp2k nat.inp nat_orig.gin
+#1475590938
+ls
+#1475590947
+less nat_orig.tmp 
+#1475590958
+temp_file="nat_orig.tmp" 
+#1475590964
+vim test.sh 
+#1475590990
+sed -n '1d;$d' "${temp_file}" | less
+#1475590994
+ls
+#1475591002
+man sed
+#1475591066
+sed '1d;$d' "${temp_file}" | less
+#1475591081
+vim test.sh 
+#1475591278
+man sed
+#1475591562
+vim test.sh 
+#1475594843
+soft
+#1475599356
+ls bin
+#1475599554
+ls bin/zzzz/
+#1475599568
+ls -a bin/zzzz/
+#1475599573
+ls -a bin/scripts/
+#1475599586
+ls -a bin/scripts/etc/
+#1475599846
+ls
+#1475599852
+ls bin
