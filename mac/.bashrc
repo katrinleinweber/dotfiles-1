@@ -4,17 +4,34 @@
 #      (functions, aliases, bash-only non-environment variables like HISTSIZE, shell options, etc)
 # Sourced by .bash_profile
 
+# Don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=100000000000
+HISTFILESIZE=100000000000
+HISTTIMEFORMAT='%F %T '
+PROMPT_COMMAND='history -a'
+
+# Check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
 # Sources prompt file
-if [ -f .bash_prompt ]; then
-        source .bash_prompt
+if [ -f ~/.bash_prompt ]; then
+        source ~/.bash_prompt
+elif [ -f ~/.prompt ]; then
+        source ~/.prompt
 fi
 
 # Source alias definitions file(s)
 if [ -f ~/.bash_aliases ]; then
 	source ~/.bash_aliases
-fi
-
-if [ -f ~/.aliases ]; then
+elif [ -f ~/.aliases ]; then
 	source ~/.aliases
 fi
 
@@ -23,23 +40,12 @@ if [ -d ~/.bash_functions ]; then
 	source ~/.bash_functions/codes
 fi
 
-##################################################################################
-# HISTORY-SPECIFIC SETTINGS
-##################################################################################
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
+# Source environment variables file
+if [ -f ~/.exports ]; then
+        source ~/.exports
+fi
 
-# append to the history file, don't overwrite it
-shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=100000000000
-HISTFILESIZE=100000000000
-
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-##################################################################################
-# END HISTORY-SPECIFIC SETTINGS
-##################################################################################
+# Source path file
+if [ -f ~/.path ]; then
+        source ~/.path
+fi
