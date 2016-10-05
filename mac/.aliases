@@ -1,0 +1,63 @@
+# .aliases
+# Defines aliases for use in shells
+# Sourced by .bash_profile
+
+# Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!
+alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
+
+##################################################################################
+# FROM .BASH_PROFILE (MACBOOK PRO)
+##################################################################################
+
+# Git aliases
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit '
+alias gd='git diff '
+alias go='git checkout '
+alias gs='git status '
+alias gt='git tag '
+alias gk='gitk --all&'
+alias gx='gitx -all'
+
+# Personal ~/bin/ aliases
+alias relink='~/bin/link_syreport.sh ; ~/bin/link_bib.sh'
+
+# Enable color support of ls and also add handy aliases
+# Sets colours to distinguish directories from files, etc
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# Longlist of files
+alias ll='ls -alhF --color=always'
+
+# Always create parent directories on command
+alias mkdir='mkdir -pv'
+
+# Ensures you always open the Vimproved Version :D
+alias vi='vim'
+
+# Find top 5 largest files
+alias findbig="find . -type f -exec ls -s {} \; | sort -n -r | head -5"
+
+# Auto-resumes wget downloads
+alias wget='wget -c'
+
+##################################################################################
+# FROM .BASHRC (MACBOOK PRO)
+##################################################################################
+
+# None that weren't already included in .bash_profile (directory/file colours aliases)
+
+##################################################################################
+# FROM .PROFILE (MACBOOK PRO)
+##################################################################################
+
+# None that weren't already included in .bash_profile (git aliases)
