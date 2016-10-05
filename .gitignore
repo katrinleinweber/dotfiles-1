@@ -1,3 +1,12 @@
-.ssh/
 .bash_history
 .cache/
+.config/pulse/
+.dmenu_cache
+.git/
+.java/
+.jmol/
+.local/
+.qt/
+.ssh/
+.subversion/
+.unison/
