@@ -5,6 +5,8 @@
 # Original homebrew formulae
 brew install tree
 brew install texmath
+brew install vcsh
+brew install mr
 
 # Install cask
 brew tap caskroom/cask
