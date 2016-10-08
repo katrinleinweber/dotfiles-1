@@ -1,0 +1,1 @@
+for file in ~/.dotfiles/arch/\.[a-zA-Z]*; do if [[ ! -d /home/james/.dotfiles/arch/.xsession-errors.old && ! -L .xsession-errors.old && -f /home/james/.dotfiles/arch/.xsession-errors.old ]]; then cp ~/.xsession-errors.old ~/.dotfiles/arch/; fi; ln -sf /home/james/.dotfiles/arch/.xsession-errors.old ~/.xsession-errors.old; done
