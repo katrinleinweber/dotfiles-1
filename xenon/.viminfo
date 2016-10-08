@@ -8,20 +8,21 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/home
+~MSle0~/CURL
 
 # Last Substitute Search Pattern:
 ~MSle0&-PADE-
 
 # Last Substitute String:
-$-PBE-
+$
 
 # Command Line History (newest to oldest):
 :x
 :q!
+:w
+:split .exports
 :X
 :.,%s/-PADE-/-PBE-/g
-:w
 :W
 :,.%s/-PADE-/-PBE-/g
 :split scol.xyz
@@ -66,16 +67,49 @@ $-PBE-
 :1,.d
 :n
 :1
-:1,$s/Ca1/Ca/
 
 # Search String History (newest to oldest):
-?/home/james
+?/CURL
+?/curl
+?/HOMEBREW_PREFIX
+?/HOMEBREW_REPOSITORY
+?/HOMEBREW_CURL
+?/usr
+?/usr\/bin\/curl
+? \<if\>
+?/HOMEBREW_CU
+?/HOMEBREW_LIB:x
+?/HOMEBREW_LIBRARY
+?/git
+?/scm
+?/GIT
+?/git\ 
+? \<bin\>
 ?/pref
+?/gitexec
+?/prefi
+?/usr\/
+?/locale
+?/LC
+?/update
+?/core
+?/mouse
+?/pkg
+?/ftrap
+?/FAIL
+?/lib
+?/read_p
+? \<LD_LIBRARY_PATH\>
+?/inf
+?/prefix
+?/home
+?/default
+?/default_
+?/pref:
+?/home/james
 ?/\/hom
 ?/\/usr
-?/prefix
 ?/localedir=
-?/locale
 ?/\/home\/james
 ?/\/home
 ?/\/us
@@ -85,40 +119,6 @@ $-PBE-
 ?/gets
 ?/\/u
 ?/install-m
-?/man
-?/man 
-?/permission
-?/open
-?/INSTALL
-?/DISTFI
-?/\/
-?/oldin
-?/dir
-?/DEST
-?/DES
-?/DESTD
-? -PADE-
-?/Ca
-? \<call\>
-? \<if\>
-?/scol
-? \<rm\>
-? v2\.txt
-? \\t
-? nat00_hydrated\.gout
-?/\.sh
-?/.sh
-?/zip
-?/ganal
-?/gzip
-? H\ c
-?/conv
-?/opt
-?/machine
-?/R_COND
-?/condi
-?//
-?/MOLOPT
 
 # Expression History (newest to oldest):
 
@@ -127,348 +127,567 @@ $-PBE-
 # Input Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	#export PATH="$HOME/.linuxbrew/bin:$HOME/bin:$HOME/local/bin:$HOME/DeHydrate/Code:$PATH"
+	#LD_LIBRARY_PATH="/home/james/usr/local/lib"
+	#C_INCLUDE_PATH="/home/james/usr/local/include"
+	#LD_RUN_PATH="/home/james/usr/local/lib"
 "1	LINE	0
-	export PATH=$HOME/local/bin:$PATH
-"2	BLOCK	0
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-"3	BLOCK	6
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	  core 
-	   core
-	   core
+	    analyticsdisabled = true
+"2	LINE	0
+	echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' >>~/.bash_
+"3	LINE	0
+	        #&END COORD
 "4	LINE	0
-	
+	            #@INCLUDE                'scol.inc'
 "5	LINE	0
-	    ~/binX/cp2k "$file" 2.6.0 2 "${file%.*}"
+	            #SCALED
 "6	LINE	0
-	    #rm $work_dir/scol00.inp
+	        #&COORD
 "7	LINE	0
-	    cp scol00_N0.cp2k $work_dir/scol00.cp2k
+	#&END EXT_RESTART
 "8	LINE	0
-	        $template_file > $work_dir/$template_file
+	#	RESTART_FILE_NAME               ${RESTART_FILE}
 "9	LINE	0
-	        -e "s/${precond_placeholder}/${test}/g" \
+	#&EXT_RESTART
 ""-	CHAR	0
 	 
 
 # File marks:
-'0  59  0  ~/data/test/nat/test/test.sh
-'1  57  51  ~/data/test/nat/test/test.sh
-'2  54  0  ~/data/test/nat/test/test.sh
-'3  55  23  ~/data/test/nat/test/test.sh
-'4  1  0  ~/data/test/nat/test/nat_orig.frac
-'5  1  0  ~/data/test/nat/test/test.sh
-'6  58  24  ~/data/test/nat/test/test.sh
-'7  43  52  ~/data/test/nat/test/test.sh
-'8  688  14  ~/src/libxml2-2.9.4/Makefile
-'9  970  17  ~/src/libxml2-2.9.4/configure
+'0  6  34  ~/.ssh/config
+'1  2  23  ~/.ssh/config
+'2  7  3  ~/.bashrc
+'3  62  0  ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
+'4  507  0  ~/.linuxbrew/Cellar/curl/7.50.3/libexec/mk-ca-bundle.pl
+'5  39  0  ~/.linuxbrew/Cellar/curl/7.50.3/lib/pkgconfig/libcurl.pc
+'6  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl
+'7  178  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
+'8  32  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
+'9  1  0  ~/install
 
 # Jumplist (newest first):
--'  59  0  ~/data/test/nat/test/test.sh
--'  1  0  ~/data/test/nat/test/test.sh
--'  57  51  ~/data/test/nat/test/test.sh
--'  54  0  ~/data/test/nat/test/test.sh
--'  55  23  ~/data/test/nat/test/test.sh
--'  1  0  ~/data/test/nat/test/nat_orig.frac
--'  58  24  ~/data/test/nat/test/test.sh
--'  43  52  ~/data/test/nat/test/test.sh
--'  688  14  ~/src/libxml2-2.9.4/Makefile
--'  1  9  ~/src/libxml2-2.9.4/Makefile
--'  970  17  ~/src/libxml2-2.9.4/configure
--'  1  0  ~/src/libxml2-2.9.4/configure
--'  42  0  ~/.bashrc
+-'  6  34  ~/.ssh/config
+-'  1  0  ~/.ssh/config
+-'  2  23  ~/.ssh/config
+-'  7  3  ~/.bashrc
 -'  1  0  ~/.bashrc
--'  51  0  ~/.bash_profile
--'  1  0  ~/.bash_profile
--'  53  0  ~/.bash_profile
--'  30  0  ~/.bashrc
+-'  62  0  ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
+-'  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
+-'  507  0  ~/.linuxbrew/Cellar/curl/7.50.3/libexec/mk-ca-bundle.pl
+-'  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/libexec/mk-ca-bundle.pl
+-'  39  0  ~/.linuxbrew/Cellar/curl/7.50.3/lib/pkgconfig/libcurl.pc
+-'  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/lib/pkgconfig/libcurl.pc
+-'  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl
+-'  178  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
+-'  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
+-'  32  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
+-'  1  0  ~/install
+-'  14  54  ~/.exports
+-'  1  0  ~/.exports
+-'  284  0  ~/.linuxbrew/Library/Homebrew/manpages/brew.1.md.erb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/manpages/brew.1.md.erb
+-'  85  0  ~/.linuxbrew/Library/Homebrew/cmd/update-report.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/cmd/update-report.rb
+-'  66  0  ~/.linuxbrew/Library/Homebrew/build_environment.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/build_environment.rb
+-'  26  0  ~/.linuxbrew/Library/Homebrew/build_options.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/build_options.rb
+-'  43  0  ~/.linuxbrew/Library/Homebrew/build.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/build.rb
+-'  538  0  ~/.linuxbrew/Library/Homebrew/extend/pathname.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/pathname.rb
+-'  139  0  ~/.linuxbrew/Library/Homebrew/extend/fileutils.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/fileutils.rb
+-'  93  0  ~/.linuxbrew/Library/Homebrew/extend/os/linux/hardware/cpu.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/os/linux/hardware/cpu.rb
+-'  67  0  ~/.linuxbrew/Library/Homebrew/extend/os/linux/keg_relocate.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/os/linux/keg_relocate.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/os/linux/system_config.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/os/linux/cleaner.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/os/cleaner.rb
+-'  354  0  ~/.linuxbrew/Library/Homebrew/extend/ENV/shared.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/ENV/shared.rb
+-'  290  0  ~/.linuxbrew/Library/Homebrew/extend/ENV/std.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/ENV/std.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/extend/ENV.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/cmd/--env.rb
+-'  154  0  ~/.linuxbrew/Library/Homebrew/brew.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/brew.rb
+-'  51  0  ~/.linuxbrew/Library/Homebrew/config.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/config.rb
+-'  6  2  ~/.linuxbrew/Library/Homebrew/utils/curl.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/utils/curl.rb
+-'  585  2  ~/.linuxbrew/Library/Homebrew/utils.rb
+-'  177  0  ~/.linuxbrew/Library/Homebrew/utils.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/utils.rb
+-'  548  0  ~/.linuxbrew/Library/Homebrew/tap.rb
+-'  1  0  ~/.linuxbrew/Library/Homebrew/tap.rb
+-'  89  36  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  1  0  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  1  0  ~/.linuxbrew/bin/brew
+-'  327  1  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  61  29  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  1  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
+-'  29  21  ~/.linuxbrew/.git/config
+-'  1  0  ~/.linuxbrew/.git/config
+-'  32  0  ~/.linuxbrew/.git/config
+-'  31  0  ~/.linuxbrew/.git/config
+-'  17  16  ~/.linuxbrew/.git/config
+-'  1  0  ~/.linuxbrew/Cellar/git/2.10.0/libexec/git-core/git-remote-https
+-'  1  0  ~/.linuxbrew/bin/curl
+-'  33  3  ~/.linuxbrew/.git/config
+-'  492  36  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
+-'  581  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
+-'  6  0  ~/.bashrc
+-'  14  0  ~/.bashrc
+-'  90  0  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  498  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
+-'  497  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
+-'  1  9  .linuxbrew/.git/config
 -'  5  0  ~/.path
 -'  1  0  ~/.path
--'  4  6  ~/.path
--'  570  18  ~/src/glibc-2.24/configure
--'  1  0  ~/src/glibc-2.24/configure
--'  454  0  ~/src/glibc-2.24/INSTALL
--'  1  0  ~/src/glibc-2.24/INSTALL
--'  76  0  ~/src/glibc-2.24/README
--'  1  0  ~/src/glibc-2.24/README
--'  213  0  ~/src/gettext-0.19.8.1/DEPENDENCIES
--'  1  0  ~/src/gettext-0.19.8.1/DEPENDENCIES
--'  237  4  ~/src/ncurses-6.0/INSTALL
--'  1  0  ~/src/ncurses-6.0/INSTALL
--'  155  17  ~/src/ncurses-6.0/configure
--'  1  0  ~/src/ncurses-6.0/configure
--'  337  18  ~/src/gettext-0.19.8.1/Makefile
--'  1  0  ~/src/gettext-0.19.8.1/Makefile
--'  1354  0  ~/src/libiconv-1.14/configure
--'  1  0  ~/src/libiconv-1.14/configure
--'  1366  0  ~/src/libiconv-1.14/configure
--'  69  0  ~/src/libiconv-1.14/Makefile
--'  1  0  ~/src/libiconv-1.14/Makefile
--'  1  0  ~/src/libiconv-1.14/config
--'  10  31  ~/src/libiconv-1.14/Makefile
--'  1330  0  ~/src/libiconv-1.14/configure
--'  1  0  ~/src/libiconv-1.14/DEPENDENCIES
--'  1  0  ~/src/gettext-0.19.8.1/INSTALL
--'  294  19  ~/src/gettext-0.19.8.1/Makefile
--'  771  14  ~/src/gettext-0.19.8.1/configure
--'  1  0  ~/src/gettext-0.19.8.1/configure
--'  728  17  ~/src/git-2.10.0/configure
--'  1  0  ~/src/git-2.10.0/configure
--'  1  0  ~/src/git-2.10.0/INSTALL
--'  494  15  ~/src/curl-7.50.3/Makefile
--'  1  0  ~/src/curl-7.50.3/Makefile
--'  1207  17  ~/src/curl-7.50.3/configure
--'  1  0  ~/src/curl-7.50.3/configure
--'  1456  19  ~/src/m4-1.4.17/Makefile
--'  1  0  ~/src/m4-1.4.17/Makefile
--'  1837  20  ~/src/m4-1.4.17/configure
--'  1  0  ~/src/m4-1.4.17/configure
--'  721  34  ~/src/autoconf-2.69/configure
--'  1  0  ~/src/autoconf-2.69/configure
--'  347  29  ~/src/tcl8.6.6/unix/configure
--'  1  0  ~/src/tcl8.6.6/unix/configure
--'  227  0  ~/src/openssl-1.1.0b/INSTALL
--'  1  0  ~/src/openssl-1.1.0b/INSTALL
--'  197  0  ~/src/openssl-1.1.0b/INSTALL
--'  1  0  ~/src/openssl-1.1.0b/Makefile
--'  917  0  ~/src/openssl-1.1.0b/config
--'  1  0  ~/src/openssl-1.1.0b/config
--'  122  2  ~/src/openssl-1.1.0b/INSTALL
--'  767  17  ~/src/expat-2.2.0/configure
--'  1  0  ~/src/expat-2.2.0/configure
--'  2  0  ~/src/zlib-1.2.8/Makefile
--'  1  0  ~/src/zlib-1.2.8/Makefile
--'  52  21  ~/src/zlib-1.2.8/configure
--'  1  0  ~/src/zlib-1.2.8/configure
--'  1  0  ~/src/man-pages-4.07/README
--'  76  0  ~/bin/testdisk-7.0/README
--'  1  0  ~/bin/testdisk-7.0/README
--'  1  0  ~/src/perl-5.24.0/Makefile
--'  1  0  ~/src/perl-5.24.0/INSTALL
--'  1  0  ~/src/bzip2-1.0.6/README
--'  1  0  ~/src/bzip2-1.0.6/configu
--'  864  17  ~/src/Python-3.5.2/configure
--'  1  0  ~/src/Python-3.5.2/configure
--'  1  0  ~/src/tk8.6.6/unix/Makefile
--'  323  17  ~/src/tk8.6.6/unix/configure
--'  1  0  ~/src/tk8.6.6/unix/configure
--'  1  0  ~/src/tcl8.6.6/unix/Makefile
--'  332  15  ~/src/tcl8.6.6/unix/configure
--'  323  17  ~/src/tcl8.6.6/unix/configure
--'  25  0  ~/src/tcl8.6.6/unix/Makefile
--'  258  10  ~/src/gettext-0.19.8.1/Makefile
--'  238  10  ~/src/gettext-0.19.8.1/Makefile
--'  768  4  ~/src/gettext-0.19.8.1/configure
--'  132  12  ~/src/libiconv-1.14/README
--'  1  12  ~/src/libiconv-1.14/README
--'  64  0  ~/src/libiconv-1.14/HACKING
+-'  160  0  ~/usr/local/compileEverything/make_env.sh
+-'  1  0  ~/usr/local/compileEverything/make_env.sh
+-'  7  0  ~/.linuxbrew/bin/brew
+-'  72  0  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  52  2  ~/.linuxbrew/Library/Homebrew/shims/scm/git
+-'  1  0  ~/.linuxbrew/Library/Homebrew/shims/scm/git
+-'  63  0  ~/.linuxbrew/Library/Homebrew/shims/scm/git
+-'  225  40  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  40  33  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  305  0  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  43  0  ~/.linuxbrew/Library/Homebrew/shims/scm/git
+-'  129  5  ~/.linuxbrew/Library/Homebrew/shims/scm/git
+-'  1  0  Library/Homebrew/shims/scm/git
+-'  125  11  ~/.linuxbrew/Library/Homebrew/shims/scm/git
+-'  1190  28  ~/src/curl-7.38.0/configure
+-'  1  0  ~/src/curl-7.38.0/configure
+-'  15  20  ~/.bashrc
+-'  6  18  ~/.bash_functions/codes
 
 # History of marks within files (newest to oldest):
 
-> ~/data/test/nat/test/test.sh
-	"	59	0
-	^	55	24
-	.	57	12
-	+	43	52
-	+	57	53
-	+	58	24
-	+	56	0
-	+	54	31
-	+	57	51
-	+	58	23
-	+	57	39
-	+	55	23
-	+	57	12
-
-> ~/data/test/nat/test/nat_orig.frac
-	"	1	0
-
-> ~/src/libxml2-2.9.4/Makefile
-	"	688	14
-
-> ~/src/libxml2-2.9.4/configure
-	"	970	17
-	^	970	18
-	.	970	17
-	+	578	28
-	+	967	22
-	+	970	17
+> ~/.ssh/config
+	"	6	34
+	^	6	35
+	.	3	34
+	+	6	23
+	+	5	23
+	+	3	23
+	+	2	23
+	+	4	41
+	+	3	32
+	+	4	31
+	+	2	31
+	+	5	31
+	+	6	31
+	+	3	34
 
 > ~/.bashrc
-	"	42	0
-	^	29	0
-	.	42	0
-	+	12	20
-	+	13	24
+	"	7	3
+	^	7	4
+	.	7	3
+	+	25	20
+	+	26	24
+	+	28	0
+	+	28	1
+	+	17	0
+	+	17	0
+	+	17	0
+	+	17	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	32	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	56	0
+	+	17	0
+	+	28	0
+	+	32	0
+	+	33	0
+	+	32	9
+	+	38	0
+	+	56	0
+	+	37	79
+	+	44	25
+	+	45	1
+	+	39	14
+	+	34	14
+	+	55	1
+	+	43	0
+	+	44	8
+	+	45	0
+	+	53	0
+	+	54	8
+	+	55	0
+	+	33	0
+	+	34	8
+	+	33	0
+	+	43	0
+	+	44	8
+	+	45	0
+	+	53	0
+	+	54	8
+	+	55	0
+	+	48	0
+	+	49	8
+	+	50	0
+	+	53	0
+	+	54	8
+	+	55	0
+	+	3	25
+	+	17	2
+	+	21	2
+	+	24	2
+	+	28	2
+	+	29	2
+	+	5	71
+	+	6	21
 	+	15	0
-	+	15	1
-	+	4	0
-	+	4	0
-	+	4	0
-	+	4	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	19	0
-	+	43	0
-	+	43	0
-	+	43	0
-	+	43	0
-	+	43	0
-	+	43	0
-	+	43	0
-	+	4	0
-	+	15	0
-	+	19	0
+	+	14	0
+	+	6	47
+	+	11	0
+	+	10	0
+	+	9	0
+	+	10	3
+	+	8	0
+	+	7	3
+	a	20	0
+	y	27	0
+
+> ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
+	"	62	0
+
+> ~/.linuxbrew/Cellar/curl/7.50.3/libexec/mk-ca-bundle.pl
+	"	507	0
+
+> ~/.linuxbrew/Cellar/curl/7.50.3/lib/pkgconfig/libcurl.pc
+	"	39	0
+
+> ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl
+	"	1	0
+
+> ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
+	"	178	0
+
+> ~/install
+	"	1	0
+
+> ~/.exports
+	"	14	54
+	^	14	55
+	.	14	0
+	+	3	80
+	+	11	1
+	+	6	21
+	+	10	23
+	+	18	18
+	+	17	11
+	+	19	63
 	+	20	0
+	+	22	0
+	+	21	11
+	+	16	24
+	+	3	61
+	+	16	19
+	+	13	52
+	+	14	0
+
+> ~/.linuxbrew/Library/Homebrew/manpages/brew.1.md.erb
+	"	284	0
+
+> ~/.linuxbrew/Library/Homebrew/cmd/update-report.rb
+	"	85	0
+
+> ~/.linuxbrew/Library/Homebrew/build_environment.rb
+	"	66	0
+
+> ~/.linuxbrew/Library/Homebrew/build_options.rb
+	"	26	0
+
+> ~/.linuxbrew/Library/Homebrew/build.rb
+	"	43	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/pathname.rb
+	"	538	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/fileutils.rb
+	"	139	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/os/linux/hardware/cpu.rb
+	"	93	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/os/linux/keg_relocate.rb
+	"	67	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/os/linux/system_config.rb
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/os/linux/cleaner.rb
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/os/cleaner.rb
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/ENV/shared.rb
+	"	354	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/ENV/std.rb
+	"	290	0
+
+> ~/.linuxbrew/Library/Homebrew/extend/ENV.rb
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/cmd/--env.rb
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/brew.rb
+	"	154	0
+
+> ~/.linuxbrew/Library/Homebrew/config.rb
+	"	51	0
+
+> ~/.linuxbrew/Library/Homebrew/utils/curl.rb
+	"	6	2
+	^	6	3
+	.	6	2
+	+	7	54
+	+	6	2
+
+> ~/.linuxbrew/Library/Homebrew/utils.rb
+	"	585	2
+
+> ~/.linuxbrew/Library/Homebrew/tap.rb
+	"	548	0
+
+> ~/.linuxbrew/Library/Homebrew/brew.sh
+	"	89	36
+	^	89	37
+	.	89	36
+	+	46	21
+	+	89	36
+
+> ~/.linuxbrew/bin/brew
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/cmd/update.sh
+	"	1	0
+	^	492	0
+
+> ~/.linuxbrew/.git/config
+	"	29	21
+	^	29	22
+	.	29	21
+	+	16	24
+	+	18	0
+	+	15	0
+	+	1	8
+	+	34	4
+	+	33	4
+	+	17	16
+	+	29	9
+	+	32	0
+	+	29	21
+
+> ~/.linuxbrew/Cellar/git/2.10.0/libexec/git-core/git-remote-https
+	"	1	0
+
+> ~/.linuxbrew/bin/curl
+	"	1	0
+
+> .linuxbrew/.git/config
+	"	1	9
+	^	1	10
+	.	1	9
+	+	1	9
+
+> ~/.path
+	"	5	0
+	^	5	104
+	.	5	103
+	+	6	50
+	+	6	83
+	+	7	43
+	+	7	0
+	+	6	38
+	+	7	0
+	+	5	6
+	+	5	33
+	+	6	0
+	+	5	63
+	+	7	32
+	+	9	27
+	+	7	79
+	+	9	38
+	+	7	88
+	+	9	50
+	+	7	42
+	+	7	76
+	+	9	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	5	0
+	+	4	0
+	+	3	84
+	+	5	103
+	a	6	0
+
+> ~/usr/local/compileEverything/make_env.sh
+	"	160	0
+
+> ~/.linuxbrew/Library/Homebrew/shims/scm/git
+	"	52	2
+	.	129	0
+	+	129	0
+
+> Library/Homebrew/shims/scm/git
+	"	1	0
+
+> ~/src/curl-7.38.0/configure
+	"	1190	28
+	^	1190	29
+	.	1190	28
+	+	819	28
+	+	1187	32
+	+	1190	28
+
+> ~/.bash_functions/codes
+	"	6	18
+	^	6	19
+	.	6	18
+	+	42	30
+	+	43	18
+	+	47	21
+	+	46	22
+	+	49	5
+	+	45	16
+	+	51	40
+	+	42	17
+	+	24	0
+	+	22	0
+	+	21	0
+	+	14	39
+	+	15	52
+	+	20	3
+	+	15	33
+	+	16	11
 	+	19	9
-	+	25	0
-	+	43	0
-	+	24	79
-	+	31	25
-	+	32	1
-	+	26	14
-	+	21	14
-	+	42	1
-	+	30	0
-	+	31	8
-	+	32	0
-	+	40	0
-	+	41	8
-	+	42	0
-	+	20	0
-	+	21	8
-	+	20	0
-	+	30	0
-	+	31	8
-	+	32	0
-	+	40	0
-	+	41	8
-	+	42	0
-	a	7	0
-	y	14	0
+	+	15	14
+	+	1	29
+	+	4	0
+	+	3	45
+	+	27	13
+	+	51	13
+	+	6	18
+	+	10	0
+	+	9	15
+	+	6	0
+	+	7	0
+	+	8	4
+	+	9	4
+	+	10	0
+	+	6	18
+
+> ~/.gitconfig
+	"	19	0
+	^	17	17
+	.	17	16
+	+	20	15
+	+	17	16
+
+> ~/src/git-2.10.0/Makefile
+	"	444	6
+	^	444	7
+	.	444	7
+	+	425	22
+	+	430	24
+	+	420	25
+	+	434	15
+	+	444	7
+
+> ~/src/git-2.10.0/Make
+	"	1	0
+
+> ~/src/git-2.10.0/configure
+	"	766	11
+	^	766	12
+	.	728	27
+	+	571	28
+	+	725	22
+	+	728	17
+	+	571	28
+	+	725	22
+	+	728	17
+	+	571	28
+	+	725	32
+	+	728	28
+	+	571	28
+	+	725	32
+	+	728	27
+
+> ~/src/git-2.10.0/configure.ac
+	"	1	0
+
+> ~/.linuxbrew/Library/Homebrew/utils/analytics.rb
+	"	1	0
+
+> ~/.linuxbrew/Cellar/git/2.10.1/bin/git
+	"	1	0
+
+> ~/.linuxbrew/bin/git
+	"	1	0
+
+> ~/.linuxbrew/Cellar/xz/5.2.2/TODO
+	"	111	0
+
+> ~/.linuxbrew/Cellar/xz/5.2.2/INSTALL_RECEIPT.json
+	"	1	0
+
+> ~/.linuxbrew/Cellar/xz/5.2.2/README
+	"	97	4
+
+> ~/.linuxbrew/Dockerfile
+	"	20	15
+	^	20	16
+	.	19	36
+	+	18	14
+	+	19	36
+
+> ~/.linuxbrew/Library/Homebrew/utils/git.rb
+	"	25	0
 
 > ~/.bash_profile
-	"	51	0
+	"	53	0
 	^	51	0
 	.	51	0
 	+	4	100
@@ -543,130 +762,151 @@ $-PBE-
 	+	51	0
 	a	41	0
 
-> ~/.path
-	"	5	0
-	^	5	1
-	.	5	0
-	+	5	50
-	+	5	83
-	+	7	0
-	+	6	0
-	+	5	38
-	+	6	0
-	+	4	6
-	+	4	33
-	+	5	0
+> ~/src/Linuxbrew-brew-cdb9b18/Library/Homebrew/brew.sh
+	"	86	0
 
-> ~/src/glibc-2.24/configure
-	"	570	18
-	^	859	0
-	.	806	17
-	+	570	28
-	+	803	22
-	+	806	17
+> ~/src/Linuxbrew-brew-cdb9b18/bin/brew
+	"	51	0
 
-> ~/src/glibc-2.24/INSTALL
-	"	454	0
-	.	45	0
-	+	45	0
-
-> ~/src/glibc-2.24/README
-	"	76	0
-
-> ~/src/gettext-0.19.8.1/DEPENDENCIES
-	"	213	0
-
-> ~/src/ncurses-6.0/INSTALL
-	"	237	4
-
-> ~/src/ncurses-6.0/configure
-	"	155	17
-	^	155	18
-	.	155	17
-	+	97	28
-	+	152	22
-	+	155	17
-
-> ~/src/gettext-0.19.8.1/Makefile
-	"	337	18
-
-> ~/src/libiconv-1.14/configure
-	"	1354	0
-	^	1353	18
-	.	1320	17
-	+	558	28
-	+	1317	22
-	+	1320	17
-
-> ~/src/libiconv-1.14/Makefile
-	"	69	0
-	^	10	32
-	.	10	31
-	+	10	31
-
-> ~/src/libiconv-1.14/config
+> ~/export.sh
 	"	1	0
-
-> ~/src/libiconv-1.14/DEPENDENCIES
-	"	1	0
-
-> ~/src/gettext-0.19.8.1/INSTALL
-	"	1	0
-
-> ~/src/gettext-0.19.8.1/configure
-	"	771	14
-	^	763	18
-	.	763	17
-	+	570	28
-	+	760	22
-	+	763	17
-
-> ~/src/git-2.10.0/configure
-	"	728	17
-	^	728	18
-	.	728	17
-	+	571	28
-	+	725	22
-	+	728	17
-	+	571	28
-	+	725	22
-	+	728	17
-
-> ~/src/git-2.10.0/INSTALL
-	"	1	0
-
-> ~/src/curl-7.50.3/Makefile
-	"	494	15
 
 > ~/src/curl-7.50.3/configure
-	"	1207	17
-	^	1207	18
-	.	1207	17
+	"	1207	27
+	^	1207	28
+	.	1207	27
 	+	819	27
 	+	1204	18
 	+	1207	13
 	+	819	28
 	+	1204	22
 	+	1207	17
+	+	819	28
+	+	1204	32
+	+	1207	27
 
-> ~/src/m4-1.4.17/Makefile
-	"	1456	19
-	^	1434	20
-	.	1434	19
-	+	1434	19
+> ~/src/curl-7.50.3/docs/INSTALL
+	"	121	0
+
+> ~/src/curl-7.50.3/README
+	"	49	2
+
+> ~/src/Linuxbrew-brew-cdb9b18/install
+	"	235	2
+
+> ~/src/Linuxbrew-brew-cdb9b18/README.md
+	"	36	0
+
+> ~/src/compileEverything/.cpl/src/ncurses-6.0/ncurses/curses.priv.h
+	"	1917	16
+
+> ~/src/compileEverything/.cpl/src/ncurses-6.0/ncurses/lib_gen.c
+	"	929	1
+
+> ~/src/compileEverything/.cpl/logs/20161006.123334.makecmd_ncurses-6.0.log
+	"	68	0
+
+> ~/src/compileEverything/.cpl/src/ncurses-6.0/include/curses.h
+	"	1631	16
+
+> ~/src/compileEverything/.cpl/src/ncurses-6.0/ncurses/dcsc
+	"	1	0
+
+> ~/src/compileEverything/.cpl/addresses.txt.tpl
+	"	50	0
+
+> ~/src/compileEverything/.cpl/params/ncurses
+	"	1	0
+
+> ~/src/compileEverything/.cpl/logs/20161006.123333.premake_ncurses-6.0.log
+	"	1	0
+
+> ~/src/compileEverything/.cpl/scripts/get_page_gcc
+	"	13	5
+	^	13	6
+	.	13	6
+	+	4	38
+	+	13	6
+
+> ~/src/compileEverything/.cpl/params/gcc
+	"	3	82
+	^	3	83
+	.	2	0
+	+	4	0
+	+	3	3
+	+	2	0
+
+> ~/src/compileEverything/.cpl/params/mpc
+	"	1	5
+	^	1	6
+	.	1	5
+	+	3	2
+	+	2	0
+	+	3	30
+	+	1	5
+
+> ~/src/compileEverything/.cpl/scripts/get_param.sh
+	"	69	0
+
+> ~/src/compileEverything/.cpl/scripts/links.sh
+	"	80	0
+
+> ~/src/_pkgs/mpc
+	"	1	0
+
+> ~/src/compileEverything/.cpl/logs/20161006.112819.wget_sources_mpc-1.0.3.tar.gz.log
+	"	1	0
+
+> ~/src/_pkgs/gcc
+	"	1	0
+
+> ~/src/compileEverything/make_env.sh
+	"	498	20
+
+> ~/src/compileEverything/README.md
+	"	1	0
+
+> ~/src/gdbm-1.8.3/Makefile
+	"	288	4
+	^	288	5
+	.	214	1
+	+	208	0
+	+	209	1
+	+	98	0
+	+	118	1
+	+	117	54
+	+	129	26
+	+	138	1
+	+	206	0
+	+	213	0
+	+	214	1
 
 > ~/src/m4-1.4.17/configure
-	"	1837	20
-	^	2049	5
-	.	1845	17
+	"	1845	27
+	^	1845	28
+	.	1845	27
 	+	571	29
 	+	1842	22
 	+	1845	17
+	+	571	38
+	+	1842	32
+	+	1845	27
+
+> ~/src/autoconf-2.69/README
+	"	65	0
+
+> ~/src/autoconf-2.69/GNUmakefile
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/src/autoconf-2.69/INSTALL
+	"	53	2
 
 > ~/src/autoconf-2.69/configure
-	"	721	34
-	^	741	13
-	.	702	17
+	"	702	27
+	^	702	28
+	.	702	27
 	+	570	0
 	+	699	18
 	+	702	10
@@ -674,829 +914,70 @@ $-PBE-
 	+	570	28
 	+	699	22
 	+	702	17
+	+	570	38
+	+	699	32
+	+	702	27
 
-> ~/src/tcl8.6.6/unix/configure
-	"	347	29
-	^	323	18
-	.	323	17
-	+	254	28
-	+	320	22
-	+	323	17
+> ~/src/ncurses-6.0/configure
+	"	155	27
+	^	155	28
+	.	155	27
+	+	97	28
+	+	152	22
+	+	155	17
+	+	97	38
+	+	152	32
+	+	155	27
 
-> ~/src/openssl-1.1.0b/INSTALL
-	"	227	0
+> ~/src/texinfo-5.2.0.dfsg.1/configure
+	"	1404	27
+	^	1404	28
+	.	1404	27
+	+	571	29
+	+	1401	32
+	+	1404	27
 
-> ~/src/openssl-1.1.0b/Makefile
-	"	1	0
+> ~/src/gdbm-1.8.3/configure
+	"	504	11
+	^	479	28
+	.	479	27
+	+	409	28
+	+	476	32
+	+	479	27
 
-> ~/src/openssl-1.1.0b/config
-	"	917	0
+> ~/src/gdbm-1.8.3/INSTALL
+	"	118	0
 
-> ~/src/expat-2.2.0/configure
-	"	767	17
-	^	767	18
-	.	767	17
-	+	581	28
-	+	764	22
-	+	767	17
+> ~/src/glibc-2.24/configure
+	"	806	27
+	^	806	28
+	.	806	27
+	+	570	28
+	+	803	22
+	+	806	17
+	+	570	38
+	+	803	32
+	+	806	27
 
-> ~/src/zlib-1.2.8/Makefile
-	"	2	0
+> ~/src/glibc-2.24/INSTALL
+	"	231	0
+	.	45	0
+	+	45	0
 
-> ~/src/zlib-1.2.8/configure
-	"	52	21
-	^	62	27
-	.	62	26
-	+	62	26
-
-> ~/src/man-pages-4.07/README
-	"	1	0
-
-> ~/bin/testdisk-7.0/README
+> ~/src/glibc-2.24/README
 	"	76	0
 
-> ~/src/perl-5.24.0/Makefile
+> ~/src/zlib-1.2.8/configure
+	"	831	6
+	^	379	1
+	.	62	36
+	+	62	36
+
+> ~/src/linux-3.16.36/README
+	"	31	2
+
+> ~/src/debian/README
+	"	37	0
+
+> ~/src/db-defaults-5.3.0/debian/substvars
 	"	1	0
-
-> ~/src/perl-5.24.0/INSTALL
-	"	1	0
-
-> ~/src/bzip2-1.0.6/README
-	"	1	0
-
-> ~/src/bzip2-1.0.6/configu
-	"	1	0
-
-> ~/src/Python-3.5.2/configure
-	"	864	17
-	^	864	18
-	.	864	17
-	+	571	28
-	+	861	22
-	+	864	17
-
-> ~/src/tk8.6.6/unix/Makefile
-	"	1	0
-
-> ~/src/tk8.6.6/unix/configure
-	"	323	17
-	^	323	18
-	.	323	17
-	+	254	28
-	+	320	22
-	+	323	17
-
-> ~/src/tcl8.6.6/unix/Makefile
-	"	1	0
-
-> ~/src/libiconv-1.14/README
-	"	132	12
-
-> ~/src/libiconv-1.14/HACKING
-	"	64	0
-
-> ~/src/libiconv-1.14/INSTALL.generic
-	"	65	0
-
-> ~/src/libiconv-1.14/srclib/progname.c
-	"	92	0
-
-> ~/src/libiconv-1.14/srclib/stdio.h
-	"	1005	6
-
-> ~/src/tcl8.6.6/README
-	"	119	0
-
-> ~/src/tk8.6.6/README
-	"	1	0
-
-> ~/.exports
-	"	12	0
-	^	15	64
-	.	15	63
-	+	3	80
-	+	11	1
-	+	6	21
-	+	10	23
-	+	14	18
-	+	13	11
-	+	15	63
-
-> ~/.bashr
-	"	1	0
-
-> ~/src/git-2.10.0/Documentation/Makefile
-	"	435	12
-
-> ~/src/git-2.10.0/Makefile
-	"	2392	35
-
-> ~/src/man-pages-4.07/Makefile
-	"	47	18
-	^	47	19
-	.	4	18
-	+	4	18
-
-> ~/src/perl-5.24.0/Configure
-	"	1875	0
-
-> ~/.bash_functions/codes
-	"	3	44
-	^	3	45
-	.	3	45
-	+	36	30
-	+	37	18
-	+	41	21
-	+	40	22
-	+	43	5
-	+	39	16
-	+	45	40
-	+	36	17
-	+	18	0
-	+	16	0
-	+	15	0
-	+	8	39
-	+	9	52
-	+	14	3
-	+	9	33
-	+	10	11
-	+	13	9
-	+	9	14
-	+	1	29
-	+	4	0
-	+	3	45
-
-> ~/src/expat-2.2.0/README
-	"	60	0
-
-> ~/src/git-2.10.0/git-compat-util.h
-	"	1	10
-
-> ~/src/openssl-1.1.0b/Configure
-	"	47	0
-
-> ~/src/m4-1.4.17/INSTALL
-	"	1	0
-
-> ~/src/autoconf-2.69/Makefile.in
-	"	853	0
-
-> ~/src/autoconf-2.69/Makefile.am
-	"	100	0
-
-> ~/src/autoconf-2.69/configure.ac
-	"	1	0
-
-> ~/src/autoconf-2.69/configure.ax
-	"	1	0
-
-> ~/src/autoconf-2.69/config
-	"	1	0
-
-> ~/src/autoconf-2.69/INSTALL
-	"	1	0
-
-> ~/src/autoconf-2.69/README
-	"	65	0
-
-> ~/src/git-2.10.0/configure.ac
-	"	224	0
-
-> ~/etc/dotfiles/xenon/.gitconfig
-	"	1	0
-
-> ~/etc/dotfiles/.gitignore
-	"	1	5
-	^	1	6
-	.	1	5
-	+	1	5
-
-> ~/.gitconfig
-	"	20	20
-	^	20	10
-	.	20	0
-	+	20	0
-
-> ~/git-2.10.0/Makefile
-	"	1617	0
-
-> ~/quickstep/sco/changes.md
-	"	36	177
-	^	36	178
-	.	36	177
-	+	2	77
-	+	16	180
-	+	4	146
-	+	6	18
-	+	8	130
-	+	10	86
-	+	16	162
-	+	18	0
-	+	4	1
-	+	6	2
-	+	8	1
-	+	10	1
-	+	12	1
-	+	14	1
-	+	16	1
-	+	4	12
-	+	5	0
-	+	7	0
-	+	9	0
-	+	11	0
-	+	13	0
-	+	15	0
-	+	17	0
-	+	19	306
-	+	19	152
-	+	19	475
-	+	19	233
-	+	20	51
-	+	21	0
-	+	22	111
-	+	24	364
-	+	26	77
-	+	27	168
-	+	27	125
-	+	26	50
-	+	30	158
-	+	31	160
-	+	33	40
-	+	29	85
-	+	33	367
-	+	35	211
-	+	36	177
-
-> ~/quickstep/sco/2016-09-27_scol/scol.inp
-	"	51	40
-	^	51	41
-	.	51	40
-	+	51	40
-
-> ~/quickstep/sco/scol.inp
-	"	155	0
-	^	89	24
-	.	89	23
-	+	36	29
-	+	33	32
-	+	32	32
-	+	31	32
-	+	34	32
-	+	41	32
-	+	44	26
-	+	45	26
-	+	3	35
-	+	104	42
-	+	105	43
-	+	3	36
-	+	4	0
-	+	1	0
-	+	107	26
-	+	108	26
-	+	109	26
-	+	113	26
-	+	114	26
-	+	117	38
-	+	119	26
-	+	122	23
-	+	124	26
-	+	125	23
-	+	127	23
-	+	128	23
-	+	131	23
-	+	6	3
-	+	7	4
-	+	8	3
-	+	7	33
-	+	27	0
-	+	28	0
-	+	29	0
-	+	135	8
-	+	136	12
-	+	137	0
-	+	138	8
-	+	136	35
-	+	36	33
-	+	107	40
-	+	15	43
-	+	18	37
-	+	19	39
-	+	20	40
-	+	21	4
-	+	127	44
-	+	125	39
-	+	136	40
-	+	122	39
-	+	119	42
-	+	24	37
-	+	114	39
-	+	113	35
-	+	110	30
-	+	108	43
-	+	25	39
-	+	1	28
-	+	1	32
-	+	1	62
-	+	25	40
-	+	1	219
-	+	1	0
-	+	38	37
-	+	33	35
-	+	118	53
-	+	16	43
-	+	19	43
-	+	118	46
-	+	121	59
-	+	16	44
-	+	17	43
-	+	22	0
-	+	21	0
-	+	1	0
-	+	48	30
-	+	49	4
-	+	47	0
-	+	54	17
-	+	52	18
-	+	53	45
-	+	48	29
-	+	19	54
-	+	20	37
-	+	13	41
-	+	59	0
-	+	90	23
-	+	89	33
-	+	1	0
-	+	53	12
-	+	52	12
-	+	51	8
-	+	54	8
-	+	49	3
-	+	48	30
-	+	13	41
-	+	19	54
-	+	20	37
-	+	59	0
-	+	89	23
-
-> ~/quickstep/sco/2016-09-24_scol/scol.inp
-	"	46	35
-	^	46	36
-	.	46	35
-	+	46	35
-
-> ~/quickstep/sco/scol.log
-	"	170	1
-
-> ~/quickstep/data/GTH_POTENTIALS
-	"	2462	0
-
-> ~/.vimrc
-	"	1	0
-	^	91	1
-	.	91	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	55	0
-	+	2	11
-	+	1	21
-	+	3	49
-	+	4	57
-	+	5	33
-	+	6	32
-	+	7	42
-	+	8	41
-	+	9	57
-	+	10	0
-	+	11	46
-	+	12	43
-	+	13	58
-	+	14	14
-	+	13	15
-	+	15	0
-	+	17	33
-	+	18	51
-	+	19	40
-	+	20	46
-	+	55	0
-	+	20	0
-	+	22	105
-	+	25	13
-	+	55	0
-	+	31	11
-	+	30	0
-	+	44	33
-	+	54	0
-	+	2	0
-	+	90	0
-	+	91	0
-	+	89	19
-	+	91	0
-	o	26	0
-
-> ~/quickstep/sco/scol.xyz
-	"	1	3
-	.	49	3
-	+	1	3
-	+	49	3
-
-> ~/quickstep/sco/.sh
-	"	1	0
-
-> ~/data/test/sco/00/scol00.gin
-	"	14	0
-	a	14	0
-
-> ~/quickstep/sco/scol00_N0.cp2k
-	"	1	0
-
-> ~/quickstep/sco/opt/create_inputs.sh
-	"	39	40
-	^	39	41
-	.	39	40
-	+	35	35
-	+	39	0
-	+	39	0
-	+	39	0
-	+	36	0
-	+	37	0
-	+	35	49
-	+	36	24
-	+	33	125
-	+	9	0
-	+	12	0
-	+	2	0
-	+	13	0
-	+	13	0
-	+	17	0
-	+	17	0
-	+	13	0
-	+	15	0
-	+	19	0
-	+	23	0
-	+	15	15
-	+	19	26
-	+	23	19
-	+	19	28
-	+	19	143
-	+	23	144
-	+	19	71
-	+	23	49
-	+	19	108
-	+	23	28
-	+	23	139
-	+	19	140
-	+	19	28
-	+	19	149
-	+	23	148
-	+	15	49
-	+	42	122
-	+	42	0
-	+	42	1
-	+	42	14
-	+	42	1
-	+	42	3
-	+	42	10
-	+	42	8
-	+	42	6
-	+	42	9
-	+	42	10
-	+	42	3
-	+	42	5
-	+	42	7
-	+	42	9
-	+	42	1
-	+	42	3
-	+	42	5
-	+	42	7
-	+	42	9
-	+	42	9
-	+	42	1
-	+	42	3
-	+	42	5
-	+	42	7
-	+	42	9
-	+	42	9
-	+	42	9
-	+	42	1
-	+	42	3
-	+	42	5
-	+	42	7
-	+	42	9
-	+	42	11
-	+	42	1
-	+	42	3
-	+	42	5
-	+	42	7
-	+	42	9
-	+	42	193
-	+	42	16
-	+	42	22
-	+	42	40
-	+	42	4
-	+	42	4
-	+	42	11
-	+	42	34
-	+	42	7
-	+	42	36
-	+	42	36
-	+	42	7
-	+	42	7
-	+	42	8
-	+	42	5
-	+	42	0
-	+	2	18
-	+	4	60
-	+	10	86
-	+	26	7
-	+	37	42
-	+	27	26
-	+	41	4
-	+	26	30
-	+	39	40
-	a	6	0
-
-> ~/quickstep/sco/opt/precond_NONE/scol.log
-	"	74	1
-
-> ~/quickstep/sco/opt/precond_run.sh
-	"	29	41
-	^	29	42
-	.	29	41
-	+	3	35
-	+	5	0
-	+	32	0
-	+	32	0
-	+	31	0
-	+	29	0
-	+	29	0
-	+	28	8
-	+	29	54
-	+	31	0
-	+	32	0
-	+	30	8
-	+	27	37
-	+	28	7
-	+	6	29
-	+	29	41
-
-> ~/quickstep/sco/opt/recursive_inputs.sh
-	"	115	24
-	^	115	25
-	.	115	24
-	+	2	0
-	+	5	0
-	+	57	0
-	+	22	22
-	+	22	0
-	+	23	0
-	+	22	0
-	+	23	0
-	+	54	0
-	+	36	18
-	+	39	0
-	+	41	0
-	+	40	18
-	+	45	0
-	+	44	18
-	+	49	0
-	+	48	18
-	+	118	0
-	+	74	67
-	+	70	25
-	+	68	0
-	+	70	49
-	+	116	12
-	+	99	5
-	+	100	5
-	+	101	7
-	+	102	11
-	+	103	15
-	+	104	11
-	+	105	15
-	+	106	11
-	+	107	11
-	+	109	11
-	+	110	17
-	+	111	17
-	+	110	16
-	+	111	16
-	+	113	15
-	+	113	15
-	+	114	11
-	+	114	60
-	+	116	12
-	+	117	0
-	+	101	9
-	+	102	10
-	+	103	8
-	+	104	6
-	+	105	4
-	+	106	2
-	+	107	0
-	+	109	10
-	+	110	8
-	+	111	6
-	+	113	4
-	+	113	2
-	+	114	49
-	+	116	0
-	+	115	0
-	+	116	6
-	+	100	34
-	+	101	20
-	+	71	29
-	+	56	0
-	+	71	31
-	+	77	28
-	+	84	11
-	+	83	32
-	+	89	33
-	+	109	57
-	+	113	0
-	+	112	56
-	+	109	14
-	+	72	36
-	+	100	10
-	+	101	39
-	+	77	0
-	+	79	0
-	+	78	34
-	+	85	0
-	+	84	40
-	+	90	40
-	+	108	0
-	+	109	13
-	+	108	26
-	+	73	50
-	+	80	0
-	+	79	47
-	+	86	0
-	+	85	52
-	+	92	0
-	+	91	51
-	+	100	34
-	+	102	21
-	+	103	30
-	+	105	21
-	+	113	60
-	+	114	38
-	+	115	24
-	a	109	51
-
-> ~/quickstep/sco/opt/2016-09-13_recursive_inputs.sh
-	"	1	0
-
-> ~/quickstep/sco/opt/cutoff_inputs.sh
-	"	6	0
-
-> ~/quickstep/sco/opt/scol.inp
-	"	42	7
-	^	42	8
-	.	42	8
-	+	18	49
-	+	19	54
-	+	21	49
-	+	22	49
-	+	42	8
-
-> ~/quickstep/sco/-c.sh
-	"	1	0
-
-> ~/binX/editing/erm.sh
-	"	1	0
-
-> ~/binX/editing/tex_to_txt.sh
-	"	1	0
-
-> ~/binX/editing/tex_edit.sh
-	"	1	0
-
-> ~/binX/xyz_dehydrate.sh
-	"	48	0
-	^	40	31
-	.	40	30
-	+	7	20
-	+	7	108
-	+	8	118
-	+	34	43
-	+	22	60
-	+	38	68
-	+	22	60
-	+	38	69
-	+	12	47
-	+	43	100
-	+	45	105
-	+	46	1
-	+	42	11
-	+	43	0
-	+	45	0
-	+	46	43
-	+	48	15
-	+	44	5
-	+	47	5
-	+	40	4
-	+	34	83
-	+	27	4
-	+	4	0
-	+	7	0
-	+	8	0
-	+	12	0
-	+	6	11
-	+	16	22
-	+	10	12
-	+	16	6
-	+	13	41
-	+	17	0
-	+	22	0
-	+	27	0
-	+	34	0
-	+	34	79
-	+	36	15
-	+	28	8
-	+	27	5
-	+	17	16
-	+	18	0
-	+	21	11
-	+	14	84
-	+	5	15
-	+	11	1
-	+	10	59
-	+	11	23
-	+	15	23
-	+	6	27
-	+	14	86
-	+	27	43
-	+	21	13
-	+	19	19
-	+	21	22
-	+	27	70
-	+	29	80
-	+	31	56
-	+	40	29
-	+	39	37
-	+	33	51
-	+	29	29
-	+	33	16
-	+	28	11
-	+	29	1
-	+	31	1
-	+	33	150
-	+	21	69
-	+	34	1
-	+	30	0
-	+	29	48
-	+	34	2
-	+	33	112
-	+	34	19
-	+	27	45
-	+	22	44
-	+	25	4
-	+	24	6
-	+	25	5
-	+	24	28
-	+	26	0
-	+	27	1
-	+	28	0
-	+	29	1
-	+	30	0
-	+	31	0
-	+	33	0
-	+	34	28
-	+	35	6
-	+	27	33
-	+	39	63
-	+	32	29
-	+	20	21
-	+	39	104
-	+	40	30
-	b	40	18
-	m	40	18
-
-> ~/.bash_aliases
-	"	20	30
-	^	20	31
-	.	20	30
-	+	16	0
-	+	16	0
-	+	6	38
-	+	14	4
-	+	6	0
-	+	4	2
-	+	5	2
-	+	38	0
-	+	17	0
-	+	16	0
-	+	37	0
-	+	20	30
-
-> ~/.prompt
-	"	1	0
-	^	4	152
-	.	4	100
-	+	4	100
-
-> ~/.profile
-	"	6	0
-	.	7	0
-	+	7	0

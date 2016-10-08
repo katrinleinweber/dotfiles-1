@@ -1,19 +1,32 @@
 # James Prime
 # .bashrc
+# Sourced by .bash_profile
 
-# don't put duplicate lines or lines starting with space in the history.
+# Start ssh-agent, because apparently Xenon doesn't do it automatically
+if ! pgrep -u $USER ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval $(<~/.ssh-agent-thing)
+fi
+#eval "$(ssh-agent -s)"
+# And add ~/.ssh/github to ssh-agent once started, then test it
+#ssh-add ~/.ssh/github
+#ssh -T git@github.com
+
+# Don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
-# append to the history file, don't overwrite it
+# Append to the history file, don't overwrite it
 shopt -s histappend
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+# For setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000000000
 HISTFILESIZE=100000000000
 
-# check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
+# Check the window size after each command and, if necessary,
+# Update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
 # Source alias definitions file
@@ -32,11 +45,11 @@ if [ -f ~/.exports ]; then
 fi
 
 # Source bash prompt file
-if [ -f ~/.prompt ]; then
-        source ~/.prompt
-fi
+#if [ -f ~/.prompt ]; then
+        #source ~/.prompt
+#fi
 
 # Source path file
-if [ -f ~/.path ]; then
-        source ~/.path
-fi
+#if [ -f ~/.path ]; then
+        #source ~/.path
+#fi

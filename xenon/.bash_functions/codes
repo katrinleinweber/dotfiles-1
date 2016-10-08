@@ -3,6 +3,12 @@ function reinstall_packages()
     dpkg --set-selections < "$HOME"/installed.log
 }
 
+#function auto_ssh_add()
+#{
+    #eval "$(ssh-agent -s)"
+    #ssh-add "$1"
+#}
+
 function dotfiles()
 {
     for dotfile in "$HOME/\.[a-z]*"; do
@@ -18,7 +24,7 @@ function qgulp()
 {
     file_list="$1"
     for file in "$file_list"; do
-        ~/binX/qgulp "$file"
+        ~/bin/qgulp "$file"
     done
 }
 
@@ -42,7 +48,7 @@ function cp2k()
         echo "Where (stuff in brackets) is optional"
     fi
     for file in "$file_list"; do
-        ~/binX/cp2k "$file" 2.6.0 "$slots" "${file%.*}"
+        ~/bin/cp2k "$file" 2.6.0 "$slots" "${file%.*}"
     done
 }
 
