@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/CURL
+~MSle0~/prefix
 
 # Last Substitute Search Pattern:
 ~MSle0&-PADE-
@@ -18,8 +18,9 @@ $
 
 # Command Line History (newest to oldest):
 :x
-:q!
+:q
 :w
+:q!
 :split .exports
 :X
 :.,%s/-PADE-/-PBE-/g
@@ -30,7 +31,6 @@ $
 :split create_inputs.sh
 :split 2016-09-13_recursive_inputs.sh
 :split recursive_inputs.sh
-:q
 :help highlight
 :help number
 :help cursorline
@@ -69,6 +69,8 @@ $
 :1
 
 # Search String History (newest to oldest):
+?/prefix
+?/prefi
 ?/CURL
 ?/curl
 ?/HOMEBREW_PREFIX
@@ -87,7 +89,6 @@ $
 ? \<bin\>
 ?/pref
 ?/gitexec
-?/prefi
 ?/usr\/
 ?/locale
 ?/LC
@@ -101,7 +102,6 @@ $
 ?/read_p
 ? \<LD_LIBRARY_PATH\>
 ?/inf
-?/prefix
 ?/home
 ?/default
 ?/default_
@@ -132,45 +132,105 @@ $
 	#LD_LIBRARY_PATH="/home/james/usr/local/lib"
 	#C_INCLUDE_PATH="/home/james/usr/local/include"
 	#LD_RUN_PATH="/home/james/usr/local/lib"
-"1	LINE	0
-	    analyticsdisabled = true
+""1	BLOCK	31
+	 4300  2016-10-12 17:56:24 wget 
+	 4301  2016-10-12 17:56:52 wget 
+	 4302  2016-10-12 17:57:20 wget 
+	 4303  2016-10-12 17:57:48 wget 
+	 4304  2016-10-12 17:59:15 wget 
+	 4305  2016-10-12 17:59:55 wget 
+	 4306  2016-10-12 18:00:19 wget 
+	 4307  2016-10-12 18:01:08 wget 
+	 4308  2016-10-12 18:50:46 wget 
+	 4309  2016-10-12 18:57:10 wget 
+	 4311  2016-10-12 18:58:00 wget 
+	 4312  2016-10-12 18:58:38 wget 
+	 4313  2016-10-12 18:59:28 wget 
+	 4314  2016-10-12 19:00:07 wget 
+	 4316  2016-10-12 19:01:19 wget 
+	 4317  2016-10-12 19:01:58 wget 
+	 4318  2016-10-12 19:02:41 wget 
+	 4319  2016-10-12 19:03:22 wget 
+	 4320  2016-10-12 19:03:48 wget 
+	 4321  2016-10-12 19:04:27 wget 
+	 4322  2016-10-12 19:16:43 wget 
 "2	LINE	0
-	echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' >>~/.bash_
+	 4315  2016-10-12 19:00:35 man wget
 "3	LINE	0
-	        #&END COORD
+	 4310  2016-10-12 18:57:56 https://raw.githubusercontent.com/josuegaleas/jay/master/colors/jay.vim
 "4	LINE	0
-	            #@INCLUDE                'scol.inc'
-"5	LINE	0
-	            #SCALED
-"6	LINE	0
-	        #&COORD
-"7	LINE	0
-	#&END EXT_RESTART
-"8	LINE	0
-	#	RESTART_FILE_NAME               ${RESTART_FILE}
-"9	LINE	0
-	#&EXT_RESTART
-""-	CHAR	0
+	 4299  2016-10-12 17:55:06 vim ~/vim_colourschemes.md
+"5	BLOCK	0
 	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+"6	BLOCK	30
+	4287  2016-10-12 17:49:03 wget 
+	4288  2016-10-12 17:49:27 wget 
+	4289  2016-10-12 17:50:14 wget 
+	4290  2016-10-12 17:50:39 wget 
+	4291  2016-10-12 17:51:08 wget 
+	4292  2016-10-12 17:51:41 wget 
+	4293  2016-10-12 17:52:51 wget 
+	4294  2016-10-12 17:53:34 wget 
+"7	LINE	0
+	2 17:49:00 cd .vim/colors/
+"8	LINE	0
+	 4295  2016-10-12 17:54:03 vim ~/vim_colourschemes.md
+"9	LINE	0
+	    analyticsdisabled = true
+"-	CHAR	0
+	e
 
 # File marks:
-'0  6  34  ~/.ssh/config
-'1  2  23  ~/.ssh/config
-'2  7  3  ~/.bashrc
-'3  62  0  ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
-'4  507  0  ~/.linuxbrew/Cellar/curl/7.50.3/libexec/mk-ca-bundle.pl
-'5  39  0  ~/.linuxbrew/Cellar/curl/7.50.3/lib/pkgconfig/libcurl.pc
-'6  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl
-'7  178  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
-'8  32  0  ~/.linuxbrew/Cellar/curl/7.50.3/bin/curl-config
-'9  1  0  ~/install
+'0  26  36  ~/quickstep/sco/2016-10-13_scol_cutoffup/scol.inp
+'1  26  36  ~/quickstep/sco/2016-10-13_scol_cutoffdown/scol.inp
+'2  1  0  ~/.bashrc
+'3  9  0  ~/vim_colourschemes.md
+'4  1  0  ~/vim_colourschemes.md
+'5  91  3  ~/.vimrc
+'6  1  0  ~/.vim/colors/monokaifluffed.vim
+'7  1  0  ~/.vimrc
+'8  3  18  ~/.vimrc
+'9  2  0  ~/.vimrc
 
 # Jumplist (newest first):
+-'  26  36  ~/quickstep/sco/2016-10-13_scol_cutoffup/scol.inp
+-'  1  0  ~/quickstep/sco/2016-10-13_scol_cutoffup/scol.inp
+-'  26  36  ~/quickstep/sco/2016-10-13_scol_cutoffdown/scol.inp
+-'  1  0  ~/quickstep/sco/2016-10-13_scol_cutoffdown/scol.inp
+-'  1  0  ~/.bashrc
+-'  9  0  ~/vim_colourschemes.md
+-'  1  0  ~/vim_colourschemes.md
+-'  91  3  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/.vim/colors/monokaifluffed.vim
+-'  3  18  ~/.vimrc
+-'  2  0  ~/.vimrc
+-'  144  0  ~/.vimrc
+-'  18  0  ~/.vimrc
+-'  810  27  ~/src/zsh-5.2/configure
+-'  1  0  ~/src/zsh-5.2/configure
+-'  568  29  ~/src/zsh-5.2/configure
+-'  82  0  ~/src/zsh-5.2/INSTALL
+-'  1  24  ~/src/zsh-5.2/INSTALL
+-'  6  41  ~/.bashrc
+-'  1  0  ~/.ssh-agent-thing
+-'  7  33  ~/.bashrc
+-'  15  0  ~/.linuxbrew/.git/config
+-'  1  0  ~/.linuxbrew/.git/config
+-'  10  0  ~/.linuxbrew/.gitignore
+-'  1  0  ~/.linuxbrew/.gitignore
+-'  89  30  ~/.linuxbrew/Library/Homebrew/brew.sh
+-'  1  0  ~/.linuxbrew/Library/Homebrew/brew.sh
 -'  6  34  ~/.ssh/config
 -'  1  0  ~/.ssh/config
 -'  2  23  ~/.ssh/config
--'  7  3  ~/.bashrc
--'  1  0  ~/.bashrc
 -'  62  0  ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
 -'  1  0  ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
 -'  507  0  ~/.linuxbrew/Cellar/curl/7.50.3/libexec/mk-ca-bundle.pl
@@ -222,14 +282,11 @@ $
 -'  1  0  ~/.linuxbrew/Library/Homebrew/utils.rb
 -'  548  0  ~/.linuxbrew/Library/Homebrew/tap.rb
 -'  1  0  ~/.linuxbrew/Library/Homebrew/tap.rb
--'  89  36  ~/.linuxbrew/Library/Homebrew/brew.sh
--'  1  0  ~/.linuxbrew/Library/Homebrew/brew.sh
 -'  1  0  ~/.linuxbrew/bin/brew
 -'  327  1  ~/.linuxbrew/Library/Homebrew/brew.sh
 -'  61  29  ~/.linuxbrew/Library/Homebrew/brew.sh
 -'  1  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
 -'  29  21  ~/.linuxbrew/.git/config
--'  1  0  ~/.linuxbrew/.git/config
 -'  32  0  ~/.linuxbrew/.git/config
 -'  31  0  ~/.linuxbrew/.git/config
 -'  17  16  ~/.linuxbrew/.git/config
@@ -238,55 +295,29 @@ $
 -'  33  3  ~/.linuxbrew/.git/config
 -'  492  36  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
 -'  581  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
--'  6  0  ~/.bashrc
 -'  14  0  ~/.bashrc
 -'  90  0  ~/.linuxbrew/Library/Homebrew/brew.sh
 -'  498  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
 -'  497  0  ~/.linuxbrew/Library/Homebrew/cmd/update.sh
--'  1  9  .linuxbrew/.git/config
--'  5  0  ~/.path
--'  1  0  ~/.path
--'  160  0  ~/usr/local/compileEverything/make_env.sh
--'  1  0  ~/usr/local/compileEverything/make_env.sh
--'  7  0  ~/.linuxbrew/bin/brew
--'  72  0  ~/.linuxbrew/Library/Homebrew/brew.sh
--'  52  2  ~/.linuxbrew/Library/Homebrew/shims/scm/git
--'  1  0  ~/.linuxbrew/Library/Homebrew/shims/scm/git
--'  63  0  ~/.linuxbrew/Library/Homebrew/shims/scm/git
--'  225  40  ~/.linuxbrew/Library/Homebrew/brew.sh
--'  40  33  ~/.linuxbrew/Library/Homebrew/brew.sh
--'  305  0  ~/.linuxbrew/Library/Homebrew/brew.sh
--'  43  0  ~/.linuxbrew/Library/Homebrew/shims/scm/git
--'  129  5  ~/.linuxbrew/Library/Homebrew/shims/scm/git
--'  1  0  Library/Homebrew/shims/scm/git
--'  125  11  ~/.linuxbrew/Library/Homebrew/shims/scm/git
--'  1190  28  ~/src/curl-7.38.0/configure
--'  1  0  ~/src/curl-7.38.0/configure
--'  15  20  ~/.bashrc
--'  6  18  ~/.bash_functions/codes
 
 # History of marks within files (newest to oldest):
 
-> ~/.ssh/config
-	"	6	34
-	^	6	35
-	.	3	34
-	+	6	23
-	+	5	23
-	+	3	23
-	+	2	23
-	+	4	41
-	+	3	32
-	+	4	31
-	+	2	31
-	+	5	31
-	+	6	31
-	+	3	34
+> ~/quickstep/sco/2016-10-13_scol_cutoffup/scol.inp
+	"	26	36
+	^	26	37
+	.	26	36
+	+	26	36
+
+> ~/quickstep/sco/2016-10-13_scol_cutoffdown/scol.inp
+	"	26	36
+	^	26	37
+	.	26	36
+	+	26	36
 
 > ~/.bashrc
-	"	7	3
-	^	7	4
-	.	7	3
+	"	1	0
+	^	6	45
+	.	6	41
 	+	25	20
 	+	26	24
 	+	28	0
@@ -381,8 +412,92 @@ $
 	+	10	3
 	+	8	0
 	+	7	3
+	+	6	41
 	a	20	0
 	y	27	0
+
+> ~/vim_colourschemes.md
+	"	9	0
+	^	12	106
+	.	9	0
+	+	30	0
+	+	1	0
+	+	29	14
+	+	9	0
+	+	19	0
+	+	23	0
+	+	9	0
+
+> ~/.vimrc
+	"	91	3
+	^	91	4
+	.	91	3
+	+	16	0
+	+	14	0
+	+	2	0
+	+	3	18
+	+	91	3
+
+> ~/.vim/colors/monokaifluffed.vim
+	"	1	0
+
+> ~/src/zsh-5.2/configure
+	"	810	27
+	^	810	28
+	.	810	27
+	+	568	29
+	+	807	32
+	+	810	27
+
+> ~/src/zsh-5.2/INSTALL
+	"	82	0
+
+> ~/.ssh-agent-thing
+	"	1	0
+
+> ~/.linuxbrew/.git/config
+	"	15	0
+	^	29	22
+	.	29	21
+	+	16	24
+	+	18	0
+	+	15	0
+	+	1	8
+	+	34	4
+	+	33	4
+	+	17	16
+	+	29	9
+	+	32	0
+	+	29	21
+
+> ~/.linuxbrew/.gitignore
+	"	10	0
+	^	10	0
+	.	9	9
+	+	9	9
+
+> ~/.linuxbrew/Library/Homebrew/brew.sh
+	"	89	30
+	^	89	31
+	.	89	30
+	+	46	21
+	+	89	30
+
+> ~/.ssh/config
+	"	6	34
+	^	6	35
+	.	3	34
+	+	6	23
+	+	5	23
+	+	3	23
+	+	2	23
+	+	4	41
+	+	3	32
+	+	4	31
+	+	2	31
+	+	5	31
+	+	6	31
+	+	3	34
 
 > ~/.linuxbrew/Cellar/curl/7.50.3/.brew/curl.rb
 	"	62	0
@@ -489,34 +604,12 @@ $
 > ~/.linuxbrew/Library/Homebrew/tap.rb
 	"	548	0
 
-> ~/.linuxbrew/Library/Homebrew/brew.sh
-	"	89	36
-	^	89	37
-	.	89	36
-	+	46	21
-	+	89	36
-
 > ~/.linuxbrew/bin/brew
 	"	1	0
 
 > ~/.linuxbrew/Library/Homebrew/cmd/update.sh
 	"	1	0
 	^	492	0
-
-> ~/.linuxbrew/.git/config
-	"	29	21
-	^	29	22
-	.	29	21
-	+	16	24
-	+	18	0
-	+	15	0
-	+	1	8
-	+	34	4
-	+	33	4
-	+	17	16
-	+	29	9
-	+	32	0
-	+	29	21
 
 > ~/.linuxbrew/Cellar/git/2.10.0/libexec/git-core/git-remote-https
 	"	1	0
@@ -936,48 +1029,3 @@ $
 	+	571	29
 	+	1401	32
 	+	1404	27
-
-> ~/src/gdbm-1.8.3/configure
-	"	504	11
-	^	479	28
-	.	479	27
-	+	409	28
-	+	476	32
-	+	479	27
-
-> ~/src/gdbm-1.8.3/INSTALL
-	"	118	0
-
-> ~/src/glibc-2.24/configure
-	"	806	27
-	^	806	28
-	.	806	27
-	+	570	28
-	+	803	22
-	+	806	17
-	+	570	38
-	+	803	32
-	+	806	27
-
-> ~/src/glibc-2.24/INSTALL
-	"	231	0
-	.	45	0
-	+	45	0
-
-> ~/src/glibc-2.24/README
-	"	76	0
-
-> ~/src/zlib-1.2.8/configure
-	"	831	6
-	^	379	1
-	.	62	36
-	+	62	36
-
-> ~/src/linux-3.16.36/README
-	"	31	2
-
-> ~/src/debian/README
-	"	37	0
-
-> ~/src/db-defaults-5.3.0/debian/substvars
-	"	1	0

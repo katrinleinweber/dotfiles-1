@@ -5,8 +5,6 @@
 # Original homebrew formulae
 brew install tree
 brew install texmath
-brew install vcsh
-brew install mr
 
 # Install cask
 brew tap caskroom/cask
@@ -19,7 +17,7 @@ brew cask install atom
 # Nothing for automator anywhere
 # Nothing for bakoma-tex anywhere
 brew cask install bibdesk
-brew cask install bittorrent-sync
+#brew cask install bittorrent-sync # NOW REPLACED BY RESILIO-SYNC
 brew cask install burn
 # Nothing for byword anywhere
 brew cask install chrome-remote-desktop-host
@@ -62,6 +60,7 @@ brew cask install parallels-desktop
 brew cask install readcube
 # Nothing for records anywhere
 brew cask install recovery-disk-assistant
+brew cask install resilio-sync
 # Nothing for rough-draft anywhere
 brew cask install rstudio
 brew cask install scrivener
