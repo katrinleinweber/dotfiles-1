@@ -15,15 +15,15 @@
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1475327978,,"x"
+|2,0,1477152384,,"x"
+:q!
+|2,0,1477151169,,"q!"
 :w
 |2,0,1473017073,,"w"
 :X
 |2,0,1473014224,,"X"
 :.,.+1!
 |2,0,1473012999,,".,.+1!"
-:q!
-|2,0,1472506047,,"q!"
 :x!
 |2,0,1472329428,,"x!"
 
@@ -76,261 +76,271 @@
 |3,0,36,0,1,0,1473013366,"!"
 
 # File marks:
-'0  1  0  ~/.ssh/github.pub
-|4,48,1,0,1475327978,"~/.ssh/github.pub"
-'1  1  0  ~/.ssh/github.pub
-|4,49,1,0,1475327455,"~/.ssh/github.pub"
-'2  1  0  ~/.ssh/github.pub
-|4,50,1,0,1475326807,"~/.ssh/github.pub"
-'3  1  0  ~/.ssh/github.pub
-|4,51,1,0,1475326807,"~/.ssh/github.pub"
-'4  1  0  ~/.gitconfig
-|4,52,1,0,1475326074,"~/.gitconfig"
-'5  135  24  ~/.config/tint2/tint2rc
-|4,53,135,24,1473022114,"~/.config/tint2/tint2rc"
-'6  53  15  ~/.bashrc
-|4,54,53,15,1473015365,"~/.bashrc"
-'7  231  0  ~/.config/i3/config
-|4,55,231,0,1473015305,"~/.config/i3/config"
-'8  52  0  ~/.Xdefaults
-|4,56,52,0,1473014234,"~/.Xdefaults"
-'9  55  0  ~/.Xdefaults
-|4,57,55,0,1473013371,"~/.Xdefaults"
+'0  1  0  ~/.dotfiles/bootstrap_aid.sh
+|4,48,1,0,1477152384,"~/.dotfiles/bootstrap_aid.sh"
+'1  89  0  ~/.dotfiles/arch/.config/fontconfig/fonts.conf
+|4,49,89,0,1477151580,"~/.dotfiles/arch/.config/fontconfig/fonts.conf"
+'2  233  0  ~/.dotfiles/arch/.config/i3/config
+|4,50,233,0,1477151361,"~/.dotfiles/arch/.config/i3/config"
+'3  1  0  ~/monaco
+|4,51,1,0,1477151169,"~/monaco"
+'4  17  0  ~/.dotfiles/xenon/.bashrc
+|4,52,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+'5  1  0  ~/builds/sublime_text_3/sublime.py
+|4,53,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+'6  1  0  ~/builds/sublime_text_3/sublime_text
+|4,54,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+'7  11  44  ~/.bashrc
+|4,55,11,44,1477149210,"~/.bashrc"
+'8  34  8  ~/.linuxbrew/.gitignore
+|4,56,34,8,1475964037,"~/.linuxbrew/.gitignore"
+'9  34  7  ~/.linuxbrew/.gitignore
+|4,57,34,7,1475963797,"~/.linuxbrew/.gitignore"
 
 # Jumplist (newest first):
--'  1  0  ~/.ssh/github.pub
-|4,39,1,0,1475327978,"~/.ssh/github.pub"
--'  1  0  ~/.ssh/github.pub
-|4,39,1,0,1475327455,"~/.ssh/github.pub"
--'  1  0  ~/.ssh/github.pub
-|4,39,1,0,1475326807,"~/.ssh/github.pub"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1475326074,"~/.gitconfig"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  135  24  ~/.config/tint2/tint2rc
-|4,39,135,24,1473022114,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  1  0  ~/.config/tint2/tint2rc
-|4,39,1,0,1473016444,"~/.config/tint2/tint2rc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  53  15  ~/.bashrc
-|4,39,53,15,1473015365,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
--'  52  25  ~/.bashrc
-|4,39,52,25,1473015340,"~/.bashrc"
+-'  1  0  ~/.dotfiles/bootstrap_aid.sh
+|4,39,1,0,1477152384,"~/.dotfiles/bootstrap_aid.sh"
+-'  89  0  ~/.dotfiles/arch/.config/fontconfig/fonts.conf
+|4,39,89,0,1477151580,"~/.dotfiles/arch/.config/fontconfig/fonts.conf"
+-'  89  0  ~/.dotfiles/arch/.config/fontconfig/fonts.conf
+|4,39,89,0,1477151580,"~/.dotfiles/arch/.config/fontconfig/fonts.conf"
+-'  1  0  ~/.dotfiles/arch/.config/fontconfig/fonts.conf
+|4,39,1,0,1477151539,"~/.dotfiles/arch/.config/fontconfig/fonts.conf"
+-'  1  0  ~/.dotfiles/arch/.config/fontconfig/fonts.conf
+|4,39,1,0,1477151539,"~/.dotfiles/arch/.config/fontconfig/fonts.conf"
+-'  233  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,233,0,1477151361,"~/.dotfiles/arch/.config/i3/config"
+-'  233  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,233,0,1477151361,"~/.dotfiles/arch/.config/i3/config"
+-'  233  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,233,0,1477151361,"~/.dotfiles/arch/.config/i3/config"
+-'  233  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,233,0,1477151361,"~/.dotfiles/arch/.config/i3/config"
+-'  1  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,1,0,1477151213,"~/.dotfiles/arch/.config/i3/config"
+-'  1  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,1,0,1477151213,"~/.dotfiles/arch/.config/i3/config"
+-'  1  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,1,0,1477151213,"~/.dotfiles/arch/.config/i3/config"
+-'  1  0  ~/.dotfiles/arch/.config/i3/config
+|4,39,1,0,1477151213,"~/.dotfiles/arch/.config/i3/config"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  1  0  ~/monaco
+|4,39,1,0,1477151169,"~/monaco"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  17  0  ~/.dotfiles/xenon/.bashrc
+|4,39,17,0,1477150234,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/.dotfiles/xenon/.bashrc
+|4,39,1,0,1477150219,"~/.dotfiles/xenon/.bashrc"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime.py
+|4,39,1,0,1477149585,"~/builds/sublime_text_3/sublime.py"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
+-'  1  0  ~/builds/sublime_text_3/sublime_text
+|4,39,1,0,1477149543,"~/builds/sublime_text_3/sublime_text"
 
 # History of marks within files (newest to oldest):
 
-> ~/.ssh/github.pub
-	*	1475327898	0
-	"	1	0
-	a	1	0
-
-> ~/.gitconfig
-	*	1475326066	0
+> ~/.dotfiles/bootstrap_aid.sh
+	*	1477152349	0
 	"	1	0
 
-> ~/.config/tint2/tint2rc
-	*	1473022110	0
-	"	135	24
-	^	135	25
-	.	15	35
-	+	10	103
-	+	11	27
-	+	12	23
-	+	13	33
-	+	14	29
-	+	15	36
-	+	16	31
-	+	14	29
-	+	13	33
-	+	15	35
+> ~/.dotfiles/arch/.config/fontconfig/fonts.conf
+	*	1477151566	0
+	"	89	0
+
+> ~/.dotfiles/arch/.config/i3/config
+	*	1477151360	0
+	"	233	0
+	^	233	1
+	.	174	19
+	+	26	11
+	+	28	25
+	+	175	27
+	+	174	19
+
+> ~/monaco
+	*	1477151166	0
+	"	1	0
+
+> ~/.dotfiles/xenon/.bashrc
+	*	1477150234	0
+	"	17	0
+	a	4	0
+
+> ~/builds/sublime_text_3/sublime.py
+	*	1477149581	0
+	"	1	0
+
+> ~/builds/sublime_text_3/sublime_text
+	*	1477149539	0
+	"	1	0
 
 > ~/.bashrc
-	*	1473015362	0
-	"	53	15
-	^	53	16
-	.	53	16
+	*	1477149209	0
+	"	11	44
+	^	11	45
+	.	11	44
 	+	13	0
 	+	26	28
 	+	25	21
@@ -360,7 +370,60 @@
 	+	52	0
 	+	53	0
 	+	53	16
+	+	11	44
 	a	52	25
+
+> ~/.linuxbrew/.gitignore
+	*	1475964035	0
+	"	34	8
+	^	34	9
+	.	34	8
+	+	33	0
+	+	32	94
+	+	34	8
+
+> ~/.ssh/config
+	*	1475954550	0
+	"	1	0
+	^	13	18
+	.	13	19
+	+	3	5
+	+	2	9
+	+	12	23
+	+	11	14
+	+	10	14
+	+	9	7
+	+	8	10
+	+	4	14
+	+	3	7
+	+	2	10
+	+	5	19
+	+	13	19
+
+> ~/.ssh/github.pub
+	*	1475327898	0
+	"	1	0
+	a	1	0
+
+> ~/.gitconfig
+	*	1475326066	0
+	"	1	0
+
+> ~/.config/tint2/tint2rc
+	*	1473022110	0
+	"	135	24
+	^	135	25
+	.	15	35
+	+	10	103
+	+	11	27
+	+	12	23
+	+	13	33
+	+	14	29
+	+	15	36
+	+	16	31
+	+	14	29
+	+	13	33
+	+	15	35
 
 > ~/.config/i3/config
 	*	1473015301	0

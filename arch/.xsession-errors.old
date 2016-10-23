@@ -5,4 +5,4 @@ libpng warning: iCCP: known incorrect sRGB profile
 i3status: trying to auto-detect output_format setting
 i3status: auto-detected "i3bar"
 urxvt: perl extension 'clipboard' not found in perl library search path
-urxvt: X connection to ':0' broken, unable to recover, exiting.
+urxvt: perl extension 'clipboard' not found in perl library search path

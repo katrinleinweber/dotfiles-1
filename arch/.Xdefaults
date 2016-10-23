@@ -25,10 +25,15 @@ urxvt*background: rgba:0000/0000/0200/c800
 !urxvt*shading : 30
 ! ^^ Previously 5 (lower numbers mean darker shading)
 ! Font
-urxvt*font: xft:DejaVu Sans Mono:size=10:antialias=false		
-urxvt*boldFont: xft:DejaVu Sans Mono:size=10:antialias=false
-urxvt*italicFont: xft:DejaVu Sans Mono:size=10:antialias=false
-urxvt*bolditalicFont: xft:DejaVu Sans Mono:size=10:antialias=false
+urxvt*font: xft:Monaco:size=10:antialias=false		
+urxvt*boldFont: xft:Monaco:size=10:antialias=false
+urxvt*italicFont: xft:Monaco:size=10:antialias=false
+urxvt*bolditalicFont: xft:Monaco:size=10:antialias=false
+! Previously:
+!urxvt*font: xft:DejaVu Sans Mono:size=10:antialias=false		
+!urxvt*boldFont: xft:DejaVu Sans Mono:size=10:antialias=false
+!urxvt*italicFont: xft:DejaVu Sans Mono:size=10:antialias=false
+!urxvt*bolditalicFont: xft:DejaVu Sans Mono:size=10:antialias=false
 ! Scroll
 urxvt*scrollBar: false
 ! Settings
