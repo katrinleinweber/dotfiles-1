@@ -1,0 +1,32 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-CK0VKY.desktop
+x-scheme-handler/https=userapp-Firefox-CK0VKY.desktop
+x-scheme-handler/ftp=userapp-Firefox-CK0VKY.desktop
+x-scheme-handler/chrome=userapp-Firefox-CK0VKY.desktop
+text/html=userapp-Firefox-CK0VKY.desktop
+application/x-extension-htm=userapp-Firefox-CK0VKY.desktop
+application/x-extension-html=userapp-Firefox-CK0VKY.desktop
+application/x-extension-shtml=userapp-Firefox-CK0VKY.desktop
+application/xhtml+xml=userapp-Firefox-CK0VKY.desktop
+application/x-extension-xhtml=userapp-Firefox-CK0VKY.desktop
+application/x-extension-xht=userapp-Firefox-CK0VKY.desktop
+application/x-shellscript=sublime_text.desktop
+application/vnd.debian.binary-package=gdebi.desktop
+text/plain=sublime_text.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Firefox-CK0VKY.desktop;
+x-scheme-handler/https=userapp-Firefox-CK0VKY.desktop;
+x-scheme-handler/ftp=userapp-Firefox-CK0VKY.desktop;
+x-scheme-handler/chrome=userapp-Firefox-CK0VKY.desktop;
+text/html=userapp-Firefox-CK0VKY.desktop;
+application/x-extension-htm=userapp-Firefox-CK0VKY.desktop;
+application/x-extension-html=userapp-Firefox-CK0VKY.desktop;
+application/x-extension-shtml=userapp-Firefox-CK0VKY.desktop;
+application/xhtml+xml=userapp-Firefox-CK0VKY.desktop;
+application/x-extension-xhtml=userapp-Firefox-CK0VKY.desktop;
+application/x-extension-xht=userapp-Firefox-CK0VKY.desktop;
+application/vnd.debian.binary-package=gdebi.desktop;gnome-software-local-file.desktop;
+application/x-shellscript=sublime_text.desktop;vim.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+text/plain=sublime_text.desktop;

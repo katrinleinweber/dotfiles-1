@@ -1,0 +1,8 @@
+/home/james/.Xresources:1:3: error: invalid preprocessing directive #.
+ # .Xresources
+   ^
+libpng warning: iCCP: known incorrect sRGB profile
+i3status: trying to auto-detect output_format setting
+i3status: auto-detected "i3bar"
+urxvt: perl extension 'clipboard' not found in perl library search path
+urxvt: perl extension 'clipboard' not found in perl library search path
