@@ -2,8 +2,8 @@
 # Defines aliases for use in shells
 # Sourced by .bash_profile
 
-# Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!
-alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
+# DOESN'T WORK: Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!
+#alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 
 ##################################################################################
 # FROM BASH-IT AUTO-GENERATED .BASHRC FILE

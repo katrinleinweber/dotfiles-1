@@ -5,6 +5,7 @@
 # Original homebrew formulae
 brew install tree
 brew install texmath
+brew install unison
 
 # Install cask
 brew tap caskroom/cask

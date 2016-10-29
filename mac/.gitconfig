@@ -32,7 +32,7 @@
 	frag = magenta bold
 	old = red bold
 	new = green bold
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+#[color "status"]
+	#added = yellow
+	#changed = green
+	#untracked = cyan
