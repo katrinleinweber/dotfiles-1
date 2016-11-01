@@ -1,4 +1,6 @@
 #!/bin/bash
+# bootstrap_aid.sh
+# Auto-link dotfiles recursively, making directories as necessary in the process
 
 if [ "$#" -eq "1" ]; then
 	os="$1"
@@ -35,4 +37,14 @@ for file in "$HOME/.dotfiles/$os/\.[a-zA-Z]"*; do
 	fi
 	# Forces symlink from .dotfiles/$os files into $HOME directory
 	ln -sf "$file" "$HOME/$(basename "$file")"
+done
+
+# Grabbed the following from arch_config.sh
+for file in "$HOME/.dotfiles/$os/"*; do
+    if [[ -d "$file" ]]; then
+        mkdir -p "$HOME/${file##*/}"
+        ln -sf "$file/"* "$HOME/${file##*/}/"
+    elif [[ ! -d "$file" && -f "$file" ]]; then
+        ln -sf "$file" "$HOME/${file##*/}"
+    fi
 done

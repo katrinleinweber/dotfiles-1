@@ -1,5 +1,8 @@
 !!!!!! XConfig file !!!!!!
 
+!!! Xft "scaling" !!!
+!Xft.dpi: 72
+
 !!! ROFI !!!
 ! ! Use extended color scheme
 rofi.color-enabled:                  true
@@ -15,6 +18,7 @@ rofi.color-window:                   argb:ee222222,  #FAC863 ,  #FAC863
 rofi.separator-style:                dash
 
 !!! URxvt-unicode !!!
+!! Settings info here: https://wiki.archlinux.org/index.php/Rxvt-unicode
 ! Terminal
 URxvt*termName: screen-256color
 ! Real Transparency
@@ -25,16 +29,16 @@ urxvt*background: rgba:0000/0000/0200/c800
 !urxvt*shading : 30
 ! ^^ Previously 5 (lower numbers mean darker shading)
 ! Font
-urxvt*font: xft:Monaco:size=10:antialias=false		
-urxvt*boldFont: xft:Monaco:size=10:antialias=false
-urxvt*italicFont: xft:Monaco:size=10:antialias=false
-urxvt*bolditalicFont: xft:Monaco:size=10:antialias=false
+urxvt*font: xft:Monaco:size=11:antialias=true
+urxvt*boldFont: xft:Monaco:size=11:antialias=true
+urxvt*italicFont: xft:Monaco:size=11:antialias=true
+urxvt*bolditalicFont: xft:Monaco:size=11:antialias=true
 ! Previously:
-!urxvt*font: xft:DejaVu Sans Mono:size=10:antialias=false		
+!urxvt*font: xft:DejaVu Sans Mono:size=10:antialias=false
 !urxvt*boldFont: xft:DejaVu Sans Mono:size=10:antialias=false
 !urxvt*italicFont: xft:DejaVu Sans Mono:size=10:antialias=false
 !urxvt*bolditalicFont: xft:DejaVu Sans Mono:size=10:antialias=false
-! Scroll
+! Scroll (don't show it please; not great aesthetically)
 urxvt*scrollBar: false
 ! Settings
 urxvt*internalBorder: 3
@@ -43,6 +47,9 @@ URxvt*cursorBlink: true
 URxvt*savelines: 10000
 ! Optional settings
 URxvt.letterSpace:-1
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+URxvt.secondaryWheel: 1
 ! Perl extensions
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
@@ -50,6 +57,7 @@ URxvt.colorBD: white
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard,matcher
+!^^,tabbed
 URxvt*perl-ext:
 URxvt*perl-ext-common:
 
@@ -74,7 +82,7 @@ URxvt*perl-ext-common:
 ! Magenta Magenta !
 *color5: #75507B
 *color13: #AD7FA8
-!*color5: #F79F81 
+!*color5: #F79F81
 !*color13: #F79F81
 ! Cyan Cyan !
 *color6: #06989A
@@ -104,7 +112,7 @@ URxvt*perl-ext-common:
 ! Magenta Magenta !
 !*color5: #CB4F29
 !*color13: #CB4F29
-!!*color5: #F79F81 
+!!*color5: #F79F81
 !!*color13: #F79F81
 ! Cyan Cyan !
 !*color6: #767D75

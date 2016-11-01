@@ -12,7 +12,8 @@ set $mod Mod1
 #set $tag1 "1: blah"
 
 # Set wallpaper
-exec --no-startup-id feh --bg-scale ~/wallpapers/SlowmoGuys_Paint.png
+exec --no-startup-id feh --bg-fill ~/wallpapers/SlowmoGuys_Paint.png
+# Previously exec --no-startup-id feh --bg-scale ~/wallpapers/SlowmoGuys_Paint.png
 
 # Set up conky
 #exec --no-startup-id conky -c ~/.config/conky/.conkyrc
@@ -40,6 +41,9 @@ font pango:Monaco 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Explicitly set focus-follows-mouse to off (to behave more like Mac OS X in terms of being able to scroll unfocused windows)
+focus_follows_mouse no
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal # urxvt
