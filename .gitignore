@@ -31,3 +31,4 @@
 .unison/
 *.tmp
 .xsession_old
+.Xauthority
