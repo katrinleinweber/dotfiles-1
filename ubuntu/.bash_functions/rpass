@@ -1,0 +1,6 @@
+# rpass generates a random password with a specified length
+
+# function rpass()
+# {
+#  cat /dev/urandom | tr -cd '[:graph:]' | head -c ${1:-12}
+# }

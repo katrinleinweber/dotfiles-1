@@ -1,0 +1,6 @@
+# getip displays the ipaddress of a given interface
+
+# function getip()
+# {
+#  /sbin/ifconfig ${1:-eth0} | awk '/inet addr/ {print $2}' | awk -F: '{print $2}';
+# }

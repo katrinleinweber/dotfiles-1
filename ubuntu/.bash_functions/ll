@@ -1,0 +1,9 @@
+# ll function formats the ls -l output better
+
+# function ll ()
+# {
+#     clear;
+#     tput cup 0 0;
+#     ls --color=auto -F --color=always -lhFrt;
+#     tput cup 40 0;
+# }

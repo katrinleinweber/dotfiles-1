@@ -1,0 +1,25 @@
+# .exports
+# Exports all environment variables
+# Sourced by .bashrc (which is itself sourced by .bash_profile); sources .path and .prompt
+
+if [ -f ~/.path ]; then
+        source ~/.path
+fi
+
+if [ -f ~/.prompt ]; then
+        source ~/.prompt
+fi
+
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+
+export LC_ALL=en_GB.UTF-8
+export SHELL="/bin/bash"
+export VISUAL="vim"
+#export TERMINAL="gnome-terminal" # Or whatever, just an example
+
+# FROM .PATH
+#export PATH="$HOME/.linuxbrew/bin:$HOME/bin:$HOME/local/bin:$HOME/DeHydrate/Code:$PATH"
+#LD_LIBRARY_PATH="/home/james/usr/local/lib"
+#C_INCLUDE_PATH="/home/james/usr/local/include"
+#LD_RUN_PATH="/home/james/usr/local/lib"
