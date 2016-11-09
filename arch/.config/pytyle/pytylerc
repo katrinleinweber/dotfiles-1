@@ -1,0 +1,22 @@
+Config.KEYMAP = {
+    'Super-asciitilde': 'tile.default',
+    'Super-Shift-asciitilde': 'untile',
+ 
+    'Super-BackSpace': 'cycle_tiler',
+    'Super-Alt-asciitilde': 'reload',
+ 
+    'Super-plus': 'master_increase',
+    'Super-minus': 'master_decrease',
+ 
+    'Super-Shift-plus': 'add_master',
+    'Super-Shift-minus': 'remove_master',
+ 
+    'Super-backslash': 'make_active_master',
+    'Super-Shift-backslash': 'win_master',
+ 
+    'Super-bracketleft': 'win_previous',
+    'Super-bracketright': 'win_next',
+ 
+    'Super-Shift-bracketleft': 'switch_previous',
+    'Super-Shift-bracketright': 'switch_next',
+}

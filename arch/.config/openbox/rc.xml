@@ -231,23 +231,43 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-1">
+    <keybind key="A-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="S-A-2">
+    <keybind key="A-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="S-A-3">
+    <keybind key="A-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="S-A-4">
+    <keybind key="A-4">
       <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="S-A-1">
+      <action name="SendToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="S-A-2">
+      <action name="SendToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="S-A-3">
+      <action name="SendToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="S-A-4">
+      <action name="SendToDesktop">
         <to>4</to>
       </action>
     </keybind>
@@ -274,6 +294,7 @@
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
+      	<allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -283,6 +304,7 @@
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
+      	<allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
