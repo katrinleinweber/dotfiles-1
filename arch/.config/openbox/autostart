@@ -1,2 +1,3 @@
 tint2 -c ~/.dotfiles/arch/.config/tint2/tint2rc &
-feh --no-startup-id --bg-fill ~/wallpapers/SlowmoGuys_Paint.png
+feh --no-startup-id --bg-fill ~/wallpapers/SlowmoGuys_Paint.png &
+compton --config ~/.config/compton.conf

@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>simple</name>
+    <name>Orang</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -123,10 +123,10 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Terminal</name>
-      <name>Writing</name>
-      <name>Browsing</name>
-      <name>Researching</name>
+	    <name>Terminal</name>
+	    <name>Writing</name>
+	    <name>Browsing</name>
+	    <name>Researching</name>
       <!-- set names up here if you want to, like this:
     <name>desktop 1</name>
     <name>desktop 2</name>
@@ -327,15 +327,6 @@
           <name>Konqueror</name>
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
-      </action>
-    </keybind>
-    <keybind key="A-Enter">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>urxvt</name>
-        </startupnotify>
-        <command>rxvt-unicode</command>
       </action>
     </keybind>
   </keyboard>
