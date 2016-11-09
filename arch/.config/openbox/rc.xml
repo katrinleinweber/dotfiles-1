@@ -347,7 +347,7 @@
 	<command>rofi</command>
       </action>
     </keybind>
-    <keybind key="A-Enter">
+    <keybind key="A-Return">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
