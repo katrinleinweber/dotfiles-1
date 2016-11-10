@@ -50,8 +50,8 @@ conky.config = {
     if_up_strictness = 'link',
     imlib_cache_size = 0,
     maximum_width = 182,
+    maximum_height = 750,
     minimum_height = 5,
-    minimum_size = '182 750',
     minimum_width = 5,
     net_avg_samples = 1,
     no_buffers = true,
@@ -113,18 +113,18 @@ conky.text = [[
     ${font Monaco:style=Bold:size=8}${goto 32}Cached:  ${font}${color2}${font Monaco:size=8}${cached}${font}${color}
     ${voffset 10}${color2}${font ConkyColors:size=15}h${font}${color}${voffset -14}${font Monaco:style=Bold:size=8}${goto 32}Swap:  ${font}${color2}${font Monaco:size=8}$swap used $alignr${swapbar 4,50}
     ${goto 70}$swapfree free ${alignr}of $swapmax${font}${color}
-    -- NETWORK
+
     ${font Monaco:bold:size=14}${voffset 10}NETWORK $hr${font}
     ${voffset 6}${font Monaco:bold:size=8}Signal:  ${font}${color2}${font Monaco:size=8}${wireless_link_qual_perc wls1}%${color}$font$alignr${font Monaco:bold:size=8}Speed:  ${font}${color2}${font Monaco:size=8}${wireless_bitrate wls1}${color}$font
     ${color0}${downspeedgraph wls1 1793d0 ffffff}${color}
     ${font Monaco:style=Bold:size=8}Download: ${font}${font Monacod:size=8}${color2}${downspeed wls1}${font}${color} ${font Monaco:style=Bold:size=8}$alignr Total: ${font}${color2}${font Monaco:size=8}${totaldown wls1}${font}${color}
     ${color0}${upspeedgraph wls1 1793d0 ffffff}
     ${color1}${font Monaco:style=Bold:size=8}Upload: ${color}${font}${font Monaco:size=8}${color2}${upspeed wls1}${color} $alignr ${font Monaco:style=Bold:size=8}Total: ${font}${color2}${font Monaco:size=8}${totalup wls1}${color}
-    -- CLOCK
+
     ${voffset 10}${font Monaco:style=Bold:size=14}DATE $hr${font}
     ${voffset 10}${alignc}${color2}${font Monaco:style=Bold:size=30}${time %I:%M}${font} ${time %p}${color}
     ${alignc 12}${time %d %B %Y}
-    -- PROCESSES
+
     ${font Monaco:bold:size=14}${voffset 10}PROCESSES $hr${font}
     ${voffset 5}${font Monaco:bold:size=8}Process Name${alignr}PID  CPU  MEM${font}
     ${color2}${font Monaco:size=8}${voffset -2} ${top name 1}${alignr}${top pid 1} ${top cpu 1} ${top mem 1}
@@ -134,11 +134,11 @@ conky.text = [[
      ${top name 5}${alignr}${top pid 5} ${top cpu 5} ${top mem 5}
      ${top name 6}${alignr}${top pid 6} ${top cpu 6} ${top mem 6}${font}${color}
     ${voffset 0}${font Monaco:Bold:size=9}Total: ${font}${color2}$processes${color}${alignr}${voffset 2}${font Monaco:Bold:size=9}Running: ${font}${color2}$running_processes$color
-    -- POWER
+
     ${font Monaco:bold:size=14}${voffset 10}POWER $hr${font}
     ${voffset 6}${font Monaco:style=Bold:size=8}Battery:  ${font}${font Monaco:size=8}${color2}${alignr}${battery}  ${battery_bar 6,20}${font}${color}
     ${font Monaco:style=Bold:size=8}Remaining:  ${font}${color2}${font Monaco:size=8}${alignr 28}$battery_time$font$color
-    -- DISK I/O
+
     ${font Monaco:bold:size=14}${voffset 10}DISK I/O $hr${font}
     ${voffset 6}${font Monaco:style=Bold:size=8}Root Disk:$alignr${font}${font Monaco:size=8}${color2}/dev/sda2 (${fs_size /})${font}${color}${font Monaco:style=Bold:size=8}${alignr}
     Usage: $font${color2}${font Monaco:size=8}$alignr${fs_used /}, ${fs_free /} free$font$color
