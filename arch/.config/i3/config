@@ -12,7 +12,7 @@ set $mod Mod1
 #set $tag1 "1: blah"
 
 # Set wallpaper
-#exec --no-startup-id feh --bg-fill ~/wallpapers/SlowmoGuys_Paint.png
+exec --no-startup-id feh --bg-fill ~/wallpapers/SlowmoGuys_Paint.png
 # Previously exec --no-startup-id feh --bg-scale ~/wallpapers/SlowmoGuys_Paint.png
 
 # Set up conky
