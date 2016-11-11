@@ -17,7 +17,12 @@ export PS1="\[\033[0;34m\]\u:\w $ \[\033[0m\]"
 
 # Source .bash_aliases if it exists
 if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+	source ~/.bash_aliases
+fi
+
+# Source .bash_functions if it exists
+if [ -f ~/.bash_functions ]; then
+	source ~/.bash_functions
 fi
 
 # If not, here are ALL THE ALIASES
