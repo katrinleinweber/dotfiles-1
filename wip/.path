@@ -1,0 +1,3 @@
+# .path
+# Exports PATH
+# Sourced by .exports, which is itself sourced by .bash_profile

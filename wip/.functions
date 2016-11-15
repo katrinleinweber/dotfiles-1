@@ -1,0 +1,7 @@
+# .functions
+
+function linkbin() {
+	src="/Users/jcprime/Google Drive/bin"
+	dst="/Users/jcprime/bin"
+	pax -rwlpe "$src" "$dst"
+}
