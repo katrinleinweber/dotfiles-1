@@ -3,12 +3,12 @@
 # Sourced by .bash_profile
 
 # Start ssh-agent, because apparently Xenon doesn't do it automatically
-if ! pgrep -u $USER ssh-agent > /dev/null; then
-    ssh-agent > ~/.ssh-agent-thing
-fi
-if [[ "$SSH_AGENT_PID" == "" ]]; then
-    eval $(<~/.ssh-agent-thing)
-fi
+#if ! pgrep -u $USER ssh-agent > /dev/null; then
+#    ssh-agent > ~/.ssh-agent-thing
+#fi
+#if [[ "$SSH_AGENT_PID" == "" ]]; then
+#    eval $(<~/.ssh-agent-thing)
+#fi
 #eval "$(ssh-agent -s)"
 # And add ~/.ssh/github to ssh-agent once started, then test it
 #ssh-add ~/.ssh/github
