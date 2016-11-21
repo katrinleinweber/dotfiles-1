@@ -3,8 +3,14 @@
 # Checks brew is up-to-date, installs stuff I like
 
 # Original homebrew formulae
+brew install macvim --override-system-vim
 brew install tree
 brew install texmath
+brew install unison
+brew install vim
+
+# Sort out links
+brew linkapps
 
 # Install cask
 brew tap caskroom/cask

@@ -1,6 +1,8 @@
 " Colours and Things {{{
-"colorscheme badwolf		    " awesome colorscheme
-colorscheme monokai
+"colorscheme 256-grayvim
+colorscheme blues
+"colorscheme meta5
+"colorscheme vorange
 syntax on			        " turn on syntax processing
 " }}}
 

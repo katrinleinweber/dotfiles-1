@@ -6,6 +6,7 @@
 brew install tree
 brew install texmath
 brew install unison
+brew install vim
 
 # Install cask
 brew tap caskroom/cask
