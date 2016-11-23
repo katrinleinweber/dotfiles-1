@@ -36,3 +36,9 @@ alias findbig="find . -type f -exec ls -s {} \; | sort -n -r | head -5"
 
 # Auto-resumes wget downloads
 alias wget='wget -c'
+
+# Single update command
+alias update='sudo apt update && sudo apt upgrade && sudo apt dist-upgrade'
+
+# Single clean-up command
+alias clean='sudo apt autoremove && sudo apt clean all && sudo apt autoclean all'
