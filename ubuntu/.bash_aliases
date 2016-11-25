@@ -42,3 +42,7 @@ alias update='sudo apt update && sudo apt upgrade && sudo apt dist-upgrade'
 
 # Single clean-up command
 alias clean='sudo apt autoremove && sudo apt clean all && sudo apt autoclean all'
+
+# Auto-recursive copies
+alias cp='cp -r'
+alias scp='scp -r'

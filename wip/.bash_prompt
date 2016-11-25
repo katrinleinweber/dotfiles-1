@@ -1,4 +1,16 @@
 # .bash_prompt
 # Defines bash prompt; sourced by .bashrc
 
-export PS1="\[\033[0;34m\]\u:\w $ \[\033[0m\]"
+# Assume configuring a home machine, unless told otherwise in first argument
+if [[ "$#" -eq "1" ]]; then
+    where="$1"
+else
+    where="home"
+fi
+
+# Set blue prompt for home, or green prompt for work
+if [[ "$where" == "home" ]]; then
+    export PS1="\[\033[0;34m\]\u:\w $ \[\033[0m\]"
+elif [[ "$where" == "work" ]]; then
+    export PS1="\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]\[\e[32m\]:\[\e[m\]\[\e[32m\]\w\[\e[m\]\[\e[32m\] \[\e[m\]\[\e[32m\]\\$\[\e[m\] "
+fi
