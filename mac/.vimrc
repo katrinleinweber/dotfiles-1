@@ -1,3 +1,4 @@
+colorscheme blues
 syntax on
 
 " VUNDLE CONFIGURATION
