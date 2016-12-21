@@ -1,4 +1,4 @@
-colorscheme blues
+colorscheme primeblues
 syntax on
 
 " VUNDLE CONFIGURATION
