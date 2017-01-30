@@ -1,6 +1,6 @@
 " Colours and Things {{{
 "colorscheme badwolf		    " awesome colorscheme
-colorscheme monokai
+colorscheme blues
 syntax on			        " turn on syntax processing
 " }}}
 

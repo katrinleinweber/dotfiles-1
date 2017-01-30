@@ -1,4 +1,6 @@
+colorscheme primeblues
 syntax on
+set backspace=2
 
 " VUNDLE CONFIGURATION
 set nocompatible              " be iMproved, required
