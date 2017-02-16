@@ -5,6 +5,9 @@
 # DOESN'T WORK: Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!
 #alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 
+# Open Jmol (possibly specific to macOS, but)
+alias jmol='java -jar ~/bin/jmol-full/Jmol.jar'
+
 ##################################################################################
 # FROM BASH-IT AUTO-GENERATED .BASHRC FILE
 ##################################################################################
@@ -79,15 +82,3 @@ alias findbig="find . -type f -exec ls -s {} \; | sort -n -r | head -5"
 
 # Auto-resumes wget downloads
 alias wget='wget -c'
-
-##################################################################################
-# FROM .BASHRC (MACBOOK PRO)
-##################################################################################
-
-# None that weren't already included in .bash_profile (directory/file colours aliases)
-
-##################################################################################
-# FROM .PROFILE (MACBOOK PRO)
-##################################################################################
-
-# None that weren't already included in .bash_profile (git aliases)
