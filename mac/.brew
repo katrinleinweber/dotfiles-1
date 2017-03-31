@@ -3,105 +3,40 @@
 # Checks brew is up-to-date, installs stuff I like
 
 # Original homebrew formulae
-brew install tree
-brew install texmath
-brew install unison
-brew install vim
+package_file="$HOME/.brew_installs"
+
+if [[ -f "${package_file}" ]]; then
+    while read -r line; do
+        # Ignore "commented" lines beginning with hash in casks_file
+        [[ $line = \#* ]] && continue
+        #printf '%s\n' "$line" # Check
+        packages+=("$line")
+    done < "${package_file}"
+else
+    declare -a packages=("atk" "bash-completion" "bibutils" "boost" "boost-python" "cairo" "cmake" "coreutils" "cppcheck" "cscope" "cvs" "dos2unix" "eigen" "exiv2" "faac" "ffmpeg" "fontconfig" "freetype" "gcc" "gd" "gdbm" "gtk-pixbuf" "gettext" "git-lfs" "glib" "gmp" "gnuplot" "gobject-introspection" "grc" "gtk+" "gtkglext" "harfbuzz" "hicolor-icon-theme" "icu4c" "isl" "jpeg" "lame" "libav" "libffi" "libmpc" "libpng" "libtiff" "libyaml" "lua" "mackup" "macvim" "maven" "mpfr" "mr" "open-babel" "openssl" "p7zip" "pandoc" "pango" "pcre" "perl" "pixman" "pkg-config" "pyexiv2" "python" "python3" "qt" "readline" "ruby" "scons" "shared-mime-info" "shellcheck" "sqlite" "tcl-tk" "texmath" "tree" "unison" "vcsh" "vim" "webp" "wget" "x264" "xonsh" "xvid" "xz" "youtube-dl")
+fi
+
+for i in "${packages[@]}"; do
+    brew install "$i"
+done
 
 # Install cask
 brew tap caskroom/cask
 
-# Cask formulae (MacOS app manager)
-brew cask install adobe-acrobat
-brew cask install alfred
-# Nothing for archimedes anywhere
-brew cask install atom
-# Nothing for automator anywhere
-# Nothing for bakoma-tex anywhere
-brew cask install bibdesk
-#brew cask install bittorrent-sync # NOW REPLACED BY RESILIO-SYNC
-brew cask install burn
-# Nothing for byword anywhere
-brew cask install chrome-remote-desktop-host
-# Nothing for cobook anywhere
-# Nothing for cytoscape anywhere
-brew cask install devonthink-pro
-brew cask install disk-inventory-x
-brew cask install dropbox
-brew cask install dropzone
-brew cask install eclipse-ide
-brew cask install evernote
-# Nothing for express-scribe anywhere
-brew cask install firefox
-# Nothing for flashmode or flashmode-scripts anywhere
-brew cask install flux
-brew cask install focuswriter
-# Nothing for freespace anywhere
-brew cask install git
-brew cask install github-desktop
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install iterm2
-brew cask install java
-# Nothing for keynote anywhere
-brew cask install launchpad-manager-yosemite
-brew cask install mactex
-brew cask install manuscripts
-brew cask install marked
-# ^^ Nothing for marked2 anywhere, so assuming above is the same thing :D
-brew cask install mendeley-desktop
-# Nothing for monity anywhere
-brew cask install mou
-# Nothing for multimarkdown-composer anywhere
-brew cask install notational-velocity
-# Nothing for outlinely anywhere
-brew cask install papers
-# Nothing for paragraphs anywhere
-brew cask install parallels-desktop
-# Nothing specifically for R anywhere
-brew cask install readcube
-# Nothing for records anywhere
-brew cask install recovery-disk-assistant
-brew cask install resilio-sync
-# Nothing for rough-draft anywhere
-brew cask install rstudio
-brew cask install scrivener
-brew cask install sdformatter
-brew cask install sente
-brew cask install skim
-brew cask install skype
-# Nothing for sophos anywhere
-brew cask install soulver
-# Nothing for studies
-# There's also brew cask install sublime but I don't know the difference between that and sublime-text
-brew cask install sublime-text
-brew cask install tagger
-brew cask install texmacs
-brew cask install texshop
-brew cask install texstudio
-# Nothing for textastic anywhere
-# Nothing for textedit anywhere
-brew cask install textexpander
-brew cask install textmate
-brew cask install textsoap
-brew cask install textwrangler
-# Nothing for texworks anywhere
-brew cask install the-unarchiver
-# Nothing specifically for time-machine anywhere, but...
-brew cask install timemachineeditor
-brew cask install timemachinescheduler
-# Nothing for to-mp3-converter-free
-brew cask install tunnelbear
-brew cask install unetbootin
-brew cask install utorrent
-brew cask install veracrypt
-# Nothing for vesta anywhere
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install vlc
-# Nothing for vosviewer anywhere
-# Nothing for write2 anywhere
-# Nothing for writeroom anywhere
-# Nothing for yoink anywhere
-# Nothing for zenmap anywhere
-brew cask install zotero
+# Casks for install
+casks_file="$HOME/.brew_casks"
+
+if [[ -f "${casks_file}" ]]; then
+    while read -r line; do
+        # Ignore "commented" lines beginning with hash in casks_file
+        [[ $line = \#* ]] && continue
+        #printf '%s\n' "$line" # Check
+        casks+=("$line")
+    done < "${casks_file}"
+else
+    declare -a casks=("adobe-acrobat" "alfred" "atom" "bibdesk" "burn" "chrome-remote-desktop-host" "devonthink-pro" "disk-inventory-x" "dropbox" "dropzone" "eclipse-ide" "evernote" "firefox" "flux" "focuswriter" "git" "github-desktop" "google-chrome" "google-drive" "iterm2" "java" "launchpad-manager-yosemite" "mactex" "manuscripts" "marked" "mendeley-desktop" "mou" "notational-velocity" "papers" "parallels-desktop" "readcube" "recovery-disk-assistant" "resilio-sync" "rstudio" "scrivener" "sdformatter" "sente" "skim" "skype" "soulver" "sublime-text" "tagger" "texmacs" "texshop" "texstudio" "textexpander" "textmate" "textsoap" "textwrangler" "the-unarchiver" "timemachineeditor" "timemachinescheduler" "tunnelbear" "unetbootin" "utorrent" "veracrypt" "virtualbox" "virtualbox-extension-pack" "vlc" "zotero")
+fi
+
+for i in "${casks[@]}"; do
+    brew cask install "$i"
+done

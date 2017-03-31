@@ -1,0 +1,107 @@
+# .brew
+# One-time script
+# Checks brew is up-to-date, installs stuff I like
+
+# Original homebrew formulae
+brew install tree
+brew install texmath
+brew install unison
+brew install vim
+
+# Install cask
+brew tap caskroom/cask
+
+# Cask formulae (MacOS app manager)
+brew cask install adobe-acrobat
+brew cask install alfred
+# Nothing for archimedes anywhere
+brew cask install atom
+# Nothing for automator anywhere
+# Nothing for bakoma-tex anywhere
+brew cask install bibdesk
+#brew cask install bittorrent-sync # NOW REPLACED BY RESILIO-SYNC
+brew cask install burn
+# Nothing for byword anywhere
+brew cask install chrome-remote-desktop-host
+# Nothing for cobook anywhere
+# Nothing for cytoscape anywhere
+brew cask install devonthink-pro
+brew cask install disk-inventory-x
+brew cask install dropbox
+brew cask install dropzone
+brew cask install eclipse-ide
+brew cask install evernote
+# Nothing for express-scribe anywhere
+brew cask install firefox
+# Nothing for flashmode or flashmode-scripts anywhere
+brew cask install flux
+brew cask install focuswriter
+# Nothing for freespace anywhere
+brew cask install git
+brew cask install github-desktop
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install iterm2
+brew cask install java
+# Nothing for keynote anywhere
+brew cask install launchpad-manager-yosemite
+brew cask install mactex
+brew cask install manuscripts
+brew cask install marked
+# ^^ Nothing for marked2 anywhere, so assuming above is the same thing :D
+brew cask install mendeley-desktop
+# Nothing for monity anywhere
+brew cask install mou
+# Nothing for multimarkdown-composer anywhere
+brew cask install notational-velocity
+# Nothing for outlinely anywhere
+brew cask install papers
+# Nothing for paragraphs anywhere
+brew cask install parallels-desktop
+# Nothing specifically for R anywhere
+brew cask install readcube
+# Nothing for records anywhere
+brew cask install recovery-disk-assistant
+brew cask install resilio-sync
+# Nothing for rough-draft anywhere
+brew cask install rstudio
+brew cask install scrivener
+brew cask install sdformatter
+brew cask install sente
+brew cask install skim
+brew cask install skype
+# Nothing for sophos anywhere
+brew cask install soulver
+# Nothing for studies
+# There's also brew cask install sublime but I don't know the difference between that and sublime-text
+brew cask install sublime-text
+brew cask install tagger
+brew cask install texmacs
+brew cask install texshop
+brew cask install texstudio
+# Nothing for textastic anywhere
+# Nothing for textedit anywhere
+brew cask install textexpander
+brew cask install textmate
+brew cask install textsoap
+brew cask install textwrangler
+# Nothing for texworks anywhere
+brew cask install the-unarchiver
+# Nothing specifically for time-machine anywhere, but...
+brew cask install timemachineeditor
+brew cask install timemachinescheduler
+# Nothing for to-mp3-converter-free
+brew cask install tunnelbear
+brew cask install unetbootin
+brew cask install utorrent
+brew cask install veracrypt
+# Nothing for vesta anywhere
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
+brew cask install vlc
+# Nothing for vosviewer anywhere
+# Nothing for write2 anywhere
+# Nothing for writeroom anywhere
+# Nothing for yoink anywhere
+# Nothing for zenmap anywhere
+brew cask install zotero
