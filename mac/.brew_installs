@@ -2,21 +2,21 @@
 # Lists packages to be installed/updated by Homebrew
 # Update list using brew list -1 if necessary!
 
-atk
+#atk
 bash-completion
 bibutils
-boost
-boost-python
-cairo
+#boost
+#boost-python
+#cairo
 cmake
 coreutils
 cppcheck
 cscope
-cvs
+#cvs
 dos2unix
-eigen
+#eigen
 exiv2
-faac
+#faac
 ffmpeg
 fontconfig
 freetype
@@ -33,10 +33,10 @@ gobject-introspection
 grc
 gtk+
 gtkglext
-harfbuzz
+#harfbuzz
 hicolor-icon-theme
-icu4c
-isl
+#icu4c
+#isl
 jpeg
 lame
 libav
@@ -56,9 +56,9 @@ openssl
 p7zip
 pandoc
 pango
-pcre
+#pcre
 perl
-pixman
+#pixman
 pkg-config
 pyexiv2
 python
@@ -66,8 +66,8 @@ python3
 qt
 readline
 ruby
-scons
-shared-mime-info
+#scons
+#shared-mime-info
 shellcheck
 sqlite
 tcl-tk
