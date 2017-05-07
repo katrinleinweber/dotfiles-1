@@ -61,3 +61,8 @@ fi
 
 # Source bash completions (installed by Homebrew!)
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# Add ssh keys to Keychain and ssh-agent (needed on Sierra only)
+ssh-add -K ~/.ssh/socrates &> /dev/null
+ssh-add -K ~/.ssh/xenon &> /dev/null
+ssh-add -A &> /dev/null
