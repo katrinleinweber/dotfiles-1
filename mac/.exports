@@ -2,7 +2,7 @@
 # Defines environment variables; sourced by .bash_profile
 
 # Mac-specific PATH here!
-export PATH="/Users/jcprime/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:~/bin"
+export PATH="/Users/jcprime/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:~/bin:/Applications/Utilities/XQuartz.app/Contents/MacOS"
 
 # Default shell = bash
 export SHELL="/bin/bash"
