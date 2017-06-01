@@ -17,3 +17,9 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+# added by Anaconda3 4.3.1 installer
+export PATH="/Users/jcprime/anaconda/bin:$PATH"
+
+# added by Anaconda3 4.3.1 installer
+export PATH="/Users/jcprime/anaconda/bin:$PATH"
