@@ -1,0 +1,28 @@
+# simple test: change background color of PyMOL window
+#bg blue
+
+# this will run the script in the specified location
+#run /path/to/home/pymol/load_sep.py
+
+# your favorite settings
+#set movie_loop, 0
+#set two_sided_lighting, 1
+
+#set label_size, 60
+#set label_outline_color, 1
+#set label_color, 0
+#set label_position, [0, 0, 10]
+
+# for images:
+#   antialias =1 smooths jagged edges, 0 turns it off
+#set antialias, 1
+
+#   stick_radius -adjust thickness of atomic bonds
+#set stick_radius, 0.3
+
+# save fetched PDB files here
+#set fetch_path, /your/fetch/path
+
+# Personal short-cut to color_obj function
+#import color_obj
+#cmd.extend("co",color_obj.color_obj)
