@@ -1,0 +1,69 @@
+<JWM>
+
+    <!-- Visual Styles -->
+    <WindowStyle>
+        <Font>Sans-9:bold</Font>
+        <Width>4</Width>
+        <Height>24</Height>
+        <Corner>3</Corner>
+        <Foreground>#9a9a9a</Foreground>
+        <Background>#2d2d2d</Background>
+        <Outline>#000000</Outline>
+        <Opacity>0.5</Opacity>
+        <Active>
+            <Foreground>#cacaca</Foreground>
+            <Background>#2d2d2d</Background>
+            <Outline>#7f7f7f</Outline>
+            <Opacity>1.0</Opacity>
+        </Active>
+    </WindowStyle>
+    <TrayStyle group="false" list="all">
+        <Font>Sans-9</Font>
+        <Background>#333333</Background>
+        <Foreground>#cacaca</Foreground>
+        <Outline>#000000</Outline>
+        <Opacity>0.75</Opacity>
+        <Active>
+            <Foreground>#cacaca</Foreground>
+            <Background>#7D2323</Background>
+        </Active>
+    </TrayStyle>
+    <PagerStyle>
+        <Outline>#000000</Outline>
+        <Foreground>#2d2d2d</Foreground>
+        <Background>#333333</Background>
+        <Text>#FFFFFF</Text>
+        <Active>
+            <Foreground>#2d2d2d</Foreground>
+            <Background>#7D2323</Background>
+        </Active>
+    </PagerStyle>
+    <MenuStyle>
+        <Font>Sans-9</Font>
+        <Foreground>#cacaca</Foreground>
+        <Background>#333333</Background>
+        <Outline>#000000</Outline>
+        <Active>
+            <Foreground>#cacaca</Foreground>
+            <Background>#7D2323</Background>
+        </Active>
+        <Opacity>0.85</Opacity>
+    </MenuStyle>
+    <PopupStyle>
+        <Font>Sans-9</Font>
+        <Foreground>#000000</Foreground>
+        <Background>#999999</Background>
+    </PopupStyle>
+
+	
+<ButtonClose>/home/my/.themes/red-black/jwm-red-black/close.svg
+</ButtonClose>
+<ButtonMax>/home/my/.themes/red-black/jwm-red-black/close.svg
+</ButtonMax>
+<ButtonMaxActive>/home/my/.themes/red-black/jwm-red-black/close.svg
+</ButtonMaxActive>
+<ButtonMin>/home/my/.themes/red-black/jwm-red-black/close.svg
+</ButtonMin>
+
+
+</JWM>
