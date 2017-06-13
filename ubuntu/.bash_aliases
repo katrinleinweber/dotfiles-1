@@ -24,7 +24,7 @@ alias mkdir='mkdir -pv'
 
 # Adding prompts to most regular commands
 #alias cp='cp -iv'      # interactive, verbose
-alias rm='rm -iv'      # interactive, verbose
+alias rm='rm -v'      # interactive, verbose
 #alias mv='mv -iv'      # interactive, verbose
 alias grep='grep -i'   # ignore case when grepping
 

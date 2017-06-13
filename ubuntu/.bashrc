@@ -53,3 +53,9 @@ fi
 #if [ -f ~/.path ]; then
         #source ~/.path
 #fi
+
+# added by Anaconda2 4.3.0 installer
+export PATH="/home/james/anaconda2/bin:$PATH"
+
+# added by Anaconda3 4.3.1 installer
+export PATH="/home/james/anaconda3/bin:$PATH"
