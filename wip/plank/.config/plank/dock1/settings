@@ -10,7 +10,7 @@ UnhideDelay=0
 # Monitor number for the dock; use -1 to keep on the primary monitor
 Monitor=-1
 # *.dockitem files on this dock
-DockItems=plank.dockitem;;firefox.dockitem;;gnome-terminal.dockitem;;desktop.dockitem;;cpumonitor.dockitem;;clock-1.dockitem;;trash.dockitem
+DockItems=plank.dockitem;;firefox.dockitem;;gnome-terminal.dockitem;;sublime-text.dockitem;;desktop.dockitem;;cpumonitor.dockitem;;clock-1.dockitem;;trash.dockitem
 # Position: 0 = left; 1 = right; 2 = top; 3 = bottom
 Position=3
 # Position offset from center (in %)
