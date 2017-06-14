@@ -1,0 +1,31 @@
+#!/bin/bash
+
+sudo cp -r /etc/adduser.conf .
+sudo cp -r /etc/locale.gen .
+sudo cp -r /etc/locale.conf .
+sudo cp -r /etc/localtime .
+sudo cp -r /etc/vconsole.conf .
+sudo cp -r /etc/crontab .
+sudo cp -r /etc/crouton .
+sudo cp -r /etc/dconf/ .
+sudo cp -r /etc/debconf.conf .
+sudo cp -r /etc/default/ .
+sudo cp -r /etc/environment .
+sudo cp -r /etc/fonts/ .
+sudo cp -r /etc/fstab .
+sudo cp -r /etc/host* .
+sudo cp -r /etc/kbd/ .
+sudo cp -r /etc/lsb-release .
+sudo cp -r /etc/modprobe.d/ .
+sudo cp -r /etc/networks .
+sudo cp -r /etc/profile.d/ .
+sudo cp -r /etc/profile .
+sudo cp -r /etc/purple/prefs.xml .
+sudo cp -r /etc/resolv.conf .
+sudo cp -r /etc/resolvconf/ .
+sudo cp -r /etc/sysctl.conf .
+sudo cp -r /etc/sysctl.d/ .
+sudo cp -r /etc/skel/ .
+sudo cp -r /etc/xfce4 .
+sudo cp -r /etc/xdg/ .
+sudo cp -r /etc/X11/ .

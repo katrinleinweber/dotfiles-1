@@ -1,0 +1,42 @@
+# Table of Contents
+
+`archanywhere_commands.sh`
+`arch_config.sh`
+`archdi`
+`archfi`
+`autoconfig.sh`
+`boot_disk_creation.md`
+`bootstrap_wip.sh`
+`chroot_setup.sh`
+`colour_schemes.css`
+`colour_schemes.xml`
+`colours_hex.md`
+`commands.sh`
+`English`
+**`etc`**
+`Git_Specifics.sh`
+`InstallVimWithRubySupport.sh`
+`linux_directory_structure.md`
+`MacOSX_Specifics.sh`
+`makesymlinks.sh`
+`packagecontrol_installation.py`
+**`packages`**
+    `arch_packages`
+    `arch_yaourts`
+    `brew_packages.md`
+    `installed2.txt`
+    `installed.txt`
+    `programs.txt`
+`SlowmoGuys_Paint.png`
+`ssh_setup.sh`
+`SSH_Specifics.sh`
+`texmake.sh`
+**`touchpad`**
+    `synclient-l`
+    `xinput_list-props`
+    `xset_q`
+`ubuntu_config.py`
+`ubuntu_config.sh`
+`UEFI_Only_Booting_Issues.sh`
+`universal_gitconfig`
+`useful.sh`

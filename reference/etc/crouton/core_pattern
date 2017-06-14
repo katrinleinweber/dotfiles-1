@@ -1,0 +1,4 @@
+# The first non-comment line is the core_pattern that applies to this chroot.
+# See man 5 core for details.
+
+|/usr/share/apport/apport %p %s %c

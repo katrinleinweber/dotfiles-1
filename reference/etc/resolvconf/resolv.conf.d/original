@@ -1,0 +1,5 @@
+nameserver 212.219.59.200
+nameserver 128.86.163.242
+nameserver 128.86.163.243
+search london.ac.uk.
+options single-request timeout:1 attempts:5

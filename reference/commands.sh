@@ -1,0 +1,31 @@
+#!/bin/bash
+
+sudo cp -rLf /etc/adduser.conf ~/bin/config/etc/
+sudo cp -rLf /etc/locale.gen ~/bin/config/etc/
+sudo cp -rLf /etc/locale.conf ~/bin/config/etc/
+sudo cp -rLf /etc/localtime ~/bin/config/etc/
+sudo cp -rLf /etc/vconsole.conf ~/bin/config/etc/
+sudo cp -rLf /etc/crontab ~/bin/config/etc/
+sudo cp -rLf /etc/crouton ~/bin/config/etc/
+sudo cp -rLf /etc/dconf/ ~/bin/config/etc/
+sudo cp -rLf /etc/debconf.conf ~/bin/config/etc/
+sudo cp -rLf /etc/default/ ~/bin/config/etc/
+sudo cp -rLf /etc/environment ~/bin/config/etc/
+sudo cp -rLf /etc/fonts/ ~/bin/config/etc/
+sudo cp -rLf /etc/fstab ~/bin/config/etc/
+sudo cp -rLf /etc/host* ~/bin/config/etc/
+sudo cp -rLf /etc/kbd/ ~/bin/config/etc/
+sudo cp -rLf /etc/lsb-release ~/bin/config/etc/
+sudo cp -rLf /etc/modprobe.d/ ~/bin/config/etc/
+sudo cp -rLf /etc/networks ~/bin/config/etc/
+sudo cp -rLf /etc/profile.d/ ~/bin/config/etc/
+sudo cp -rLf /etc/profile ~/bin/config/etc/
+sudo cp -rLf /etc/purple/prefs.xml ~/bin/config/etc/
+sudo cp -rLf /etc/resolv.conf ~/bin/config/etc/
+sudo cp -rLf /etc/resolvconf/ ~/bin/config/etc/
+sudo cp -rLf /etc/sysctl.conf ~/bin/config/etc/
+sudo cp -rLf /etc/sysctl.d/ ~/bin/config/etc/
+sudo cp -rLf /etc/skel/ ~/bin/config/etc/
+sudo cp -rLf /etc/xfce4 ~/bin/config/etc/
+sudo cp -rLf /etc/xdg/ ~/bin/config/etc/
+sudo cp -rLf /etc/X11/ ~/bin/config/etc/

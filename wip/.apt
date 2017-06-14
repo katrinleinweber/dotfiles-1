@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Read in each line of .apt_installs to add to apts array
+while read -r line; do
+    # Somethingorother
+done
+
+for apt in "${apts[@]}"; do
+    sudo apt install "$apt"
+done

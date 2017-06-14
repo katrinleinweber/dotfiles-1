@@ -1,0 +1,11 @@
+#!/bin/bash
+# For Ubuntu flavours, to be run once
+
+repos=("ppa:gottcode/gcppa" "ppa:docky-core/stable" "ppa:numix/ppa")
+installs=("focuswriter" "plank" "numix-gtk-theme" "numix-icon-circle-theme")
+
+for repo in "${repos[@]}"; do
+    sudo add-apt-repository "$repo"
+done
+
+sudo apt update
