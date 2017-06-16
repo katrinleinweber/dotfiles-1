@@ -2,10 +2,14 @@
 # For Ubuntu flavours, to be run once
 
 repos=("ppa:gottcode/gcppa" "ppa:docky-core/stable" "ppa:numix/ppa")
-installs=("focuswriter" "plank" "numix-gtk-theme" "numix-icon-circle-theme")
+installs=("focuswriter" "plank" "numix-gtk-theme" "numix-icon-theme-circle")
 
 for repo in "${repos[@]}"; do
-    sudo add-apt-repository "$repo"
+    sudo add-apt-repository -y "$repo"
 done
 
 sudo apt update
+
+for install in "${installs[@]}"; do
+    sudo apt install -y "$install"
+done
