@@ -88,7 +88,7 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 " }}}
 
 " Pathogen Settings {{{
-call pathogen#infect()                      " use pathogen
+"call pathogen#infect()                      " use pathogen
 "call pathogen#runtime_append_all_bundles()  " use pathogen
 " }}}
 
