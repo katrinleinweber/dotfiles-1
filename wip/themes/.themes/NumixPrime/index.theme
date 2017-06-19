@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Numix Prime
+Comment=A modern flat theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Numix Prime
+MetacityTheme=Numix Prime
+ButtonLayout=:minimize,maximize,close
