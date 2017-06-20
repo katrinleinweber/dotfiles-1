@@ -24,7 +24,7 @@
 .linuxbrew/
 .local/
 .log/
-.mozilla/
+#.mozilla/
 .qt/
 .rnd
 .ssh/
