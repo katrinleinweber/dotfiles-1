@@ -1,0 +1,18 @@
+
+** (opensnap:513): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-pH9ADvxQKt: Connection refused
+ERROR: openbox-xdg-autostart requires PyXDG to be installed
+xfce4-panel: Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+
+** (wrapper-2.0:540): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-pH9ADvxQKt: Connection refused
+
+(wrapper-2.0:540): libnotify-WARNING **: Failed to connect to proxy
+
+(wrapper-2.0:540): Gtk-WARNING **: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner PulseaudioButton)
+
+** (xfce4-terminal:578): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-pH9ADvxQKt: Connection refused
+Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+
+(xfdesktop:511): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(xfce4-panel:510): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
