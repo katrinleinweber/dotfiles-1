@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>simple</name>
-    <titleLayout>NLIMC</titleLayout>
+    <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -57,12 +57,12 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
+      <name>Sans</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
@@ -294,7 +294,7 @@
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
-      	<allDesktops>yes</allDesktops>
+        <allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -304,7 +304,7 @@
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
-      	<allDesktops>yes</allDesktops>
+        <allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -351,22 +351,22 @@
           <enabled>true</enabled>
           <name>Thunar</name>
         </startupnotify>
-	<command>thunar</command>
+        <command>thunar</command>
       </action>
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
-	<command>xscreensaver-command -lock</command>
+        <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-	<command>rofi</command>
+        <command>rofi</command>
       </action>
     </keybind>
     <keybind key="A-d">
       <action name="Execute">
-	<command>rofi</command>
+        <command>rofi</command>
       </action>
     </keybind>
     <keybind key="A-Return">
