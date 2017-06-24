@@ -1326,7 +1326,7 @@ GtkModelButton.button:selected {
 
 /* General settings for tabs at top of screen on gnome-terminal */
 TerminalWindow .notebook tab, TerminalWindow .notebook tab.top {
-    background-color: @theme_bg_color;
+    background-color: shade(#444444, 0.85);
     border-color: transparent;
     border-left-width: 0;
     border-right-width: 0;
@@ -1336,28 +1336,28 @@ TerminalWindow .notebook tab, TerminalWindow .notebook tab.top {
     border-bottom-width: 2px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    color: @theme_fg_color;
+    color: #dcdcdc;
 }
 /* Tabs when hovered over ("prelight")
    NB: ORDER MATTERS! (Put hover first and it won't impact active+hovered tabs; put active first and hover settings will be applied on top of active settings) */
 TerminalWindow .notebook tab.top:hover, TerminalWindow .notebook tab.reorderable-page:hover {
-    background-color: @theme_bg_color;
+    background-color: shade(#444444, 0.85);
     border-left: 0px;
     border-right: 0px;
     border-bottom-color: alpha(@theme_selected_bg_color, 0.3);
     box-shadow: inset 0 3px alpha(black, 0.03), inset 0 2px alpha(black, 0.03), inset 0 1px alpha(black, 0.03),
                 inset -3px 0 alpha(black, 0.03), inset -2px 0 alpha(black, 0.03), inset -1px 0 alpha(black, 0.03);
-    color: @theme_fg_color;
+    color: #dcdcdc;
 }
 /* Active tabs */
 TerminalWindow .notebook tab.top:active, TerminalWindow .notebook tab.reorderable-page:active {
-    background-color: @theme_base_color;
+    background-color: shade(#444444, 0.9);
     border-left: 0px;
     border-right: 0px;
     border-bottom-color: @theme_selected_bg_color;
     box-shadow: inset 0 3px alpha(black, 0.03), inset 0 2px alpha(black, 0.03), inset 0 1px alpha(black, 0.03),
                 inset -3px 0 alpha(black, 0.03), inset -2px 0 alpha(black, 0.03), inset -1px 0 alpha(black, 0.03);
-    color: @theme_text_color;
+    color: @theme_base_color;
 }
 /* End TerminalWindow-specific settings */
 
@@ -1886,8 +1886,8 @@ GtkComboBox .separator {
 .sidebar row:prelight,
 .sidebar .view row:prelight {
     border-color: shade(@theme_bg_color, 1.05);
-    /*background-color: shade(@theme_bg_color, 1.05);*/
-    background-color: green;
+    background-color: shade(@theme_bg_color, 1.05);
+    /*background-color: green; LATEST TEST*/
     background-image: none;
     color: @theme_fg_color;
 }

@@ -8,14 +8,14 @@
 /* Changing Gnome-Colors 4-colour set to #5c8cff, #4c7df0, #1546b9, and #002fa0 in oomox (using same saturation and brightness, and changing hue from 3 to 222 in each original case) */
 
 /* default color scheme */
-@define-color bg_color #2d2d2d;
-@define-color fg_color #dcdcdc;
-@define-color base_color #333333;
-@define-color text_color #dedede; /* Slightly lighter than fg_color */
+@define-color bg_color #eeeeee;
+@define-color fg_color #555555;
+@define-color base_color #ffffff;
+@define-color text_color #333333; /* Slightly lighter than fg_color */
 @define-color selected_bg_color #3d61ff;
-@define-color selected_fg_color #f9f9f9;
-@define-color tooltip_bg_color #2d2d2d;
-@define-color tooltip_fg_color #dcdcdc;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #444444;
+@define-color tooltip_fg_color #eeeeee;
 
 /* dark color scheme */
 @define-color dark_bg_color #2d2d2d;
@@ -30,6 +30,8 @@
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color theme_dark_bg_color @dark_bg_color;
+@define-color theme_dark_fg_color @dark_fg_color;
 
 /* shadow effects */
 @define-color light_shadow #fff;
@@ -55,16 +57,16 @@
 @define-color error_color #cc0000;
 
 /* widget colors */
-@define-color titlebar_bg_color @dark_bg_color;
-@define-color titlebar_fg_color @dark_fg_color;
-@define-color menubar_bg_color @dark_bg_color;
-@define-color menubar_fg_color @dark_fg_color;
-@define-color toolbar_bg_color @theme_bg_color;
-@define-color toolbar_fg_color @theme_fg_color;
-@define-color menu_bg_color @dark_bg_color;
-@define-color menu_fg_color @dark_fg_color;
-@define-color panel_bg_color @dark_bg_color;
-@define-color panel_fg_color @dark_fg_color;
+@define-color titlebar_bg_color #444444;
+@define-color titlebar_fg_color #dddddd;
+@define-color menubar_bg_color #444444;
+@define-color menubar_fg_color #dddddd;
+@define-color toolbar_bg_color #eeeeee;
+@define-color toolbar_fg_color #555555;
+@define-color menu_bg_color #444444;
+@define-color menu_fg_color #dddddd;
+@define-color panel_bg_color #444444;
+@define-color panel_fg_color #dddddd;
 
 /* osd */
 @define-color osd_base @dark_bg_color;
