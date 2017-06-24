@@ -25,6 +25,23 @@ PATH="/home/james/.linuxbrew/bin:/home/james/bin:/home/james/usr/local/bin:/home
 # Command prompt customisation (found both in .bashrc and .bash_profile, just in case)
 export PS1="\[\033[0;34m\]\u:\w $ \[\033[0m\]"
 
+# Don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
+# For setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=100000000000
+HISTFILESIZE=100000000000
+HISTTIMEFORMAT='%F %T '
+PROMPT_COMMAND='history -a'
+
+# Check the window size after each command and, if necessary,
+# Update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
 # Source .bash_aliases if it exists
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
