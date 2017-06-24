@@ -1,35 +1,33 @@
-/* This is the dark-ish theme by default!  NOT the same as gtk-dark.css! */
 @import url("resource:///org/numixproject/gtk/dist/gtk.css");
 
 /* MY REPLACEMENTS */
 /* #f0544c or #d64937 --> #3d61ff (bright blue) */
 /* #f06860 or  --> #608cf0 (lighter bright blue) */
+/* #08c7fd is an unused Good Light Bright Blue, just for reference and all */
 
-/* Changing Gnome-Colors 4-colour set to #5c8cff, #4c7df0, #1546b9, and #002fa0 in oomox (using same saturation and brightness, and changing hue from 3 to 222 in each original case) */
-
-/* default color scheme */
-@define-color bg_color #2d2d2d;
-@define-color fg_color #dcdcdc;
-@define-color base_color #333333;
-@define-color text_color #dedede; /* Slightly lighter than fg_color */
-@define-color selected_bg_color #3d61ff;
-@define-color selected_fg_color #f9f9f9;
-@define-color tooltip_bg_color #2d2d2d;
-@define-color tooltip_fg_color #dcdcdc;
+/* Default Style with my replacements */
+@define-color bg_color #dedede; /* Light grey */
+@define-color fg_color #555555; /* Dark grey */
+@define-color base_color #f9f9f9; /* Lightest grey */
+@define-color text_color #333333; /* Darker grey */
+@define-color selected_bg_color #3d61ff; /* Bright blue */
+@define-color selected_fg_color #f9f9f9; /* Lightest grey */
+@define-color tooltip_bg_color #2d2d2d; /* Darkest grey */
+@define-color tooltip_fg_color #dcdcdc; /* Lighter grey */
 
 /* dark color scheme */
-@define-color dark_bg_color #2d2d2d;
-@define-color dark_fg_color #dcdcdc;
+@define-color dark_bg_color #2d2d2d; /* Darkest grey */
+@define-color dark_fg_color #dcdcdc; /* Lighter grey */
 
 /* colormap actually used by the theme, to be overridden in other css files */
-@define-color theme_bg_color @bg_color;
-@define-color theme_fg_color @fg_color;
-@define-color theme_base_color @base_color;
-@define-color theme_text_color @text_color;
-@define-color theme_selected_bg_color @selected_bg_color;
-@define-color theme_selected_fg_color @selected_fg_color;
-@define-color theme_tooltip_bg_color @tooltip_bg_color;
-@define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color theme_bg_color @bg_color; /* Light grey */
+@define-color theme_fg_color @fg_color; /* Dark grey */
+@define-color theme_base_color @base_color; /* Lightest grey */
+@define-color theme_text_color @text_color; /* Darker grey */
+@define-color theme_selected_bg_color @selected_bg_color; /* Bright blue */
+@define-color theme_selected_fg_color @selected_fg_color; /* Lightest grey */
+@define-color theme_tooltip_bg_color @tooltip_bg_color; /* Darkest grey */
+@define-color theme_tooltip_fg_color @tooltip_fg_color; /* Lighter grey */
 
 /* shadow effects */
 @define-color light_shadow #fff;
@@ -90,10 +88,12 @@
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
-@import url("apps/gnome-applications.css");
+@import url("apps/applications-gnome.css");
 /*@import url("apps/granite-widgets.css");
 @import url("apps/unity.css");
 @import url("apps/xfce.css");
 @import url("apps/nemo.css");
 @import url("apps/synaptic.css");
 @import url("apps/lightdm-gtk-greeter.css");*/
+
+/* From https://askubuntu.com/questions/40332/how-to-make-selected-tab-in-terminal-more-prominent, https://askubuntu.com/questions/769135/where-has-the-gnome-terminal-gtk3-style-configuration-moved-to-in-ubuntu-16-04 */

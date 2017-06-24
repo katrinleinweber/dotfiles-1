@@ -1,22 +1,22 @@
-@import url("resource:///org/numixproject/gtk/dist/gtk-dark.css");
+@import url("resource:///org/numixproject/gtk/dist/gtk.css");
 
 /* MY REPLACEMENTS */
 /* #f0544c or #d64937 --> #3d61ff (bright blue) */
 /* #f06860 or  --> #608cf0 (lighter bright blue) */
 
-/* default color scheme */
-@define-color base_color #333333;
+/* darkified color scheme */
 @define-color bg_color #2d2d2d;
-@define-color text_color #dedede;
 @define-color fg_color #dcdcdc;
+@define-color base_color #333333;
+@define-color text_color #dedede; /* Slightly lighter than fg_color */
 @define-color selected_bg_color #3d61ff;
 @define-color selected_fg_color #f9f9f9;
 @define-color tooltip_bg_color #2d2d2d;
 @define-color tooltip_fg_color #dcdcdc;
 
 /* dark color scheme */
-@define-color dark_bg_color #2d2d2d;
-@define-color dark_fg_color #dcdcdc;
+/*@define-color dark_bg_color #2d2d2d;*/
+/*@define-color dark_fg_color #dcdcdc;*/
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
