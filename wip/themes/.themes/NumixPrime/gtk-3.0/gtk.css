@@ -1,9 +1,11 @@
-/* This is the dark-ish theme by default!  NOT the same as gtk-dark.css! */
 @import url("resource:///org/numixproject/gtk/dist/gtk.css");
+/* ^^ Tested replacing above 25/06/2017 ~2.30pm with import of local file, as suggested here: https://askubuntu.com/questions/572511/how-do-i-open-a-gresource-file */
+/*@import url("gtk-numix-blue.css")*/
+/* Then thought better of it and started new directory, NumixBlue, so as not to screw up existing NumixPrime progress (because I'd changed all the other files anyway, so it wouldn't have worked as I'd want it to) */
 
 /* MY REPLACEMENTS */
 /* #f0544c or #d64937 --> #3d61ff (bright blue) */
-/* #f06860 or  --> #608cf0 (lighter bright blue) */
+/* #f06860 --> #608cf0 (lighter bright blue) */
 
 /* Changing Gnome-Colors 4-colour set to #5c8cff, #4c7df0, #1546b9, and #002fa0 in oomox (using same saturation and brightness, and changing hue from 3 to 222 in each original case) */
 

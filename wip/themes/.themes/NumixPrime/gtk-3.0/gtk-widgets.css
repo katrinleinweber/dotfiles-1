@@ -1,5 +1,6 @@
 /* NOTES to contributors:
- * use 4 spaces indents, and keep code ALIGNED and ORDERED */
+ * use 4 spaces indents, and keep code ALIGNED and ORDERED
+ * and shade(@color, @number) does effectively same as mix(@color1, @color2, @fraction_of_color1), but with @color1 being @color, and @color2 being black, so numbers above 1 are lightening effects */
 
 /* default */
 * {
@@ -569,13 +570,18 @@ GtkExpander {
 }
 
 .list-row:hover {
-    background-color: shade(@theme_bg_color, 1.02);
+    background-color: shade(@theme_bg_color, 1.5); /* Originally shade(@theme_bg_color, 1.02); changed 25/06/2017 ~1.30pm to lighten hovered backgrounds */
 }
 
 .list-row:selected {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
 }
+
+.list-row:selected:hover {
+    background-color: shade(@theme_selected_bg_color, 0.8);
+    color: @theme_selected_fg_color;
+} /* Added .list-row:selected:hover to fix Nautilus red selected+hovered sidebar things 25/06/2017 ~1.30pm; something actually worked, at last! */
 
 /**************
 * flow boxes *
@@ -1865,39 +1871,70 @@ GtkComboBox .separator {
 /* e.g. in Nautilus */
 .sidebar,
 .sidebar.view,
+GtkHTML.sidebar,
 .sidebar .view,
+.sidebar GtkHTML,
 .sidebar GtkScrolledWindow {
     background-color: @theme_bg_color;
     color: mix(@theme_fg_color, @theme_bg_color, 0.1);
 } /* Swapped color and background-color; then changed new background-color from mix(@theme_fg_color, @theme_bg_color, 0.1) to @theme_fg_color, then changed everything back 23/06/2017 */
 
+.sidebar.view row:hover,
+GtkHTML.sidebar row:hover,
+.sidebar row:hover,
+.sidebar .view row:hover,
+.sidebar GtkHTML row:hover {
+    background-color: @theme_selected_bg_color;
+}
+
+.sidebar.view row:prelight,
+GtkHTML.sidebar row:prelight,
+.sidebar row:prelight,
+.sidebar .view row:prelight,
+.sidebar GtkHTML row:prelight {
+    border-color: shade(@theme_bg_color, 1.05);
+    background-color: shade(@theme_bg_color, 1.05);
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+.sidebar.view row:selected,
+.sidebar.view row:selected:hover,
+.sidebar.view row:selected:focus,
+GtkHTML.sidebar row:selected,
+GtkHTML.sidebar row:selected:hover,
+GtkHTML.sidebar row:selected:focus,
 .sidebar row:selected,
 .sidebar row:selected:hover,
 .sidebar row:selected:focus,
 .sidebar .view row:selected,
 .sidebar .view row:selected:hover,
-.sidebar .view row:selected:focus {
+.sidebar .view row:selected:focus,
+.sidebar GtkHTML row:selected,
+.sidebar GtkHTML row:selected:hover,
+.sidebar GtkHTML row:selected:focus {
     border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
 }
 
-.sidebar row:prelight,
-.sidebar .view row:prelight {
-    border-color: shade(@theme_bg_color, 1.05);
-    background-color: shade(@theme_bg_color, 1.05);
-    /*background-color: green; LATEST TEST*/
-    background-image: none;
-    color: @theme_fg_color;
-}
-
+.sidebar.view row:selected:prelight,
+GtkHTML.sidebar row:selected:prelight,
 .sidebar row:selected:prelight,
-.sidebar .view row:selected:prelight {
+.sidebar .view row:selected:prelight,
+.sidebar GtkHTML row:selected:prelight {
     border-color: shade(@theme_selected_bg_color, 1.05);
     background-color: shade(@theme_selected_bg_color, 1.05);
     background-image: none;
     color: @theme_selected_fg_color;
+}
+
+NautilusWindow.sidebar .view:selected,
+NautilusWindow.sidebar .view:selected:hover,
+NautilusWindow.sidebar .view:selected:prelight,
+NautilusWindow.sidebar .view:selected:focus {
+    background-color: @theme_selected_bg_color;
 }
 
 .sidebar .frame {
@@ -2087,7 +2124,6 @@ GtkComboBox .separator {
 GtkStatusbar {
     padding: 4px;
     color: @theme_fg_color;
-    /*background-color: green;*/ /* Test added 23/06/2017 */
 }
 
 /**********
