@@ -13,7 +13,9 @@ fast 0
 colour_bg 1.000000 1.000000 1.000000
 colour_morph 0.100000 0.100000 0.800000
 colour_rsurf 0.000000 0.300000 0.600000
+babel_path /usr/bin/babel
 convert_path /usr/bin/convert
+povray_path /usr/bin/povray
 viewer_path /usr/bin/display
 babel_exe babel
 convert_exe convert
