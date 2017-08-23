@@ -107,6 +107,9 @@ endif
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
+    autocmd VimEnter * setlocal tabstop=4
+    autocmd VimEnter * setlocal shiftwidth=4
+    autocmd VimEnter * setlocal softtabstop=4
     autocmd BufWritePre *.php,*.py,*.js,*.txt,*.hs,*.java,*.md
         \:call <SID>StripTrailingWhitespaces()
     autocmd FileType java setlocal noexpandtab
