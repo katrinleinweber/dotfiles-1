@@ -5,3 +5,10 @@ function linkbin() {
 	dst="/Users/jcprime/bin"
 	pax -rwlpe "$src" "$dst"
 }
+
+function cpclear() {
+    rm *.[elos]*
+    rm *.trajectory*.pdb
+    rm *.restart*
+    rm *-RESTART.wfn*
+}
