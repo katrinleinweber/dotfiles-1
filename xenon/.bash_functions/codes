@@ -52,6 +52,13 @@ function cp2k()
     done
 }
 
+function cpclear() {
+    rm *.[elos]*
+    rm *.trajectory*.pdb
+    rm *.restart*
+    rm *-RESTART.wfn*
+}
+
 function extract {
  if [ -z "$1" ]; then
     # display usage if no parameters given
