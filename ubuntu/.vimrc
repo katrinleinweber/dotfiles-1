@@ -4,6 +4,19 @@ colorscheme blues
 syntax on			        " turn on syntax processing
 " }}}
 
+" Vundle {{{
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" PLUGINS
+Plugin 'davidhalter/jedi-vim'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" }}}
+
 " Tabs and Spaces {{{
 set tabstop=4			    " number of visual spaces per TAB
 set softtabstop=4	    	" number of spaces in tab when editing
