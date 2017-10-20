@@ -16,7 +16,7 @@ Position=3
 # Position offset from center (in %)
 Offset=0
 # Theme name
-Theme=Numix
+Theme=Numix Circle
 # Alignment for dock on monitor's edge: 0 = panel-mode; 1 = right-aligned; 2 = left-aligned; 3 = centred
 Alignment=3
 # Alignment of the items in the dock if panel-mode is used: 1 = left-aligned; 2 = right-aligned; 3 = centred
