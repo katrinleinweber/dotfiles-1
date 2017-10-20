@@ -1,8 +1,7 @@
 #!/bin/bash
 # autoconfig.sh
 # Sets up config files that I would otherwise have to manually edit over and over again when installing a new Linux distro
-
-# DEPRECATED; SEE ARCH_CONFIG.SH ANDBOOTSTRAP_WIP.SH PLEASE!
+# DEPRECATED; SEE ARCH_CONFIG.SH AND BOOTSTRAP_WIP.SH PLEASE!
 
 # Chromebook touchpad configuration
 if [ ! -f "/etc/X11/xorg.conf.d/50-cros-touchpad.conf" ]; then

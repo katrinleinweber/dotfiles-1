@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Arch Linux Desktop Install (archdi)
 # -----------------------------------
 # author    : MatMoul
@@ -9,8 +8,6 @@
 # project   : https://github.com/MatMoul/archdi
 #             http://sourceforge.net/projects/archdi/
 # license   : GPLv3 (http://opensource.org/licenses/GPL-3.0)
-
-
 
 apptitle="Arch Linux Desktop Install (archdi) - Version: 2016.03.18.23.14.56 (GPLv3)"
 version="2016.03.18.23.14.56"
@@ -24,7 +21,6 @@ binurl2=matmoul.github.io/archdi
 
 liburl1=http://archdi.sourceforge.net/archdi-lib
 liburl2=https://raw.githubusercontent.com/MatMoul/archdi-pkg/master/lib
-
 
 help(){
   echo "-h | --help                   : this screen"
@@ -113,7 +109,7 @@ dependencies(){
     echo ""
     echo "Install missing dependencies ?"
     read -p "Install missing dependencies ? (Y/n)" choice
-    case "$choice" in 
+    case "$choice" in
       n|N ) exit 1;;
     esac
     pacman -S --needed wget libnewt

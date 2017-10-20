@@ -213,8 +213,9 @@ function install_everything() {
         declare -a packages=("zathura" "zathura-pdf-poppler" "vim" "gparted" "filezilla" "gpicview" "texworks" "lynx" "ranger" "vlc" "ttf-dejavu" "ttf-inconsolata" "lxappearance" "vim-systemd" "tlp" "alsa-firmware" "alsa-utils" "alsa-plugins" "pulseaudio-alsa" "pulseaudio" "pavucontrol" "thunar" "tree" "npm" "gnome-themes-standard" "gtk-engine-murrine" "font-mathematica" "texlive-core" "texlive-fontsextra" "shellcheck")
     fi
     # Shouldn't need any interaction besides the sudo password
+    sudo pacman -Syu # Must be done before installing a new package, or could fuck up system
     for i in "${packages[@]}"; do
-        sudo pacman -Sy --noconfirm "$i"
+        sudo pacman -S --noconfirm "$i"
     done
 
     # Then install everything in list via Yaourt
