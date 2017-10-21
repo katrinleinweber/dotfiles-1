@@ -16,7 +16,22 @@ Remote copy of my usual dotfiles and the like.  I tend to move between a fair bu
 
 For my own future reference, I'm dumping things like what things are dependent on what files in what places and so on, because I'm guaranteed to forget it every sodding time I need it.  I may dump code snippets in here as I go along as well, because I'm me, and I can't handle the thought of not finding something when I need it.  So.
 
-### `tint2`
+* Find lots of useful ricing-related information [here](https://www.reddit.com/r/unixporn/wiki/ricerous_info)
+* Useful thing I keep coming back to re-Googling, every time I forget, which is basically every time I need it:
+    - Status bar: simple block of text information that sticks to one side of your screen; designed to show the change in something over time (e.g. CPU usage, RAM usage, etc):
+        + [Lemonbar](https://github.com/LemonBoy/bar); requires `libxcb-xinerama0-dev` and `libxcb-randr0-dev` (on Ubuntu, anyway)
+        + [Dzen](http://robm.github.io/dzen/); configure using `~/.Xresources` (see [ArchWiki](https://wiki.archlinux.org/index.php/Dzen) for more details)
+        + [Candybar](https://github.com/Lokaltog/candybar); requires a fair few things, so check its wiki for details
+        + [Polybar](https://github.com/jaagr/polybar); yet to test
+    - Panel: also sticks to one side of your screen, but allows you to manipulate windows, and includes clickable widgets:
+        + [tint2](https://wiki.archlinux.org/index.php/Tint2)
+    - Dock: program that regroups certain widgets (like a panel) to make it easier to open up programs, and may have a window-manipulation feature:
+        + [Cairo-Dock](https://wiki.archlinux.org/index.php/Cairo-Dock)
+    - Conky: information display
+    - Taskbar: all the features of a panel, plus a menu, manages non-daemon programs that run in the background, manages popup notification-y things, and so on
+* I can't believe there is actually such a thing as a [terminal screensaver](https://github.com/pipeseroni/pipes.sh), but there is!
+
+### `tint2` taskbar/panel thingy
 
 Need to have `xcompmgr` and `compton` installed to get transparency effects.  The default place for themes to be saved (and looked for upon starting) is `~/.config/tint2/tint2rc`.  You can set it to run several themes at once by calling it twice and pointing to each different theme-containing file: `tint2 -c /path/to/first/file & ; tint2 -c /path/to/second/file`.
 
