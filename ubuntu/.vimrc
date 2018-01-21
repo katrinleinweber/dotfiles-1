@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 " PLUGINS
 Plugin 'davidhalter/jedi-vim'
 Plugin 'WolfgangMehner/perl-support'
+Plugin 'Shougo/unite.vim'    " Required for citation.vim
+Plugin 'rafaqz/citation.vim' " Zotero and BibTeX integration
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
