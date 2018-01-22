@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=NumixBlue
+Comment=A modern flat theme, blue-shifted
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=NumixBlue
+MetacityTheme=NumixBlue
+ButtonLayout=:minimize,maximize,close

@@ -1,0 +1,4 @@
+sh ~/.fehbg &
+xcompmgr &
+plank &
+#cairo-dock & # Yes to using openGL

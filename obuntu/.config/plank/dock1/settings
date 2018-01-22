@@ -1,0 +1,31 @@
+# From https://github.com/Madh93/config/blob/master/plank/settings
+# Whether to show only windows of the current workspace
+CurrentWorkspaceOnly=false
+# Size of dock icons (in pixels)
+IconSize=40
+# 0 = no hiding; 1 = intelligent hiding; 2 = auto-hiding; 3 = dodge active maximised windows
+HideMode=0
+# Milliseconds of delay before unhiding the dock
+UnhideDelay=0
+# Monitor number for the dock; use -1 to keep on the primary monitor
+Monitor=-1
+# *.dockitem files on this dock
+DockItems=plank.dockitem;;firefox.dockitem;;gnome-terminal.dockitem;;sublime-text.dockitem;;mendeleydesktop.dockitem;;rstudio.dockitem;;desktop.dockitem;;cpumonitor.dockitem;;clock-1.dockitem;;trash.dockitem
+# Position: 0 = left; 1 = right; 2 = top; 3 = bottom
+Position=3
+# Position offset from center (in %)
+Offset=0
+# Theme name
+Theme=Numix
+# Alignment for dock on monitor's edge: 0 = panel-mode; 1 = right-aligned; 2 = left-aligned; 3 = centred
+Alignment=3
+# Alignment of the items in the dock if panel-mode is used: 1 = left-aligned; 2 = right-aligned; 3 = centred
+ItemsAlignment=3
+# Whether to prevent drag-and-drop actions and lock items on the dock
+LockItems=true
+# Whether to use pressure-based revealing of the dock if the support is available
+PressureReveal=false
+# Whether to show only pinned applications (useful for running more than one dock)
+PinnedOnly=false
+# Whether to automatically pin an application if it seems useful to do
+AutoPinnng=true

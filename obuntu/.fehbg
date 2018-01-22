@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-scale '/home/soft/wallpaper/SlowmoGuys_Paint.png' 

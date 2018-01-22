@@ -1,0 +1,6 @@
+# lsext displays long list of files of the given extension
+
+# function lsext()
+# {
+#  find . -type f -iname '*.'${1}'' -exec ls -l {} \; ;
+# }

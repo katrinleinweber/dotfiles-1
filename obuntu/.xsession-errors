@@ -1,0 +1,6 @@
+Unable to create /home/soft/.dbus/session-bus
+
+(fluxgui:1477): IBUS-WARNING **: Unable to connect to ibus: Could not connect: Connection refused
+error 3: BadWindow (invalid Window parameter) request 15 minor 0 serial 551
+error 3: BadWindow (invalid Window parameter) request 15 minor 0 serial 26365
+error 3: BadWindow (invalid Window parameter) request 15 minor 0 serial 27389
