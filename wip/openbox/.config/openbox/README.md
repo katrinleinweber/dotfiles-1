@@ -5,6 +5,7 @@ OK, so, just to keep better track of what the hell all these files are doing:
 * `autostart_archtint2-feh-compton` is the original `autostart` I'd set up for Openbox with, duh, Arch
 * `autostart_feh-only` just sets the `feh` background image from the default path to `~/.fehbg`
 * `autostart_feh-tint2-compton` is the current `autostart` being tested on my ThinkPad Edge 11
+* `autostart_feh-xcompmgr-plank` is the current `autostart` in use on my Lenovo IdeaPad 100S
 
 `rc.xml`s:
 

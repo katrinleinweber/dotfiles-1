@@ -1,0 +1,271 @@
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/apps: nautilus.css
+diff -r .themes/NumixPrime/gtk-3.0/gtk.css .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/gtk.css
+1a2,4
+> /* ^^ Tested replacing above 25/06/2017 ~2.30pm with import of local file, as suggested here: https://askubuntu.com/questions/572511/how-do-i-open-a-gresource-file */
+> /*@import url("gtk-numix-blue.css")*/
+> /* Then thought better of it and started new directory, NumixBlue, so as not to screw up existing NumixPrime progress (because I'd changed all the other files anyway, so it wouldn't have worked as I'd want it to) */
+5,6c8
+< /* #f06860 or  --> #608cf0 (lighter bright blue) */
+< /* #08c7fd is an unused Good Light Bright Blue, just for reference and all */
+---
+> /* #f06860 --> #608cf0 (lighter bright blue) */
+8,16c10,20
+< /* Default Style with my replacements */
+< @define-color bg_color #dedede; /* Light grey */
+< @define-color fg_color #555555; /* Dark grey */
+< @define-color base_color #f9f9f9; /* Lightest grey */
+< @define-color text_color #333333; /* Darker grey */
+< @define-color selected_bg_color #3d61ff; /* Bright blue */
+< @define-color selected_fg_color #f9f9f9; /* Lightest grey */
+< @define-color tooltip_bg_color #2d2d2d; /* Darkest grey */
+< @define-color tooltip_fg_color #dcdcdc; /* Lighter grey */
+---
+> /* Changing Gnome-Colors 4-colour set to #5c8cff, #4c7df0, #1546b9, and #002fa0 in oomox (using same saturation and brightness, and changing hue from 3 to 222 in each original case) */
+> 
+> /* default color scheme */
+> @define-color bg_color #eeeeee;
+> @define-color fg_color #555555;
+> @define-color base_color #ffffff;
+> @define-color text_color #333333; /* Slightly lighter than fg_color */
+> @define-color selected_bg_color #3d61ff;
+> @define-color selected_fg_color #ffffff;
+> @define-color tooltip_bg_color #444444;
+> @define-color tooltip_fg_color #eeeeee;
+19,20c23,24
+< @define-color dark_bg_color #2d2d2d; /* Darkest grey */
+< @define-color dark_fg_color #dcdcdc; /* Lighter grey */
+---
+> @define-color dark_bg_color #2d2d2d;
+> @define-color dark_fg_color #dcdcdc;
+23,30c27,36
+< @define-color theme_bg_color @bg_color; /* Light grey */
+< @define-color theme_fg_color @fg_color; /* Dark grey */
+< @define-color theme_base_color @base_color; /* Lightest grey */
+< @define-color theme_text_color @text_color; /* Darker grey */
+< @define-color theme_selected_bg_color @selected_bg_color; /* Bright blue */
+< @define-color theme_selected_fg_color @selected_fg_color; /* Lightest grey */
+< @define-color theme_tooltip_bg_color @tooltip_bg_color; /* Darkest grey */
+< @define-color theme_tooltip_fg_color @tooltip_fg_color; /* Lighter grey */
+---
+> @define-color theme_bg_color @bg_color;
+> @define-color theme_fg_color @fg_color;
+> @define-color theme_base_color @base_color;
+> @define-color theme_text_color @text_color;
+> @define-color theme_selected_bg_color @selected_bg_color;
+> @define-color theme_selected_fg_color @selected_fg_color;
+> @define-color theme_tooltip_bg_color @tooltip_bg_color;
+> @define-color theme_tooltip_fg_color @tooltip_fg_color;
+> @define-color theme_dark_bg_color @dark_bg_color;
+> @define-color theme_dark_fg_color @dark_fg_color;
+56,65c62,71
+< @define-color titlebar_bg_color @dark_bg_color;
+< @define-color titlebar_fg_color @dark_fg_color;
+< @define-color menubar_bg_color @dark_bg_color;
+< @define-color menubar_fg_color @dark_fg_color;
+< @define-color toolbar_bg_color @theme_bg_color;
+< @define-color toolbar_fg_color @theme_fg_color;
+< @define-color menu_bg_color @dark_bg_color;
+< @define-color menu_fg_color @dark_fg_color;
+< @define-color panel_bg_color @dark_bg_color;
+< @define-color panel_fg_color @dark_fg_color;
+---
+> @define-color titlebar_bg_color #444444;
+> @define-color titlebar_fg_color #dddddd;
+> @define-color menubar_bg_color #444444;
+> @define-color menubar_fg_color #dddddd;
+> @define-color toolbar_bg_color #eeeeee;
+> @define-color toolbar_fg_color #555555;
+> @define-color menu_bg_color #444444;
+> @define-color menu_fg_color #dddddd;
+> @define-color panel_bg_color #444444;
+> @define-color panel_fg_color #dddddd;
+91c97
+< @import url("apps/applications-gnome.css");
+---
+> @import url("apps/gnome-applications.css");
+98,99d103
+< 
+< /* From https://askubuntu.com/questions/40332/how-to-make-selected-tab-in-terminal-more-prominent, https://askubuntu.com/questions/769135/where-has-the-gnome-terminal-gtk3-style-configuration-moved-to-in-ubuntu-16-04 */
+diff -r .themes/NumixPrime/gtk-3.0/gtk-dark.css .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/gtk-dark.css
+1c1
+< @import url("resource:///org/numixproject/gtk/dist/gtk-dark.css");
+---
+> @import url("resource:///org/numixproject/gtk/dist/gtk.css");
+6d5
+< /* #08c7fd is an unused Good Light Bright Blue, just for reference and all */
+8,16c7,15
+< /* Default Style with my replacements */
+< @define-color bg_color #555555; /* Dark grey */
+< @define-color fg_color #dedede; /* Light grey */
+< @define-color base_color #333333; /* Darker grey */
+< @define-color text_color #f9f9f9; /* Lightest grey */
+< @define-color selected_bg_color #3d61ff; /* Bright blue */
+< @define-color selected_fg_color #f9f9f9; /* Lightest grey */
+< @define-color tooltip_bg_color #2d2d2d; /* Darkest grey */
+< @define-color tooltip_fg_color #dcdcdc; /* Lighter grey */
+---
+> /* darkified color scheme */
+> @define-color bg_color #2d2d2d;
+> @define-color fg_color #dcdcdc;
+> @define-color base_color #333333;
+> @define-color text_color #dedede; /* Slightly lighter than fg_color */
+> @define-color selected_bg_color #3d61ff;
+> @define-color selected_fg_color #f9f9f9;
+> @define-color tooltip_bg_color #2d2d2d;
+> @define-color tooltip_fg_color #dcdcdc;
+19,20c18,19
+< @define-color dark_bg_color #2d2d2d; /* Darkest grey */
+< @define-color dark_fg_color #dcdcdc; /* Lighter grey */
+---
+> /*@define-color dark_bg_color #2d2d2d;*/
+> /*@define-color dark_fg_color #dcdcdc;*/
+23,30c22,29
+< @define-color theme_bg_color @bg_color; /* Light grey */
+< @define-color theme_fg_color @fg_color; /* Dark grey */
+< @define-color theme_base_color @base_color; /* Darker grey */
+< @define-color theme_text_color @text_color; /* Lightest grey */
+< @define-color theme_selected_bg_color @selected_bg_color; /* Bright blue */
+< @define-color theme_selected_fg_color @selected_fg_color; /* Lightest grey */
+< @define-color theme_tooltip_bg_color @tooltip_bg_color; /* Darkest grey */
+< @define-color theme_tooltip_fg_color @tooltip_fg_color; /* Lighter grey */
+---
+> @define-color theme_bg_color @bg_color;
+> @define-color theme_fg_color @fg_color;
+> @define-color theme_base_color @base_color;
+> @define-color theme_text_color @text_color;
+> @define-color theme_selected_bg_color @selected_bg_color;
+> @define-color theme_selected_fg_color @selected_fg_color;
+> @define-color theme_tooltip_bg_color @tooltip_bg_color;
+> @define-color theme_tooltip_fg_color @tooltip_fg_color;
+91c90
+< @import url("apps/applications-gnome.css");
+---
+> @import url("apps/gnome-applications.css");
+98,99d96
+< 
+< /* From https://askubuntu.com/questions/40332/how-to-make-selected-tab-in-terminal-more-prominent, https://askubuntu.com/questions/769135/where-has-the-gnome-terminal-gtk3-style-configuration-moved-to-in-ubuntu-16-04 */
+Only in .themes/NumixPrime/gtk-3.0/: gtk-dark_orig.css
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/: gtk.gresource.xml
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/: gtk-light.css
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/: gtk-numix-blue.css
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/: gtk-numix-orig.css
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/: gtk-orig.css
+diff -r .themes/NumixPrime/gtk-3.0/gtk-widgets.css .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/gtk-widgets.css
+2c2,3
+<  * use 4 spaces indents, and keep code ALIGNED and ORDERED */
+---
+>  * use 4 spaces indents, and keep code ALIGNED and ORDERED
+>  * and shade(@color, @number) does effectively same as mix(@color1, @color2, @fraction_of_color1), but with @color1 being @color, and @color2 being black, so numbers above 1 are lightening effects */
+70c71,72
+< *:selected:focus {
+---
+> *:selected:focus,
+> *:selected:hover {
+571c573
+<     background-color: shade(@theme_bg_color, 1.02);
+---
+>     background-color: shade(@theme_bg_color, 1.5); /* Originally shade(@theme_bg_color, 1.02); changed 25/06/2017 ~1.30pm to lighten hovered backgrounds */
+578a581,585
+> .list-row:selected:hover {
+>     background-color: shade(@theme_selected_bg_color, 0.8);
+>     color: @theme_selected_fg_color;
+> } /* Added .list-row:selected:hover to fix Nautilus red selected+hovered sidebar things 25/06/2017 ~1.30pm; something actually worked, at last! */
+> 
+1263a1271
+> /* First active, non-hovered tab */
+1327c1335
+<     background-color: @theme_tooltip_bg_color;
+---
+>     background-color: shade(#444444, 0.85);
+1337c1345
+<     color: @theme_base_color;
+---
+>     color: #dcdcdc;
+1342c1350
+<     background-color: @theme_tooltip_bg_color;
+---
+>     background-color: shade(#444444, 0.85);
+1348c1356
+<     color: @theme_text_color;
+---
+>     color: #dcdcdc;
+1352c1360
+<     background-color: @theme_base_color;
+---
+>     background-color: shade(#444444, 0.9);
+1358c1366
+<     color: @theme_text_color;
+---
+>     color: @theme_base_color;
+1711c1719
+<     background-color: @theme_bg_color;
+---
+>     background-color: shade(@theme_bg_color, 0.2);
+1862a1871
+> /* e.g. in Nautilus */
+1864a1874
+> GtkHTML.sidebar,
+1865a1876
+> .sidebar GtkHTML,
+1868a1880,1898
+> } /* Swapped color and background-color; then changed new background-color from mix(@theme_fg_color, @theme_bg_color, 0.1) to @theme_fg_color, then changed everything back 23/06/2017 */
+> 
+> .sidebar.view row:hover,
+> GtkHTML.sidebar row:hover,
+> .sidebar row:hover,
+> .sidebar .view row:hover,
+> .sidebar GtkHTML row:hover {
+>     background-color: @theme_selected_bg_color;
+> }
+> 
+> .sidebar.view row:prelight,
+> GtkHTML.sidebar row:prelight,
+> .sidebar row:prelight,
+> .sidebar .view row:prelight,
+> .sidebar GtkHTML row:prelight {
+>     border-color: shade(@theme_bg_color, 1.05);
+>     background-color: shade(@theme_bg_color, 1.05);
+>     background-image: none;
+>     color: @theme_fg_color;
+1870a1901,1906
+> .sidebar.view row:selected,
+> .sidebar.view row:selected:hover,
+> .sidebar.view row:selected:focus,
+> GtkHTML.sidebar row:selected,
+> GtkHTML.sidebar row:selected:hover,
+> GtkHTML.sidebar row:selected:focus,
+1876c1912,1915
+< .sidebar .view row:selected:focus {
+---
+> .sidebar .view row:selected:focus,
+> .sidebar GtkHTML row:selected,
+> .sidebar GtkHTML row:selected:hover,
+> .sidebar GtkHTML row:selected:focus {
+1883,1890c1922,1923
+< .sidebar row:prelight,
+< .sidebar .view row:prelight {
+<     border-color: shade(@theme_bg_color, 1.05);
+<     background-color: shade(@theme_bg_color, 1.05);
+<     background-image: none;
+<     color: @theme_fg_color;
+< }
+< 
+---
+> .sidebar.view row:selected:prelight,
+> GtkHTML.sidebar row:selected:prelight,
+1892c1925,1926
+< .sidebar .view row:selected:prelight {
+---
+> .sidebar .view row:selected:prelight,
+> .sidebar GtkHTML row:selected:prelight {
+1898a1933,1939
+> NautilusWindow.sidebar .view:selected,
+> NautilusWindow.sidebar .view:selected:hover,
+> NautilusWindow.sidebar .view:selected:prelight,
+> NautilusWindow.sidebar .view:selected:focus {
+>     background-color: @theme_selected_bg_color;
+> }
+> 
+2081a2123
+> /*Shows e.g. at bottom of gedit*/
+Only in .dotfiles/wip/themes/.themes/NumixPrime/gtk-3.0/: NumixPrime.sublime-workspace
