@@ -32,6 +32,10 @@ filetype indent on		    " load filetype-specific indent files
 "set wildmenu			    " visual autocomplete for command menu
 set lazyredraw			    " redraw only when we need to
 set showmatch			    " highlight matching [{()}]
+hi! link FoldColumn Normal  " don't know what this does but apparently needed before next line
+set foldcolumn=4            " trick to get margin on left-hand side
+set wrap linebreak nolist   " sets softwrap on
+set textwidth=80            " set for softwrap at 80 characters
 " }}}
 
 " Searching {{{
