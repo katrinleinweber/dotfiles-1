@@ -2,8 +2,9 @@
 # Defines aliases for use in shells
 # Sourced by .bash_profile
 
-# Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!
-alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
+# --Ensures "cd sublime" will get me to the Git directory I'll want to commit changes from!--
+# DOESN'T WORK
+# alias sublime='/Users/jcprime/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 
 # Open Jmol from command line
 alias jmol='java -jar ~/bin/jmol-full/Jmol.jar'
