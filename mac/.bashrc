@@ -59,6 +59,10 @@ fi
 #        source ~/.path
 #fi
 
+###################################################################################################
+# MAC-SPECIFIC
+###################################################################################################
+
 # Source bash completions (installed by Homebrew!)
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
