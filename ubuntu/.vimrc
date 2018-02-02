@@ -27,13 +27,18 @@ set expandtab			    " tabs are spaces
 " }}}
 
 " UI Configuration {{{
-"set number			        " show line numbers
+set number			        " show line numbers
+hi! link LineNr Normal      " sets syntax highlight to normal for line numbers
 set showcmd			        " show command in bottom bar
 "set cursorline			    " highlight current line
 filetype indent on		    " load filetype-specific indent files
 "set wildmenu			    " visual autocomplete for command menu
 set lazyredraw			    " redraw only when we need to
 set showmatch			    " highlight matching [{()}]
+hi! link FoldColumn Normal  " sets syntax highlight to normal for the fold-columns
+set foldcolumn=8            " trick to get margin on left-hand side
+set wrap linebreak nolist   " sets softwrap on
+set textwidth=80            " set for softwrap at 80 characters
 " }}}
 
 " Searching {{{
