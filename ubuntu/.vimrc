@@ -38,7 +38,8 @@ set showmatch			    " highlight matching [{()}]
 hi! link FoldColumn Normal  " sets syntax highlight to normal for the fold-columns
 set foldcolumn=8            " trick to get margin on left-hand side
 set wrap linebreak nolist   " sets softwrap on
-set textwidth=80            " set for softwrap at 80 characters
+set textwidth=0             " set for softwrap at 80 characters
+set wrapmargin=10
 " }}}
 
 " Searching {{{
