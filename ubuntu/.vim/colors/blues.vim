@@ -17,6 +17,7 @@ hi Directory     ctermfg=32     ctermbg=None  cterm=None  guifg=#0087d7  guibg=#
 hi ErrorMsg      ctermfg=203    ctermbg=None  cterm=None  guifg=#ff5f5f  guibg=#1c1c1c
 hi PreProc       ctermfg=248    ctermbg=None  cterm=None  guifg=#a8a8a8  guibg=#1c1c1c
 hi Search        ctermfg=227    ctermbg=None  cterm=None  guifg=#ffff5f  guibg=#1c1c1c
+hi MoreMsg       ctermfg=121    ctermbg=None  cterm=None  guifg=#87ffaf  guibg=#1c1c1c
 hi Type          ctermfg=75     ctermbg=None  cterm=None  guifg=#5fafff  guibg=#1c1c1c
 hi Statement     ctermfg=75     ctermbg=None  cterm=None  guifg=#5fafff  guibg=#1c1c1c
 hi Comment       ctermfg=242    ctermbg=None  cterm=None  guifg=#6c6c6c  guibg=#1c1c1c

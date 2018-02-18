@@ -15,6 +15,15 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'WolfgangMehner/perl-support'
 Plugin 'Shougo/unite.vim'    " Required for citation.vim
 Plugin 'rafaqz/citation.vim' " Zotero and BibTeX integration
+Plugin 'tpope/vim-markdown'  " Markdown support
+"Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'reedes/vim-pencil'   " Support for document-writing
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'chrisbra/csv.vim'    " CSV file support
+Plugin 'lervag/vimtex'       " LaTeX support
+Plugin 'junegunn/goyo.vim'   " Distraction-free writing
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -28,7 +37,8 @@ set expandtab			    " tabs are spaces
 
 " UI Configuration {{{
 set number			        " show line numbers
-hi! link LineNr Normal      " sets syntax highlight to normal for line numbers
+" sets syntax highlight to normal for line numbers
+hi LineNr ctermfg=232 ctermbg=None guifg=#080808 guibg=#1c1c1c
 set showcmd			        " show command in bottom bar
 "set cursorline			    " highlight current line
 filetype indent on		    " load filetype-specific indent files
@@ -38,8 +48,25 @@ set showmatch			    " highlight matching [{()}]
 hi! link FoldColumn Normal  " sets syntax highlight to normal for the fold-columns
 set foldcolumn=8            " trick to get margin on left-hand side
 set wrap linebreak nolist   " sets softwrap on
-set textwidth=0             " set for softwrap at 80 characters
-set wrapmargin=10
+"set textwidth=0             " set for softwrap at 80 characters
+"set fo+=t
+"set fo-=l
+"set wrapmargin=0
+"}}}
+
+" Themes {{{
+let g:airline_theme='blues' " try tomorrow, jellybeans, and base16-spacemacs
+let g:airline_detect_modified=0
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+"let g:airline_section_a='%{mode(10/10)}'   " (mode, crypt, paste, spell, iminsert)
+"let g:airline_section_b                    " (hunks, branch)[*]
+let g:airline_section_c='%F'                " (bufferline or filename)
+"let g:airline_section_gutter               " (readonly, csv)
+let g:airline_section_x='%y'                " (tagbar, filetype, virtualenv)
+let g:airline_section_y='%3.4p%% '          " (fileencoding, fileformat)
+let g:airline_section_z='%4l/%-4L : %4c'    " (percentage, line number, column number)
 " }}}
 
 " Searching {{{
@@ -150,9 +177,23 @@ augroup configgroup
     autocmd BufEnter *.cls setlocal filetype=java
     autocmd BufEnter *.zsh-theme setlocal filetype=zsh
     autocmd BufEnter Makefile setlocal noexpandtab
-    autocmd BufEnter *.sh setlocal tabstop=2
-    autocmd BufEnter *.sh setlocal shiftwidth=2
-    autocmd BufEnter *.sh setlocal softtabstop=2
+    autocmd BufEnter *.sh setlocal tabstop=4
+    autocmd BufEnter *.sh setlocal shiftwidth=4
+    autocmd BufEnter *.sh setlocal softtabstop=4
+augroup END
+
+let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
+let g:pencil#textwidth = 80
+let g:pencil#joinspaces = 1             " 0=one_space (def), 1=two_spaces
+augroup pencil
+    autocmd!
+    autocmd FileType markdown,mkd call pencil#init()
+    autocmd FileType text         call pencil#init()
+augroup END
+
+augroup plugins
+    autocmd!
+    "autocmd FileType perl
 augroup END
 " }}}
 
