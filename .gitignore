@@ -25,7 +25,7 @@
 .local/
 .log/
 #.mozilla/
-.netrwhist
+*.netrwhist
 .qt/
 .rnd
 .ssh/
