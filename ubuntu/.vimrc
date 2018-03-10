@@ -13,17 +13,25 @@ Plugin 'VundleVim/Vundle.vim'
 " PLUGINS
 Plugin 'davidhalter/jedi-vim'
 Plugin 'WolfgangMehner/perl-support'
-Plugin 'Shougo/unite.vim'    " Required for citation.vim
-Plugin 'rafaqz/citation.vim' " Zotero and BibTeX integration
-Plugin 'tpope/vim-markdown'  " Markdown support
+" Required for citation.vim
+Plugin 'Shougo/unite.vim'
+" Zotero and BibTeX integration
+Plugin 'rafaqz/citation.vim'
+" Markdown support
+Plugin 'tpope/vim-markdown'  
 "Plugin 'vim-pandoc/vim-pandoc'
 "Plugin 'vim-pandoc/vim-pandoc-syntax'
-Plugin 'reedes/vim-pencil'   " Support for document-writing
+" Support for document-writing
+Plugin 'reedes/vim-pencil'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'chrisbra/csv.vim'    " CSV file support
-Plugin 'lervag/vimtex'       " LaTeX support
-Plugin 'junegunn/goyo.vim'   " Distraction-free writing
+Plugin 'jamesprime/vim-airline-stuff'
+" CSV file support
+Plugin 'chrisbra/csv.vim'
+" LaTeX support
+Plugin 'lervag/vimtex'
+" Distraction-free writing
+Plugin 'junegunn/goyo.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
