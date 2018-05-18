@@ -32,7 +32,10 @@ alias grep='grep -i'   # ignore case when grepping
 alias vi='vim'
 
 # Find top 5 largest files
-alias findbig="find . -type f -exec ls -s {} \; | sort -n -r | head -5"
+#alias findbig="find . -type f -exec ls -s {} \; | sort -n -r | head -5"
+
+# Find files bigger than 50MB (to avoid GitHub implosions)
+alias findbig="find . -type f -size +50M -exec ls -lh {} \;"
 
 # Auto-resumes wget downloads
 alias wget='wget -c'
