@@ -1,6 +1,7 @@
 " Colours and Things {{{
 "colorscheme badwolf		    " awesome colorscheme
 colorscheme blues
+"colorscheme CoolFluffed
 syntax on			        " turn on syntax processing
 " }}}
 

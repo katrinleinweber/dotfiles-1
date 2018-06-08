@@ -1,0 +1,1489 @@
+texCmdBody     xxx matchgroup=Delimiter start=/{/rs=s+1 skip=/\\\\\|\\[{}]/ end=/}/  contained contains=@texCmdGroup 
+texComment     xxx match /%.*$/  contains=@texCommentGroup 
+                   links to Comment
+texDefParm     xxx match /#\d\+/  contained 
+                   links to Special
+texDelimiter   xxx match /&/  
+                   match /\\\\/  
+                   links to Delimiter
+texDocType     xxx match /\\documentclass\>\|\\documentstyle\>\|\\usepackage\>/  nextgroup=texBeginEndName,texDocTypeArgs 
+                   links to texCmdName
+texInput       xxx match =\\input\s\+[a-zA-Z/.0-9_^]\+=hs=s+7  contains=texStatement 
+                   links to Special
+texLength      xxx match /\<\d\+\([.,]\d\+\)\=\s*\(true\)\=\s*\(bp\|cc\|cm\|dd\|em\|ex\|in\|mm\|pc\|pt\|sp\)\>/  
+                   links to Number
+texLigature    xxx match /\\\([ijolL]\|ae\|oe\|ss\|AA\|AE\|OE\)\A/me=e-1  
+                   match /\\\([ijolL]\|ae\|oe\|ss\|AA\|AE\|OE\)$/  
+                   match /\\AE\>/  conceal 
+                   match /\\ae\>/  conceal 
+                   match /\\oe\>/  conceal 
+                   match /\\OE\>/  conceal 
+                   match /\\ss\>/  conceal 
+                   links to texSpecialChar
+texMathDelim   xxx match /\\left\\{\>/  contained contains=texMathSymbol nextgroup=texMathDelimSet1,texMathDelimSet2,texMathDelimBad skipwhite 
+                   match /\\right\\}\>/  contained contains=texMathSymbol nextgroup=texMathDelimSet1,texMathDelimSet2,texMathDelimBad skipwhite 
+                   match /\\[bB]igg\=[lr]/  contained nextgroup=texMathDelimBad 
+                   match /\\[bB]igg\=[lr]\=</  contained conceal 
+                   match /\\[bB]igg\=[lr]\=>/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=(/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=)/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\[/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=]/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\{/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\}/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=|/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\|/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\backslash/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\downarrow/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\Downarrow/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\langle/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\lbrace/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\lceil/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\lfloor/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\lgroup/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\lmoustache/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rangle/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rbrace/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rceil/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rfloor/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rgroup/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rmoustache/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\uparrow/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\Uparrow/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\updownarrow/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\Updownarrow/  contained conceal 
+                   match /\\\(left\|right\)arrow\>\|\<\([aA]rrow\|brace\)\=vert\>/  contained 
+                   match /\\lefteqn\>/  contained 
+                   match /\\[bB]igg\=[lr]\=\\lvert/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rvert/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\lVert/  contained conceal 
+                   match /\\[bB]igg\=[lr]\=\\rVert/  contained conceal 
+                   links to Statement
+texMathOper    xxx match /[_^=]/  contained 
+                   links to Operator
+texNewCmd      xxx match /\\newcommand\>/  nextgroup=texCmdName skipwhite skipnl 
+                   match /\\renewcommand\>/  nextgroup=texCmdName skipwhite skipnl 
+                   links to Statement
+texNewEnv      xxx match /\\newenvironment\>/  nextgroup=texEnvName skipwhite skipnl 
+                   match /\\renewenvironment\>/  nextgroup=texEnvName skipwhite skipnl 
+                   links to Statement
+texRefZone     xxx matchgroup=texStatement start=/\\nocite{/ end=/}\|%stopzone\>/  contains=@texRefGroup 
+                   matchgroup=texStatement start=/\\bibliography{/ end=/}\|%stopzone\>/  contains=@texRefGroup 
+                   matchgroup=texStatement start=/\\label{/ end=/}\|%stopzone\>/  contains=@texRefGroup 
+                   matchgroup=texStatement start=/\\\(page\|eq\)ref{/ end=/}\|%stopzone\>/  contains=@texRefGroup 
+                   matchgroup=texStatement start=/\\v\=ref{/ end=/}\|%stopzone\>/  contains=@texRefGroup 
+                   match /\\cite\%([tp]\*\=\)\=/  nextgroup=texRefOption,texCite 
+                   links to Special
+texBeginEnd    xxx match /\\begin\>\|\\end\>/  nextgroup=texBeginEndName 
+                   match /\(\\begin\>\|\\end\>\)\ze{subequations}/  nextgroup=texBeginEndName 
+                   links to texCmdName
+texBeginEndName xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=texComment nextgroup=texBeginEndModifier 
+                   links to texSection
+texSpecialChar xxx match /\\[$&%#{}_]/  
+                   match /\\[SP@]\A/me=e-1  
+                   match /\\\\/  
+                   match /\^\^[0-9a-f]\{2}\|\^\^\S/  
+                   links to SpecialChar
+texStatement   xxx match /\\\a\+/  
+                   match /\\url\ze[^\ta-zA-Z]/  nextgroup=texUrlVerb 
+                   match /\\url\ze\s*{/  nextgroup=texUrl 
+                   match /\\href/  nextgroup=texHref 
+                   match /\\hyperref/  nextgroup=texHyperref 
+                   match /\v\\bibentry\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\cite[pt]?\*?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\citeal[tp]\*?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\cite(num|text|url)\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Cc]ite%(title|author|year(par)?|date)\*?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Pp]arencite\*?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\foot%(full)?cite%(text)?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\fullcite\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Tt]extcite\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Ss]martcite\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\supercite\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Aa]utocite\*?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Ppf]?[Nn]otecite\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\%(text|block)cquote\*?\ze\s*%(\[|\{)/  nextgroup=texRefOption,texCite 
+                   match /\v\\[Cc]ites\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\[Pp]arencites\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\footcite%(s|texts)\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\[Tt]extcites\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\[Ss]martcites\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\supercites\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\[Aa]utocites\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\[pPfFsStTaA]?[Vv]olcites?\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\cite%(field|list|name)\ze\s*%(\[|\{)/  nextgroup=texRefOptions,texCites 
+                   match /\v\\%(foreign|hyphen)textcquote\*?\ze\s*%(\[|\{)/  nextgroup=texQuoteLang 
+                   match /\v\\%(foreign|hyphen)blockcquote\ze\s*%(\[|\{)/  nextgroup=texQuoteLang 
+                   match /\v\\hybridblockcquote\ze\s*%(\[|\{)/  nextgroup=texQuoteLang 
+                   match /\\\(\(label\)\?c\(page\)\?\|C\|auto\)ref\>/  nextgroup=texCRefZone 
+                   match /\\c\(page\)\?refrange\>/  nextgroup=texCRefZoneRange skipwhite skipnl 
+                   match /\\label\[.\{-}\]/  contains=texCRefLabelOpts nextgroup=texCRefZone skipwhite skipnl 
+                   match /\\Vref\>/  nextgroup=texVarioRefZone 
+                   match /\\\(directlua\|luadirect\)/  nextgroup=texZoneLuaArg 
+                   links to Statement
+texString      xxx match /\(``\|''\|,,\)/  
+                   links to String
+texTypeSize    xxx match /\\tiny\>/  
+                   match /\\scriptsize\>/  
+                   match /\\footnotesize\>/  
+                   match /\\small\>/  
+                   match /\\normalsize\>/  
+                   match /\\large\>/  
+                   match /\\Large\>/  
+                   match /\\LARGE\>/  
+                   match /\\huge\>/  
+                   match /\\Huge\>/  
+                   links to texType
+texTypeStyle   xxx match /\\rm\>/  
+                   match /\\em\>/  
+                   match /\\bf\>/  
+                   match /\\it\>/  
+                   match /\\sl\>/  
+                   match /\\sf\>/  
+                   match /\\sc\>/  
+                   match /\\tt\>/  
+                   match /\\textmd\>/  
+                   match /\\textrm\>/  
+                   match /\\textsc\>/  
+                   match /\\textsf\>/  
+                   match /\\textsl\>/  
+                   match /\\texttt\>/  
+                   match /\\textup\>/  
+                   match /\\emph\>/  
+                   match /\\mathbb\>/  
+                   match /\\mathbf\>/  
+                   match /\\mathcal\>/  
+                   match /\\mathfrak\>/  
+                   match /\\mathit\>/  
+                   match /\\mathnormal\>/  
+                   match /\\mathrm\>/  
+                   match /\\mathsf\>/  
+                   match /\\mathtt\>/  
+                   match /\\rmfamily\>/  
+                   match /\\sffamily\>/  
+                   match /\\ttfamily\>/  
+                   match /\\itshape\>/  
+                   match /\\scshape\>/  
+                   match /\\slshape\>/  
+                   match /\\upshape\>/  
+                   match /\\bfseries\>/  
+                   match /\\mdseries\>/  
+                   links to texType
+texMathError   xxx match /}/  contained 
+                   links to texError
+texMatcher     xxx matchgroup=Delimiter start=/{/ skip=/\\\\\|\\[{}]/ end=/}/  transparent contains=@texMatchGroup,texError 
+                   matchgroup=Delimiter start=/\[/ end=/]/  transparent contains=@texMatchGroup,texError,@NoSpell 
+texAccent      xxx match /\\[bcdvuH]\A/me=e-1  
+                   match /\\[bcdvuH]$/  
+                   match /\\[=^.\~"`']/  
+                   match /\\['=t'.c^ud"vb~Hr]{\a}/  
+                   match /\\`\s*\({a}\|a\)/  conceal 
+                   match /\\\'\s*\({a}\|a\)/  conceal 
+                   match /\\^\s*\({a}\|a\)/  conceal 
+                   match /\\"\s*\({a}\|a\)/  conceal 
+                   match /\\\~\s*\({a}\|a\)/  conceal 
+                   match /\\\.\s*\({a}\|a\)/  conceal 
+                   match /\\=\s*\({a}\|a\)/  conceal 
+                   match /\\k\(\s*{a}\|\s\+a\)/  conceal 
+                   match /\\r\(\s*{a}\|\s\+a\)/  conceal 
+                   match /\\u\(\s*{a}\|\s\+a\)/  conceal 
+                   match /\\v\(\s*{a}\|\s\+a\)/  conceal 
+                   match /\\`\s*\({A}\|A\)/  conceal 
+                   match /\\\'\s*\({A}\|A\)/  conceal 
+                   match /\\^\s*\({A}\|A\)/  conceal 
+                   match /\\"\s*\({A}\|A\)/  conceal 
+                   match /\\\~\s*\({A}\|A\)/  conceal 
+                   match /\\\.\s*\({A}\|A\)/  conceal 
+                   match /\\=\s*\({A}\|A\)/  conceal 
+                   match /\\k\(\s*{A}\|\s\+A\)/  conceal 
+                   match /\\r\(\s*{A}\|\s\+A\)/  conceal 
+                   match /\\u\(\s*{A}\|\s\+A\)/  conceal 
+                   match /\\v\(\s*{A}\|\s\+A\)/  conceal 
+                   match /\\\'\s*\({c}\|c\)/  conceal 
+                   match /\\^\s*\({c}\|c\)/  conceal 
+                   match /\\\.\s*\({c}\|c\)/  conceal 
+                   match /\\c\(\s*{c}\|\s\+c\)/  conceal 
+                   match /\\v\(\s*{c}\|\s\+c\)/  conceal 
+                   match /\\\'\s*\({C}\|C\)/  conceal 
+                   match /\\^\s*\({C}\|C\)/  conceal 
+                   match /\\\.\s*\({C}\|C\)/  conceal 
+                   match /\\c\(\s*{C}\|\s\+C\)/  conceal 
+                   match /\\v\(\s*{C}\|\s\+C\)/  conceal 
+                   match /\\v\(\s*{d}\|\s\+d\)/  conceal 
+                   match /\\v\(\s*{D}\|\s\+D\)/  conceal 
+                   match /\\`\s*\({e}\|e\)/  conceal 
+                   match /\\\'\s*\({e}\|e\)/  conceal 
+                   match /\\^\s*\({e}\|e\)/  conceal 
+                   match /\\"\s*\({e}\|e\)/  conceal 
+                   match /\\\~\s*\({e}\|e\)/  conceal 
+                   match /\\\.\s*\({e}\|e\)/  conceal 
+                   match /\\=\s*\({e}\|e\)/  conceal 
+                   match /\\c\(\s*{e}\|\s\+e\)/  conceal 
+                   match /\\k\(\s*{e}\|\s\+e\)/  conceal 
+                   match /\\u\(\s*{e}\|\s\+e\)/  conceal 
+                   match /\\v\(\s*{e}\|\s\+e\)/  conceal 
+                   match /\\`\s*\({E}\|E\)/  conceal 
+                   match /\\\'\s*\({E}\|E\)/  conceal 
+                   match /\\^\s*\({E}\|E\)/  conceal 
+                   match /\\"\s*\({E}\|E\)/  conceal 
+                   match /\\\~\s*\({E}\|E\)/  conceal 
+                   match /\\\.\s*\({E}\|E\)/  conceal 
+                   match /\\=\s*\({E}\|E\)/  conceal 
+                   match /\\c\(\s*{E}\|\s\+E\)/  conceal 
+                   match /\\k\(\s*{E}\|\s\+E\)/  conceal 
+                   match /\\u\(\s*{E}\|\s\+E\)/  conceal 
+                   match /\\v\(\s*{E}\|\s\+E\)/  conceal 
+                   match /\\\'\s*\({g}\|g\)/  conceal 
+                   match /\\^\s*\({g}\|g\)/  conceal 
+                   match /\\\.\s*\({g}\|g\)/  conceal 
+                   match /\\c\(\s*{g}\|\s\+g\)/  conceal 
+                   match /\\u\(\s*{g}\|\s\+g\)/  conceal 
+                   match /\\v\(\s*{g}\|\s\+g\)/  conceal 
+                   match /\\\'\s*\({G}\|G\)/  conceal 
+                   match /\\^\s*\({G}\|G\)/  conceal 
+                   match /\\\.\s*\({G}\|G\)/  conceal 
+                   match /\\c\(\s*{G}\|\s\+G\)/  conceal 
+                   match /\\u\(\s*{G}\|\s\+G\)/  conceal 
+                   match /\\v\(\s*{G}\|\s\+G\)/  conceal 
+                   match /\\^\s*\({h}\|h\)/  conceal 
+                   match /\\v\(\s*{h}\|\s\+h\)/  conceal 
+                   match /\\v\(\s*{H}\|\s\+H\)/  conceal 
+                   match /\\`\s*\({i}\|i\)/  conceal 
+                   match /\\\'\s*\({i}\|i\)/  conceal 
+                   match /\\^\s*\({i}\|i\)/  conceal 
+                   match /\\"\s*\({i}\|i\)/  conceal 
+                   match /\\\~\s*\({i}\|i\)/  conceal 
+                   match /\\\.\s*\({i}\|i\)/  conceal 
+                   match /\\=\s*\({i}\|i\)/  conceal 
+                   match /\\k\(\s*{i}\|\s\+i\)/  conceal 
+                   match /\\u\(\s*{i}\|\s\+i\)/  conceal 
+                   match /\\v\(\s*{i}\|\s\+i\)/  conceal 
+                   match /\\`\s*\({I}\|I\)/  conceal 
+                   match /\\\'\s*\({I}\|I\)/  conceal 
+                   match /\\^\s*\({I}\|I\)/  conceal 
+                   match /\\"\s*\({I}\|I\)/  conceal 
+                   match /\\\~\s*\({I}\|I\)/  conceal 
+                   match /\\\.\s*\({I}\|I\)/  conceal 
+                   match /\\=\s*\({I}\|I\)/  conceal 
+                   match /\\k\(\s*{I}\|\s\+I\)/  conceal 
+                   match /\\u\(\s*{I}\|\s\+I\)/  conceal 
+                   match /\\v\(\s*{I}\|\s\+I\)/  conceal 
+                   match /\\v\(\s*{J}\|\s\+J\)/  conceal 
+                   match /\\c\(\s*{k}\|\s\+k\)/  conceal 
+                   match /\\v\(\s*{k}\|\s\+k\)/  conceal 
+                   match /\\c\(\s*{K}\|\s\+K\)/  conceal 
+                   match /\\v\(\s*{K}\|\s\+K\)/  conceal 
+                   match /\\\'\s*\({l}\|l\)/  conceal 
+                   match /\\^\s*\({l}\|l\)/  conceal 
+                   match /\\c\(\s*{l}\|\s\+l\)/  conceal 
+                   match /\\v\(\s*{l}\|\s\+l\)/  conceal 
+                   match /\\\'\s*\({L}\|L\)/  conceal 
+                   match /\\^\s*\({L}\|L\)/  conceal 
+                   match /\\c\(\s*{L}\|\s\+L\)/  conceal 
+                   match /\\v\(\s*{L}\|\s\+L\)/  conceal 
+                   match /\\\'\s*\({n}\|n\)/  conceal 
+                   match /\\\~\s*\({n}\|n\)/  conceal 
+                   match /\\c\(\s*{n}\|\s\+n\)/  conceal 
+                   match /\\v\(\s*{n}\|\s\+n\)/  conceal 
+                   match /\\\'\s*\({N}\|N\)/  conceal 
+                   match /\\\~\s*\({N}\|N\)/  conceal 
+                   match /\\c\(\s*{N}\|\s\+N\)/  conceal 
+                   match /\\v\(\s*{N}\|\s\+N\)/  conceal 
+                   match /\\`\s*\({o}\|o\)/  conceal 
+                   match /\\\'\s*\({o}\|o\)/  conceal 
+                   match /\\^\s*\({o}\|o\)/  conceal 
+                   match /\\"\s*\({o}\|o\)/  conceal 
+                   match /\\\~\s*\({o}\|o\)/  conceal 
+                   match /\\\.\s*\({o}\|o\)/  conceal 
+                   match /\\=\s*\({o}\|o\)/  conceal 
+                   match /\\H\(\s*{o}\|\s\+o\)/  conceal 
+                   match /\\k\(\s*{o}\|\s\+o\)/  conceal 
+                   match /\\u\(\s*{o}\|\s\+o\)/  conceal 
+                   match /\\v\(\s*{o}\|\s\+o\)/  conceal 
+                   match /\\`\s*\({O}\|O\)/  conceal 
+                   match /\\\'\s*\({O}\|O\)/  conceal 
+                   match /\\^\s*\({O}\|O\)/  conceal 
+                   match /\\"\s*\({O}\|O\)/  conceal 
+                   match /\\\~\s*\({O}\|O\)/  conceal 
+                   match /\\\.\s*\({O}\|O\)/  conceal 
+                   match /\\=\s*\({O}\|O\)/  conceal 
+                   match /\\H\(\s*{O}\|\s\+O\)/  conceal 
+                   match /\\k\(\s*{O}\|\s\+O\)/  conceal 
+                   match /\\u\(\s*{O}\|\s\+O\)/  conceal 
+                   match /\\v\(\s*{O}\|\s\+O\)/  conceal 
+                   match /\\\'\s*\({r}\|r\)/  conceal 
+                   match /\\c\(\s*{r}\|\s\+r\)/  conceal 
+                   match /\\v\(\s*{r}\|\s\+r\)/  conceal 
+                   match /\\\'\s*\({R}\|R\)/  conceal 
+                   match /\\c\(\s*{R}\|\s\+R\)/  conceal 
+                   match /\\v\(\s*{R}\|\s\+R\)/  conceal 
+                   match /\\\'\s*\({s}\|s\)/  conceal 
+                   match /\\^\s*\({s}\|s\)/  conceal 
+                   match /\\c\(\s*{s}\|\s\+s\)/  conceal 
+                   match /\\k\(\s*{s}\|\s\+s\)/  conceal 
+                   match /\\v\(\s*{s}\|\s\+s\)/  conceal 
+                   match /\\\'\s*\({S}\|S\)/  conceal 
+                   match /\\^\s*\({S}\|S\)/  conceal 
+                   match /\\c\(\s*{S}\|\s\+S\)/  conceal 
+                   match /\\v\(\s*{S}\|\s\+S\)/  conceal 
+                   match /\\c\(\s*{t}\|\s\+t\)/  conceal 
+                   match /\\v\(\s*{t}\|\s\+t\)/  conceal 
+                   match /\\c\(\s*{T}\|\s\+T\)/  conceal 
+                   match /\\v\(\s*{T}\|\s\+T\)/  conceal 
+                   match /\\`\s*\({u}\|u\)/  conceal 
+                   match /\\\'\s*\({u}\|u\)/  conceal 
+                   match /\\^\s*\({u}\|u\)/  conceal 
+                   match /\\"\s*\({u}\|u\)/  conceal 
+                   match /\\\~\s*\({u}\|u\)/  conceal 
+                   match /\\=\s*\({u}\|u\)/  conceal 
+                   match /\\H\(\s*{u}\|\s\+u\)/  conceal 
+                   match /\\k\(\s*{u}\|\s\+u\)/  conceal 
+                   match /\\r\(\s*{u}\|\s\+u\)/  conceal 
+                   match /\\u\(\s*{u}\|\s\+u\)/  conceal 
+                   match /\\v\(\s*{u}\|\s\+u\)/  conceal 
+                   match /\\`\s*\({U}\|U\)/  conceal 
+                   match /\\\'\s*\({U}\|U\)/  conceal 
+                   match /\\^\s*\({U}\|U\)/  conceal 
+                   match /\\"\s*\({U}\|U\)/  conceal 
+                   match /\\\~\s*\({U}\|U\)/  conceal 
+                   match /\\=\s*\({U}\|U\)/  conceal 
+                   match /\\H\(\s*{U}\|\s\+U\)/  conceal 
+                   match /\\k\(\s*{U}\|\s\+U\)/  conceal 
+                   match /\\r\(\s*{U}\|\s\+U\)/  conceal 
+                   match /\\u\(\s*{U}\|\s\+U\)/  conceal 
+                   match /\\v\(\s*{U}\|\s\+U\)/  conceal 
+                   match /\\^\s*\({w}\|w\)/  conceal 
+                   match /\\^\s*\({W}\|W\)/  conceal 
+                   match /\\`\s*\({y}\|y\)/  conceal 
+                   match /\\\'\s*\({y}\|y\)/  conceal 
+                   match /\\^\s*\({y}\|y\)/  conceal 
+                   match /\\"\s*\({y}\|y\)/  conceal 
+                   match /\\\~\s*\({y}\|y\)/  conceal 
+                   match /\\`\s*\({Y}\|Y\)/  conceal 
+                   match /\\\'\s*\({Y}\|Y\)/  conceal 
+                   match /\\^\s*\({Y}\|Y\)/  conceal 
+                   match /\\"\s*\({Y}\|Y\)/  conceal 
+                   match /\\\~\s*\({Y}\|Y\)/  conceal 
+                   match /\\\'\s*\({z}\|z\)/  conceal 
+                   match /\\\.\s*\({z}\|z\)/  conceal 
+                   match /\\v\(\s*{z}\|\s\+z\)/  conceal 
+                   match /\\\'\s*\({Z}\|Z\)/  conceal 
+                   match /\\\.\s*\({Z}\|Z\)/  conceal 
+                   match /\\v\(\s*{Z}\|\s\+Z\)/  conceal 
+                   match /\\`\s*\({\\i}\|\\i\)/  conceal 
+                   match /\\\'\s*\({\\i}\|\\i\)/  conceal 
+                   match /\\^\s*\({\\i}\|\\i\)/  conceal 
+                   match /\\"\s*\({\\i}\|\\i\)/  conceal 
+                   match /\\\~\s*\({\\i}\|\\i\)/  conceal 
+                   match /\\\.\s*\({\\i}\|\\i\)/  conceal 
+                   match /\\u\(\s*{\\i}\|\s\+\\i\)/  conceal 
+                   match /\\aa\>/  conceal 
+                   match /\\AA\>/  conceal 
+                   match /\\o\>/  conceal 
+                   match /\\O\>/  conceal 
+                   links to texStatement
+texBadMath     xxx match /\\end\s*{\s*\(array\|gathered\|bBpvV]matrix\|split\|subequations\|smallmatrix\|xxalignat\)\s*}/  
+                   match /\\end\s*{\s*\(align\|alignat\|displaymath\|displaymath\|eqnarray\|equation\|flalign\|gather\|math\|multline\|xalignat\)\*\=\s*}/  
+                   match /\\[\])]/  
+                   match /\\end\s*{\s*\(align\|alignat\|equation\|flalign\|gather\|multline\|xalignat\|xxalignat\)\*\=\s*}/  
+                   links to texError
+texDefCmd      xxx match /\\def\>/  nextgroup=texDefName skipwhite skipnl 
+                   links to texDef
+texInputFile   xxx match /\\include\(graphics\|list\)\=\(\[.\{-}\]\)\=\s*{.\{-}}/  contains=texStatement,texInputCurlies,texInputFileOpt 
+                   match /\\\(epsfig\|input\|usepackage\)\s*\(\[.*\]\)\={.\{-}}/  contains=texStatement,texInputCurlies,texInputFileOpt 
+                   match /\\includepdf\%(\[.\{-}\]\)\=\s*{.\{-}}/  contains=texStatement,texInputCurlies,texInputFileOpt 
+                   match /\\lstinputlisting\s*\(\[.*\]\)\={.\{-}}/  contains=texStatement,texInputCurlies,texInputFileOpt 
+                   match /\\includegraphics<[^>]*>\(\[.\{-}\]\)\=\s*{.\{-}}/  contains=texStatement,texBeamerOpt,texInputCurlies,texInputFileOpt 
+                   links to Special
+texMathZoneV   xxx matchgroup=Delimiter start=/\\(/ end=/\\)\|%stopzone\>/  keepend concealends contains=@texMathZoneGroup 
+                   start=/\\begin\s*{\s*gather\s*}/ end=/\\end\s*{\s*gather\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneW   xxx matchgroup=Delimiter start=/\\\[/ end=/\\]\|%stopzone\>/  keepend concealends contains=@texMathZoneGroup 
+                   start=/\\begin\s*{\s*flalign\s*}/ end=/\\end\s*{\s*flalign\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneX   xxx matchgroup=Delimiter start=/\$/ skip=/\\\\\|\\\$/ end=/%stopzone\>/ end=/\$/  concealends contains=@texMathZoneGroup 
+                   start=/\\begin\s*{\s*equation\s*}/ end=/\\end\s*{\s*equation\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneY   xxx matchgroup=Delimiter start=/\$\$/ end=/%stopzone\>/ end=/\$\$/  keepend concealends contains=@texMathZoneGroup 
+                   start=/\\begin\s*{\s*alignat\s*}/ end=/\\end\s*{\s*alignat\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneZ   xxx matchgroup=texStatement start=/\\ensuremath\s*{/ end=/%stopzone\>/ end=/}/  contains=@texMathZoneGroup 
+                   start=/\\begin\s*{\s*align\s*}/ end=/\\end\s*{\s*align\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texOnlyMath    xxx match /[_^]/  
+                   links to texError
+texOption      xxx match /[^\\]\zs#\d\+\|^#\d\+/  
+                   links to Number
+texParen       xxx start=/(/ end=/)/  transparent contains=@texMatchGroup,@Spell 
+texSectionZone xxx matchgroup=texSection start=/\\section\>/ end=/\ze\s*\\\%(section\>\|chapter\>\|part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@texSectionGroup,@Spell 
+texSpaceCode   xxx match /\\\(math\|cat\|del\|lc\|sf\|uc\)code`/me=e-1  nextgroup=texSpaceCodeChar 
+                   links to texStatement
+texZone        xxx start=/\\begin{[vV]erbatim}/ end=/\\end{[vV]erbatim}\|%stopzone\>/  
+                   start=/\\verb\*\=\z([^\ta-zA-Z]\)/ end=/\z1\|%stopzone\>/  
+                   matchgroup=texStatement start=/@samp{/ end=/}\|%stopzone\>/  contains=@texRefGroup 
+                   start=/\\begin{lstlisting}/rs=s end=/\\end{lstlisting}\|%stopzone\>/re=e  keepend contains=texBeginEnd 
+                   match /\\lstinline\s*\(\[.*\]\)\={.\{-}}/  
+                   start=/\\begin{verbatimtab}/ end=/\\end{verbatimtab}\|%stopzone\>/  
+                   start=/\\begin{verbatimwrite}/ end=/\\end{verbatimwrite}\|%stopzone\>/  
+                   start=/\\begin{boxedverbatim}/ end=/\\end{boxedverbatim}\|%stopzone\>/  
+                   links to PreCondit
+texTitle       xxx matchgroup=texSection start=/\\\%(author\|title\)\>\s*{/ end=/}/  contains=@texFoldGroup,@Spell 
+texAbstract    xxx matchgroup=texSection start=/\\begin\s*{\s*abstract\s*}/ end=/\\end\s*{\s*abstract\s*}/  contains=@texFoldGroup,@Spell 
+texBoldStyle   xxx matchgroup=texTypeStyle start=/\\textbf\s*{/ end=/}/  concealends contains=@texBoldGroup,@Spell 
+                   matchgroup=texTypeStyle start=/\\textbf\s*{/ end=/}/  concealends contains=@Spell,@texBoldGroup 
+texItalStyle   xxx matchgroup=texTypeStyle start=/\\textit\s*{/ end=/}/  concealends contains=@texItalGroup,@Spell 
+                   matchgroup=texTypeStyle start=/\\emph\s*{/ end=/}/  concealends contains=@Spell,@texItalGroup 
+                   matchgroup=texTypeStyle start=/\\textit\s*{/ end=/}/  concealends contains=@Spell,@texItalGroup 
+texNoSpell     xxx matchgroup=texComment start=/%\s*nospell\s*{/ end=/%\s*nospell\s*}/  contained contains=@texFoldGroup,@NoSpell 
+texBoldItalStyle xxx matchgroup=texTypeStyle start=/\\textit\s*{/ end=/}/  concealends contains=@texItalGroup,@Spell 
+texItalBoldStyle xxx matchgroup=texTypeStyle start=/\\textbf\s*{/ end=/}/  concealends contains=@texBoldGroup,@Spell 
+texStyleStatement xxx match /\\[a-zA-Z@]\+/  contained 
+                   links to texStatement
+texStyleMatcher xxx matchgroup=Delimiter start=/{/ skip=/\\\\\|\\[{}]/ end=/}/  contained contains=@texStyleGroup,texError 
+                   matchgroup=Delimiter start=/\[/ end=/]/  contained contains=@texStyleGroup,texError 
+texMathDelimBad xxx match /\S/  contained 
+                   links to texError
+texMathMatcher xxx matchgroup=Delimiter start=/{/ skip=/\%(\\\\\)*\\}/ end=/%stopzone\>/ end=/}/  contained contains=@texMathMatchGroup 
+                   links to texMath
+texMathSymbol  xxx match /\\|/  contained conceal 
+                   match /\\aleph\>/  contained conceal 
+                   match /\\amalg\>/  contained conceal 
+                   match /\\angle\>/  contained conceal 
+                   match /\\approx\>/  contained conceal 
+                   match /\\ast\>/  contained conceal 
+                   match /\\asymp\>/  contained conceal 
+                   match /\\backepsilon\>/  contained conceal 
+                   match /\\backsimeq\>/  contained conceal 
+                   match /\\backslash\>/  contained conceal 
+                   match /\\barwedge\>/  contained conceal 
+                   match /\\because\>/  contained conceal 
+                   match /\\between\>/  contained conceal 
+                   match /\\bigcap\>/  contained conceal 
+                   match /\\bigcirc\>/  contained conceal 
+                   match /\\bigcup\>/  contained conceal 
+                   match /\\bigodot\>/  contained conceal 
+                   match /\\bigoplus\>/  contained conceal 
+                   match /\\bigotimes\>/  contained conceal 
+                   match /\\bigsqcup\>/  contained conceal 
+                   match /\\bigtriangledown\>/  contained conceal 
+                   match /\\bigtriangleup\>/  contained conceal 
+                   match /\\bigvee\>/  contained conceal 
+                   match /\\bigwedge\>/  contained conceal 
+                   match /\\blacksquare\>/  contained conceal 
+                   match /\\bot\>/  contained conceal 
+                   match /\\bowtie\>/  contained conceal 
+                   match /\\boxdot\>/  contained conceal 
+                   match /\\boxminus\>/  contained conceal 
+                   match /\\boxplus\>/  contained conceal 
+                   match /\\boxtimes\>/  contained conceal 
+                   match /\\bullet\>/  contained conceal 
+                   match /\\bumpeq\>/  contained conceal 
+                   match /\\Bumpeq\>/  contained conceal 
+                   match /\\cap\>/  contained conceal 
+                   match /\\Cap\>/  contained conceal 
+                   match /\\cdot\>/  contained conceal 
+                   match /\\cdots\>/  contained conceal 
+                   match /\\circ\>/  contained conceal 
+                   match /\\circeq\>/  contained conceal 
+                   match /\\circlearrowleft\>/  contained conceal 
+                   match /\\circlearrowright\>/  contained conceal 
+                   match /\\circledast\>/  contained conceal 
+                   match /\\circledcirc\>/  contained conceal 
+                   match /\\clubsuit\>/  contained conceal 
+                   match /\\complement\>/  contained conceal 
+                   match /\\cong\>/  contained conceal 
+                   match /\\coprod\>/  contained conceal 
+                   match /\\copyright\>/  contained conceal 
+                   match /\\cup\>/  contained conceal 
+                   match /\\Cup\>/  contained conceal 
+                   match /\\curlyeqprec\>/  contained conceal 
+                   match /\\curlyeqsucc\>/  contained conceal 
+                   match /\\curlyvee\>/  contained conceal 
+                   match /\\curlywedge\>/  contained conceal 
+                   match /\\dagger\>/  contained conceal 
+                   match /\\dashv\>/  contained conceal 
+                   match /\\ddagger\>/  contained conceal 
+                   match /\\ddots\>/  contained conceal 
+                   match /\\diamond\>/  contained conceal 
+                   match /\\diamondsuit\>/  contained conceal 
+                   match /\\div\>/  contained conceal 
+                   match /\\doteq\>/  contained conceal 
+                   match /\\doteqdot\>/  contained conceal 
+                   match /\\dotplus\>/  contained conceal 
+                   match /\\dots\>/  contained conceal 
+                   match /\\dotsb\>/  contained conceal 
+                   match /\\dotsc\>/  contained conceal 
+                   match /\\dotsi\>/  contained conceal 
+                   match /\\dotso\>/  contained conceal 
+                   match /\\doublebarwedge\>/  contained conceal 
+                   match /\\downarrow\>/  contained conceal 
+                   match /\\Downarrow\>/  contained conceal 
+                   match /\\ell\>/  contained conceal 
+                   match /\\emptyset\>/  contained conceal 
+                   match /\\eqcirc\>/  contained conceal 
+                   match /\\eqsim\>/  contained conceal 
+                   match /\\eqslantgtr\>/  contained conceal 
+                   match /\\eqslantless\>/  contained conceal 
+                   match /\\equiv\>/  contained conceal 
+                   match /\\exists\>/  contained conceal 
+                   match /\\fallingdotseq\>/  contained conceal 
+                   match /\\flat\>/  contained conceal 
+                   match /\\forall\>/  contained conceal 
+                   match /\\frown\>/  contained conceal 
+                   match /\\ge\>/  contained conceal 
+                   match /\\geq\>/  contained conceal 
+                   match /\\geqq\>/  contained conceal 
+                   match /\\gets\>/  contained conceal 
+                   match /\\gg\>/  contained conceal 
+                   match /\\gneqq\>/  contained conceal 
+                   match /\\gtrdot\>/  contained conceal 
+                   match /\\gtreqless\>/  contained conceal 
+                   match /\\gtrless\>/  contained conceal 
+                   match /\\gtrsim\>/  contained conceal 
+                   match /\\hbar\>/  contained conceal 
+                   match /\\heartsuit\>/  contained conceal 
+                   match /\\hookleftarrow\>/  contained conceal 
+                   match /\\hookrightarrow\>/  contained conceal 
+                   match /\\iiint\>/  contained conceal 
+                   match /\\iint\>/  contained conceal 
+                   match /\\Im\>/  contained conceal 
+                   match /\\imath\>/  contained conceal 
+                   match /\\in\>/  contained conceal 
+                   match /\\infty\>/  contained conceal 
+                   match /\\int\>/  contained conceal 
+                   match /\\lceil\>/  contained conceal 
+                   match /\\ldots\>/  contained conceal 
+                   match /\\le\>/  contained conceal 
+                   match /\\leadsto\>/  contained conceal 
+                   match /\\left(/  contained conceal 
+                   match /\\left\[/  contained conceal 
+                   match /\\left\\{/  contained conceal 
+                   match /\\leftarrow\>/  contained conceal 
+                   match /\\Leftarrow\>/  contained conceal 
+                   match /\\leftarrowtail\>/  contained conceal 
+                   match /\\leftharpoondown\>/  contained conceal 
+                   match /\\leftharpoonup\>/  contained conceal 
+                   match /\\leftrightarrow\>/  contained conceal 
+                   match /\\Leftrightarrow\>/  contained conceal 
+                   match /\\leftrightsquigarrow\>/  contained conceal 
+                   match /\\leftthreetimes\>/  contained conceal 
+                   match /\\leq\>/  contained conceal 
+                   match /\\leq\>/  contained conceal 
+                   match /\\leqq\>/  contained conceal 
+                   match /\\lessdot\>/  contained conceal 
+                   match /\\lesseqgtr\>/  contained conceal 
+                   match /\\lesssim\>/  contained conceal 
+                   match /\\lfloor\>/  contained conceal 
+                   match /\\ll\>/  contained conceal 
+                   match /\\lmoustache\>/  contained conceal 
+                   match /\\lneqq\>/  contained conceal 
+                   match /\\ltimes\>/  contained conceal 
+                   match /\\mapsto\>/  contained conceal 
+                   match /\\measuredangle\>/  contained conceal 
+                   match /\\mid\>/  contained conceal 
+                   match /\\models\>/  contained conceal 
+                   match /\\mp\>/  contained conceal 
+                   match /\\nabla\>/  contained conceal 
+                   match /\\natural\>/  contained conceal 
+                   match /\\ncong\>/  contained conceal 
+                   match /\\ne\>/  contained conceal 
+                   match /\\nearrow\>/  contained conceal 
+                   match /\\neg\>/  contained conceal 
+                   match /\\neq\>/  contained conceal 
+                   match /\\nexists\>/  contained conceal 
+                   match /\\ngeq\>/  contained conceal 
+                   match /\\ngeqq\>/  contained conceal 
+                   match /\\ngtr\>/  contained conceal 
+                   match /\\ni\>/  contained conceal 
+                   match /\\nleftarrow\>/  contained conceal 
+                   match /\\nLeftarrow\>/  contained conceal 
+                   match /\\nLeftrightarrow\>/  contained conceal 
+                   match /\\nleq\>/  contained conceal 
+                   match /\\nleqq\>/  contained conceal 
+                   match /\\nless\>/  contained conceal 
+                   match /\\nmid\>/  contained conceal 
+                   match /\\notin\>/  contained conceal 
+                   match /\\nprec\>/  contained conceal 
+                   match /\\nrightarrow\>/  contained conceal 
+                   match /\\nRightarrow\>/  contained conceal 
+                   match /\\nsim\>/  contained conceal 
+                   match /\\nsucc\>/  contained conceal 
+                   match /\\ntriangleleft\>/  contained conceal 
+                   match /\\ntrianglelefteq\>/  contained conceal 
+                   match /\\ntriangleright\>/  contained conceal 
+                   match /\\ntrianglerighteq\>/  contained conceal 
+                   match /\\nvdash\>/  contained conceal 
+                   match /\\nvDash\>/  contained conceal 
+                   match /\\nVdash\>/  contained conceal 
+                   match /\\nwarrow\>/  contained conceal 
+                   match /\\odot\>/  contained conceal 
+                   match /\\oint\>/  contained conceal 
+                   match /\\ominus\>/  contained conceal 
+                   match /\\oplus\>/  contained conceal 
+                   match /\\oslash\>/  contained conceal 
+                   match /\\otimes\>/  contained conceal 
+                   match /\\owns\>/  contained conceal 
+                   match /\\P\>/  contained conceal 
+                   match /\\parallel\>/  contained conceal 
+                   match /\\partial\>/  contained conceal 
+                   match /\\perp\>/  contained conceal 
+                   match /\\pitchfork\>/  contained conceal 
+                   match /\\pm\>/  contained conceal 
+                   match /\\prec\>/  contained conceal 
+                   match /\\precapprox\>/  contained conceal 
+                   match /\\preccurlyeq\>/  contained conceal 
+                   match /\\preceq\>/  contained conceal 
+                   match /\\precnapprox\>/  contained conceal 
+                   match /\\precneqq\>/  contained conceal 
+                   match /\\precsim\>/  contained conceal 
+                   match /\\prime\>/  contained conceal 
+                   match /\\prod\>/  contained conceal 
+                   match /\\propto\>/  contained conceal 
+                   match /\\rceil\>/  contained conceal 
+                   match /\\Re\>/  contained conceal 
+                   match /\\rfloor\>/  contained conceal 
+                   match /\\right)/  contained conceal 
+                   match /\\right]/  contained conceal 
+                   match /\\right\\}/  contained conceal 
+                   match /\\rightarrow\>/  contained conceal 
+                   match /\\Rightarrow\>/  contained conceal 
+                   match /\\rightarrowtail\>/  contained conceal 
+                   match /\\rightleftharpoons\>/  contained conceal 
+                   match /\\rightsquigarrow\>/  contained conceal 
+                   match /\\rightthreetimes\>/  contained conceal 
+                   match /\\risingdotseq\>/  contained conceal 
+                   match /\\rmoustache\>/  contained conceal 
+                   match /\\rtimes\>/  contained conceal 
+                   match /\\S\>/  contained conceal 
+                   match /\\searrow\>/  contained conceal 
+                   match /\\setminus\>/  contained conceal 
+                   match /\\sharp\>/  contained conceal 
+                   match /\\sim\>/  contained conceal 
+                   match /\\simeq\>/  contained conceal 
+                   match /\\smile\>/  contained conceal 
+                   match /\\spadesuit\>/  contained conceal 
+                   match /\\sphericalangle\>/  contained conceal 
+                   match /\\sqcap\>/  contained conceal 
+                   match /\\sqcup\>/  contained conceal 
+                   match /\\sqsubset\>/  contained conceal 
+                   match /\\sqsubseteq\>/  contained conceal 
+                   match /\\sqsupset\>/  contained conceal 
+                   match /\\sqsupseteq\>/  contained conceal 
+                   match /\\star\>/  contained conceal 
+                   match /\\subset\>/  contained conceal 
+                   match /\\Subset\>/  contained conceal 
+                   match /\\subseteq\>/  contained conceal 
+                   match /\\subseteqq\>/  contained conceal 
+                   match /\\subsetneq\>/  contained conceal 
+                   match /\\subsetneqq\>/  contained conceal 
+                   match /\\succ\>/  contained conceal 
+                   match /\\succapprox\>/  contained conceal 
+                   match /\\succcurlyeq\>/  contained conceal 
+                   match /\\succeq\>/  contained conceal 
+                   match /\\succnapprox\>/  contained conceal 
+                   match /\\succneqq\>/  contained conceal 
+                   match /\\succsim\>/  contained conceal 
+                   match /\\sum\>/  contained conceal 
+                   match /\\supset\>/  contained conceal 
+                   match /\\Supset\>/  contained conceal 
+                   match /\\supseteq\>/  contained conceal 
+                   match /\\supseteqq\>/  contained conceal 
+                   match /\\supsetneq\>/  contained conceal 
+                   match /\\supsetneqq\>/  contained conceal 
+                   match /\\surd\>/  contained conceal 
+                   match /\\swarrow\>/  contained conceal 
+                   match /\\therefore\>/  contained conceal 
+                   match /\\times\>/  contained conceal 
+                   match /\\to\>/  contained conceal 
+                   match /\\top\>/  contained conceal 
+                   match /\\triangle\>/  contained conceal 
+                   match /\\triangleleft\>/  contained conceal 
+                   match /\\trianglelefteq\>/  contained conceal 
+                   match /\\triangleq\>/  contained conceal 
+                   match /\\triangleright\>/  contained conceal 
+                   match /\\trianglerighteq\>/  contained conceal 
+                   match /\\twoheadleftarrow\>/  contained conceal 
+                   match /\\twoheadrightarrow\>/  contained conceal 
+                   match /\\uparrow\>/  contained conceal 
+                   match /\\Uparrow\>/  contained conceal 
+                   match /\\updownarrow\>/  contained conceal 
+                   match /\\Updownarrow\>/  contained conceal 
+                   match /\\varnothing\>/  contained conceal 
+                   match /\\vartriangle\>/  contained conceal 
+                   match /\\vdash\>/  contained conceal 
+                   match /\\vDash\>/  contained conceal 
+                   match /\\Vdash\>/  contained conceal 
+                   match /\\vdots\>/  contained conceal 
+                   match /\\vee\>/  contained conceal 
+                   match /\\veebar\>/  contained conceal 
+                   match /\\Vvdash\>/  contained conceal 
+                   match /\\wedge\>/  contained conceal 
+                   match /\\wp\>/  contained conceal 
+                   match /\\wr\>/  contained conceal 
+                   match /\\gg\>/  contained conceal 
+                   match /\\ll\>/  contained conceal 
+                   match /\\hat{a}/  contained conceal 
+                   match /\\hat{A}/  contained conceal 
+                   match /\\hat{c}/  contained conceal 
+                   match /\\hat{C}/  contained conceal 
+                   match /\\hat{e}/  contained conceal 
+                   match /\\hat{E}/  contained conceal 
+                   match /\\hat{g}/  contained conceal 
+                   match /\\hat{G}/  contained conceal 
+                   match /\\hat{i}/  contained conceal 
+                   match /\\hat{I}/  contained conceal 
+                   match /\\hat{o}/  contained conceal 
+                   match /\\hat{O}/  contained conceal 
+                   match /\\hat{s}/  contained conceal 
+                   match /\\hat{S}/  contained conceal 
+                   match /\\hat{u}/  contained conceal 
+                   match /\\hat{U}/  contained conceal 
+                   match /\\hat{w}/  contained conceal 
+                   match /\\hat{W}/  contained conceal 
+                   match /\\hat{y}/  contained conceal 
+                   match /\\hat{Y}/  contained conceal 
+                   links to texStatement
+texMathText    xxx matchgroup=texStatement start=/\\\(\(inter\)\=text\|mbox\)\s*{/ end=/}/  contains=@texFoldGroup,@Spell 
+texPartZone    xxx matchgroup=texSection start=/\\part\>/ end=/\ze\s*\\\%(part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@texPartGroup,@Spell 
+texChapterZone xxx matchgroup=texSection start=/\\chapter\>/ end=/\ze\s*\\\%(chapter\>\|part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@texChapterGroup,@Spell 
+texParaZone    xxx matchgroup=texSection start=/\\paragraph\>/ end=/\ze\s*\\\%(paragraph\>\|\%(sub\)*section\>\|chapter\>\|part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@texParaGroup,@Spell 
+texSubSectionZone xxx matchgroup=texSection start=/\\subsection\>/ end=/\ze\s*\\\%(\%(sub\)\=section\>\|chapter\>\|part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@texSubSectionGroup,@Spell 
+texSubSubSectionZone xxx matchgroup=texSection start=/\\subsubsection\>/ end=/\ze\s*\\\%(\%(sub\)\{,2}section\>\|chapter\>\|part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@texSubSubSectionGroup,@Spell 
+texSubParaZone xxx matchgroup=texSection start=/\\subparagraph\>/ end=/\ze\s*\\\%(\%(sub\)\=paragraph\>\|\%(sub\)*section\>\|chapter\>\|part\>\|end\s*{\s*document\s*}\)/  contains=@texFoldGroup,@Spell 
+texGreek       xxx match /\\alpha\>/  contained conceal 
+                   match /\\beta\>/  contained conceal 
+                   match /\\gamma\>/  contained conceal 
+                   match /\\delta\>/  contained conceal 
+                   match /\\epsilon\>/  contained conceal 
+                   match /\\varepsilon\>/  contained conceal 
+                   match /\\zeta\>/  contained conceal 
+                   match /\\eta\>/  contained conceal 
+                   match /\\theta\>/  contained conceal 
+                   match /\\vartheta\>/  contained conceal 
+                   match /\\kappa\>/  contained conceal 
+                   match /\\lambda\>/  contained conceal 
+                   match /\\mu\>/  contained conceal 
+                   match /\\nu\>/  contained conceal 
+                   match /\\xi\>/  contained conceal 
+                   match /\\pi\>/  contained conceal 
+                   match /\\varpi\>/  contained conceal 
+                   match /\\rho\>/  contained conceal 
+                   match /\\varrho\>/  contained conceal 
+                   match /\\sigma\>/  contained conceal 
+                   match /\\varsigma\>/  contained conceal 
+                   match /\\tau\>/  contained conceal 
+                   match /\\upsilon\>/  contained conceal 
+                   match /\\phi\>/  contained conceal 
+                   match /\\varphi\>/  contained conceal 
+                   match /\\chi\>/  contained conceal 
+                   match /\\psi\>/  contained conceal 
+                   match /\\omega\>/  contained conceal 
+                   match /\\Gamma\>/  contained conceal 
+                   match /\\Delta\>/  contained conceal 
+                   match /\\Theta\>/  contained conceal 
+                   match /\\Lambda\>/  contained conceal 
+                   match /\\Xi\>/  contained conceal 
+                   match /\\Pi\>/  contained conceal 
+                   match /\\Sigma\>/  contained conceal 
+                   match /\\Upsilon\>/  contained conceal 
+                   match /\\Phi\>/  contained conceal 
+                   match /\\Psi\>/  contained conceal 
+                   match /\\Omega\>/  contained conceal 
+                   links to texStatement
+texSuperscript xxx matchgroup=Delimiter start=/\^{/ skip=/\\\\\|\\[{}]/ end=/}/  contained concealends contains=texSpecialChar,texSuperscripts,texStatement,texSubscript,texSuperscript,texMathMatcher 
+                   match /\^0/  contained conceal 
+                   match /\^1/  contained conceal 
+                   match /\^2/  contained conceal 
+                   match /\^3/  contained conceal 
+                   match /\^4/  contained conceal 
+                   match /\^5/  contained conceal 
+                   match /\^6/  contained conceal 
+                   match /\^7/  contained conceal 
+                   match /\^8/  contained conceal 
+                   match /\^9/  contained conceal 
+                   match /\^a/  contained conceal 
+                   match /\^b/  contained conceal 
+                   match /\^c/  contained conceal 
+                   match /\^d/  contained conceal 
+                   match /\^e/  contained conceal 
+                   match /\^f/  contained conceal 
+                   match /\^g/  contained conceal 
+                   match /\^h/  contained conceal 
+                   match /\^i/  contained conceal 
+                   match /\^j/  contained conceal 
+                   match /\^k/  contained conceal 
+                   match /\^l/  contained conceal 
+                   match /\^m/  contained conceal 
+                   match /\^n/  contained conceal 
+                   match /\^o/  contained conceal 
+                   match /\^p/  contained conceal 
+                   match /\^r/  contained conceal 
+                   match /\^s/  contained conceal 
+                   match /\^t/  contained conceal 
+                   match /\^u/  contained conceal 
+                   match /\^v/  contained conceal 
+                   match /\^w/  contained conceal 
+                   match /\^x/  contained conceal 
+                   match /\^y/  contained conceal 
+                   match /\^z/  contained conceal 
+                   match /\^A/  contained conceal 
+                   match /\^B/  contained conceal 
+                   match /\^D/  contained conceal 
+                   match /\^E/  contained conceal 
+                   match /\^G/  contained conceal 
+                   match /\^H/  contained conceal 
+                   match /\^I/  contained conceal 
+                   match /\^J/  contained conceal 
+                   match /\^K/  contained conceal 
+                   match /\^L/  contained conceal 
+                   match /\^M/  contained conceal 
+                   match /\^N/  contained conceal 
+                   match /\^O/  contained conceal 
+                   match /\^P/  contained conceal 
+                   match /\^R/  contained conceal 
+                   match /\^T/  contained conceal 
+                   match /\^U/  contained conceal 
+                   match /\^W/  contained conceal 
+                   match /\^,/  contained conceal 
+                   match /\^:/  contained conceal 
+                   match /\^;/  contained conceal 
+                   match /\^+/  contained conceal 
+                   match /\^-/  contained conceal 
+                   match /\^</  contained conceal 
+                   match /\^>/  contained conceal 
+                   match +\^/+  contained conceal 
+                   match /\^(/  contained conceal 
+                   match /\^)/  contained conceal 
+                   match /\^\./  contained conceal 
+                   match /\^=/  contained conceal 
+                   links to texStatement
+texSubscript   xxx matchgroup=Delimiter start=/_{/ skip=/\\\\\|\\[{}]/ end=/}/  contained concealends contains=texSpecialChar,texSubscripts,texStatement,texSubscript,texSuperscript,texMathMatcher 
+                   match /_0/  contained conceal 
+                   match /_1/  contained conceal 
+                   match /_2/  contained conceal 
+                   match /_3/  contained conceal 
+                   match /_4/  contained conceal 
+                   match /_5/  contained conceal 
+                   match /_6/  contained conceal 
+                   match /_7/  contained conceal 
+                   match /_8/  contained conceal 
+                   match /_9/  contained conceal 
+                   match /_a/  contained conceal 
+                   match /_e/  contained conceal 
+                   match /_i/  contained conceal 
+                   match /_o/  contained conceal 
+                   match /_u/  contained conceal 
+                   match /_,/  contained conceal 
+                   match /_+/  contained conceal 
+                   match /_-/  contained conceal 
+                   match +_/+  contained conceal 
+                   match /_(/  contained conceal 
+                   match /_)/  contained conceal 
+                   match /_\./  contained conceal 
+                   match /_r/  contained conceal 
+                   match /_v/  contained conceal 
+                   match /_x/  contained conceal 
+                   match /_\\beta\>/  contained conceal 
+                   match /_\\delta\>/  contained conceal 
+                   match /_\\phi\>/  contained conceal 
+                   match /_\\gamma\>/  contained conceal 
+                   match /_\\chi\>/  contained conceal 
+                   links to texStatement
+texError       xxx match /[}\])]/  
+                   match /\\\a*@[a-zA-Z@]*/  
+                   links to Error
+texBeginEndModifier xxx matchgroup=Delimiter start=/\[/ end=/]/  contained contains=texComment,@NoSpell 
+texDocTypeArgs xxx matchgroup=Delimiter start=/\[/ end=/]/  contained contains=texComment,@NoSpell nextgroup=texBeginEndName 
+                   links to texCmdArgs
+texStyle       xxx matchgroup=texStatement start=/\\makeatletter/ end=/\\makeatother/  contained contains=@texStyleGroup 
+texInputCurlies xxx match /[{}]/  contained 
+                   links to texDelimiter
+texInputFileOpt xxx matchgroup=Delimiter start=/\[/ end=/\]/  contained contains=texComment 
+                   links to texCmdArgs
+texSpaceCodeChar xxx match /`\\\=.\(\^.\)\==\(\d\|\"\x\{1,6}\|`.\)/  contained 
+                   links to Special
+texDocZone     xxx matchgroup=texSection start=/\\begin\s*{\s*document\s*}/ end=/\\end\s*{\s*document\s*}/  contains=@texFoldGroup,@texDocGroup,@Spell 
+texMathZoneA   xxx start=/\\begin\s*{\s*align\s*}/ end=/\\end\s*{\s*align\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneAS  xxx start=/\\begin\s*{\s*align\*\s*}/ end=/\\end\s*{\s*align\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneB   xxx start=/\\begin\s*{\s*alignat\s*}/ end=/\\end\s*{\s*alignat\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneBS  xxx start=/\\begin\s*{\s*alignat\*\s*}/ end=/\\end\s*{\s*alignat\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneC   xxx start=/\\begin\s*{\s*displaymath\s*}/ end=/\\end\s*{\s*displaymath\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneCS  xxx start=/\\begin\s*{\s*displaymath\*\s*}/ end=/\\end\s*{\s*displaymath\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneD   xxx start=/\\begin\s*{\s*eqnarray\s*}/ end=/\\end\s*{\s*eqnarray\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneDS  xxx start=/\\begin\s*{\s*eqnarray\*\s*}/ end=/\\end\s*{\s*eqnarray\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneE   xxx start=/\\begin\s*{\s*equation\s*}/ end=/\\end\s*{\s*equation\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneES  xxx start=/\\begin\s*{\s*equation\*\s*}/ end=/\\end\s*{\s*equation\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneF   xxx start=/\\begin\s*{\s*flalign\s*}/ end=/\\end\s*{\s*flalign\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneFS  xxx start=/\\begin\s*{\s*flalign\*\s*}/ end=/\\end\s*{\s*flalign\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneG   xxx start=/\\begin\s*{\s*gather\s*}/ end=/\\end\s*{\s*gather\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneGS  xxx start=/\\begin\s*{\s*gather\*\s*}/ end=/\\end\s*{\s*gather\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneH   xxx start=/\\begin\s*{\s*math\s*}/ end=/\\end\s*{\s*math\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneHS  xxx start=/\\begin\s*{\s*math\*\s*}/ end=/\\end\s*{\s*math\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneI   xxx start=/\\begin\s*{\s*multline\s*}/ end=/\\end\s*{\s*multline\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneIS  xxx start=/\\begin\s*{\s*multline\*\s*}/ end=/\\end\s*{\s*multline\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneJ   xxx start=/\\begin\s*{\s*subequations\s*}/ end=/\\end\s*{\s*subequations\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneK   xxx start=/\\begin\s*{\s*xalignat\s*}/ end=/\\end\s*{\s*xalignat\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneKS  xxx start=/\\begin\s*{\s*xalignat\*\s*}/ end=/\\end\s*{\s*xalignat\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneL   xxx start=/\\begin\s*{\s*xxalignat\s*}/ end=/\\end\s*{\s*xxalignat\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texTodo        xxx contained fixme xxx combak todo
+                   links to Todo
+texRefOption   xxx matchgroup=Delimiter start=/\[/ end=/]/  contained contains=@texRefGroup,texRefZone nextgroup=texRefOption,texCite 
+texCite        xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=@texRefGroup,texRefZone,texCite 
+                   links to texRefZone
+texCmdName     xxx matchgroup=Delimiter start=/{/rs=s+1 end=/}/  contained nextgroup=texCmdArgs,texCmdBody skipwhite skipnl 
+                   links to Statement
+texCmdArgs     xxx matchgroup=Delimiter start=/\[/rs=s+1 end=/]/  contained nextgroup=texCmdBody skipwhite skipnl 
+                   links to Number
+texEnvName     xxx matchgroup=Delimiter start=/{/rs=s+1 end=/}/  contained nextgroup=texEnvBgn skipwhite skipnl 
+                   matchgroup=Delimiter start=/{/rs=s+1 end=/}/  contained nextgroup=texEnvBgn,texEnvArgs skipwhite skipnl 
+texEnvBgn      xxx matchgroup=Delimiter start=/{/rs=s+1 end=/}/  contained contains=@texEnvGroup nextgroup=texEnvEnd skipwhite skipnl 
+texEnvEnd      xxx matchgroup=Delimiter start=/{/rs=s+1 end=/}/  contained contains=@texEnvGroup 
+texDefName     xxx match /\\\a\+/  contained nextgroup=texDefParms,texCmdBody skipwhite skipnl 
+                   match /\\\A/  contained nextgroup=texDefParms,texCmdBody skipwhite skipnl 
+                   links to texDef
+texDefParms    xxx match /#[^{]*/  contained contains=texDefParm nextgroup=texCmdBody skipwhite skipnl 
+texSuperscripts xxx match /0/  contained conceal nextgroup=texSuperscripts 
+                   match /1/  contained conceal nextgroup=texSuperscripts 
+                   match /2/  contained conceal nextgroup=texSuperscripts 
+                   match /3/  contained conceal nextgroup=texSuperscripts 
+                   match /4/  contained conceal nextgroup=texSuperscripts 
+                   match /5/  contained conceal nextgroup=texSuperscripts 
+                   match /6/  contained conceal nextgroup=texSuperscripts 
+                   match /7/  contained conceal nextgroup=texSuperscripts 
+                   match /8/  contained conceal nextgroup=texSuperscripts 
+                   match /9/  contained conceal nextgroup=texSuperscripts 
+                   match /a/  contained conceal nextgroup=texSuperscripts 
+                   match /b/  contained conceal nextgroup=texSuperscripts 
+                   match /c/  contained conceal nextgroup=texSuperscripts 
+                   match /d/  contained conceal nextgroup=texSuperscripts 
+                   match /e/  contained conceal nextgroup=texSuperscripts 
+                   match /f/  contained conceal nextgroup=texSuperscripts 
+                   match /g/  contained conceal nextgroup=texSuperscripts 
+                   match /h/  contained conceal nextgroup=texSuperscripts 
+                   match /i/  contained conceal nextgroup=texSuperscripts 
+                   match /j/  contained conceal nextgroup=texSuperscripts 
+                   match /k/  contained conceal nextgroup=texSuperscripts 
+                   match /l/  contained conceal nextgroup=texSuperscripts 
+                   match /m/  contained conceal nextgroup=texSuperscripts 
+                   match /n/  contained conceal nextgroup=texSuperscripts 
+                   match /o/  contained conceal nextgroup=texSuperscripts 
+                   match /p/  contained conceal nextgroup=texSuperscripts 
+                   match /r/  contained conceal nextgroup=texSuperscripts 
+                   match /s/  contained conceal nextgroup=texSuperscripts 
+                   match /t/  contained conceal nextgroup=texSuperscripts 
+                   match /u/  contained conceal nextgroup=texSuperscripts 
+                   match /v/  contained conceal nextgroup=texSuperscripts 
+                   match /w/  contained conceal nextgroup=texSuperscripts 
+                   match /x/  contained conceal nextgroup=texSuperscripts 
+                   match /y/  contained conceal nextgroup=texSuperscripts 
+                   match /z/  contained conceal nextgroup=texSuperscripts 
+                   match /A/  contained conceal nextgroup=texSuperscripts 
+                   match /B/  contained conceal nextgroup=texSuperscripts 
+                   match /D/  contained conceal nextgroup=texSuperscripts 
+                   match /E/  contained conceal nextgroup=texSuperscripts 
+                   match /G/  contained conceal nextgroup=texSuperscripts 
+                   match /H/  contained conceal nextgroup=texSuperscripts 
+                   match /I/  contained conceal nextgroup=texSuperscripts 
+                   match /J/  contained conceal nextgroup=texSuperscripts 
+                   match /K/  contained conceal nextgroup=texSuperscripts 
+                   match /L/  contained conceal nextgroup=texSuperscripts 
+                   match /M/  contained conceal nextgroup=texSuperscripts 
+                   match /N/  contained conceal nextgroup=texSuperscripts 
+                   match /O/  contained conceal nextgroup=texSuperscripts 
+                   match /P/  contained conceal nextgroup=texSuperscripts 
+                   match /R/  contained conceal nextgroup=texSuperscripts 
+                   match /T/  contained conceal nextgroup=texSuperscripts 
+                   match /U/  contained conceal nextgroup=texSuperscripts 
+                   match /W/  contained conceal nextgroup=texSuperscripts 
+                   match /,/  contained conceal nextgroup=texSuperscripts 
+                   match /:/  contained conceal nextgroup=texSuperscripts 
+                   match /;/  contained conceal nextgroup=texSuperscripts 
+                   match /+/  contained conceal nextgroup=texSuperscripts 
+                   match /-/  contained conceal nextgroup=texSuperscripts 
+                   match /</  contained conceal nextgroup=texSuperscripts 
+                   match />/  contained conceal nextgroup=texSuperscripts 
+                   match +/+  contained conceal nextgroup=texSuperscripts 
+                   match /(/  contained conceal nextgroup=texSuperscripts 
+                   match /)/  contained conceal nextgroup=texSuperscripts 
+                   match /\./  contained conceal nextgroup=texSuperscripts 
+                   match /=/  contained conceal nextgroup=texSuperscripts 
+                   links to texSuperscript
+texSubscripts  xxx match /0/  contained conceal nextgroup=texSubscripts 
+                   match /1/  contained conceal nextgroup=texSubscripts 
+                   match /2/  contained conceal nextgroup=texSubscripts 
+                   match /3/  contained conceal nextgroup=texSubscripts 
+                   match /4/  contained conceal nextgroup=texSubscripts 
+                   match /5/  contained conceal nextgroup=texSubscripts 
+                   match /6/  contained conceal nextgroup=texSubscripts 
+                   match /7/  contained conceal nextgroup=texSubscripts 
+                   match /8/  contained conceal nextgroup=texSubscripts 
+                   match /9/  contained conceal nextgroup=texSubscripts 
+                   match /a/  contained conceal nextgroup=texSubscripts 
+                   match /e/  contained conceal nextgroup=texSubscripts 
+                   match /i/  contained conceal nextgroup=texSubscripts 
+                   match /o/  contained conceal nextgroup=texSubscripts 
+                   match /u/  contained conceal nextgroup=texSubscripts 
+                   match /,/  contained conceal nextgroup=texSubscripts 
+                   match /+/  contained conceal nextgroup=texSubscripts 
+                   match /-/  contained conceal nextgroup=texSubscripts 
+                   match +/+  contained conceal nextgroup=texSubscripts 
+                   match /(/  contained conceal nextgroup=texSubscripts 
+                   match /)/  contained conceal nextgroup=texSubscripts 
+                   match /\./  contained conceal nextgroup=texSubscripts 
+                   match /r/  contained conceal nextgroup=texSubscripts 
+                   match /v/  contained conceal nextgroup=texSubscripts 
+                   match /x/  contained conceal nextgroup=texSubscripts 
+                   match /\\beta\>/  contained conceal nextgroup=texSubscripts 
+                   match /\\delta\>/  contained conceal nextgroup=texSubscripts 
+                   match /\\phi\>/  contained conceal nextgroup=texSubscripts 
+                   match /\\gamma\>/  contained conceal nextgroup=texSubscripts 
+                   match /\\chi\>/  contained conceal nextgroup=texSubscripts 
+                   links to texSubscript
+texEnvArgs     xxx matchgroup=Delimiter start=/\[/rs=s+1 end=/]/  contained nextgroup=texEnvBgn,texEnvArgs skipwhite skipnl 
+texDefParmNested xxx match /##\+\d\+/  contained 
+                   links to Identifier
+texUrlVerb     xxx matchgroup=Delimiter start=/\z([^\ta-zA-Z]\)/ end=/\z1/  contained 
+                   links to texUrl
+texUrl         xxx matchgroup=Delimiter start=/{/ end=/}/  contained 
+                   links to Function
+texHref        xxx matchgroup=Delimiter start=/{/ end=/}/  contained nextgroup=texMatcher 
+                   links to texUrl
+texHyperref    xxx matchgroup=Delimiter start=/\[/ end=/\]/  contained 
+                   links to texRefZone
+texRefOptions  xxx matchgroup=Delimiter start=/\[/ end=/]/  contained contains=@texRefGroup,texRefZone nextgroup=texRefOptions,texCites 
+                   links to texRefOption
+texCites       xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=@texRefGroup,texRefZone,texCites nextgroup=texRefOptions,texCites 
+                   links to texCite
+texQuoteLang   xxx matchgroup=Delimiter start=/{/ end=/}/  contained transparent contains=@texMatchGroup nextgroup=texRefOption,texCite 
+texCRefZone    xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=@texRefGroup,texRefZone 
+                   links to texRefZone
+texCRefZoneRange xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=@texRefGroup,texRefZone nextgroup=texCRefZone skipwhite skipnl 
+                   links to texRefZone
+texCRefLabelOpts xxx matchgroup=Delimiter start=/\[/ end=/]/  contained contains=@texRefGroup,texRefZone 
+                   links to texCmdArgs
+texVarioRefZone xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=@texRefGroup,texRefZone 
+                   links to texRefZone
+texBeamerDelimiter xxx match /<\|>/  contained 
+                   links to Delimiter
+texBeamerOpt   xxx match /<[^>]*>/  contained contains=texBeamerDelimiter 
+                   links to Identifier
+texStatementBeamer xxx match /\\only\(<[^>]*>\)\?/  contains=texBeamerOpt 
+                   match /\\item<[^>]*>/  contains=texBeamerOpt 
+                   links to texStatement
+texMathZoneZS  xxx start=/\\begin\s*{\s*align\*\s*}/ end=/\\end\s*{\s*align\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneYS  xxx start=/\\begin\s*{\s*alignat\*\s*}/ end=/\\end\s*{\s*alignat\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneXS  xxx start=/\\begin\s*{\s*equation\*\s*}/ end=/\\end\s*{\s*equation\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneWS  xxx start=/\\begin\s*{\s*flalign\*\s*}/ end=/\\end\s*{\s*flalign\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneVS  xxx start=/\\begin\s*{\s*gather\*\s*}/ end=/\\end\s*{\s*gather\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneU   xxx start=/\\begin\s*{\s*multline\s*}/ end=/\\end\s*{\s*multline\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneUS  xxx start=/\\begin\s*{\s*multline\*\s*}/ end=/\\end\s*{\s*multline\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneT   xxx start=/\\begin\s*{\s*xalignat\s*}/ end=/\\end\s*{\s*xalignat\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneTS  xxx start=/\\begin\s*{\s*xalignat\*\s*}/ end=/\\end\s*{\s*xalignat\*\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+texMathZoneS   xxx start=/\\begin\s*{\s*xxalignat\s*}/ end=/\\end\s*{\s*xxalignat\s*}/  keepend contains=@texMathZoneGroup 
+                   links to texMath
+dotParErr      xxx match /)/  contained 
+                   links to Error
+dotBrackErr    xxx match /]/  contained 
+                   links to Error
+dotBraceErr    xxx match /}/  contained 
+                   links to Error
+dotEncl        xxx matchgroup=dotParEncl start=/(/ end=/)/  contained transparent contains=ALLBUT,dotParErr 
+                   matchgroup=dotBrackEncl start=/\[/ end=/\]/  contained transparent contains=ALLBUT,dotBrackErr 
+                   matchgroup=dotBraceEncl start=/{/ end=/}/  contained transparent contains=ALLBUT,dotBraceErr 
+dotComment     xxx start=+//+ end=/$/  contained contains=dotComment,dotTodo 
+                   start=+/\*+ end=+\*/+  contained contains=dotComment,dotTodo 
+                   links to Comment
+dotTodo        xxx contained XXX FIXME TODO
+                   links to Todo
+dotString      xxx start=/"/ skip=/\\\\\|\\"/ end=/"/  contained 
+                   links to String
+dotKeyword     xxx contained node subgraph digraph edge
+                   links to Keyword
+dotType        xxx contained arrowsize headclip bgcolor shape ratio decorateP layers rankdir center style layer layer arrowtail
+                   contained samehead labelfontcolor weight tailport color pagedir taillabel peripheries ranksep page nodesep ordering
+                   contained name distortion arrowhead port_label_distance orientation tailclip labelfontsize margin labeldistance
+                   contained labelfontname size width mclimit dir headlabel regular height shapefile rank rotate headport fontcolor
+                   contained fontcolor fontname fontname URL minlen nslimit sides constraint fillcolor labelangle label skew sametail
+                   contained fontsize fontsize
+                   links to Type
+dotKeyChar     xxx match /=/  contained 
+                   match /;/  contained 
+                   match /->/  contained 
+                   links to Keyword
+dotIdentifier  xxx match /\<\w\+\(:\w\+\)\?\>/  contained 
+                   links to Identifier
+texZoneDot     xxx start=/\\begin{dot2tex}/rs=s end=/\\end{dot2tex}/re=e  keepend transparent contains=texBeginEnd,@DOT 
+luaTodo        xxx contained XXX FIXME TODO
+                   links to Todo
+luaComment     xxx match /--.*$/  contained contains=luaTodo,@Spell 
+                   matchgroup=luaComment start=/--\[\z(=*\)\[/ end=/\]\z1\]/  contained contains=luaTodo,@Spell 
+                   match /\%^#!.*/  contained 
+                   links to Comment
+luaParenError  xxx match /)/  contained 
+                   links to Error
+luaSpecial     xxx match /\\[\\abfnrtvz'"]\|\\x[[:xdigit:]]\{2}\|\\[[:digit:]]\{,3}/  contained 
+                   links to SpecialChar
+luaIfThen      xxx matchgroup=luaCond start=/\<if\>/ end=/\<then\>/me=e-4  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaElseifThen,luaElse,luaIn nextgroup=luaThenEnd skipwhite skipempty 
+luaElseifThen  xxx matchgroup=luaCond start=/\<elseif\>/ end=/\<then\>/  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaElseifThen,luaElse,luaThenEnd,luaIn 
+luaElse        xxx contained else
+                   links to Conditional
+luaThenEnd     xxx matchgroup=luaCond start=/\<then\>/ end=/\<end\>/  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaThenEnd,luaIn 
+luaBlock       xxx matchgroup=luaStatement start=/\<do\>/ end=/\<end\>/  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaElseifThen,luaElse,luaThenEnd,luaIn 
+luaLoopBlock   xxx matchgroup=luaRepeat start=/\<repeat\>/ end=/\<until\>/  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaElseifThen,luaElse,luaThenEnd,luaIn 
+                   matchgroup=luaRepeat start=/\<while\>/ end=/\<do\>/me=e-2  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaIfThen,luaElseifThen,luaElse,luaThenEnd,luaIn nextgroup=luaBlock skipwhite skipempty 
+                   matchgroup=luaRepeat start=/\<for\>/ end=/\<do\>/me=e-2  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaIfThen,luaElseifThen,luaElse,luaThenEnd nextgroup=luaBlock skipwhite skipempty 
+luaIn          xxx contained in
+                   links to Operator
+luaStatement   xxx contained local break return goto
+                   links to Statement
+luaParen       xxx start=/(/ end=/)/  contained transparent contains=ALLBUT,luaParenError,luaTodo,luaSpecial,luaIfThen,luaElseifThen,luaElse,luaThenEnd,luaBlock,luaLoopBlock,luaIn,luaStatement 
+luaBraceError  xxx match /}/  contained 
+                   links to Error
+luaTableBlock  xxx matchgroup=luaTable start=/{/ end=/}/  contained transparent contains=ALLBUT,luaBraceError,luaTodo,luaSpecial,luaIfThen,luaElseifThen,luaElse,luaThenEnd,luaBlock,luaLoopBlock,luaIn,luaStatement 
+luaError       xxx match /\<\%(end\|else\|elseif\|then\|until\|in\)\>/  contained 
+                   links to Error
+luaFunctionBlock xxx matchgroup=luaFunction start=/\<function\>/ end=/\<end\>/  contained transparent contains=ALLBUT,luaTodo,luaSpecial,luaElseifThen,luaElse,luaThenEnd,luaIn 
+luaLabel       xxx match /::\I\i*::/  contained 
+                   links to Label
+luaOperator    xxx contained and not or
+                   links to Operator
+luaConstant    xxx contained true nil false
+                   links to Constant
+luaString2     xxx matchgroup=luaString start=/\[\z(=*\)\[/ end=/\]\z1\]/  contained contains=@Spell 
+                   links to String
+luaString      xxx start=/'/ skip=/\\\\\|\\'/ end=/'/  contained contains=luaSpecial,@Spell 
+                   start=/"/ skip=/\\\\\|\\"/ end=/"/  contained contains=luaSpecial,@Spell 
+                   links to String
+luaNumber      xxx match /\<\d\+\>/  contained 
+                   match /\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>/  contained 
+                   match /\.\d\+\%([eE][-+]\=\d\+\)\=\>/  contained 
+                   match /\<\d\+[eE][-+]\=\d\+\>/  contained 
+                   match /\<0[xX][[:xdigit:].]\+\%([pP][-+]\=\d\+\)\=\>/  contained 
+                   links to Number
+luaFunc        xxx contained tonumber collectgarbage rawequal pairs pcall rawlen getmetatable ipairs print _VERSION require _G error
+                   contained tostring type rawset loadfile load setmetatable rawget next select xpcall dofile _ENV assert
+                   match /\<package\.cpath\>/  contained 
+                   match /\<package\.loaded\>/  contained 
+                   match /\<package\.loadlib\>/  contained 
+                   match /\<package\.path\>/  contained 
+                   match /\<package\.config\>/  contained 
+                   match /\<package\.preload\>/  contained 
+                   match /\<package\.searchers\>/  contained 
+                   match /\<package\.searchpath\>/  contained 
+                   match /\<bit32\.arshift\>/  contained 
+                   match /\<bit32\.band\>/  contained 
+                   match /\<bit32\.bnot\>/  contained 
+                   match /\<bit32\.bor\>/  contained 
+                   match /\<bit32\.btest\>/  contained 
+                   match /\<bit32\.bxor\>/  contained 
+                   match /\<bit32\.extract\>/  contained 
+                   match /\<bit32\.lrotate\>/  contained 
+                   match /\<bit32\.lshift\>/  contained 
+                   match /\<bit32\.replace\>/  contained 
+                   match /\<bit32\.rrotate\>/  contained 
+                   match /\<bit32\.rshift\>/  contained 
+                   match /\<coroutine\.running\>/  contained 
+                   match /\<coroutine\.create\>/  contained 
+                   match /\<coroutine\.resume\>/  contained 
+                   match /\<coroutine\.status\>/  contained 
+                   match /\<coroutine\.wrap\>/  contained 
+                   match /\<coroutine\.yield\>/  contained 
+                   match /\<string\.byte\>/  contained 
+                   match /\<string\.char\>/  contained 
+                   match /\<string\.dump\>/  contained 
+                   match /\<string\.find\>/  contained 
+                   match /\<string\.format\>/  contained 
+                   match /\<string\.gsub\>/  contained 
+                   match /\<string\.len\>/  contained 
+                   match /\<string\.lower\>/  contained 
+                   match /\<string\.rep\>/  contained 
+                   match /\<string\.sub\>/  contained 
+                   match /\<string\.upper\>/  contained 
+                   match /\<string\.gmatch\>/  contained 
+                   match /\<string\.match\>/  contained 
+                   match /\<string\.reverse\>/  contained 
+                   match /\<table\.pack\>/  contained 
+                   match /\<table\.unpack\>/  contained 
+                   match /\<table\.concat\>/  contained 
+                   match /\<table\.sort\>/  contained 
+                   match /\<table\.insert\>/  contained 
+                   match /\<table\.remove\>/  contained 
+                   match /\<math\.abs\>/  contained 
+                   match /\<math\.acos\>/  contained 
+                   match /\<math\.asin\>/  contained 
+                   match /\<math\.atan\>/  contained 
+                   match /\<math\.atan2\>/  contained 
+                   match /\<math\.ceil\>/  contained 
+                   match /\<math\.sin\>/  contained 
+                   match /\<math\.cos\>/  contained 
+                   match /\<math\.tan\>/  contained 
+                   match /\<math\.deg\>/  contained 
+                   match /\<math\.exp\>/  contained 
+                   match /\<math\.floor\>/  contained 
+                   match /\<math\.log\>/  contained 
+                   match /\<math\.max\>/  contained 
+                   match /\<math\.min\>/  contained 
+                   match /\<math\.huge\>/  contained 
+                   match /\<math\.fmod\>/  contained 
+                   match /\<math\.modf\>/  contained 
+                   match /\<math\.cosh\>/  contained 
+                   match /\<math\.sinh\>/  contained 
+                   match /\<math\.tanh\>/  contained 
+                   match /\<math\.pow\>/  contained 
+                   match /\<math\.rad\>/  contained 
+                   match /\<math\.sqrt\>/  contained 
+                   match /\<math\.frexp\>/  contained 
+                   match /\<math\.ldexp\>/  contained 
+                   match /\<math\.random\>/  contained 
+                   match /\<math\.randomseed\>/  contained 
+                   match /\<math\.pi\>/  contained 
+                   match /\<io\.close\>/  contained 
+                   match /\<io\.flush\>/  contained 
+                   match /\<io\.input\>/  contained 
+                   match /\<io\.lines\>/  contained 
+                   match /\<io\.open\>/  contained 
+                   match /\<io\.output\>/  contained 
+                   match /\<io\.popen\>/  contained 
+                   match /\<io\.read\>/  contained 
+                   match /\<io\.stderr\>/  contained 
+                   match /\<io\.stdin\>/  contained 
+                   match /\<io\.stdout\>/  contained 
+                   match /\<io\.tmpfile\>/  contained 
+                   match /\<io\.type\>/  contained 
+                   match /\<io\.write\>/  contained 
+                   match /\<os\.clock\>/  contained 
+                   match /\<os\.date\>/  contained 
+                   match /\<os\.difftime\>/  contained 
+                   match /\<os\.execute\>/  contained 
+                   match /\<os\.exit\>/  contained 
+                   match /\<os\.getenv\>/  contained 
+                   match /\<os\.remove\>/  contained 
+                   match /\<os\.rename\>/  contained 
+                   match /\<os\.setlocale\>/  contained 
+                   match /\<os\.time\>/  contained 
+                   match /\<os\.tmpname\>/  contained 
+                   match /\<debug\.debug\>/  contained 
+                   match /\<debug\.gethook\>/  contained 
+                   match /\<debug\.getinfo\>/  contained 
+                   match /\<debug\.getlocal\>/  contained 
+                   match /\<debug\.getupvalue\>/  contained 
+                   match /\<debug\.setlocal\>/  contained 
+                   match /\<debug\.setupvalue\>/  contained 
+                   match /\<debug\.sethook\>/  contained 
+                   match /\<debug\.traceback\>/  contained 
+                   match /\<debug\.getmetatable\>/  contained 
+                   match /\<debug\.setmetatable\>/  contained 
+                   match /\<debug\.getregistry\>/  contained 
+                   match /\<debug\.getuservalue\>/  contained 
+                   match /\<debug\.setuservalue\>/  contained 
+                   match /\<debug\.upvalueid\>/  contained 
+                   match /\<debug\.upvaluejoin\>/  contained 
+                   links to Identifier
+texZoneLua     xxx start=/\\begin{luacode\*\?}/rs=s end=/\\end{luacode\*\?}/re=e  keepend transparent contains=texBeginEnd,@LUA 
+texZoneLuaArg  xxx matchgroup=Delimiter start=/{/ end=/}/  contained contains=@LUA 
+gnuplotSpecial xxx match /\\./  contained 
+                   links to Special
+gnuplotUnit    xxx match /[0-9]+in/  contained 
+                   match /[0-9]+cm/  contained 
+                   match /[0-9]+pt/  contained 
+                   links to Special
+gnuplotExternal xxx start=/!/ end=/$/  contained 
+                   links to Special
+gnuplotTodo    xxx contained XXX FIXME TODO
+                   links to Todo
+gnuplotComment xxx start=/#/ end=/$/  contained contains=gnuplotTodo 
+                   links to Comment
+gnuplotString  xxx start=/"/ skip=/\\"/ end=/"/  contained contains=gnuplotSpecial 
+                   start=/'/ end=/'/  contained 
+                   links to String
+gnuplotNumber  xxx contained GPVAL_U_LOG STATS_median GPVAL_Z_MAX GPVAL_Y_MIN GPVAL_CB_MAX STATS_slope GPVAL_Y2_LOG STATS_index_max_x
+                   contained STATS_index_max_y STATS_lo_quartile_x STATS_lo_quartile_y GPVAL_TERM_XMAX GPVAL_TERM_YSIZE GPVAL_pi
+                   contained STATS_sumxy STATS_sumxy GPVAL_X_LOG GPVAL_DATA_X_MIN GPVAL_LAST_PLOT STATS_index_max GPVAL_U_MAX
+                   contained GPVAL_ENCODING GPVAL_OUTPUT GPVAL_Y2_MAX STATS_stddev_x STATS_stddev_y GPVAL_Z_MIN GPVAL_TERM_YMAX
+                   contained GPVAL_CB_MIN GPVAL_R_MIN STATS_records STATS_lo_quartile STATS_stddev STATS_stddev GPVAL_X_MAX
+                   contained STATS_blocks GPVAL_PWD GPVAL_TERM STATS_min_y GPVAL_DATA_Y_MAX GPVAL_DATA_CB_MAX STATS_invalid GNUTERM
+                   contained STATS_index_min GPVAL_U_MIN GPVAL_V_LOG GPVAL_Y2_MIN STATS_columns STATS_correlation STATS_correlation
+                   contained GPVAL_TERM_YMIN GPVAL_ERRMSG GPVAL_VIEW_ZSCALE GPVAL_VERSION STATS_max GPVAL_VIEW_ROT_X STATS_index_min_x
+                   contained STATS_index_min_y GPVAL_X_MIN STATS_sum_x STATS_sum_y GPVAL_Y_LOG GPVAL_DATA_Y_MIN GPVAL_PLOT
+                   contained GPVAL_DATA_Y2_MAX GPVAL_TERMINALS STATS_up_quartile GPVAL_DATA_CB_MIN GPVAL_V_MAX GPVAL_X2_LOG GPVAL_NaN
+                   contained STATS_pos_min_y GPVAL_VIEW_SCALE STATS_sumsq_x STATS_sumsq_y GPVAL_T_LOG STATS_up_quartile_x
+                   contained STATS_up_quartile_y GPVAL_Y_MAX STATS_min GPVAL_MULTIPLOT NaN GPVAL_DATA_Z_MAX GPVAL_X2_MAX STATS_mean
+                   contained STATS_mean GPVAL_DATA_Y2_MIN GPVAL_TERM_XSIZE GPVAL_V_MIN GPVAL_VIEW_ROT_Z STATS_min_x GPVAL_T_MAX pi
+                   contained GPVAL_COMPILE_OPTIONS STATS_mean_x STATS_mean_y STATS_intercept STATS_blank GPVAL_SPLOT GPVAL_VIEW_MAP
+                   contained GPVAL_TERM_WINDOWID GPVAL_Z_LOG GPVAL_DATA_Z_MIN GPVAL_TERM_XMIN GPVAL_CB_LOG STATS_sum GPVAL_X2_MIN
+                   contained STATS_max_x STATS_max_y GPVAL_R_LOG GPVAL_DATA_X2_MIN STATS_median_x STATS_median_y GPVAL_DATA_X_MAX
+                   contained GPVAL_ERRNO GPVAL_TERMOPTIONS STATS_outofrange GPVAL_DATA_X2_MAX STATS_pos_max_y GPVAL_PATCHLEVEL
+                   contained GPVAL_T_MIN STATS_sumsq
+                   match /GPFUN_[a-zA-Z_]*/  contained 
+                   match /\<[0-9]\+\(u\=l\=\|lu\|f\)\>/  contained 
+                   match /\<0x[0-9a-f]\+\(u\=l\=\|lu\)\>/  contained 
+                   links to Number
+gnuplotError   xxx contained FIT_MAXITER FIT_START_LAMBDA FIT_SCRIPT thru FIT_LIMIT ticscale FIT_LAMBDA_FACTOR ticslevel FIT_LOG
+                   contained clabel
+                   links to Error
+gnuplotFloat   xxx match /\<[0-9]\+\.[0-9]*\(e[-+]\=[0-9]\+\)\=[fl]\=\>/  contained 
+                   match /\.[0-9]\+\(e[-+]\=[0-9]\+\)\=[fl]\=\>/  contained 
+                   match /\<[0-9]\+e[-+]\=[0-9]\+[fl]\=\>/  contained 
+                   links to Float
+gnuplotOctalError xxx match /\<0[0-7]*[89]/  contained 
+                   links to Error
+gnuplotFunc    xxx contained tm_yday sin sin strlen gprintf expint abs tm_sec sinh hsv2rgb lgamma besy0 besy1 asinh ibeta sqrt
+                   contained strftime columnhead floor asin int tm_min tan sprintf cos real word system words erf exists imag arg
+                   contained strptime tm_mon ceil column norm tm_year EllipticPi exp atan acos tm_mday airy timecolumn substr log10
+                   contained cosh acosh strstrt valid gamma voigt defined igamma rand log tm_hour invnorm lambertw tanh atan2 atanh
+                   contained inverf besj0 besj1 erfc stringcolumn columnheader EllipticE EllipticK value tm_wday time sgn
+                   links to Identifier
+gnuplotKeyword xxx contained fsteps aspect autotitle radians notransparent skip noxtics empty empty acsplines courier ymtics yy yy
+                   contained nomxtics ydtics noequal raxis l ylabel p ctrl s u u v edf x x x y y z z z plot butt impulses nofulldoc
+                   contained func normal mxtics gparrows pm3d pm3d onecolor zy noreplotonresize cblabel svg x:y:t:u:z:s regis dynamic
+                   contained x:y:t:z:s solid solid solid solid my2tics table columnstacked pointtype pointtype mirror clipboardformat
+                   contained units units outside zero input nointerlace nointerlace noprescale matrix matrix tikzplot max max mapping
+                   contained heads heads adobeglyphnames origin origin origin ratio add add noexternalimages range layout zticlabels
+                   contained noauxfile arrow arrow standalone standalone standalone standalone ctrlq userstyles financebars
+                   contained financebars add2history mif x11 min min x:z:s defaultplex nomirror reverse autoscale ggi both Right
+                   contained noy2tics sorted giant noautoscale font font font font font font font font font xrange file xyerrorbars
+                   contained xyerrorbars title title title title fill fill lines newstyle linestyle linestyle rgbimages fraction
+                   contained preamble xtic errorbars errorbars y2data filetype bezer x2y2 interlace interlace start-lambda nofilled
+                   contained nofilled cgm grb maxcolors nobentover gif tightboundingbox nopolardistance out filled filled qms equal
+                   contained mitered center center center center center center clustered leveldefault cbdata order append limit_abs
+                   contained arrowstyle colorbox points points points mppoints psdir cauchy textcolor textcolor textcolor textcolor
+                   contained textcolor dots xdtics urange linecolor linecolor t t transpose bars wedge textscale w zdtics spacing excl
+                   contained yerrorbars yerrorbars one xlib ztic style yrange interpolate interpolate dxf nostandalone fixmin base
+                   contained noopaque print nowedge close epscairo round opaque opaque notitle nec_cp6 nec_cp6 y2zeroaxis keepfix left
+                   contained left left tek40 squared rgbalpha ydata dxy800a magnification separation pdfcairo behind ps_allcF canvas
+                   contained int mx2tics windows cubicspline position position doubleclick palette palette palette palette nops_allcF
+                   contained cartesian color color color a4paper altdiagonal pointsmax aifm pbm scale scale flush all loadpath end end
+                   contained maxrows lua noextend x2mtics nofontfiles brg clip1in mp iso_8859_1 iso_8859_2 iso_8859_9 zoomjump data
+                   contained var cbzeroaxis dummy yzeroaxis incremental x2label hann kdensity kdensity y2mtics samplen samples perltk
+                   contained flipx flipy flipz epson_60dpi okidata tab tan whitespace median sun x:z fsize fsize macros scansbackward
+                   contained explicit explicit depth implicit implicit rounded eps hidden3d hidden3d rad locale locale increment
+                   contained cbrange textspecial nounit logfile tek40xx grass loop tek410x ytics svga simplex xyplane rgbimage wxt
+                   contained scansforward rbg server noreverse histogram histogram fille vertical vertical histeps nopsnfss
+                   contained noerrorscaling gradient landscape palfuncparam palfuncparam encoding bdefault line noytics link XYZ deg
+                   contained deg fname HSV psnfss defaultfont nomytics nomy2tics termoption pointintervalbox none koi8r koi8u
+                   contained candlesticks candlesticks inverse general fit2rgbformulae hp500c iso_8859_15 nodoubleclick boxplot
+                   contained boxplot mytics every every every vgagl utf8 layerdefault hpdj filledcurves noaltdiagonal nooptimize tics
+                   contained save as at at at at at absolute animate eepic pdf pdf dashlength oldstyle frequency red front front front
+                   contained front front front nozoomjump cumulative cairolatex nobox maxiter beveled be angle key datafile by by by
+                   contained polyline with square square c1 c2 c3 c4 nooriginreset qnorm relative functions functions functions
+                   contained prologues x2range cb nohidden3d nohidden3d depthorder YIQ degrees upwards x2data mouse steps y2range
+                   contained debug contour linespoints hpgl cntrparam auxfile via via ellipses rowstacked auto auto outliers dl
+                   contained xzeroaxis dx dy dz linux name emf xmtics lmargin boxerrorbars cntrlabel script jpeg tit verbose verbose
+                   contained avs sjis tkcanvas zmtics boxed x2zeroaxis discrete xlabel boxes exp x2ticlabels format format format
+                   contained format format object zlabel emxvga noadobeglyphnames metric fc push view nolabels fs fs positive aqua
+                   contained noratio unit labels labels labels gppoints terminal terminal terminal starc linewidth linewidth linewidth
+                   contained linewidth saturation errorscaling start start parallel inlineimages separator kc-tek40xx tgif delete
+                   contained nox2tics margin point decimalsign nosquare optimize from from emtex polygon volatile using using using
+                   contained axes zdata x2tics results errorvariables surface surface surface enhanced notikzarrows mode vectors
+                   contained vectors circle circle tikz nopoint rmargin in endian y2tics zzeroaxis providevars draft version version
+                   contained epslatex x1y1 x1y2 nooutliers nomcbtics rms gap y2ticlabels bgr mean ftriangles blue gamma noborder
+                   contained noborder background background x:y:t:u:v:z:s nogparrows noraise boxwidth fit hacktext ytic size size size
+                   contained size size size width small small smooth tmargin rrange context unsorted border border border border
+                   contained xerrorlines xerrorlines top top lambda-factor trange record screen noclip defined noerrorvariables png
+                   contained png vrange green logscale height vttek xyerrorlines length big aed512 variable autojustify epson_lx800 lc
+                   contained lc tiny comma ls lt lt lw lw widelines axis zrange norotate norotate angles nogppoints timefmt
+                   contained commentschars geomean hppj inches limit postscript rotate rotate rotate rotate notimestamp persist
+                   contained offsets mf replotonresize x2y1 gauss linear ztics colour FNT5X9 clip4in nohead nohead splines cycles
+                   contained array fontscale fontscale fontscale function interval blacktext blacktext cmykimages log negative polar
+                   contained polar defaultsize latex errorlines errorlines polardistance next duplex pop noenhanced nofeed rowsfirst
+                   contained rtics noztics sbezier trianglepattern nooutput mcbtics binary binary binary noftriangles nomztics
+                   contained nobackground nooffset on yerrorlines yerrorlines imagen noinvert yticlabels level1 fixed index index
+                   contained brief ellipse ellipse mztics offset offset offset offset offset offset offset timestamp timestamp
+                   contained nosurface gbr CMY noundefined gray inside nohacktext invert pi pm ps ps pt pt colortext colortext
+                   contained acceleration model level3 amstex cnormal nocbtics lp downwards downwards back back back back back back
+                   contained mouseformat horizontal horizontal bspline nobitmap unique historysize noheader portrait ruler thickness
+                   contained output large large noctrl levels rto rectangle rectangle pspoints nofpe_trap texdraw cbtics qt backhead
+                   contained cbdtics cp1250 cp1251 cp1254 bitmap hp2648 term term header header tandy_60dpi pslatex vx384
+                   contained zoomcoordinates bottom bottom charsize widget missing cp437 box box cubehelix fullwidth noruler hypertext
+                   contained vws fillcolor cp850 cp852 crop crop noctrlq radius undefined bitgraph medium nozoomcoordinates xdata
+                   contained image two fig mono noverbose columnheader beginning notruecolor hpljii hp2623a rgb xyz isosamples
+                   contained texthidden colornames spherical rgbformulae rgbformulae dpu414 float xerrorbars xerrorbars colourtext
+                   contained colourtext map map FNT13X25 clip clip multiplot fix scan tc to to x:y:z:s nomx2tics pattern
+                   contained psnfss-version7 y2label begin delay textrigid zeroaxis label epson_180dpi user FNT9X17 pointsize
+                   contained pointsize pointsize harmean raise pngcairo pstex cairo picenvironment prescale originreset circles
+                   contained notightboundingbox variables variables set textbox linetype linetype linetype linetype linetype csplines
+                   contained maxcols dumb truecolor jsdir noautotitle parametric xticlabels perpendicular nocontours aed767 head head
+                   contained x2dtics interactive cbmtics corel nopspoints kyo time pointinterval bentover y2dtics feed wx quiet dashed
+                   contained dashed roman right right right gpic fulldoc x2 x2 default default default default cylindrical
+                   contained corners2color nonuniform boxxyerrorbars monochrome grid xtics scansautomatic fontpath km-tek40xx
+                   contained geographic bmargin graph tikzarrows off off externalimages externalimages pstricks nopicenvironment RGB
+                   contained openstep cp950 xx xx xy xy xy tpic bind noquiet Left y2 fixmax dgrid3d fortran
+                   links to Keyword
+gnuplotConditional xxx contained else if
+                   links to Conditional
+gnuplotRepeat  xxx contained while for do
+                   links to Repeat
+gnuplotOperator xxx match =[-+*/^|&?:]=  contained 
+                   match /\*\*/  contained 
+                   match /&&/  contained 
+                   match /||/  contained 
+                   links to Operator
+gnuplotMacro   xxx start=/@/ end=/ /  contained 
+                   links to Macro
+gnuplotStatement xxx contained p plot replot print help spstats pause history system splot reread save quit rep cd lower call unset
+                   contained reset load fit stats refresh undefine evaluate show exit test clear pwd update raise shell set
+                   links to Type
+texZoneGnuplot xxx start=/\\begin{gnuplot}\(\_s*\[\_[\]]\{-}\]\)\?/rs=s end=/\\end{gnuplot}/re=e  keepend transparent contains=texBeginEnd,texBeginEndModifier,@GNUPLOT 
+texZoneMinted  xxx start=/\\begin{minted}\_[^}]\{-}{\w\+}/rs=s end=/\\end{minted}/re=e  keepend contains=texMinted 
+texMinted      xxx match /\\begin{minted}\_[^}]\{-}{\w\+}/  contains=texBeginEnd,texMintedName 
+                   match /\\end{minted}/  contains=texBeginEnd 
+texMintedName  xxx match /{\w\+}/  contained 
+                   links to texBeginEndName
+texCmdGroup    cluster=texCmdBody,texComment,texDefParm,texDelimiter,texDocType,texInput,texLength,texLigature,texMathDelim,texMathOper,texNewCmd,texNewEnv,texRefZone,texSection,texBeginEnd,texBeginEndName,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texMathError,texDefParmNested 
+texEnvGroup    cluster=texComment,texDefParm,texMathDelim,texNewEnv,texSpecialChar,texStatement,texMatcher,texDefParmNested 
+texFoldGroup   cluster=texComment,texDelimiter,texDocType,texInput,texLength,texLigature,texNewCmd,texNewEnv,texRefZone,texSection,texBeginEnd,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texMatcher,texAccent,texBadMath,texDefCmd,texInputFile,texMathZoneV,texMathZoneW,texMathZoneX,texMathZoneY,texMathZoneZ,texOnlyMath,texOption,texParen,texSectionZone,texSpaceCode,texZone,texTitle,texAbstract,texBoldStyle,texItalStyle,texNoSpell,texZoneMinted,@texMathZones 
+texMathZones   cluster=texMathZoneV,texMathZoneW,texMathZoneX,texMathZoneY,texMathZoneZ,texMathZoneA,texMathZoneAS,texMathZoneB,texMathZoneBS,texMathZoneC,texMathZoneCS,texMathZoneD,texMathZoneDS,texMathZoneE,texMathZoneES,texMathZoneF,texMathZoneFS,texMathZoneG,texMathZoneGS,texMathZoneH,texMathZoneHS,texMathZoneI,texMathZoneIS,texMathZoneJ,texMathZoneK,texMathZoneKS,texMathZoneL,texMathZoneZS,texMathZoneYS,texMathZoneXS,texMathZoneWS,texMathZoneVS,texMathZoneU,texMathZoneUS,texMathZoneT,texMathZoneTS,texMathZoneS 
+texBoldGroup   cluster=texAccent,texBadMath,texComment,texDefCmd,texDelimiter,texDocType,texInput,texInputFile,texLength,texLigature,texMatcher,texMathZoneV,texMathZoneW,texMathZoneX,texMathZoneY,texMathZoneZ,texNewCmd,texNewEnv,texOnlyMath,texOption,texParen,texRefZone,texSection,texBeginEnd,texSectionZone,texSpaceCode,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texZone,@texMathZones,texTitle,texAbstract,texBoldStyle,texBoldItalStyle,texNoSpell 
+texItalGroup   cluster=texAccent,texBadMath,texComment,texDefCmd,texDelimiter,texDocType,texInput,texInputFile,texLength,texLigature,texMatcher,texMathZoneV,texMathZoneW,texMathZoneX,texMathZoneY,texMathZoneZ,texNewCmd,texNewEnv,texOnlyMath,texOption,texParen,texRefZone,texSection,texBeginEnd,texSectionZone,texSpaceCode,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texZone,@texMathZones,texTitle,texAbstract,texItalStyle,texItalBoldStyle,texNoSpell 
+texMatchGroup  cluster=texComment,texDelimiter,texDocType,texInput,texLength,texLigature,texNewCmd,texNewEnv,texRefZone,texSection,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texMatcher,texAccent,texBadMath,texDefCmd,texInputFile,texOnlyMath,texOption,texParen,texZone,texBoldStyle,texItalStyle,@texMathZones,@Spell 
+Spell          cluster=NONE
+texStyleGroup  cluster=texAccent,texBadMath,texComment,texDefCmd,texDelimiter,texDocType,texInput,texLength,texLigature,texNewCmd,texNewEnv,texOnlyMath,texParen,texRefZone,texSection,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texZone,texInputFile,texOption,texStyleStatement,@Spell,texStyleMatcher 
+texPreambleMatchGroup cluster=texAccent,texBadMath,texComment,texDefCmd,texDelimiter,texDocType,texInput,texLength,texLigature,texMatcher,texNewCmd,texNewEnv,texOnlyMath,texParen,texRefZone,texSection,texSpecialChar,texStatement,texString,texTitle,texTypeSize,texTypeStyle,texZone,texInputFile,texOption,texMathZoneZ 
+texRefGroup    cluster=texMatcher,texComment,texDelimiter 
+texMathDelimGroup cluster=texMathDelimBad,texMathDelimKey,texMathDelimSet1,texMathDelimSet2 
+texMathMatchGroup cluster=texComment,texDelimiter,texDocType,texInput,texLength,texLigature,texMathDelim,texMathOper,texNewCmd,texNewEnv,texRefZone,texSection,texSpecialChar,texStatement,texString,texTypeSize,texTypeStyle,texMathError,texDefCmd,texZone,texMathMatcher,texMathSymbol,texGreek,texSuperscript,texSubscript,@texMathZones 
+texMathZoneGroup cluster=texComment,texDelimiter,texLength,texMathDelim,texMathOper,texRefZone,texSpecialChar,texStatement,texTypeSize,texTypeStyle,texMathError,texMathMatcher,texMathSymbol,texMathText,texGreek,texSuperscript,texSubscript,@NoSpell 
+NoSpell        cluster=NONE
+texDocGroup    cluster=texPartZone,texStatementBeamer,texZoneDot,texZoneLua,texZoneGnuplot,@texPartGroup 
+texPartGroup   cluster=texChapterZone,texSectionZone,texParaZone 
+texChapterGroup cluster=texSectionZone,texParaZone 
+texSectionGroup cluster=texSubSectionZone,texParaZone 
+texSubSectionGroup cluster=texSubSubSectionZone,texParaZone 
+texSubSubSectionGroup cluster=texParaZone 
+texParaGroup   cluster=texSubParaZone 
+texCommentGroup cluster=texTodo,@Spell 
+DOT            cluster=dotParErr,dotBrackErr,dotBraceErr,dotEncl,dotComment,dotString,dotKeyword,dotType,dotKeyChar,dotIdentifier 
+LUA            cluster=luaComment,luaParenError,luaIfThen,luaBlock,luaLoopBlock,luaStatement,luaParen,luaBraceError,luaTableBlock,luaError,luaFunctionBlock,luaLabel,luaOperator,luaConstant,luaString2,luaString,luaNumber,luaFunc 
+GNUPLOT        cluster=gnuplotUnit,gnuplotExternal,gnuplotComment,gnuplotString,gnuplotNumber,gnuplotError,gnuplotFloat,gnuplotOctalError,gnuplotFunc,gnuplotKeyword,gnuplotConditional,gnuplotRepeat,gnuplotOperator,gnuplotMacro,gnuplotStatement 
+ASYMPTOTE      cluster=NONE
