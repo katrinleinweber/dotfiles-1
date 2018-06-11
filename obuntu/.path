@@ -2,7 +2,7 @@
 # Exports PATH environment variable
 # Sourced by .exports, which is sourced by .bashrc, which is sourced by .bash_profile
 
-PATH="/home/soft/.linuxbrew/bin:/home/soft/bin:/home/soft/usr/local/bin:/home/soft/usr/local/libexec:/home/soft/DeHydrate/Code:/usr/local/sge6.2u5/bin/lx24-amd64:/opt/openmpi/gfortran/1.8.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/gamess"
+PATH="/home/soft/anaconda3/bin:/home/soft/.linuxbrew/bin:/home/soft/bin:/home/soft/usr/local/bin:/home/soft/usr/local/libexec:/home/soft/DeHydrate/Code:/usr/local/sge6.2u5/bin/lx24-amd64:/opt/openmpi/gfortran/1.8.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/gamess"
 #export PATH="$HOME/.linuxbrew/bin:$HOME/bin:$HOME/local/bin:$HOME/DeHydrate/Code:$PATH"
 #LD_LIBRARY_PATH="/home/soft/usr/local/lib"
 #C_INCLUDE_PATH="/home/soft/usr/local/include"
