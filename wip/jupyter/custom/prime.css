@@ -1,0 +1,163 @@
+/* Testing Jupyter Notebook theme twiddlings */
+
+body {
+    background-color: #282828;
+    font-size: 1.5rem;
+}
+
+/* Header (the bit with the Jupyter logo, etc) */
+/*#menubar > .navbar-collapse*/ body > #header {
+    background-color: #282828;
+    color: #D2D2D2;
+}
+
+/* The horizontal line between the header and the navigation tabs*/
+body > #header > .header-bar {
+    background: #00B5FF;
+}
+
+/* "Quit" and "Logout" buttons */
+/*body > #header-container.container >*/ span#login_widget > .button, #logout, #shutdown {
+    background-color: #282828;
+    color: #DB8600;
+    border-color: #444;
+}
+
+/* Navigation tabs */
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Active navigation tabs */
+.nav-tabs > li.active {
+    background-color: #545454;
+    color: #D2D2D2;
+}
+
+.nav-tabs > li.active > a {
+    background-color: #545454;
+    border: 1px solid #bbb;
+    color: #D2D2D2;
+}
+
+/* Inactive navigation tabs */
+.nav-tabs > li > a {
+    border: 1px solid #5B5B5B;
+    border-bottom-width: 0;
+    border-radius: 2px 2px 0 0;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: #333;
+    /*border: 1px solid #5B5B5B;*/
+    border-radius: 2px 2px 0 0;
+    color: #D2D2D2;
+}
+
+/* Buttons generally */
+.btn-default {
+    background-color: #282828;
+    border-color: #444;
+    color: #DB8600;
+    font-size: 1.2rem;
+}
+
+.btn-default:hover {
+    background-color: #333;
+    color: #DB8600;
+}
+
+/* Plain text above file list table*/
+.list_toolbar {
+    color: #d2d2d2;
+}
+
+/* Whole table of file list, including header rows */
+.list_container {
+    border: 1px solid #222;
+}
+
+/* Table header for file list */
+.list_header {
+    background-color: #222;
+}
+
+/* Add dark division between cells in file list*/
+.list_item,
+.list_item > div,
+.list_container > div {
+    border-bottom: 1px solid #222;
+}
+
+/* Hovering over list items on file-list page*/
+.list_container > .list_item:hover,
+.list_container > .list_item.row:hover {
+    background-color: #333;
+}
+
+/* Check boxes and radio buttons*/
+div input,
+input[type="radio"],
+input[type="checkbox"] {
+    background-color: #222;
+    color: #d2d2d2;
+}
+
+/* The "Running" label*/
+.item_buttons .running-indicator {
+    color: #08AD08;
+}
+
+/* Links */
+a {
+    color: #00B5FF;
+}
+
+a:hover {
+    color: #7F3DFF;
+}
+
+/*******************/
+/* Notebook editor */
+/*******************/
+
+/* Main menu bar generally*/
+.container-fluid {
+    background-color: #282828;
+    color: #D2D2D2;
+}
+
+/* Remove border around main menu bar (File, Edit, etc)*/
+#header > #menubar-container > #menubar > .navbar > .container-fluid,
+#header > #menubar-container > #menubar > .navbar-default > .container-fluid,
+.navbar-default,
+.navbar {
+    border: none;
+}
+
+/* Icon buttons under main menu bar */
+.btn-group,
+.btn-default {
+    font-size: 1.7rem;
+}
+
+/* Dropdown menu (code, markdown, etc) */
+select,
+.form-control,
+.toolbar select {
+    background-color: #282828;
+    color: #d2d2d2;
+    font-size: 1.2rem;
+    height: 30px;
+    /*margin-bottom: 6px;*/
+}
+
+/* The "Python 3" kernel indicator */
+#kernel_indicator {
+    color: #0064FF;
+}
+
+/* "Trusted" button and suchlike */
+#notification_area {
+    margin: 2px 5px;
+}
