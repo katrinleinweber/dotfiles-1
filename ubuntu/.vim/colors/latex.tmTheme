@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>name</key>
+        <string>Cool Fluffed</string>
+        <key>settings</key>
+        <array>
+<!-- LaTeX(ing) Settings -->
+            <dict>
+                <key>name</key>
+                <string>Latex: Body Text</string>
+                <key>scope</key>
+                <string>text.tex.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#C9CAC8</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: Equations</string>
+                <key>scope</key>
+                <string></string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#F8F8F2</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: Equations inline</string>
+                <key>scope</key>
+                <string>string.other.math.tex, meta.function.environment.math.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>fontStyle</key>
+                    <string>italic</string>
+                    <key>foreground</key>
+                    <string>#4C61FF</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: references</string>
+                <key>scope</key>
+                <string>constant.other.reference.label.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#399C03</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: List Items</string>
+                <key>scope</key>
+                <string>text.tex.latex.ing meta.function.environment.list.latex meta.scope.item.latex keyword.other.item.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#999999</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: Label Contents</string>
+                <key>scope</key>
+                <string>text.tex.latex.ing meta.definition.label.latex variable.parameter.definition.label.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#66CCFF</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: Inside Section Brackets etc.</string>
+                <key>scope</key>
+                <string>text.tex.latex.ing meta.function.section.latex entity.name.section.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#4B9402</string>
+                </dict>
+            </dict>
+            <dict>
+                <key>name</key>
+                <string>Latex: Citations</string>
+                <key>scope</key>
+                <string>text.tex.latex.ing meta.citation.latex constant.other.reference.citation.latex</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#8000FF</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
