@@ -11,7 +11,7 @@ body {
     color: #D2D2D2;
 }
 
-/* The horizontal line between the header and the navigation tabs*/
+/* The horizontal line between the header and the navigation tabs */
 body > #header > .header-bar {
     background: #00B5FF;
 }
@@ -55,11 +55,13 @@ body > #header > .header-bar {
 }
 
 /* Buttons generally */
-.btn-default {
+.btn-default,
+.alternate_upload .btn-upload {
     background-color: #282828;
     border-color: #444;
     color: #DB8600;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    height: 30px;
 }
 
 .btn-default:hover {
@@ -67,7 +69,16 @@ body > #header > .header-bar {
     color: #DB8600;
 }
 
-/* Plain text above file list table*/
+/* Checkboxes in table headers */
+#select-all {
+    margin-top: 7px;
+}
+
+#counter-select-all {
+    margin-left: 7px;
+}
+
+/* Plain text above file list table */
 .list_toolbar {
     color: #d2d2d2;
 }
@@ -82,20 +93,20 @@ body > #header > .header-bar {
     background-color: #222;
 }
 
-/* Add dark division between cells in file list*/
+/* Add dark division between cells in file list */
 .list_item,
 .list_item > div,
 .list_container > div {
     border-bottom: 1px solid #222;
 }
 
-/* Hovering over list items on file-list page*/
+/* Hovering over list items on file-list page */
 .list_container > .list_item:hover,
 .list_container > .list_item.row:hover {
     background-color: #333;
 }
 
-/* Check boxes and radio buttons*/
+/* Check boxes and radio buttons */
 div input,
 input[type="radio"],
 input[type="checkbox"] {
@@ -103,9 +114,24 @@ input[type="checkbox"] {
     color: #d2d2d2;
 }
 
-/* The "Running" label*/
+.list_header > div input,
+.list_item > div input {
+    background-color: #222;
+}
+
+/* The "Running" label */
 .item_buttons .running-indicator {
     color: #08AD08;
+}
+
+/* The label saying when the file/folder was last modified */
+.item_modified {
+    color: #a4a4a4;
+}
+
+/* The file size label */
+.file_size {
+    color: #646464;
 }
 
 /* Links */
@@ -114,25 +140,63 @@ a {
 }
 
 a:hover {
-    color: #7F3DFF;
+    color: #0072FF;
 }
 
-/*******************/
-/* Notebook editor */
-/*******************/
+/* Links in main menu bar headers */
+.navbar-default .navbar-nav > li > a {
+    color: #a4a4a4;
+}
 
-/* Main menu bar generally*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    /*color: #409B0E;*/
+    color: #0072FF;
+}
+
+/************************************/
+/* Notebook editor header-y section */
+/************************************/
+
+/* Main menu bar generally */
 .container-fluid {
     background-color: #282828;
     color: #D2D2D2;
 }
 
-/* Remove border around main menu bar (File, Edit, etc)*/
+/* Remove border around main menu bar (File, Edit, etc) */
 #header > #menubar-container > #menubar > .navbar > .container-fluid,
 #header > #menubar-container > #menubar > .navbar-default > .container-fluid,
 .navbar-default,
 .navbar {
     border: none;
+}
+
+/* Main menu bar opened menus */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #444;
+    color: #e7e7e7;
+}
+
+/* Main menu bar opened menu items */
+.open > .dropdown-menu,
+.dropdown-menu > li > a {
+    background-color: #333;
+    color: #e7e7e7;
+}
+
+/* Main menu bar opened menu items on mouseover */
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #444;
+    color: #e7e7e7;
+}
+
+/* Main menu bar opened menu horizontal dividers */
+.dropdown-menu .divider {
+    background-color: #222;
 }
 
 /* Icon buttons under main menu bar */
@@ -144,12 +208,13 @@ a:hover {
 /* Dropdown menu (code, markdown, etc) */
 select,
 .form-control,
-.toolbar select {
+.toolbar select,
+.toolbar label {
     background-color: #282828;
     color: #d2d2d2;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     height: 30px;
-    /*margin-bottom: 6px;*/
+    padding-top: 0;
 }
 
 /* The "Python 3" kernel indicator */
@@ -161,3 +226,63 @@ select,
 #notification_area {
     margin: 2px 5px;
 }
+
+/*******************/
+/* Notebook editor */
+/*******************/
+
+/* Main background */
+#notebook_panel,
+#site {
+    background-color: #333;
+}
+
+/* Inner background with box shadow */
+#notebook-container {
+    background-color: #222;
+    box-shadow: 0px 0px 12px 1px rgba(150, 150, 150, 0.2);
+}
+
+/* Outer border of unselected cells */
+div.cell.selected {
+    border-color: #666;
+}
+
+/* The "In [x]:" things to the left of the editable bits of cells */
+div.input_prompt {
+    color: #4564D0;
+}
+
+/* Border of editable bits of cells */
+div.input_area {
+    border: 1px solid #777;
+}
+
+/* Inside the editable bits of cells */
+div.inner_cell,
+div.CodeMirror,
+div.text_cell_render {
+    background-color: #282828;
+    color: #d2d2d2;
+}
+
+/* Make sure text cell backgrounds blend with main background */
+div.text_cell_render {
+    background-color: #222;
+}
+
+/* The thin green border of selected edit-y cells */
+.edit_mode div.cell.selected {
+    border-color: #2c9b06;
+}
+
+/* The thick vertical green line on selected edit-y cells */
+.edit_mode div.cell.selected::before {
+    background: #2c9b06;
+}
+
+/*div.cell.selected.jupyter-soft-selected::before {
+    background: #42A5F5;
+}*/
+
+/*.code_cell*/
