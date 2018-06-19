@@ -271,6 +271,12 @@ div.text_cell_render {
     background-color: #222;
 }
 
+div.text_cell_render code {
+    background-color: transparent;
+    color: #C36300;
+    padding: 2px;
+}
+
 /* The thin green border of selected edit-y cells */
 .edit_mode div.cell.selected {
     border-color: #2c9b06;
@@ -286,3 +292,47 @@ div.text_cell_render {
 }*/
 
 /*.code_cell*/
+
+/**************************************/
+/* Syntax highlighting for code cells */
+/**************************************/
+
+/* DARK THEME */
+/*.CodeMirror-code .CodeMirror-line span.cm-header {color: blue;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-quote {color: #090;}*/
+/*.cm-negative {color: #d44;}*/
+/*.cm-positive {color: #292;}*/
+/*.cm-header, .cm-strong {font-weight: bold;}*/
+/*.cm-em {font-style: italic;}*/
+/*.cm-link {text-decoration: underline;}*/
+/*.cm-strikethrough {text-decoration: line-through;}*/
+
+/*.CodeMirror-code .CodeMirror-line span.cm-keyword {color: #708;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-atom {color: #219;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-number {color: #164;}*/
+.CodeMirror-code .CodeMirror-line span.cm-def {
+    color: #006EFF;
+}
+.CodeMirror-code .CodeMirror-line span.cm-variable/*,
+.CodeMirror-code .CodeMirror-line span.cm-punctuation,
+.CodeMirror-code .CodeMirror-line span.cm-property,
+.CodeMirror-code .CodeMirror-line span.cm-operator*/ {
+    color: #5DADE7;
+}
+/*.CodeMirror-code .CodeMirror-line span.cm-variable-2 {color: #05a;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-variable-3,*/
+/*.CodeMirror-code .CodeMirror-line span.cm-type {color: #085;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-comment {color: #a50;}*/
+.CodeMirror-code .CodeMirror-line span.cm-string {color: #FFB600;}
+/*.CodeMirror-code .CodeMirror-line span.cm-string-2 {color: #f50;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-meta {color: #555;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-qualifier {color: #555;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-builtin {color: #30a;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-bracket {color: #997;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-tag {color: #170;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-attribute {color: #00c;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-hr {color: #999;}*/
+/*.CodeMirror-code .CodeMirror-line span.cm-link {color: #00c;}*/
+
+/*.CodeMirror-code .CodeMirror-line span.cm-error {color: #f00;}*/
+/*.cm-invalidchar {color: #f00;}*/
