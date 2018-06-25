@@ -1,5 +1,9 @@
 # .functions
 
+function doi2bib() {
+	curl -LH "Accept: text/bibliography; style=bibtex" http://dx.doi.org/"$@" | awk '{sub(",",",\n"); gsub("},","},\n"); print $0}'
+}
+
 function linkbin() {
 	src="/Users/jcprime/Google Drive/bin"
 	dst="/Users/jcprime/bin"
