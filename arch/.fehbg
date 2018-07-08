@@ -1,2 +1,2 @@
 #!/bin/sh
-#feh  --bg-fill '/home/james/wallpapers/SlowmoGuys_Paint.png' 
+feh --bg-fill '/home/james/wallpapers/SlowmoGuys_Paint.png' 

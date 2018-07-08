@@ -52,6 +52,10 @@ bindsym $mod+Return exec i3-sensible-terminal # urxvt
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# Control screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+
 # start lighthouse (a program launcher)
 bindsym $mod+d exec dmenu
 # Previously lighthouse | sh
