@@ -25,6 +25,7 @@
 .local/
 .log/
 #.mozilla/
+.netrwhist
 .qt/
 .rnd
 .ssh/
@@ -35,4 +36,5 @@
 *.tmp
 .xsession_old
 .Xauthority
+mac/.vim/.netrwhist
 ubuntu/.vim/.netrwhist
