@@ -7,7 +7,8 @@
 
 # Setting environment variables
 export VISUAL="vim"
-export TERMINAL="urxvt"
+#export TERMINAL="urxvt"
+export TERMINAL="gnome-terminal"
 export PATH="/home/james/bin:/home/james/.linuxbrew/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
 #export PS1="\[\033[38;5;12m\][\[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[\033[38;5;12m\]@\[$(tput sgr0)\]\[\033[38;5;7m\]\h\[$(tput sgr0)\]\[\033[38;5;12m\]]\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;7m\]\w\[$(tput sgr0)\]\[\033[38;5;12m\]>\[$(tput sgr0)\]\[\033[38;5;10m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
@@ -74,3 +75,6 @@ alias update='sudo pacman -Syu'
 #alias halt='sudo /sbin/halt'
 #alias shutdown='sudo /sbin/shutdown -P now'
 alias shutdown='shutdown -P now'
+
+# added by Anaconda3 installer
+export PATH="/home/james/anaconda3/bin:$PATH"
