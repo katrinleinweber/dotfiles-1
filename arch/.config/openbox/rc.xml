@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>simple</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>NumixBlue</name>
+    <titleLayout>CIML</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -55,59 +55,59 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
-      <size>8</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>sans</name>
-      <size>9</size>
+      <name>Sans</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -123,10 +123,6 @@
     <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Terminal</name>
-      <name>Writing</name>
-      <name>Browsing</name>
-      <name>Researching</name>
       <!-- set names up here if you want to, like this:
     <name>desktop 1</name>
     <name>desktop 2</name>
@@ -158,19 +154,19 @@
      cases. -->
   <margins>
     <top>0</top>
-    <bottom>0</bottom>
+    <bottom>25</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>Bottom</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
     <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
-    <direction>Vertical</direction>
+    <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
     <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
@@ -183,25 +179,25 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="A-Left">
+    <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="A-Right">
+    <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="A-Up">
+    <keybind key="C-A-Up">
       <action name="GoToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="A-Down">
+    <keybind key="C-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
         <wrap>no</wrap>
@@ -231,43 +227,23 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="A-1">
+    <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="A-2">
+    <keybind key="W-F2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="A-3">
+    <keybind key="W-F3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="A-4">
+    <keybind key="W-F4">
       <action name="GoToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="S-A-1">
-      <action name="SendToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="S-A-2">
-      <action name="SendToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="S-A-3">
-      <action name="SendToDesktop">
-        <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="S-A-4">
-      <action name="SendToDesktop">
         <to>4</to>
       </action>
     </keybind>
@@ -278,23 +254,25 @@
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
-    <keybind key="S-A-q">
-      <action name="Close"/>
-    </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-Space">
+    <keybind key="C-A-Space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
+      </action>
+    </keybind>
+    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
+    <keybind key="A-Print">
+      <action name="Execute">
+        <command>scrot -s</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
-      	<allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -304,7 +282,6 @@
     </keybind>
     <keybind key="A-S-Tab">
       <action name="PreviousWindow">
-      	<allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="Raise"/>
@@ -324,22 +301,22 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="A-Right">
+    <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
     </keybind>
-    <keybind key="A-Left">
+    <keybind key="W-S-Left">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
     </keybind>
-    <keybind key="A-Up">
+    <keybind key="W-S-Up">
       <action name="DirectionalCycleWindows">
         <direction>up</direction>
       </action>
     </keybind>
-    <keybind key="A-Down">
+    <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
@@ -349,33 +326,40 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Thunar</name>
+          <name>Konqueror</name>
         </startupnotify>
-	<command>thunar</command>
+        <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <!-- Launch scrot when Print is pressed -->
+    <keybind key="Print">
       <action name="Execute">
-	<command>xscreensaver-command -lock</command>
+        <command>scrot</command>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="A-space">
       <action name="Execute">
-	<command>rofi</command>
-      </action>
-    </keybind>
-    <keybind key="A-d">
-      <action name="Execute">
-	<command>rofi</command>
+        <command>rofi -show run</command>
       </action>
     </keybind>
     <keybind key="A-Return">
       <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>urxvt</name>
-        </startupnotify>
-        <command>urxvt</command>
+        <command>gnome-terminal --window --maximize</command>
+      </action>
+    </keybind>
+    <keybind key="A-s">
+      <action name="Execute">
+        <command>subl</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>xbacklight +10</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute">
+        <command>xbacklight -10</command>
       </action>
     </keybind>
   </keyboard>
@@ -451,7 +435,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleMaximize"/>
+        <action name="ToggleMaximizeFull"/>
       </mousebind>
       <mousebind button="Up" action="Click">
         <action name="if">
@@ -717,6 +701,8 @@
     <!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless -->
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
+    <!-- system menu files on Debian systems -->
+    <file>/var/lib/openbox/debian-menu.xml</file>
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
@@ -740,7 +726,7 @@
   </menu>
   <applications>
     <!--
-  # this is an example with comments throughout. use these to make your
+  # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
