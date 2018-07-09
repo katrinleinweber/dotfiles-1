@@ -10,4 +10,5 @@ xset s 3600 3600
 # Set DPMS settings to follow suit
 xset dpms 3600 3600 3600
 
-exec i3
+#exec i3
+exec openbox-session
