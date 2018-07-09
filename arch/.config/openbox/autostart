@@ -1,4 +1,10 @@
-tint2 -c ~/.dotfiles/arch/.config/tint2/tint2rc &
-feh --no-startup-id --bg-fill ~/wallpapers/SlowmoGuys_Paint.png &
-compton --config ~/.config/compton.conf
+sh ~/.fehbg &
+xcompmgr &
+#plank &
+#cairo-dock & # Yes to using openGL
 
+# Linux-y f.lux
+xflux -l 51.309325 -g -0.055901
+
+# Run personal test-y script to get something vaguely i3status-like (plus clickable bits) with lemonbar
+~/.dotfiles/wip/lemonbar/i3like.sh | lemonbar -g1024 -pb -f "Monaco"
