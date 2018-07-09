@@ -1,0 +1,310 @@
+=== PRESUMABLY ORIGINAL (NUMIX) THEME FILE
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.403: Theme parsing error: gtk.css:120:16: 'px' is not a valid unit.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.403: Theme parsing error: gtk.css:133:54: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.404: Theme parsing error: gtk.css:145:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.404: Theme parsing error: gtk.css:153:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.405: Theme parsing error: gtk.css:159:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.405: Theme parsing error: gtk.css:175:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.405: Theme parsing error: gtk.css:178:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.406: Theme parsing error: gtk.css:186:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.406: Theme parsing error: gtk.css:189:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.406: Theme parsing error: gtk.css:197:74: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.406: Theme parsing error: gtk.css:204:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.407: Theme parsing error: gtk.css:207:75: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.422: Theme parsing error: gtk.css:964:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.423: Theme parsing error: gtk.css:973:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.423: Theme parsing error: gtk.css:979:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.424: Theme parsing error: gtk.css:990:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.424: Theme parsing error: gtk.css:993:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.424: Theme parsing error: gtk.css:1000:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.424: Theme parsing error: gtk.css:1003:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.432: Theme parsing error: gtk.css:1197:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.432: Theme parsing error: gtk.css:1204:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.432: Theme parsing error: gtk.css:1208:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.433: Theme parsing error: gtk.css:1233:69: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.433: Theme parsing error: gtk.css:1235:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.434: Theme parsing error: gtk.css:1238:54: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.434: Theme parsing error: gtk.css:1241:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.434: Theme parsing error: gtk.css:1244:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.434: Theme parsing error: gtk.css:1247:72: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.436: Theme parsing error: gtk.css:1306:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.436: Theme parsing error: gtk.css:1310:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.436: Theme parsing error: gtk.css:1313:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.442: Theme parsing error: gtk.css:1654:11: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.447: Theme parsing error: gtk.css:1886:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.448: Theme parsing error: gtk.css:1891:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.448: Theme parsing error: gtk.css:1894:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.448: Theme parsing error: gtk.css:1897:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.448: Theme parsing error: gtk.css:1900:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.449: Theme parsing error: gtk.css:1903:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.449: Theme parsing error: gtk.css:1905:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.449: Theme parsing error: gtk.css:1909:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.449: Theme parsing error: gtk.css:1913:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.450: Theme parsing error: gtk.css:1917:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.450: Theme parsing error: gtk.css:1921:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.450: Theme parsing error: gtk.css:1926:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.450: Theme parsing error: gtk.css:1928:58: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.450: Theme parsing error: gtk.css:1930:77: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.451: Theme parsing error: gtk.css:1932:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.451: Theme parsing error: gtk.css:1934:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.451: Theme parsing error: gtk.css:1938:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.451: Theme parsing error: gtk.css:1941:69: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.452: Theme parsing error: gtk.css:1944:60: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.452: Theme parsing error: gtk.css:1947:62: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.452: Theme parsing error: gtk.css:1950:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.458: Theme parsing error: gtk.css:2347:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.459: Theme parsing error: gtk.css:2410:8: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.459: Theme parsing error: gtk.css:2410:17: Using Pango syntax for the font: style property is deprecated; please use CSS syntax
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.462: Theme parsing error: gtk.css:2558:18: 'px' is not a valid unit.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.468: Theme parsing error: gtk.css:2861:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.468: Theme parsing error: gtk.css:2871:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.468: Theme parsing error: gtk.css:2877:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.469: Theme parsing error: gtk.css:2881:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.470: Theme parsing error: gtk.css:2966:16: 'px' is not a valid unit.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.471: Theme parsing error: gtk.css:3012:59: 'px' is not a valid unit.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.471: Theme parsing error: gtk.css:3032:69: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.473: Theme parsing error: gtk.css:3129:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.473: Theme parsing error: gtk.css:3136:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.473: Theme parsing error: gtk.css:3139:73: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.474: Theme parsing error: gtk.css:3147:52: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.475: Theme parsing error: gtk.css:3198:14: 'px' is not a valid unit.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.476: Theme parsing error: gtk.css:3246:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.476: Theme parsing error: gtk.css:3253:71: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.476: Theme parsing error: gtk.css:3257:54: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.477: Theme parsing error: gtk.css:3268:54: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.478: Theme parsing error: gtk.css:3377:8: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.478: Theme parsing error: gtk.css:3377:22: Using Pango syntax for the font: style property is deprecated; please use CSS syntax
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.479: Theme parsing error: gtk.css:3397:54: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.479: Theme parsing error: gtk.css:3408:8: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.479: Theme parsing error: gtk.css:3408:22: Using Pango syntax for the font: style property is deprecated; please use CSS syntax
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.479: Theme parsing error: gtk.css:3411:8: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.480: Theme parsing error: gtk.css:3411:28: Using Pango syntax for the font: style property is deprecated; please use CSS syntax
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.480: Theme parsing error: gtk.css:3414:8: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.480: Theme parsing error: gtk.css:3414:22: Using Pango syntax for the font: style property is deprecated; please use CSS syntax
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.480: Theme parsing error: gtk.css:3419:18: Junk at end of value for font-weight
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.480: Theme parsing error: gtk.css:3431:12: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.481: Theme parsing error: gtk.css:3431:12: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.481: Theme parsing error: gtk.css:3437:14: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.481: Theme parsing error: gtk.css:3437:14: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.481: Theme parsing error: gtk.css:3443:16: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.481: Theme parsing error: gtk.css:3443:16: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.482: Theme parsing error: gtk.css:3448:14: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.482: Theme parsing error: gtk.css:3448:14: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.483: Theme parsing error: gtk.css:3516:12: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.483: Theme parsing error: gtk.css:3518:16: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.483: Theme parsing error: gtk.css:3518:16: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.484: Theme parsing error: gtk.css:3564:12: not a number
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.484: Theme parsing error: gtk.css:3564:12: Expected a string.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.489: Theme parsing error: gtk.css:3845:72: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.490: Theme parsing error: gtk.css:3855:56: Using one color stop with linear-gradient() is deprecated.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.490: Theme parsing error: gtk.css:3859:73: Using one color stop with linear-gradient() is deprecated.
+
+=== MY THEME FILES
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.702: Theme parsing error: gtk-widgets.css:1469:5: '/*' in comment block
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:45.702: Theme parsing error: gtk-widgets.css:1472:5: '/*' in comment block
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.558: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.559: gdk_pixbuf_calculate_rowstride: assertion 'height > 0' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.559: gdk_pixbuf_fill: assertion 'GDK_IS_PIXBUF (pixbuf)' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.559: gdk_pixbuf_copy_area: assertion 'src_pixbuf != NULL' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.559: gdk_pixbuf_fill: assertion 'GDK_IS_PIXBUF (pixbuf)' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.559: gdk_pixbuf_copy_area: assertion 'src_pixbuf != NULL' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.559: gdk_pixbuf_copy_area: assertion 'src_x >= 0 && src_x + width <= src_pixbuf->width' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.564: gdk_pixbuf_copy_area: assertion 'dest_x >= 0 && dest_x + width <= dest_pixbuf->width' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.564: gdk_pixbuf_calculate_rowstride: assertion 'height > 0' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.565: gdk_pixbuf_fill: assertion 'GDK_IS_PIXBUF (pixbuf)' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.565: gdk_pixbuf_copy_area: assertion 'src_pixbuf != NULL' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.565: gdk_pixbuf_fill: assertion 'GDK_IS_PIXBUF (pixbuf)' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.565: gdk_pixbuf_copy_area: assertion 'src_pixbuf != NULL' failed
+
+(lxappearance:16430): GdkPixbuf-CRITICAL **: 14:59:46.565: gdk_pixbuf_copy_area: assertion 'src_x >= 0 && src_x + width <= src_pixbuf->width' failed
+
+(lxappearance:16430): Gtk-CRITICAL **: 14:59:46.565: gtk_image_set_from_pixbuf: assertion 'GTK_IS_IMAGE (image)' failed
+Gtk-Message: 14:59:47.022: GtkDialog mapped without a transient parent. This is discouraged.
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.542: Theme parsing error: gtk-widgets.css:7:31: The style property GtkWidget:interior-focus is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.543: Theme parsing error: gtk-widgets.css:8:32: The style property GtkExpander:expander-size is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.543: Theme parsing error: gtk-widgets.css:9:33: The style property GtkMenu:horizontal-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.543: Theme parsing error: gtk-widgets.css:10:31: The style property GtkMenu:vertical-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.543: Theme parsing error: gtk-widgets.css:12:28: The style property GtkRange:slider-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.543: Theme parsing error: gtk-widgets.css:13:31: The style property GtkRange:stepper-spacing is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.543: Theme parsing error: gtk-widgets.css:14:29: The style property GtkRange:trough-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.544: Theme parsing error: gtk-widgets.css:15:37: The style property GtkRange:trough-under-steppers is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.544: Theme parsing error: gtk-widgets.css:18:37: The style property GtkScrollbar:min-slider-length is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.544: Theme parsing error: gtk-widgets.css:20:48: The style property GtkScrolledWindow:scrollbars-within-bevel is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.544: Theme parsing error: gtk-widgets.css:21:31: The style property GtkStatusbar:shadow-type is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.544: Theme parsing error: gtk-widgets.css:31:33: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.545: Theme parsing error: gtk-widgets.css:32:30: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.545: Theme parsing error: gtk-widgets.css:120:27: The style property GtkWidget:link-color is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.546: Theme parsing error: gtk-widgets.css:121:35: The style property GtkWidget:visited-link-color is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.547: Theme parsing error: gtk-widgets.css:217:30: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.547: Theme parsing error: gtk-widgets.css:218:33: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.548: Theme parsing error: gtk-widgets.css:304:30: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.548: Theme parsing error: gtk-widgets.css:305:33: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.554: Theme parsing error: gtk-widgets.css:915:30: The style property GtkButton:image-spacing is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.554: Theme parsing error: gtk-widgets.css:916:29: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.555: Theme parsing error: gtk-widgets.css:1044:32: The style property GtkMenuItem:arrow-scaling is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.557: Theme parsing error: gtk-widgets.css:1260:30: The style property GtkNotebook:initial-gap is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.557: Theme parsing error: gtk-widgets.css:1261:32: The style property GtkNotebook:arrow-spacing is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.558: Theme parsing error: gtk-widgets.css:1262:32: The style property GtkNotebook:tab-curvature is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.558: Theme parsing error: gtk-widgets.css:1263:30: The style property GtkNotebook:tab-overlap is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.558: Theme parsing error: gtk-widgets.css:1264:30: The style property GtkNotebook:has-tab-gap is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.561: Theme parsing error: gtk-widgets.css:1469:5: '/*' in comment block
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.561: Theme parsing error: gtk-widgets.css:1472:5: '/*' in comment block
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.563: Theme parsing error: gtk-widgets.css:1620:28: The style property GtkRange:slider-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.563: Theme parsing error: gtk-widgets.css:1621:29: The style property GtkRange:trough-border is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.563: Theme parsing error: gtk-widgets.css:1622:29: The style property GtkScale:slider-length is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.566: Theme parsing error: gtk-widgets.css:1853:37: The style property GtkMenuItem:horizontal-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.566: Theme parsing error: gtk-widgets.css:1854:33: The style property GtkWidget:separator-height is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.566: Theme parsing error: gtk-widgets.css:1862:32: The style property GtkWidget:wide-separators is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.581: Theme parsing error: gtk-widgets.css:3179:32: The style property GtkWidget:wide-separators is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(lxappearance:16430): Gtk-WARNING **: 14:59:52.596: Theme parsing error: gnome-applications.css:43:29: The style property GtkButton:inner-border is deprecated and shouldn't be used anymore. It will be removed in a future version
