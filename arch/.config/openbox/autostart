@@ -6,5 +6,8 @@ xcompmgr &
 # Linux-y f.lux
 xflux -l 51.309325 -g -0.055901
 
+# Set screen brightness (assumed for Samsung NS310 netbook, which is very bright by default)
+xbacklight -set 50
+
 # Run personal test-y script to get something vaguely i3status-like (plus clickable bits) with lemonbar
 ~/.dotfiles/wip/lemonbar/i3like.sh | lemonbar -g1024 -pb -f "Monaco"
