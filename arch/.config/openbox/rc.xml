@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>NumixBlue</name>
+    <name>test</name>
     <titleLayout>CIML</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
