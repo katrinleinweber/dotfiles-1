@@ -1,7 +1,7 @@
 # .functions
 
 function doi2bib() {
-	curl -LH "Accept: text/bibliography; style=bibtex" http://dx.doi.org/"$@" | awk '{sub(",",",\n"); gsub("},","},\n"); print $0}'
+	curl -LH "Accept: text/bibliography; style=bibtex" https://doi.org/"$@" | awk '{sub(",",",\n"); gsub("},","},\n"); print $0}'
 }
 
 function linkbin() {
